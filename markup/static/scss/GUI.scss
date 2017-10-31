@@ -108,3 +108,38 @@ h1 {
     letter-spacing: -1.96px;
   }
 }
+
+h3 {
+  font-size: rem-calc(24);
+  font-family: gothamprobold;
+  @media #{$desktop} {
+    font-size: rem-calc(36);
+  }
+}
+
+.big-shadow {
+  color: #282828;
+  font-size: rem-calc(14);
+  position: relative;
+  padding-top: 41px;
+  @media #{$desktop} {
+    padding-top: 160px;
+    font-size: rem-calc(36);
+  }
+
+  &::after {
+    content: attr(data-title);
+    color: #f1f1f1;
+    font-size: 48px;
+    font-family: gothamprobold;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1;
+    white-space: nowrap;
+    @media #{$desktop} {
+      font-size: 172px;
+    }
+  }
+}

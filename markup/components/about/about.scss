@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(%=static=%general/about-line.png) -3px 0;
+
+  .about-content {
+    width: calc(100% - 20px);
+    margin: auto;
+    @media #{$desktop} {
+      width: 58.073%;
+    }
+  }
+
+  p {
+    @media #{$desktop} {
+      font-size: rem-calc(24);
+    }
+  }
+
+  h3 {
+    margin: 55px 0 24px;
+    @media #{$desktop} {
+      margin: 90px 0 109px;
+    }
+  }
+
+  .big-shadow {
+
+  }
+}
