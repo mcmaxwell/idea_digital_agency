@@ -1,0 +1,9 @@
+Django==1.9.10
+FeinCMS==1.12.1
+Pillow==3.4.1
+django-mptt==0.8.6
+django-wysiwyg-redactor==0.4.9.1
+psycopg2==2.6.2
+pytz==2016.7
+wsgiref==0.1.2
+cloudinary==1.4.0

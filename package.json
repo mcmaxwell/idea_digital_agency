@@ -1,0 +1,35 @@
+{
+  "name": "awesome_project",
+  "version": "1.0.0",
+  "description": "Your awesome project description",
+  "main": "gulpfile.js",
+  "directories": {},
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "foundation-sites": "^6.4.3",
+    "http-server": "^0.10.0",
+    "jquery": "^2.0.0",
+    "pagepiling.js": "^1.5.4",
+    "script-loader": "^0.7.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "gulp": "^3.9.1",
+    "standard": "^8.6.0",
+    "standard-loader": "^5.0.0"
+  },
+  "scripts": {
+    "publish-s3": "s3cmd --acl-public --recursive  sync builds/ s3://skelet --access_key=AKIAIRBMNEIN3ADHNCWA --secret_key=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",
+    "collect-django-static": "venv/bin/python ./skelet/manage.py collectstatic --noinput",
+    "serve-static": "./node_modules/http-server/bin/http-server dev/ -p 3005 --cors",
+    "build-serve-static": "tars start build-dev && npm run collect-django-static && npm run serve-static"
+  },
+  "author": "",
+  "license": "ISC",
+  "standard": {
+    "globals": [
+      "$"
+    ],
+    "parser": "babel-eslint"
+  }
+}
