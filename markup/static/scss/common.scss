@@ -94,7 +94,11 @@ section.scrollify {
   }
 
   &.arr-bottom {
-    padding-bottom: 88px;
+    padding-bottom: 43px;
+
+    @media #{$desktop} {
+      padding-bottom: 88px;
+    }
 
     &::after {
       left: 50%;
@@ -106,12 +110,15 @@ section.scrollify {
     }
 
     &::before {
-      height: 75px;
+      height: 33px;
       width: 1px;
       bottom: 0;
       left: 50%;
       transform: translate(-50%);
       transition: all $default-time;
+      @media #{$desktop} {
+        height: 75px;
+      }
 
     }
   }

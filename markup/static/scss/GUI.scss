@@ -98,9 +98,13 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: gothamproblack;
-  font-size: 5.11vw;
+  font-size: rem-calc(26);
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: -1.96px;
+  letter-spacing: -0.52px;
   margin: 0;
+  @media #{$desktop} {
+    font-size: 5.11vw;
+    letter-spacing: -1.96px;
+  }
 }
