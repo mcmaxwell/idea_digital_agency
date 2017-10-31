@@ -1,6 +1,6 @@
 head: {
     defaults: {
-        title: 'default title',
+        title: 'Idea Digital Agency',
         useSocialMetaTags: true
     }
 }

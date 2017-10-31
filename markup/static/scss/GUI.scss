@@ -41,3 +41,66 @@
 // @include foundation-visibility-classes;
 // @include foundation-float-classes;
 // @include foundation-flex-classes;
+
+//icon
+
+.icon {
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    font-family: $iconfont;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  &.icon-facebook::before {
+    content: "\ea91";
+  }
+  &.icon-twitter::before {
+    content: "\ea96";
+  }
+  &.icon-instagram::before {
+    content: "\ea92";
+  }
+  &.icon-vk::before {
+    content: "\ea98";
+  }
+  &.icon-youtube::before {
+    content: "\ea9d";
+  }
+  &.icon-brand::before {
+    content: "\e900";
+  }
+  &.icon-marketing::before {
+    content: "\e901";
+  }
+  &.icon-develop::before {
+    content: "\e902";
+  }
+  &.icon-web::before {
+    content: "\e903";
+  }
+}
+
+
+h1 {
+  color: #000000;
+  background-image: url(%=static=%general/bg-text.png);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: gothamproblack;
+  font-size: 5.11vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -1.96px;
+  margin: 0;
+}

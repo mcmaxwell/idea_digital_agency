@@ -9,7 +9,7 @@
     "foundation-sites": "^6.4.3",
     "http-server": "^0.10.0",
     "jquery": "^2.0.0",
-    "pagepiling.js": "^1.5.4",
+    "jquery-scrollify": "^1.0.17",
     "script-loader": "^0.7.0"
   },
   "devDependencies": {
