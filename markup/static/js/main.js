@@ -1,8 +1,17 @@
 $(document).ready(function () {
+  var caseCarusel = $('.case-list-carusel');
+  var settingsCarusel = {
+    arrows: false,
+    slidesToShow: 3
+  }
+
+  if ($(window).width() > 1024) {
+
   $.scrollify({
   		section:".scrollify",
       scrollbars:false,
       before:function(i,panels) {
+        $('body').addClass('scrollify-body')
 
         var ref = panels[i].attr("data-section-name");
 
@@ -16,6 +25,9 @@ $(document).ready(function () {
       }
     });
 
+    caseCarusel.slick(settingsCarusel)
+  }
+
 
     $('.toggle-menu').click(function () {
       $(this).toggleClass('active')
@@ -27,4 +39,53 @@ $(document).ready(function () {
       $('.main-menu a').click(function () {
         $('.toggle-menu').click()
       })
+
+      $(window).on('resize', function() {
+        if ($(window).width() < 1024) {
+          if (caseCarusel.hasClass('slick-initialized')) {
+            caseCarusel.slick('unslick');
+          }
+
+          if ($('body').hasClass('scrollify-body')) {
+            $.scrollify.destroy();
+            $('body').removeClass('scrollify-body').css('overflow', '')
+
+          }
+          return
+        }
+
+        if (!caseCarusel.hasClass('slick-initialized')) {
+          return caseCarusel.slick(settingsCarusel);
+        }
+
+        if (!$('body').hasClass('scrollify-body')) {
+          $.scrollify({
+              section:".scrollify",
+              scrollbars:false,
+              before:function(i,panels) {
+                $('body').addClass('scrollify-body')
+                var ref = panels[i].attr("data-section-name");
+
+                $(".navigation .active").removeClass("active");
+
+                $(".navigation").find("a[href=\"#" + ref + "\"]").addClass("active");
+              },
+              afterRender:function() {
+
+                $("[data-section-link]").on("click",$.scrollify.move);
+              }
+            });
+        }
+      });
+
+      $('.next-slide').click(function () {
+        caseCarusel.slick('slickNext')
+        return false;
+      })
+
+      var toggleServices = function () {
+        $(this).toggleClass('active')
+      }
+
+      $('.services-item-content').click(toggleServices).hover(toggleServices)
 })

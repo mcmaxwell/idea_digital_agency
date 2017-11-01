@@ -4,14 +4,6 @@
   align-items: center;
   background: url(%=static=%general/about-line.png) -3px 0;
 
-  .about-content {
-    width: calc(100% - 20px);
-    margin: auto;
-    @media #{$desktop} {
-      width: 58.073%;
-    }
-  }
-
   p {
     @media #{$desktop} {
       font-size: rem-calc(24);
