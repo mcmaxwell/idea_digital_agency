@@ -1,0 +1,61 @@
+.contacts {
+  &-content {
+    position: relative;
+    height: 100%;
+  }
+
+  .big-shadow.line-before {
+    &::before {
+      width: 600px;
+      bottom: 12px;
+      top: auto;
+    }
+  }
+
+  .contacts-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    span {
+      letter-spacing: -0.96px;
+      font-size: rem-calc(24);
+      text-transform: uppercase;
+      color: #c8c8c8;
+    }
+
+    p {
+      letter-spacing: -2.88px;
+      font-size: rem-calc(72);
+      font-family: gothamprobold;
+      text-transform: uppercase;
+      margin: 0;
+
+      .toggle-form {
+        font-family: gothampro;
+
+        &::before {
+          width: 100%;
+          bottom: -10px;
+        }
+
+        &::after {
+          bottom: -14px;
+        }
+      }
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

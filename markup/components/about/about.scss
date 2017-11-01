@@ -17,7 +17,11 @@
     }
   }
 
-  .big-shadow {
-
+  .big-shadow.line-before {
+    &::before {
+      width: 600px;
+      bottom: 12px;
+      top: auto;
+    }
   }
 }

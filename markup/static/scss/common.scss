@@ -46,6 +46,20 @@ img {
   right: 0;
 }
 
+.close {
+  font-size: rem-calc(29);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  transition: all $default-time;
+
+  &:hover {
+    color: $color-hover;
+  }
+}
+
 section.scrollify {
   border-bottom: 1px solid $color-line;
   min-height: 100vh;

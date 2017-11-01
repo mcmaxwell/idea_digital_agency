@@ -5,6 +5,13 @@ section.home {
     background: url(%=static=%general/bg.svg) 0 190px/480px 769px;
   }
 
+  h1 {
+    @media #{$desktop} {
+      margin-top: 45px;
+      line-height: 1.2;
+    }
+  }
+
   .logo {
     margin: 10px;
     display: inline-block;
@@ -38,6 +45,7 @@ section.home {
     right: -60px;
     top: 104px;
     z-index: -1;
+    max-height: 80vh;
     @media #{$desktop} {
       top: 122px;
       right: 115px;
@@ -49,7 +57,6 @@ section.home {
       display: flex;
       align-items: center;
       @media #{$desktop} {
-        margin: 0 20px;
         align-items: flex-start;
       }
   }
@@ -58,8 +65,8 @@ section.home {
     margin-right: 30px;
 
     @media #{$desktop} {
-      margin-top: 31px;
-      margin-right: 0;
+      margin-top: 36px;
+      margin-right: 5px;
     }
   }
 
@@ -78,6 +85,7 @@ section.home {
     }
     p {
       text-transform: uppercase;
+      margin: 0;
       @media #{$desktop} {
         &::after {
           width: 203px;

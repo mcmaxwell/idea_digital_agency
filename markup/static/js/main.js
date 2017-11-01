@@ -88,4 +88,15 @@ $(document).ready(function () {
       }
 
       $('.services-item-content').click(toggleServices).hover(toggleServices)
+
+
+      $('.toggle-form').click(function () {
+        $('.get-in-touch').toggleClass('active')
+        return false;
+      })
+
+      $('.get-in-touch .close').click(function () {
+        $('.get-in-touch').toggleClass('active')
+        return false;
+      })
 })

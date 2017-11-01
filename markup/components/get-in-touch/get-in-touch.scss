@@ -1,0 +1,23 @@
+.get-in-touch {
+  display: flex;
+  transition: all $default-time*2 ;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: -200%;
+  bottom: 0;
+  background-color: #f1f1f1;
+  z-index: 2000;
+
+  &.active {
+    display: flex;
+    right: 0;
+  }
+
+  &-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
