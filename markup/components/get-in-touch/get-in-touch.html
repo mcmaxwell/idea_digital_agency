@@ -2,28 +2,42 @@
   <div class="get-in-touch-content">
       <span class="close">×</span>
       <div class="get-in-touch-address">
-          <h4>kraine, Dnipro, </h4>
+          <h4>Ukraine, Dnipro, </h4>
           <p>M.Malinovskogo 2/4</p>
           <p><a href="tel:+380980929090">+380980929090</a></p>
           <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a></p>
       </div>
       <div class="get-in-touch-form">
-          <form>
-              <input type="text" name="first" placeholder="first name">
-              <input type="text" name="second" placeholder="second name">
-              <input type="email" name="email" placeholder="e-mail">
-              <input type="tel" name="phone" placeholder="phone (optional)">
-              <label for="budget" class="select">
-                  <select name="budget" id="budget">
-                      <option value="select a budget range" disable>select a budget range</option>
-                      <option value="500-1000">500-1000</option>
-                      <option value="1000-3000">1000-3000</option>
-                      <option value="3000 +">3000 +</option>
-                  </select>
-              </label>
-              <input type="text" name="company" placeholder="company">
-            <textarea name="message" placeholder="message"></textarea>
-            <input type="submit" value="submit" class="btn">
+          <form id="get-in-touch-form" class="ajaxform">
+            <div class="block-field">
+              <input type="text" name="first" placeholder="first name" required autocomplete="off">
+            </div>
+            <div class="block-field">
+              <input type="text" name="second" placeholder="second name" required autocomplete="off">
+            </div>
+            <div class="block-field">
+              <input type="email" name="email" placeholder="e-mail" required autocomplete="off">
+            </div>
+            <div class="block-field">
+              <input type="tel" name="phone" placeholder="phone (optional)" required autocomplete="off">
+            </div>
+            <div class="block-field">
+              <select name="budget" id="budget" required>
+                  <option value="select a budget range" disable>select a budget range</option>
+                  <option value="500-1000">500-1000</option>
+                  <option value="1000-3000">1000-3000</option>
+                  <option value="3000 +">3000 +</option>
+              </select>
+            </div>
+            <div class="block-field">
+              <input type="text" name="company" placeholder="company" autocomplete="off">
+            </div>
+            <div class="block-field block-field-textarea">
+              <textarea name="message" placeholder="message" required></textarea>
+            </div>
+            <div class="block-field">
+              <input type="submit" value="submit" class="btn">
+            </div>
           </form>
       </div>
   </div>

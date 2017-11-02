@@ -8,6 +8,7 @@
   bottom: 0;
   background-color: #f1f1f1;
   z-index: 2000;
+  height: 100%;
 
   &.active {
     display: flex;
@@ -15,9 +16,84 @@
   }
 
   &-content {
-    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
+    overflow: auto;
+    height: 100%;
+
+    @media #{$desktop} {
+      display: flex;
+    }
+  }
+
+  &-form {
+      width: 100%;
+      @media #{$desktop} {
+        max-width: 44.7%;
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      input,
+      textarea,
+      select {
+        margin-bottom: 0;
+      }
+
+      .block-field {
+        margin-bottom: 8px;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        @media #{$desktop} {
+          width: calc(50% - 10px);
+          max-width: calc(50% - 10px);
+          margin-right: 20px;
+          margin-bottom: 30px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        &-textarea {
+          width: 100%;
+          max-width: 100%;
+          margin-right: 0;
+        }
+      }
+
+
+      [type="submit"] {
+        margin-bottom: 0;
+      }
+  }
+
+  &-address {
+    padding: 10px;
+    @media #{$desktop} {
+      margin-right: 76px;
+      padding: 0;
+    }
+    h4, p, a {
+      font-size: rem-calc(18);
+      line-height: 1.5;
+      text-transform: uppercase;
+      margin: 0;
+      @media #{$desktop} {
+        font-size: rem-calc(24);
+      }
+    }
+
+    h4 {
+      font-size: rem-calc(24);
+      margin-bottom: 30px;
+      @media #{$desktop} {
+        font-size: rem-calc(36);
+      }
+    }
   }
 }

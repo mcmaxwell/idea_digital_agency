@@ -54,6 +54,7 @@ img {
   top: 0;
   padding: 20px;
   transition: all $default-time;
+  z-index: 100;
 
   &:hover {
     color: $color-hover;
@@ -381,4 +382,16 @@ section.scrollify {
   @media #{$desktop} {
     width: 58.073%;
   }
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+input:focus {
+  margin-bottom: 0!important;
+}
+
+label.error {
+  display: none!important;
 }
