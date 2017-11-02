@@ -12,7 +12,8 @@
     "jquery-scrollify": "^1.0.17",
     "jquery-validation": "^1.17.0",
     "script-loader": "^0.7.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "throttle-debounce": "^1.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

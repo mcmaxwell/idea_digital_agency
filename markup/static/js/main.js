@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   var caseCarusel = $('.case-list-carusel');
   var settingsCarusel = {
     arrows: false,
@@ -7,7 +8,7 @@ $(document).ready(function () {
 
   if ($(window).width() > 1024) {
 
-  $.scrollify({
+    $.scrollify({
   		section:".scrollify",
       scrollbars:false,
       before:function(i,panels) {
@@ -36,45 +37,47 @@ $(document).ready(function () {
       $('body').toggleClass('fixed')
     })
 
-      $('.main-menu a').click(function () {
-        $('.toggle-menu').click()
-      })
+    $('.main-menu a').click(function () {
+      $('.toggle-menu').click()
+    })
 
       $(window).on('resize', function() {
         if ($(window).width() < 1024) {
+
           if (caseCarusel.hasClass('slick-initialized')) {
             caseCarusel.slick('unslick');
           }
+          $('.scrollify').css('height', 'auto')
 
           if ($('body').hasClass('scrollify-body')) {
             $.scrollify.destroy();
             $('body').removeClass('scrollify-body').css('overflow', '')
-
+            $('.scrollify').css('height', 'auto')
           }
           return
-        }
+        } else {
+          if (!caseCarusel.hasClass('slick-initialized')) {
+            return caseCarusel.slick(settingsCarusel);
+          }
 
-        if (!caseCarusel.hasClass('slick-initialized')) {
-          return caseCarusel.slick(settingsCarusel);
-        }
+          if (!$('body').hasClass('scrollify-body')) {
+            $.scrollify({
+                section:".scrollify",
+                scrollbars:false,
+                before:function(i,panels) {
+                  $('body').addClass('scrollify-body')
+                  var ref = panels[i].attr("data-section-name");
 
-        if (!$('body').hasClass('scrollify-body')) {
-          $.scrollify({
-              section:".scrollify",
-              scrollbars:false,
-              before:function(i,panels) {
-                $('body').addClass('scrollify-body')
-                var ref = panels[i].attr("data-section-name");
+                  $(".navigation .active").removeClass("active");
 
-                $(".navigation .active").removeClass("active");
+                  $(".navigation").find("a[href=\"#" + ref + "\"]").addClass("active");
+                },
+                afterRender:function() {
 
-                $(".navigation").find("a[href=\"#" + ref + "\"]").addClass("active");
-              },
-              afterRender:function() {
-
-                $("[data-section-link]").on("click",$.scrollify.move);
-              }
-            });
+                  $("[data-section-link]").on("click",$.scrollify.move);
+                }
+              });
+          }
         }
       });
 
@@ -101,8 +104,6 @@ $(document).ready(function () {
       })
 
       $("#get-in-touch-form").validate()
-
-
 
   $(".ajaxform").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
 		var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this

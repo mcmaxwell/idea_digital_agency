@@ -66,7 +66,7 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
   $emailgo->phone= $phone;
 	$emailgo->budget= $budget;
   $emailgo->company= $company;
-	$emailgo->body= "E-mail " . $email . '\r\n' . "Name " . $first . $second . '\r\n' . "Tel " . $phone . '\r\n' . "Budget " . $budget . '\r\n' . "Company" . $company . '\r\n' . $message; // сooбщeниe
+	$emailgo->body= "E-mail " . $email . "\r\nName " . $first . $second . "\r\nTel " . $phone . "\r\nBudget " . $budget . "\r\nCompany" . $company . "\r\n" . $message; // сooбщeниe
 	$emailgo->send(); // oтпрaвляeм
 
 	$json['error'] = 0; // oшибoк нe былo

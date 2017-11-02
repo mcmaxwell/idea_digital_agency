@@ -1,4 +1,9 @@
-.contacts {
+section.scrollify.contacts {
+  border: 15px solid #fff;
+  box-sizing: border-box;
+  min-height: 100vh;
+  box-shadow: inset 0 0 0 2px  $color-line;
+  background: url(%=static=%general/bg-contacts.png) center center/calc(100% - 46px) 100% no-repeat;
   &-content {
     position: relative;
     height: 100vh;
@@ -22,9 +27,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    @media #{$desktop} {
-      align-items: flex-start;
-    }
+
     &> span {
       letter-spacing: -0.96px;
       font-size: rem-calc(18);

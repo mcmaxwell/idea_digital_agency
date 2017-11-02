@@ -1,6 +1,8 @@
 .case {
   &-list {
-    margin: 15px;
+    border-top: 1px solid $color-line;
+    border-bottom: 1px solid $color-line;
+    padding: 15px 15px;
     @media #{$desktop} {
       display: flex;
     }
