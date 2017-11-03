@@ -132,6 +132,10 @@ section.scrollify {
   &.arr-bottom {
     padding-bottom: 43px;
 
+    @media #{$laptop} {
+      padding-bottom: 60px;
+    }
+
     @media #{$desktop} {
       padding-bottom: 88px;
     }
@@ -152,6 +156,10 @@ section.scrollify {
       left: 50%;
       transform: translate(-50%);
       transition: all $default-time;
+      @media #{$laptop} {
+        height: 50px;
+      }
+
       @media #{$desktop} {
         height: 75px;
       }
@@ -177,6 +185,10 @@ section.scrollify {
   a {
     padding: 2px 5px;
     display: inline-block;
+    font-size: rem-calc(14);
+    @media #{$desktop} {
+      font-size: rem-calc(18);
+    }
   }
   .active {
     border-bottom: solid 1px;

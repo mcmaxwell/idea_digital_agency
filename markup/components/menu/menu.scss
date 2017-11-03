@@ -22,7 +22,7 @@
     right: 0;
     width: 100%;
     text-align: center;
-    @media #{$desktop} {
+    @media #{$laptop} {
       text-align: right;
       right: 50px;
     }
@@ -30,8 +30,11 @@
       font-size: rem-calc(30);
       text-transform: uppercase;
       letter-spacing: -1.2px;
-      @media #{$desktop} {
+      @media #{$laptop} {
         letter-spacing: -1.92px;
+        font-size: rem-calc(40);
+      }
+      @media #{$desktop} {
         font-size: rem-calc(50);
       }
     }

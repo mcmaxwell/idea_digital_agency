@@ -503,8 +503,14 @@ h1 {
 
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 5.11vw;
+    font-size: 4.3125rem;
     letter-spacing: -1.96px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  h1 {
+    font-size: 5.11vw;
   }
 }
 
@@ -513,7 +519,7 @@ h3 {
   font-family: gothamprobold;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   h3 {
     font-size: 2.25rem;
   }
@@ -526,7 +532,7 @@ h3 {
   padding-top: 41px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .big-shadow {
     padding-top: 160px;
     font-size: 2.25rem;
@@ -546,7 +552,7 @@ h3 {
   white-space: nowrap;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .big-shadow::after {
     font-size: 172px;
   }
@@ -605,7 +611,7 @@ select {
   line-height: 2;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   [type=color],
   [type=color]:focus,
   [type=date],
@@ -651,7 +657,7 @@ select {
   color: #000;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   ::-webkit-input-placeholder {
     font-size: 1.125rem;
   }
@@ -666,7 +672,7 @@ select {
   color: #000;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   ::-moz-placeholder {
     font-size: 1.125rem;
   }
@@ -681,7 +687,7 @@ select {
   color: #000;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   :-ms-input-placeholder {
     font-size: 1.125rem;
   }
@@ -696,7 +702,7 @@ select {
   color: #000;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   :-moz-placeholder {
     font-size: 1.125rem;
   }
@@ -716,7 +722,7 @@ select {
   border: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .btn {
     font-size: 1.25rem;
     padding: 15px 19px;
@@ -857,7 +863,7 @@ section.scrollify {
   transition: all 0.3s;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .arr.arr-right::before {
     width: 75px;
   }
@@ -868,6 +874,12 @@ section.scrollify {
 }
 
 @media screen and (min-width: 1024px) {
+  .arr.arr-bottom {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
   .arr.arr-bottom {
     padding-bottom: 88px;
   }
@@ -897,6 +909,12 @@ section.scrollify {
 
 @media screen and (min-width: 1024px) {
   .arr.arr-bottom::before {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .arr.arr-bottom::before {
     height: 75px;
   }
 }
@@ -914,6 +932,13 @@ section.scrollify {
 .top-lang a {
   padding: 2px 5px;
   display: inline-block;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1601px) {
+  .top-lang a {
+    font-size: 1.125rem;
+  }
 }
 
 .top-lang .active {
@@ -1088,7 +1113,7 @@ section.scrollify {
   margin: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .block-center-content {
     width: 58.073%;
   }
@@ -1119,7 +1144,7 @@ label.error {
   background: url(../img/general/about-line.png) -3px 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .about p {
     font-size: 1.5rem;
   }
@@ -1129,7 +1154,7 @@ label.error {
   margin: 55px 0 24px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .about h3 {
     margin: 90px 0 109px;
   }
@@ -1147,7 +1172,7 @@ label.error {
   padding: 15px 15px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .case-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1166,7 +1191,7 @@ label.error {
   font-size: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .case-item {
     width: 25.21%;
     min-width: 25.21%;
@@ -1242,7 +1267,7 @@ label.error {
   overflow: hidden;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .case-list-carusel {
     max-width: 75%;
   }
@@ -1301,7 +1326,7 @@ section.scrollify.contacts .contacts-form > span {
   color: #c8c8c8;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   section.scrollify.contacts .contacts-form > span {
     font-size: 1.5rem;
   }
@@ -1315,7 +1340,7 @@ section.scrollify.contacts .contacts-form p {
   margin: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   section.scrollify.contacts .contacts-form p {
     font-size: 3.75vw;
   }
@@ -1325,7 +1350,7 @@ section.scrollify.contacts .contacts-form p span {
   display: block;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   section.scrollify.contacts .contacts-form p span {
     display: inline-block;
   }
@@ -1365,7 +1390,7 @@ section.scrollify.contacts footer .social-list {
           justify-content: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   section.scrollify.contacts footer {
     text-align: left;
     font-size: 1.125rem;
@@ -1417,7 +1442,7 @@ section.scrollify.contacts footer .social-list {
   height: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .get-in-touch-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1429,7 +1454,7 @@ section.scrollify.contacts footer .social-list {
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .get-in-touch-form {
     max-width: 44.7%;
   }
@@ -1456,7 +1481,7 @@ section.scrollify.contacts footer .social-list {
   position: relative;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .get-in-touch-form .block-field {
     width: calc(50% - 10px);
     max-width: calc(50% - 10px);
@@ -1483,7 +1508,7 @@ section.scrollify.contacts footer .social-list {
   padding: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .get-in-touch-address {
     margin-right: 76px;
     padding: 0;
@@ -1497,7 +1522,7 @@ section.scrollify.contacts footer .social-list {
   margin: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .get-in-touch-address h4, .get-in-touch-address p, .get-in-touch-address a {
     font-size: 1.5rem;
   }
@@ -1508,7 +1533,7 @@ section.scrollify.contacts footer .social-list {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .get-in-touch-address h4 {
     font-size: 2.25rem;
   }
@@ -1519,13 +1544,13 @@ section.home {
   position: relative;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   section.home {
     background: url(../img/general/bg.svg) 0 190px/480px 769px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   section.home h1 {
     margin-top: 45px;
     line-height: 1.2;
@@ -1543,6 +1568,13 @@ section.home .logo {
 }
 
 @media screen and (min-width: 1024px) {
+  section.home .logo {
+    margin: 20px;
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
   section.home .logo {
     margin: 30px;
     width: 157px;
@@ -1580,7 +1612,16 @@ section.home .home-bg-logo {
 
 @media screen and (min-width: 1024px) {
   section.home .home-bg-logo {
-    top: 122px;
+    width: 454px;
+    bottom: 11%;
+    top: auto;
+    right: 98px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  section.home .home-bg-logo {
+    bottom: 7%;
     right: 115px;
     width: 35.157%;
   }
@@ -1608,6 +1649,13 @@ section.home .top-lang {
 }
 
 @media screen and (min-width: 1024px) {
+  section.home .top-lang {
+    margin-top: 25px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1601px) {
   section.home .top-lang {
     margin-top: 36px;
     margin-right: 5px;
@@ -1637,6 +1685,12 @@ section.home .home-content {
 
 @media screen and (min-width: 1024px) {
   section.home .home-content {
+    left: 83px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  section.home .home-content {
     left: 123px;
   }
 }
@@ -1644,9 +1698,19 @@ section.home .home-content {
 section.home .home-content p {
   text-transform: uppercase;
   margin: 0;
+  font-size: 0.75rem;
 }
 
 @media screen and (min-width: 1024px) {
+  section.home .home-content p::after {
+    width: 129px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  section.home .home-content p {
+    font-size: 1.125rem;
+  }
   section.home .home-content p::after {
     width: 203px;
   }
@@ -1659,6 +1723,15 @@ section.home .home-social {
 }
 
 @media screen and (min-width: 1024px) {
+  section.home .home-social {
+    bottom: 70px;
+  }
+  section.home .home-social::after, section.home .home-social::before {
+    width: 161px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
   section.home .home-social {
     bottom: 57px;
   }
@@ -1682,9 +1755,15 @@ section.home .scroll-down {
 
 @media screen and (min-width: 1024px) {
   section.home .scroll-down {
+    font-size: 0.6875rem;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  section.home .scroll-down {
     font-size: 1.125rem;
     font-weight: 400;
-    line-height: 1;
   }
 }
 
@@ -1697,6 +1776,53 @@ section.home .scroll-down:hover::before {
 }
 
 @media screen and (min-width: 1024px) {
+  section.home .scroll-down::after {
+    -webkit-animation: scroll 1.5s ease infinite;
+            animation: scroll 1.5s ease infinite;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      bottom: 20px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      bottom: 20px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+  section.home .scroll-down::before {
+    -webkit-animation: height 1.5s ease infinite;
+            animation: height 1.5s ease infinite;
+  }
+  @-webkit-keyframes height {
+    0% {
+      height: 35px;
+      bottom: 20px;
+    }
+    100% {
+      height: 55px;
+      bottom: 0;
+    }
+  }
+  @keyframes height {
+    0% {
+      height: 35px;
+      bottom: 20px;
+    }
+    100% {
+      height: 55px;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1601px) {
   section.home .scroll-down::after {
     -webkit-animation: scroll 1.5s ease infinite;
             animation: scroll 1.5s ease infinite;
@@ -1754,6 +1880,12 @@ section.home .scroll-down:hover::before {
 
 @media screen and (min-width: 1024px) {
   .toggle-menu {
+    margin: 22px 30px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .toggle-menu {
     width: 43px;
     height: 20px;
     padding: 20px;
@@ -1773,7 +1905,7 @@ section.home .scroll-down:hover::before {
   z-index: 200;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .toggle-menu span {
     top: 28px;
     left: 20px;
@@ -1800,7 +1932,7 @@ section.home .scroll-down:hover::before {
   top: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .toggle-menu span:first-child {
     top: 20px;
   }
@@ -1811,7 +1943,7 @@ section.home .scroll-down:hover::before {
   top: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .toggle-menu span:last-child {
     bottom: 20px;
   }
@@ -1835,7 +1967,7 @@ section.home .scroll-down:hover::before {
   transition: top 0.3s, bottom 0.3s, background-color 0.3s 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .toggle-menu.active span:first-child {
     top: 28px;
   }
@@ -1852,7 +1984,7 @@ section.home .scroll-down:hover::before {
   transition: top 0.3s, bottom 0.3s, background-color 0.3s 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .toggle-menu.active span:last-child {
     bottom: 28px;
   }
@@ -1902,6 +2034,12 @@ section.home .scroll-down:hover::before {
 @media screen and (min-width: 1024px) {
   .main-menu .menu a {
     letter-spacing: -1.92px;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .main-menu .menu a {
     font-size: 3.125rem;
   }
 }
@@ -1919,7 +2057,6 @@ section.home .scroll-down:hover::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 8px;
   background-color: #e8e8e8;
   list-style: none;
   padding: 0;
@@ -1937,12 +2074,19 @@ section.home .scroll-down:hover::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 6px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .navigation {
+    width: 8px;
   }
 }
 
 .navigation a {
   display: block;
-  width: 8px;
+  width: 6px;
   height: 42px;
   background-color: #000;
   border-top: 6px solid #fff;
@@ -1951,6 +2095,12 @@ section.home .scroll-down:hover::before {
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media screen and (min-width: 1601px) {
+  .navigation a {
+    width: 8px;
+  }
 }
 
 .navigation a.active {
@@ -1965,7 +2115,7 @@ section.home .scroll-down:hover::before {
   height: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .services-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1990,7 +2140,7 @@ section.home .scroll-down:hover::before {
   margin: 8px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .services-item {
     width: 25%;
   }
@@ -2019,7 +2169,7 @@ section.home .scroll-down:hover::before {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .services-item-content.active {
     border: 4px solid #c8c8c8;
   }
@@ -2041,7 +2191,7 @@ section.home .scroll-down:hover::before {
   line-height: 1.6;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1601px) {
   .services-item-content ul {
     height: 0;
   }

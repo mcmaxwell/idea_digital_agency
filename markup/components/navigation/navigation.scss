@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 8px;
   background-color: #e8e8e8;
   list-style: none;
   padding: 0;
@@ -14,13 +13,17 @@
   top: 50%;
   transform: translate(0, -50%);
   z-index: 300;
-  @media #{$desktop} {
+  @media #{$laptop} {
     display: flex;
+    width: 6px;
+  }
+  @media #{$desktop} {
+    width: 8px;
   }
 
   a {
     display: block;
-    width: 8px;
+    width: 6px;
     height: 42px;
     background-color: #000;
     border-top: 6px solid #fff;
@@ -28,7 +31,9 @@
     text-indent: -9999em;
     opacity: 0;
     transition: all $default-time;
-
+    @media #{$desktop} {
+      width: 8px;
+    }
     &.active {
       opacity: 1;
     }

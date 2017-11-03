@@ -20,6 +20,11 @@ section.home {
     transition: all $default-time 0.1s;
     width: 80px;
 
+    @media #{$laptop} {
+      margin: 20px;
+      width: 110px;
+    }
+
     @media #{$desktop} {
       margin: 30px;
       width: 157px;
@@ -46,8 +51,15 @@ section.home {
     top: 104px;
     z-index: -1;
     max-height: 80vh;
+    @media #{$laptop} {
+      width: 454px;
+      bottom: 11%;
+      top: auto;
+      right: 98px;
+    }
+
     @media #{$desktop} {
-      top: 122px;
+      bottom: 7%;
       right: 115px;
       width: 35.157%;
     }
@@ -56,13 +68,17 @@ section.home {
   .top-action {
       display: flex;
       align-items: center;
-      @media #{$desktop} {
+      @media #{$laptop} {
         align-items: flex-start;
       }
   }
 
   .top-lang {
     margin-right: 30px;
+    @media #{$laptop} {
+      margin-top: 25px;
+      margin-right: 0;
+    }
 
     @media #{$desktop} {
       margin-top: 36px;
@@ -80,13 +96,24 @@ section.home {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    @media #{$laptop} {
+      left: 83px;
+    }
     @media #{$desktop} {
       left: 123px;
     }
     p {
       text-transform: uppercase;
       margin: 0;
+      font-size: rem-calc(12);
+      @media #{$laptop} {
+        &::after {
+          width: 129px;
+        }
+      }
       @media #{$desktop} {
+        font-size: rem-calc(18);
+
         &::after {
           width: 203px;
         }
@@ -98,6 +125,14 @@ section.home {
     position: absolute;
     left: 22px;
     bottom: 87px;
+    @media #{$laptop} {
+      bottom: 70px;
+
+      &::after,
+      &::before {
+        width: 161px;
+      }
+    }
     @media #{$desktop} {
       bottom: 57px;
 
@@ -118,12 +153,14 @@ section.home {
     font-size: rem-calc(9);
     font-weight: 700;
     line-height: 1.26;
+    @media #{$laptop} {
+      font-size: rem-calc(11);
+      line-height: 1;
+    }
+
     @media #{$desktop} {
       font-size: rem-calc(18);
       font-weight: 400;
-      line-height: 1;
-
-
     }
 
     &:hover {
@@ -135,6 +172,28 @@ section.home {
       }
     }
 
+    @media #{$laptop} {
+      &::after {
+        animation: scroll 1.5s ease infinite;
+        @keyframes scroll {
+          0% { bottom: 20px; }
+          100%{ bottom: 0; }
+        }
+      }
+      &::before {
+        animation: height 1.5s ease infinite;
+        @keyframes height {
+          0% {
+            height: 35px;
+            bottom: 20px;
+           }
+          100%{
+            height: 55px;
+            bottom: 0;
+           }
+        }
+      }
+    }
     @media #{$desktop} {
       &::after {
         animation: scroll 1.5s ease infinite;
@@ -167,6 +226,9 @@ section.home {
   display: inline-block;
   padding: 10px;
   z-index: 2000;
+  @media #{$laptop} {
+    margin: 22px 30px;
+  }
   @media #{$desktop} {
     width: 43px;
     height: 20px;

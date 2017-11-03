@@ -103,9 +103,12 @@ h1 {
   text-transform: uppercase;
   letter-spacing: -0.52px;
   margin: 0;
+  @media #{$laptop} {
+    font-size: rem-calc(69);
+    letter-spacing: -1.96px;
+  }
   @media #{$desktop} {
     font-size: 5.11vw;
-    letter-spacing: -1.96px;
   }
 }
 
