@@ -1,15 +1,19 @@
 section.scrollify.contacts {
-  border: 15px solid #fff;
   box-sizing: border-box;
   min-height: 100vh;
-  box-shadow: inset 0 0 0 2px  $color-line;
   background: url(%=static=%general/bg-contacts.png) center center/calc(100% - 46px) 100% no-repeat;
   &-content {
     position: relative;
     height: 100vh;
   }
+  @media #{$laptop} {
+    border: 15px solid #fff;
+    box-shadow: inset 0 0 0 2px  $color-line;
+
+  }
 
   .big-shadow.line-before {
+    margin-top: 80px;
     &::before {
       width: 600px;
       bottom: 12px;
@@ -44,13 +48,16 @@ section.scrollify.contacts {
       font-family: gothamprobold;
       text-transform: uppercase;
       margin: 0;
+      @media #{$laptop} {
+        font-size: rem-calc(53);
+      }
       @media #{$desktop} {
         font-size: 3.75vw;
       }
 
       span {
         display: block;
-        @media #{$desktop} {
+        @media #{$laptop} {
           display: inline-block;
         }
       }
@@ -61,10 +68,12 @@ section.scrollify.contacts {
         &::before {
           width: 100%;
           bottom: -10px;
+          left: 55%
         }
 
         &::after {
           bottom: -14px;
+          right: -23px;
         }
       }
     }
@@ -72,9 +81,9 @@ section.scrollify.contacts {
 
   footer {
     position: absolute;
-    bottom: 40px;
-    left: 40px;
-    right: 40px;
+    bottom: 6px;
+    left: 10px;
+    right: 10px;
     justify-content: space-between;
     text-align: center;
     font-size: rem-calc(10);
@@ -84,15 +93,23 @@ section.scrollify.contacts {
       width: 100%;
       justify-content: center;
     }
-    @media #{$desktop} {
+    @media #{$laptop} {
+      left: 40px;
+      right: 40px;
+      bottom: 20px;
       text-align: left;
-      font-size: rem-calc(18);
+      font-size: rem-calc(12);
       display: flex;
       .social-list {
         position: static;
         justify-content: flex-start;
         width: auto;
       }
+    }
+    @media #{$desktop} {
+      font-size: rem-calc(18);
+      bottom: 30px;
+
     }
   }
 }

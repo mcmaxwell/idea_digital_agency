@@ -391,7 +391,7 @@ section.scrollify {
 .block-center-content {
   width: calc(100% - 20px);
   margin: auto;
-  @media #{$desktop} {
+  @media #{$laptop} {
     width: 58.073%;
   }
 }

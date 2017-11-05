@@ -1,17 +1,7 @@
 <ul class="navigation">
-  <li><a class="active" href="#home" data-section-link="home">>
-    <span>Home</span></a>
-  </li>
-  <li>
-    <a href="#about" data-section-link="about"><span>About us</span></a>
-  </li>
-  <li>
-    <a href="#services" data-section-link="services">><span>Our services</span></a>
-  </li>
-  <li>
-    <a href="#case" data-section-link="case">><span>Case</span></a>
-  </li>
-  <li>
-    <a  href="#contacts" data-section-link="contacts">><span>Contact</span></a>
-  </li>
+  {{#each navList}}
+    <li>
+      <a class="{{isActive}}" href="#{{this.link}}" data-section-link="{{this.link}}"><span>{{this.text}}</span></a>
+    </li>
+  {{/each}}
 </ul>

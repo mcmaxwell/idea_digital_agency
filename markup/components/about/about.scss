@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(%=static=%general/about-line.png) -3px 0;
-
+  @media #{$laptop} {
+    background: url(%=static=%general/about-line.png) -22px  0/354px 570px;
+  }
+  @media #{$desktop} {
+    background: url(%=static=%general/about-line.png) -3px 0;
+  }
   p {
     @media #{$desktop} {
       font-size: rem-calc(24);
@@ -12,6 +16,9 @@
 
   h3 {
     margin: 55px 0 24px;
+    @media #{$laptop} {
+      margin: 61px 0 74px;
+    }
     @media #{$desktop} {
       margin: 90px 0 109px;
     }
