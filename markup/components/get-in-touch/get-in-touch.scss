@@ -22,14 +22,14 @@
     overflow: auto;
     height: 100%;
 
-    @media #{$desktop} {
+    @media #{$laptop} {
       display: flex;
     }
   }
 
   &-form {
       width: 100%;
-      @media #{$desktop} {
+      @media #{$laptop} {
         max-width: 44.7%;
       }
       form {
@@ -48,7 +48,7 @@
         width: 100%;
         max-width: 100%;
         position: relative;
-        @media #{$desktop} {
+        @media #{$laptop} {
           width: calc(50% - 10px);
           max-width: calc(50% - 10px);
           margin-right: 20px;
@@ -74,7 +74,7 @@
 
   &-address {
     padding: 10px;
-    @media #{$desktop} {
+    @media #{$laptop} {
       margin-right: 76px;
       padding: 0;
     }
@@ -83,7 +83,7 @@
       line-height: 1.5;
       text-transform: uppercase;
       margin: 0;
-      @media #{$desktop} {
+      @media #{$laptop} {
         font-size: rem-calc(24);
       }
     }
@@ -91,7 +91,7 @@
     h4 {
       font-size: rem-calc(24);
       margin-bottom: 30px;
-      @media #{$desktop} {
+      @media #{$laptop} {
         font-size: rem-calc(36);
       }
     }

@@ -1144,6 +1144,175 @@ label.error {
   display: none !important;
 }
 
+.case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+  .case {
+    background: url(../img/general/about-line.png) 1px 0/25% 570px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .case {
+    background: url(../img/general/about-line.png) -3px 0;
+  }
+}
+
+.case .block-center-content {
+  margin: 0 auto;
+}
+
+.case-list {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 15px 15px;
+  background: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .case-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.case-item {
+  display: block;
+  border: solid 7.5px #fff;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .case-item {
+    width: 25.21%;
+    min-width: 25.21%;
+  }
+}
+
+.case-item:hover h4 {
+  opacity: 0;
+}
+
+.case-item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.case-item:hover .arr.arr-right::after {
+  left: 100%;
+}
+
+.case-item:hover .arr.arr-right::before {
+  right: 0;
+  width: 100%;
+}
+
+.case-item img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.case-item-info {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.case-item-info h4 {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.case-item-info span {
+  font-size: 0.8125rem;
+  position: absolute;
+  top: 74%;
+  padding-bottom: 20px;
+  left: 34px;
+  right: 41px;
+  text-align: center;
+}
+
+.case-item-info span.arr.arr-right::after {
+  border-color: transparent transparent transparent #fff;
+  left: 20%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.case-item-info span.arr.arr-right::before {
+  left: 0;
+  width: 20%;
+  background: #fff;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.case-item.next-slide:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.case-list-carusel {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .case-list-carusel {
+    max-width: 75%;
+  }
+}
+
+.case .big-shadow.line-before {
+  margin-top: 110px;
+}
+
+.case .big-shadow.line-before::before {
+  width: 600px;
+  bottom: 12px;
+  top: auto;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1351,175 +1520,6 @@ section.scrollify.contacts footer .social-list {
   }
 }
 
-.case {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (min-width: 1024px) {
-  .case {
-    background: url(../img/general/about-line.png) 1px 0/25% 570px;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .case {
-    background: url(../img/general/about-line.png) -3px 0;
-  }
-}
-
-.case .block-center-content {
-  margin: 0 auto;
-}
-
-.case-list {
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
-  padding: 15px 15px;
-  background: #fff;
-}
-
-@media screen and (min-width: 1024px) {
-  .case-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.case-item {
-  display: block;
-  border: solid 7.5px #fff;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  font-size: 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .case-item {
-    width: 25.21%;
-    min-width: 25.21%;
-  }
-}
-
-.case-item:hover h4 {
-  opacity: 0;
-}
-
-.case-item:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.case-item:hover .arr.arr-right::after {
-  left: 100%;
-}
-
-.case-item:hover .arr.arr-right::before {
-  right: 0;
-  width: 100%;
-}
-
-.case-item img {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 100%;
-}
-
-.case-item-info {
-  position: absolute;
-  z-index: 100;
-  color: #fff;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.case-item-info h4 {
-  font-size: 2vw;
-  text-transform: uppercase;
-  font-weight: 400;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.case-item-info span {
-  font-size: 0.8125rem;
-  position: absolute;
-  top: 74%;
-  padding-bottom: 20px;
-  left: 34px;
-  right: 41px;
-  text-align: center;
-}
-
-.case-item-info span.arr.arr-right::after {
-  border-color: transparent transparent transparent #fff;
-  left: 20%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.case-item-info span.arr.arr-right::before {
-  left: 0;
-  width: 20%;
-  background: #fff;
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.case-item.next-slide:hover img {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.case-list-carusel {
-  overflow: hidden;
-}
-
-@media screen and (min-width: 1024px) {
-  .case-list-carusel {
-    max-width: 75%;
-  }
-}
-
-.case .big-shadow.line-before {
-  margin-top: 110px;
-}
-
-.case .big-shadow.line-before::before {
-  width: 600px;
-  bottom: 12px;
-  top: auto;
-}
-
 .get-in-touch {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1555,7 +1555,7 @@ section.scrollify.contacts footer .social-list {
   height: 100%;
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1024px) {
   .get-in-touch-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1567,7 +1567,7 @@ section.scrollify.contacts footer .social-list {
   width: 100%;
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1024px) {
   .get-in-touch-form {
     max-width: 44.7%;
   }
@@ -1594,7 +1594,7 @@ section.scrollify.contacts footer .social-list {
   position: relative;
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1024px) {
   .get-in-touch-form .block-field {
     width: calc(50% - 10px);
     max-width: calc(50% - 10px);
@@ -1621,7 +1621,7 @@ section.scrollify.contacts footer .social-list {
   padding: 10px;
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1024px) {
   .get-in-touch-address {
     margin-right: 76px;
     padding: 0;
@@ -1635,7 +1635,7 @@ section.scrollify.contacts footer .social-list {
   margin: 0;
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1024px) {
   .get-in-touch-address h4, .get-in-touch-address p, .get-in-touch-address a {
     font-size: 1.5rem;
   }
@@ -1646,7 +1646,7 @@ section.scrollify.contacts footer .social-list {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1024px) {
   .get-in-touch-address h4 {
     font-size: 2.25rem;
   }
