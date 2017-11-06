@@ -288,4 +288,8 @@ select {
     border-width: 6px 4.5px 0 4.5px;
     border-color: #000 transparent transparent transparent;
   }
+
+  select {
+    height: 100%;
+  }
 }
