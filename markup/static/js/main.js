@@ -53,6 +53,7 @@ $(document).ready(function () {
             $.scrollify.destroy();
             $('body').removeClass('scrollify-body').css('overflow', '')
             $('.scrollify').css('height', 'auto')
+
           }
           return
         } else {

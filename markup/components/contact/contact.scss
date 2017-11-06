@@ -14,10 +14,17 @@ section.scrollify.contacts {
 
   .big-shadow.line-before {
     margin-top: 80px;
+    width: 100%;
     &::before {
-      width: 600px;
-      bottom: 12px;
       top: auto;
+      right: -10px;
+      width: 98px;
+      bottom: 7px;
+      @media #{$laptop} {
+        width: 600px;
+        bottom: 12px;
+        right: calc(100% + 12px);
+      }
     }
   }
 
@@ -31,6 +38,10 @@ section.scrollify.contacts {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media #{$laptop} {
+      left: 25.3%;
+      align-items: flex-start;
+    }
 
     &> span {
       letter-spacing: -0.96px;
@@ -64,18 +75,32 @@ section.scrollify.contacts {
 
       .toggle-form {
         font-family: gothampro;
+        position: relative;
 
         &::before {
           width: 100%;
           bottom: -10px;
-          left: 55%
+          left: 0  ;
+          animation: leftToRight 1.5s ease infinite;
+          transform: translate(0);
+          @keyframes leftToRight {
+            0% { width: 90%;}
+            100%{  width: calc(100% + 23px);}
+          }
         }
 
         &::after {
           bottom: -14px;
           right: -23px;
+          animation: leftToRight2 1.5s ease infinite;
+          @keyframes leftToRight2 {
+            0% { right: 30px; }
+            100%{ right: -29px; }
+          }
         }
       }
+
+
     }
   }
 
@@ -98,7 +123,7 @@ section.scrollify.contacts {
       right: 40px;
       bottom: 20px;
       text-align: left;
-      font-size: rem-calc(12);
+      font-size: rem-calc(16);
       display: flex;
       .social-list {
         position: static;
@@ -109,7 +134,6 @@ section.scrollify.contacts {
     @media #{$desktop} {
       font-size: rem-calc(18);
       bottom: 30px;
-
     }
   }
 }

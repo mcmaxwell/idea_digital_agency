@@ -22,12 +22,14 @@
               <input type="tel" name="phone" placeholder="phone (optional)" required autocomplete="off">
             </div>
             <div class="block-field">
-              <select name="budget" id="budget" required>
-                  <option value="select a budget range" disable>select a budget range</option>
-                  <option value="500-1000">500-1000</option>
-                  <option value="1000-3000">1000-3000</option>
-                  <option value="3000 +">3000 +</option>
-              </select>
+              <label for="budget" class="label-select">
+                <select name="budget" id="budget" required>
+                    <option value="" disabled selected>select a budget range</option>
+                    <option value="500$-1000$">500$-1000$</option>
+                    <option value="1000$-3000$">1000$-3000$</option>
+                    <option value="3000$ +">3000$ +</option>
+                </select>
+              </label>
             </div>
             <div class="block-field">
               <input type="text" name="company" placeholder="company" autocomplete="off">

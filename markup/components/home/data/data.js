@@ -18,14 +18,14 @@ home: {
       },
       {
         link: 'services',
-        text: 'Our services'
+        text: 'Services'
       },
       {
         link: 'case',
         text: 'Case'
       },
       {
-        link: 'contact',
+        link: 'contacts',
         text: 'Contact'
       }
     ]
@@ -48,14 +48,14 @@ home: {
       },
       {
         link: 'services',
-        text: 'Our services'
+        text: 'Services'
       },
       {
         link: 'case',
         text: 'Case'
       },
       {
-        link: 'contact',
+        link: 'contacts',
         text: 'Contact'
       }
     ]

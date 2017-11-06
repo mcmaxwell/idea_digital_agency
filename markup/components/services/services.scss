@@ -33,21 +33,24 @@
   }
 
   &-content {
-    padding: 30px;
+    padding: 20px;
     border: 1px solid $color-line;
     height: 100%;
-    width: calc(100% - 26px);
+    width: calc(100% - 78px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
     box-sizing: border-box;
     background-color: #fff;
+    @media #{$laptop} {
+      width: calc(100% - 26px);
+      padding: 30px;
+    }
 
     &.active {
       @media #{$laptop} {
         border: 6px solid #c8c8c8;
-
       }
 
       ul {
@@ -86,12 +89,21 @@
 
     .icon {
       height: 60px;
-      font-size: rem-calc(40);
+      font-size: rem-calc(50);
+      &-develop {
+        font-size: rem-calc(40);
+      }
       @media #{$laptop} {
-        font-size: rem-calc(50);
+        font-size: rem-calc(66);
+        &-develop {
+          font-size: rem-calc(50);
+        }
       }
       @media #{$desktop} {
-        font-size: rem-calc(50);
+        font-size: rem-calc(97);
+        &-develop {
+          font-size: rem-calc(66);
+        }
       }
     }
 
@@ -99,6 +111,16 @@
       font-size: rem-calc(20);
       position: relative;
       margin-bottom: 45px;
+      margin-top: 30px;
+      @media #{$laptop} {
+        font-size: rem-calc(25);
+        margin-top: 56px;
+      }
+      @media #{$desktop} {
+        font-size: rem-calc(36);
+        margin-top: 100px;
+
+      }
       &::after {
         content: "";
         width: 47px;
@@ -116,23 +138,27 @@
 .services-count {
   font-size: rem-calc(13);
   text-align: center;
-  border-bottom: 1px solid #e8e8e8;
   display: block;
-  padding: 44px 0 22px;
+  padding: 26px 0 12px;
   width: 100%;
   margin-bottom: 15px;
   background-color: #fff;
+  @media #{$laptop} {
+    border-bottom: 1px solid #e8e8e8;
+
+  }
 
   span {
     border-bottom: 1px solid $color-line;
     padding: 5px 10px;
   }
   @media #{$laptop} {
-    font-size: 2.22vh;
-    padding: 49px 0 55px;
+    font-size: 3.22vh;
+    padding: 28px 0 68px;
   }
 
   @media #{$desktop} {
-    font-size: 2.22vh;
+    font-size: rem-calc(26);
+    padding: 90px 0 55px;
   }
 }

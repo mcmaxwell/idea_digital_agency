@@ -12,14 +12,14 @@ nav: {
       },
       {
         link: 'services',
-        text: 'Our services'
+        text: 'services'
       },
       {
         link: 'case',
         text: 'Case'
       },
       {
-        link: 'contact',
+        link: 'contacts',
         text: 'Contact'
       }
     ]
@@ -37,14 +37,14 @@ nav: {
       },
       {
         link: 'services',
-        text: 'Our services'
+        text: 'services'
       },
       {
         link: 'case',
         text: 'Case'
       },
       {
-        link: 'contact',
+        link: 'contacts',
         text: 'Contact'
       }
     ]

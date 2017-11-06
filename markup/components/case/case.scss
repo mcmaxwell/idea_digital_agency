@@ -73,10 +73,13 @@
       flex-direction: column;
 
       h4 {
-        font-size: 2vw;
+        font-size: rem-calc(19);
         text-transform: uppercase;
         font-weight: 400;
         transition: all $default-time;
+        @media #{$laptop} {
+          font-size: 2vw;
+        }
       }
 
       span {

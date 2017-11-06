@@ -9,6 +9,13 @@ section.home {
   }
 
   h1 {
+    margin-top: -22px;
+    margin-bottom: 13px;
+    @media #{$laptop} {
+      margin-top: 28px;
+      margin-bottom: 0;
+    }
+
     @media #{$desktop} {
       margin-top: 45px;
       line-height: 1.2;
@@ -108,7 +115,7 @@ section.home {
     p {
       text-transform: uppercase;
       margin: 0;
-      font-size: rem-calc(12);
+      font-size: rem-calc(14);
       @media #{$laptop} {
         &::after {
           width: 129px;
@@ -308,6 +315,62 @@ section.home {
         @media #{$desktop} {
           bottom: 28px;
         }
+      }
+    }
+  }
+}
+
+.main-menu {
+  position: fixed;
+  width: 100%;
+  right: -100%;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: $bg-menu;
+  transition: all $default-time;
+  overflow: hidden;
+  @media #{$laptop} {
+    right: -400px;
+    width: 400px;
+    background: rgba($bg-menu, 0.5);
+  }
+
+
+  &.active {
+    border-radius: 0;
+    right: 0;
+  }
+
+  .social-list {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    @media #{$laptop} {
+      text-align: right;
+      right: 50px;
+    }
+    a {
+      font-size: rem-calc(30);
+      text-transform: uppercase;
+      letter-spacing: -1.2px;
+      @media #{$laptop} {
+        letter-spacing: -1.92px;
+        font-size: rem-calc(40);
+      }
+      @media #{$desktop} {
+        font-size: rem-calc(50);
       }
     }
   }
