@@ -91,7 +91,7 @@ $(document).ready(function () {
         $(this).toggleClass('active')
       }
 
-      $('.services-item-content').click(toggleServices).hover(toggleServices)
+      $('.services-item-content').hover(toggleServices)
 
 
       $('.toggle-form').click(function () {
