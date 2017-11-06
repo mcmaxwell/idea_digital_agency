@@ -488,6 +488,10 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
   content: "\e903";
 }
 
+.icon.icon-next::before {
+  content: "\e904";
+}
+
 h1 {
   color: #000000;
   background-image: url(../img/general/bg-text.png);
@@ -1264,12 +1268,15 @@ label.error {
   }
 }
 
+.case-list .slick-slide {
+  overflow: hidden;
+}
+
 .case-item {
   display: block;
   border: solid 7.5px #fff;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 0;
@@ -1370,9 +1377,36 @@ label.error {
   transition: all 0.5s;
 }
 
-.case-item.next-slide:hover img {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.case-item.next-slide .case-item-info {
+  background-color: #383838;
+  border: 10px solid #383838;
+  box-shadow: inset 0 0 0 5px #fff;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.case-item.next-slide .case-item-info span {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.case-item.next-slide .icon {
+  font-size: 1.6875rem;
+}
+
+@media screen and (min-width: 1601px) {
+  .case-item.next-slide .icon {
+    font-size: 2.375rem;
+  }
+}
+
+.case-item.next-slide:hover .case-item-info {
+  background-color: #fff;
+  border: 10px solid #fff;
+  box-shadow: inset 0 0 0 5px #383838;
+  color: #383838;
 }
 
 .case-list-carusel {

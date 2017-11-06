@@ -20,6 +20,10 @@
     @media #{$laptop} {
       display: flex;
     }
+
+    .slick-slide {
+      overflow: hidden;
+    }
   }
 
   &-item {
@@ -27,7 +31,6 @@
     border: solid 7.5px #fff;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden;
     transition: all $default-time;
     font-size: 0;
     @media #{$laptop} {
@@ -110,8 +113,32 @@
     }
 
     &.next-slide {
-      &:hover img {
-        transform: scale(1);
+
+      .case-item-info {
+        background-color: #383838;
+        border: 10px solid #383838;
+        box-shadow: inset 0 0 0 5px #fff;
+        box-sizing: border-box;
+        transition: all $default-time;
+        span {
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+      .icon {
+        font-size: rem-calc(27);
+
+        @media #{$desktop} {
+          font-size: rem-calc(38);
+        }
+      }
+      &:hover {
+        .case-item-info {
+          background-color: #fff;
+          border: 10px solid #fff;
+          box-shadow: inset 0 0 0 5px #383838;
+          color: #383838;
+        }
       }
     }
   }
