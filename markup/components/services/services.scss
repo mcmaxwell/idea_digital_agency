@@ -25,6 +25,7 @@
   align-items: center;
   @media #{$laptop} {
     width: 25%
+    max-height: none;
   }
 
   &:last-child {
@@ -47,6 +48,7 @@
     background-color: #fff;
     @media #{$laptop} {
       width: calc(100% - 26px);
+      max-height: none;
       padding: 30px;
     }
 
