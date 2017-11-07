@@ -2416,6 +2416,7 @@ section.home .scroll-down:hover::before {
 
 .services-item {
   height: calc(100% - 16px);
+  max-height: 500px;
   text-align: center;
   position: relative;
   display: -webkit-box;
@@ -2445,6 +2446,7 @@ section.home .scroll-down:hover::before {
   border: 1px solid #e8e8e8;
   height: 100%;
   width: calc(100% - 78px);
+  max-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

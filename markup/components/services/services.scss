@@ -17,6 +17,7 @@
 
 .services-item {
   height: calc(100% - 16px);
+  max-height: 500px;
   text-align: center;
   position: relative;
   display: flex;
@@ -37,6 +38,7 @@
     border: 1px solid $color-line;
     height: 100%;
     width: calc(100% - 78px);
+    max-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
