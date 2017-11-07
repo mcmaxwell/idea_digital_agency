@@ -6,7 +6,7 @@ $(document).ready(function () {
     slidesToShow: 3
   }
 
-  if ($(window).width() > 1024) {
+  if ($(window).width() > 1025) {
 
     $.scrollify({
   		section:".scrollify",
@@ -49,7 +49,7 @@ $(document).ready(function () {
     })
 
       $(window).on('resize', function () {
-        if ($(window).width() < 1024) {
+        if ($(window).width() < 1025) {
           $('.case-item.next-slide').height($('.case-list-carusel .case-item').height())
 
           if (caseCarusel.hasClass('slick-initialized')) {
