@@ -28,7 +28,10 @@ $(document).ready(function () {
 
     caseCarusel.slick(settingsCarusel)
   } else {
-    $('.case-item.next-slide').height($('.case-list-carusel .case-item').height())
+    setTimeout(function() {
+      $('.case-item.next-slide').height($('.case-list-carusel .case-item').height())
+
+    }, 100)
     $('.scrollify').css('height', 'auto')
 
   }

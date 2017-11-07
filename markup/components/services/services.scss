@@ -20,11 +20,12 @@
   max-height: 500px;
   text-align: center;
   position: relative;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   @media #{$laptop} {
     width: 25%;
+    display: flex;
     max-height: none;
   }
 
@@ -40,13 +41,16 @@
     height: 100%;
     width: calc(100% - 78px);
     max-height: 500px;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
     box-sizing: border-box;
+    margin: auto;
+
     background-color: #fff;
     @media #{$laptop} {
+      display: flex;
       width: calc(100% - 26px);
       max-height: none;
       padding: 30px;
