@@ -17,8 +17,12 @@
     border-bottom: 1px solid $color-line;
     padding: 15px 15px;
     background: #fff;
+    max-width: 500px;
+    margin: auto;
     @media #{$laptop} {
       display: flex;
+      max-width: none;
+      margin: 0;
     }
 
     .slick-slide {

@@ -1258,6 +1258,8 @@ label.error {
   border-bottom: 1px solid #e8e8e8;
   padding: 15px 15px;
   background: #fff;
+  max-width: 500px;
+  margin: auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1265,6 +1267,8 @@ label.error {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: none;
+    margin: 0;
   }
 }
 
