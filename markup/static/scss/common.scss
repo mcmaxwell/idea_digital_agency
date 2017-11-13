@@ -397,7 +397,8 @@ section.scrollify {
 }
 
 input.error,
-select.error {
+select.error,
+textarea.error {
   border: 1px solid red;
 }
 
