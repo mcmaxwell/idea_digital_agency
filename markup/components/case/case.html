@@ -1,25 +1,30 @@
-<section class="case scrollify" data-section-name="case" id="case">
-  <div class="case-content block-center-content">
-    <h2 class="big-shadow line-before" data-title="{{pageName}}">{{pageName}}</h2>
-  </div>
-
-  <div class="case-list">
-      <div class="case-list-carusel">
-        {{#each caseList}}
-          <a class="case-item" href="{{this.link}}">
-            <img src="{{this.image}}" alt="{{this.title}}">
-            <span class="case-item-info">
-                <h4>{{this.title}}</h4>
-                <span class="arr arr-right">watch case</span>
-            </span>
-          </a>
+<section class="case">
+  <div class="main-container">
+    <aside class="sidebar">
+      <h2 class="big-shadow line-before" data-title="{{pageName}}">{{pageName}}</h2>
+      <p class="title">{{clientTitle}}</p>
+      <p>{{clientName}}</p>
+      <p class="title">{{projectTitle}}</p>
+      <p>{{projectName}}</p>
+      <p class="title">{{serviceTitle}}</p>
+      {{#each serviceName}}
+        <p>{{this}}</p>
+      {{/each}}
+      <p class="title">{{siteTitle}}</p>
+      <p><a href="{{siteUrl}}">{{siteUrlText}}</a></p>
+      <ul class="social-list line-before line-after">
+        {{#each socialList }}
+          <li><a href="{{this.link}}" target="_blank"  class="icon icon-{{this.socialType}}"></a></li>
         {{/each}}
+      </ul>
+    </aside>
+    <article class="main">
+      <div class="main-description">
+        {{{description}}}
       </div>
-      <a class="case-item next-slide" href="#" style="background-image: url()">
-          <span class="case-item-info">
-            <i class="icon icon-next"></i>
-            <span>view more <br /> projects</span>
-          </span>
-      </a>
+      {{#each imgs }}
+        <img src="{{this}}">
+      {{/each}}
+    </article>
   </div>
 </section>

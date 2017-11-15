@@ -1,42 +1,11 @@
-<section class="home scrollify" data-section-name="home" id="home">
-  <img src="%=static=%img/general/logo-big.svg" alt="Idea Digital Agency" class="home-bg-logo">
-  <div class="top-nav">
-    <a href="{{linkLogo}}" class="logo">
-        <img src="%=static=%img/general/logo.svg" alt="Idea Digital Agency">
-    </a>
-    <div class="top-action">
-      <div class="top-lang">
-        <a href="/" class="{{isActiveUa}}">ua</a>
-        <a href="/us" class="{{isActiveUs}}">us</a>
-      </div>
-      <nav class="main-menu">
-        <ul class="menu">
-      {{#if lang }}
-        {{#each menuListUa}}
-          <li>
-            <a class="{{isActive}}" href="#{{this.link}}" data-section-link="{{this.link}}"><span>{{this.text}}</span></a>
-          </li>
-        {{/each}}
-      {{else}}
-        {{#each menuListUs}}
-          <li>
-            <a class="{{isActive}}" href="#{{this.link}}" data-section-link="{{this.link}}"><span>{{this.text}}</span></a>
-          </li>
-        {{/each}}
-      {{/if}}
-    </ul>
-    {{> social/social }}
-  </nav>
-      <a href="#" class="toggle-menu"><span></span><span></span><span></span></a>
-    </div>
-  </div>
-  <div class="home-content">
-    <h1>{{{title}}}</h1>
-    <p class="line-after">{{shortDescription}}</p>
-  </div>
-  <div class="home-social line-after line-before">
-    {{> social/social }}
+<img src="%=static=%img/general/logo-big.svg" alt="Idea Digital Agency" class="home-bg-logo">
 
-  </div>
-  <a href="#about" class="scroll-down arr-bottom arr" data-section-link="about">{{scrollDownText}}</a>
-</section>
+<div class="home-content">
+  <h1>{{{title}}}</h1>
+  <p class="line-after">{{shortDescription}}</p>
+</div>
+<div class="home-social line-after line-before">
+  {{> social/social }}
+
+</div>
+<a href="#about" class="scroll-down arr-bottom arr" data-section-link="about">{{scrollDownText}}</a>

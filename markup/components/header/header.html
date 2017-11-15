@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="top-nav">
+    <a href="{{linkLogo}}" class="logo">
+        <img src="%=static=%img/general/logo.svg" alt="Idea Digital Agency">
+    </a>
+    <div class="top-action">
+      <div class="top-lang">
+        <a href="/" class="{{isActiveUa}}">ua</a>
+        <a href="/us" class="{{isActiveUs}}">us</a>
+      </div>
+      <nav class="main-menu">
+        <ul class="menu">
+          {{#each menuList}}
+            <li>
+              <a class="{{isActive}}" href="{{this.link}}" data-section-link="{{this.link}}"><span>{{this.text}}</span></a>
+            </li>
+          {{/each}}
+        </ul>
+        {{> social/social }}
+      </nav>
+      <a href="#" class="toggle-menu"><span></span><span></span><span></span></a>
+    </div>
+  </div>
+</header>

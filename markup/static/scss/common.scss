@@ -68,6 +68,48 @@ section.scrollify {
   overflow: hidden;
 }
 
+.main-container {
+  display: flex;
+  max-width: 1180px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-direction: column;
+  @media #{$laptop} {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    min-width: 100%;
+    @media #{$laptop} {
+      margin-right: 40px;
+      min-width: 390px;
+    }
+  }
+
+  .main {
+    min-width: 100%;
+    @media #{$laptop} {
+      min-width: calc(100% - 380px);
+    }
+  }
+}
+
+.sticky {
+  @media #{$laptop} {
+    position: fixed;
+    z-index: 101;
+  }
+}
+
+.stop {
+  @media #{$laptop} {
+    position: relative;
+    z-index: 101;
+  }
+}
+
 .line-after,
 .line-before {
   position: relative;

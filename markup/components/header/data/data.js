@@ -1,6 +1,8 @@
-nav: {
+header: {
   ua: {
-    navList: [
+    linkLogo: '/',
+    isActiveUa: 'active',
+    menuList: [
       {
         link: 'home',
         text: 'Главная',
@@ -12,7 +14,7 @@ nav: {
       },
       {
         link: 'services',
-        text: 'services'
+        text: 'Services'
       },
       {
         link: 'cases-carusel',
@@ -25,7 +27,9 @@ nav: {
     ]
   },
   us: {
-    navList: [
+    linkLogo: './',
+    isActiveUs: 'active',
+    menuList: [
       {
         link: 'home',
         text: 'Home',
@@ -37,10 +41,10 @@ nav: {
       },
       {
         link: 'services',
-        text: 'services'
+        text: 'Services'
       },
       {
-        link: 'case',
+        link: 'cases-carusel',
         text: 'Case'
       },
       {

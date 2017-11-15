@@ -7,21 +7,15 @@
 
     <body class="page">
         %=symbols=%
-        {{> navigation/navigation nav.ua}}
-        <main class="scrollify-page">
-          <section class="home scrollify" data-section-name="home" id="home">
+        <main >
+          <section class="case-top">
             {{> header/header header.ua }}
-            {{> home/home home.ua }}
+            {{> case-top/case-top caseTop.ua }}
           </section>
 
-          {{> about/about about.ua}}
+          {{> case/case case.ua}}
 
-          {{> services/services services.ua }}
-
-          <section class="cases-carusel scrollify" data-section-name="cases-carusel" id="cases-carusel">
-            {{> cases-content/cases-content casesContent.ua }}
-            {{> cases-carusel/cases-carusel casesCarusel.ua }}
-          </section>
+          {{> cases-carusel/cases-carusel casesCarusel.ua }}
 
           {{> contact/contact contact.ua }}
 

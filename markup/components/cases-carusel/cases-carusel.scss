@@ -1,0 +1,165 @@
+.cases-carusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media #{$laptop} {
+    background: url(%=static=%general/about-line.png) 1px 0/25% 570px;
+  }
+  @media #{$desktop} {
+    background: url(%=static=%general/about-line.png) -3px 0;
+  }
+  .block-center-content {
+    margin: 0 auto;
+  }
+
+  &-list {
+    border-top: 1px solid $color-line;
+    border-bottom: 1px solid $color-line;
+    padding: 15px;
+    background: #fff;
+    max-width: 500px;
+    margin: auto;
+    @media #{$laptop} {
+      display: flex;
+      max-width: none;
+      margin: 0;
+    }
+
+    .slick-slide {
+      overflow: hidden;
+    }
+  }
+
+  &-item {
+    display: block;
+    border: solid 7.5px #fff;
+    box-sizing: border-box;
+    position: relative;
+    transition: all $default-time;
+    font-size: 0;
+    @media #{$laptop} {
+      width: 25.21%;
+      min-width: 25.21%;
+    }
+
+    &:hover {
+      h4 {
+        opacity: 0;
+      }
+      img {
+        transform: scale(1.1);
+      }
+      .arr.arr-right {
+        &::after {
+          left: 100%;
+        }
+
+        &::before {
+          right: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    img {
+      transition: all $default-time;
+      width: 100%;
+    }
+
+    &-info {
+      position: absolute;
+      z-index: 100;
+      color: #fff;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h4 {
+        font-size: rem-calc(19);
+        text-transform: uppercase;
+        font-weight: 400;
+        transition: all $default-time;
+        @media #{$laptop} {
+          font-size: 2vw;
+        }
+      }
+
+      span {
+        font-size: rem-calc(13);
+        position: absolute;
+        top: 74%;
+        padding-bottom: 20px;
+        left: 34px;
+        right: 41px;
+        text-align: center;
+        &.arr.arr-right {
+          &::after {
+            border-color: transparent transparent transparent #fff;
+            left: 20%;
+            transition: all 0.5s;
+          }
+
+          &::before {
+            left: 0;
+            width: 20%;
+            background: #fff;
+            transform: translate(0);
+            transition: all 0.5s;
+
+          }
+        }
+      }
+    }
+
+    &.next-slide {
+
+      .cases-carusel-item-info {
+        background-color: #383838;
+        border: 10px solid #383838;
+        box-shadow: inset 0 0 0 5px #fff;
+        box-sizing: border-box;
+        transition: all $default-time;
+        span {
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+      .icon {
+        font-size: rem-calc(27);
+
+        @media #{$desktop} {
+          font-size: rem-calc(38);
+        }
+      }
+      &:hover {
+        .cases-carusel-item-info {
+          background-color: #fff;
+          border: 10px solid #fff;
+          box-shadow: inset 0 0 0 5px #383838;
+          color: #383838;
+        }
+      }
+    }
+  }
+
+  &-list-carusel {
+    overflow: hidden;
+    @media #{$laptop} {
+      max-width: 75%;
+    }
+  }
+
+  .big-shadow.line-before {
+    margin-top: 110px;
+    &::before {
+      width: 600px;
+      bottom: 12px;
+      top: auto;
+    }
+  }
+}

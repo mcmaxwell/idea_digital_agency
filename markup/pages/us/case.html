@@ -1,26 +1,21 @@
 <!doctype html>
-<html class="no-js" lang="us">
+<html class="no-js" lang="ua">
 
     <head>
-        {{> head/head head.us}}
+        {{> head/head head.ua }}
     </head>
 
     <body class="page">
         %=symbols=%
-        {{> navigation/navigation nav.us }}
-        <main class="scrollify-page">
-          <section class="home scrollify" data-section-name="home" id="home">
+        <main >
+          <section class="case-top">
             {{> header/header header.us }}
-            {{> home/home home.us }}
+            {{> case-top/case-top caseTop.us }}
           </section>
-          {{> about/about about.us }}
 
-          {{> services/services services.us }}
+          {{> case/case case.us }}
 
-          <section class="cases-carusel scrollify" data-section-name="cases-carusel" id="cases-carusel">
-            {{> cases-content/cases-content casesContent.us }}
-            {{> cases-carusel/cases-carusel casesCarusel.us }}
-          </section>
+          {{> cases-carusel/cases-carusel casesCarusel.us }}
 
           {{> contact/contact contact.us }}
 
