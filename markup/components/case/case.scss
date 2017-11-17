@@ -64,9 +64,16 @@
     }
   }
 
+  .main {
+    img {
+      margin-bottom: 80px;
+    }
+  }
+
   .main-description {
     font-size: rem-calc(19);
     background: url(%=static=%general/logo-big.svg) 98% 79%/340px 420px no-repeat;
+
     @media #{$laptop} {
       height: 80vh;
     }
