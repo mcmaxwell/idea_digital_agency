@@ -22,7 +22,7 @@ services: {
       {
         count: '04',
         icon: 'brand',
-        title: `Brand/Identity  Strategy & Design`,
+        title: `Brand/Identity Strategy & Design`,
         servicesList: ['Brand Strategy', 'Website Planning', 'Marketing Campaigns', 'Identity Design', 'Message & Tone', 'Visual Systems', 'Logo Mark Design', 'Brand Book & Guidelines', 'Look & Feel']
       }
     ]
