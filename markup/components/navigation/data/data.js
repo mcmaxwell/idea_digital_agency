@@ -3,24 +3,24 @@ nav: {
     navList: [
       {
         link: 'home',
-        text: 'Главная',
+        text: 'Головна',
         isActive: 'active'
       },
       {
         link: 'about',
-        text: 'About us'
+        text: 'Про нас'
       },
       {
         link: 'services',
-        text: 'services'
+        text: 'Послуги'
       },
       {
         link: 'cases-carusel',
-        text: 'Case'
+        text: 'Кейси'
       },
       {
         link: 'contacts',
-        text: 'Contact'
+        text: 'Контакти'
       }
     ]
   },
@@ -37,10 +37,10 @@ nav: {
       },
       {
         link: 'services',
-        text: 'services'
+        text: 'Services'
       },
       {
-        link: 'case',
+        link: 'cases-carusel',
         text: 'Case'
       },
       {

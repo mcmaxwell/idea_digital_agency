@@ -1,12 +1,12 @@
 about: {
   ua: {
-    pageName: 'О нас.',
-    title: 'IdeaDigital - агентство комплексного интерьер-маркетинга с креативным началом.',
-    description: 'Наша команда существует, чтобы превратить превосходные идеи и бренды в высокопроизводительные и продающие веб-сайты.'
+    pageName: 'Про нас.',
+    title: 'Idea Digital - веб-розробка, просування, візуалізація, брендінг і створення історії та цінностей бренду.',
+    description: 'Ми проти рекламної мови. Мова бренду повинна бути простою. Так, ніби його історію розповідає приятель.'
   },
   us: {
     pageName: 'about us.',
-    title: 'The expert web design & development agency',
-    description: 'Drive Digital is a boutique web design and development agency headquartered in Vancouver, BC, with offices in Toronto and New York. Our team exists to turn great brands and clear business goals into exceptional, high-performing websites.'
+    title: 'The expert digital marketing and development agency',
+    description: 'Idea Digital is a global experience innovation agency in the heart of Europe. Our team exists to turn great brands and clean business goals into exceptional high-performing websites.'
   }
 }

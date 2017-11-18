@@ -4,7 +4,7 @@ head: {
         useSocialMetaTags: true
     },
     ua: {
-        title: 'Idea Digital Agency',
+        title: 'Idea Digital Agency | Веб-розробка, просування, візуалізація, брендінг.',
         useSocialMetaTags: true
     }
 }

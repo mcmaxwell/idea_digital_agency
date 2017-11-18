@@ -4,26 +4,26 @@ services: {
       {
         count: '01',
         icon: 'web',
-        title: 'Web Design',
-        servicesList: ['Branding', 'UI / UX', 'Graphic Design', 'Responsive Website Design', 'User Experience Design', 'Photography + Videography', 'Motion Graphics', 'Environmental Design', 'User Interface Design (UI)', 'User Experience (UX)', 'Information Architecture', 'Wireframing & Prototyping']
+        title: 'Дизайн',
+        servicesList: ['Графічний дизайн', 'Адаптивний дизайн сайтів', 'Фото та Відео', 'Айдентіка', 'Анімаційний дизайн', 'Прототипування']
       },
       {
         count: '02',
         icon: 'develop',
-        title: 'Web Development',
-        servicesList: ['Professional Websites', 'Ecommerce Solutions', 'Small Business Websites', 'Custom Websites', 'CMS Development', 'Responsive HTML/CSS', 'Site Architecture & Wire Frames', 'Website Reviews and Audits', 'Landing Pages']
+        title: 'Веб-розробка',
+        servicesList: ['Розробка веб-сайтів', 'Ecommerce рішення', 'Розробка Landing pages', 'Розробки на CMS платформах', 'Індивідуальні рішення']
       },
       {
         count: '03',
         icon: 'marketing',
-        title: 'Digital Marketing',
-        servicesList: ['SEO', 'PPC', 'Social Media<', 'Content Marketing', 'Email Marketing', 'Website Optimization', 'Reputation Management', 'SOCIAL MEDIA ADVERTISING', 'YOUTUBE ADVERTISING', 'INFLUENCER OUTREACH', 'Social Media Strategy', 'Community Management', 'Facebook Applications', 'Monitoring and Analyses']
+        title: 'Діджитал маркетинг',
+        servicesList: ['SEO просування', 'SMM', 'Контент маркетинг', 'Email маркетинг', 'Крауд маркетинг', 'Аудит веб-сайтів', 'Внутрішня оптимізація', 'PPC']
       },
       {
         count: '04',
         icon: 'brand',
-        title: `Brand/Identity Strategy & Design`,
-        servicesList: ['Brand Strategy', 'Website Planning', 'Marketing Campaigns', 'Identity Design', 'Message & Tone', 'Visual Systems', 'Logo Mark Design', 'Brand Book & Guidelines', 'Look & Feel']
+        title: `Брендінг Стратегії & Комунікації`,
+        servicesList: ['Бренд стратегії', 'Маркетингові кампанії', 'Брендінг та візуалізація', 'Керування репутацією', 'Неймінг', 'Брендбук & гайдлайн']
       }
     ]
   },
@@ -33,25 +33,25 @@ services: {
         count: '01',
         icon: 'web',
         title: 'Web Design',
-        servicesList: ['Branding', 'UI / UX', 'Graphic Design', 'Responsive Website Design', 'User Experience Design', 'Photography + Videography', 'Motion Graphics', 'Environmental Design', 'User Interface Design (UI)', 'User Experience (UX)', 'Information Architecture', 'Wireframing & Prototyping']
+        servicesList: ['Branding', 'UI / UX', 'Graphic Design', 'Responsive Website Design', 'Photography + Videography', 'Motion Graphics', 'Wireframing & Prototyping']
       },
       {
         count: '02',
         icon: 'develop',
         title: 'Web Development',
-        servicesList: ['Professional Websites', 'Ecommerce Solutions', 'Small Business Websites', 'Custom Websites', 'CMS Development', 'Responsive HTML/CSS', 'Site Architecture & Wire Frames', 'Website Reviews and Audits', 'Landing Pages']
+        servicesList: ['Professional Websites', 'Ecommerce Solutions', 'Landing Pages', 'Custom Websites', 'CMS Development', 'Small Business Websites']
       },
       {
         count: '03',
         icon: 'marketing',
         title: 'Digital Marketing',
-        servicesList: ['SEO', 'PPC', 'Social Media<', 'Content Marketing', 'Email Marketing', 'Website Optimization', 'Reputation Management', 'SOCIAL MEDIA ADVERTISING', 'YOUTUBE ADVERTISING', 'INFLUENCER OUTREACH', 'Social Media Strategy', 'Community Management', 'Facebook Applications', 'Monitoring and Analyses']
+        servicesList: ['SEO', 'PPC', 'Social Media', 'Content Marketing', 'Email Marketing', 'Crowd marketing', 'Website Optimization', 'Reputation Management']
       },
       {
         count: '04',
         icon: 'brand',
         title: `Brand/Identity  Strategy & Design`,
-        servicesList: ['Brand Strategy', 'Website Planning', 'Marketing Campaigns', 'Identity Design', 'Message & Tone', 'Visual Systems', 'Logo Mark Design', 'Brand Book & Guidelines', 'Look & Feel']
+        servicesList: ['Brand Strategy', 'Marketing Campaigns', 'Identity Design', 'Visual Systems', 'Message & Tone', 'Logo Mark Design', 'Brand Book & Guidelines', 'Look & Feel']
       }
     ]
   }

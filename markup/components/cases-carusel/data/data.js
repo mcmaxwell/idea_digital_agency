@@ -1,51 +1,61 @@
 casesCarusel: {
   ua: {
-    pageName: 'Case.',
+    pageName: 'Кейси.',
+    viewMore: 'Більше проектів',
     caseList: [
       {
-        link: 'case.html',
+        link: 'cradle-of-links.html',
         image: '%=static=%img/assets/cases-carusel/case-1.png',
-        title: 'FILM'
+        watch: 'переглянути кейс',
+        title: 'Cradle of Links'
       },
       {
-        link: 'case.html',
+        link: 'lorairis.html',
         image: '%=static=%img/assets/cases-carusel/case-2.png',
-        title: 'ART'
+        watch: 'переглянути кейс',
+        title: 'LoraIris ТМ'
       },
       {
-        link: 'case.html',
+        link: 'your-time.html',
+        image: '%=static=%img/assets/cases-carusel/case-3.png',
+        watch: 'переглянути кейс',
+        title: 'YOURTIME.ua'
+      },
+      {
+        link: 'cradle-of-links.html',
         image: '%=static=%img/assets/cases-carusel/case-1.png',
-        title: 'FILM'
-      },
-      {
-        link: 'case.html',
-        image: '%=static=%img/assets/cases-carusel/case-2.png',
-        title: 'ART'
+        watch: 'переглянути кейс',
+        title: 'Cradle of Links'
       }
     ]
   },
   us: {
-    pageName: 'Case.',
+    pageName: 'Cases.',
+    viewMore: 'view more projects',
     caseList: [
       {
-        link: 'case.html',
+        link: 'cradle-of-links.html',
         image: '%=static=%img/assets/cases-carusel/case-1.png',
-        title: 'FILM'
+        watch: 'watch case',
+        title: 'Cradle of Links'
       },
       {
-        link: 'case.html',
+        link: 'lorairis.html',
         image: '%=static=%img/assets/cases-carusel/case-2.png',
-        title: 'ART'
+        watch: 'watch case',
+        title: 'LoraIris ТМ'
       },
       {
-        link: 'case.html',
+        link: 'your-time.html',
+        image: '%=static=%img/assets/cases-carusel/case-3.png',
+        watch: 'watch case',
+        title: 'YOURTIME.ua'
+      },
+      {
+        link: 'cradle-of-links.html',
         image: '%=static=%img/assets/cases-carusel/case-1.png',
-        title: 'FILM'
-      },
-      {
-        link: 'case.html',
-        image: '%=static=%img/assets/cases-carusel/case-2.png',
-        title: 'ART'
+        watch: 'watch case',
+        title: 'Cradle of Links'
       }
     ]
   }

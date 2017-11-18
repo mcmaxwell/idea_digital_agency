@@ -889,7 +889,7 @@ section.scrollify {
 
 @media screen and (min-width: 1025px) {
   .main-container .main {
-    min-width: calc(100% - 380px);
+    min-width: calc(100% - 430px);
   }
 }
 
@@ -1236,58 +1236,6 @@ label.error {
   display: none !important;
 }
 
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 1025px) {
-  .about {
-    background: url(../img/general/about-line.png) -22px 0/354px 570px;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .about {
-    background: url(../img/general/about-line.png) -3px 0;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .about p {
-    font-size: 1.5rem;
-  }
-}
-
-.about h3 {
-  margin: 37px 0 24px;
-}
-
-@media screen and (min-width: 1025px) {
-  .about h3 {
-    margin: 61px 0 74px;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .about h3 {
-    margin: 40px 0 109px;
-  }
-}
-
-.about .big-shadow.line-before::before {
-  width: 600px;
-  bottom: 12px;
-  top: auto;
-}
-
 .case {
   box-sizing: border-box;
   padding-top: 80px;
@@ -1375,6 +1323,58 @@ label.error {
   margin-top: 40px;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .about {
+    background: url(../img/general/about-line.png) -22px 0/354px 570px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .about {
+    background: url(../img/general/about-line.png) -3px 0;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .about p {
+    font-size: 1.5rem;
+  }
+}
+
+.about h3 {
+  margin: 37px 0 24px;
+}
+
+@media screen and (min-width: 1025px) {
+  .about h3 {
+    margin: 61px 0 74px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .about h3 {
+    margin: 40px 0 109px;
+  }
+}
+
+.about .big-shadow.line-before::before {
+  width: 600px;
+  bottom: 12px;
+  top: auto;
+}
+
 .case-top {
   height: 100vh;
   position: relative;
@@ -1441,7 +1441,7 @@ label.error {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 58%;
+  padding-top: 36%;
   width: 100%;
 }
 

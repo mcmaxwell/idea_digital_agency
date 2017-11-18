@@ -95,7 +95,7 @@ section.scrollify {
   .main {
     min-width: 100%;
     @media #{$laptop} {
-      min-width: calc(100% - 380px);
+      min-width: calc(100% - 430px);
     }
   }
 }

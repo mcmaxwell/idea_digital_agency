@@ -5,24 +5,24 @@ header: {
     menuList: [
       {
         link: 'home',
-        text: 'Главная',
+        text: 'Головна',
         isActive: 'active'
       },
       {
         link: 'about',
-        text: 'About us'
+        text: 'Про нас'
       },
       {
         link: 'services',
-        text: 'Services'
+        text: 'Послуги'
       },
       {
         link: 'cases-carusel',
-        text: 'Case'
+        text: 'Кейси'
       },
       {
         link: 'contacts',
-        text: 'Contact'
+        text: 'Контакти'
       }
     ]
   },
