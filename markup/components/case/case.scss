@@ -8,13 +8,15 @@
   }
 
   .sidebar {
-
     h2 {
       font-size: rem-calc(19);
       padding-top: 70px;
 
       &::after {
-        font-size: rem-calc(60);
+        font-size: rem-calc(45);
+        @media #{$desktop} {
+          font-size: rem-calc(60);
+        }
       }
 
       &::before {

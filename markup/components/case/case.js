@@ -23,7 +23,7 @@ if (document.querySelector('aside.sidebar')) {
       a.style.border = '0';
     }
     var Ra = a.getBoundingClientRect(),
-        R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.cases-carusel-item').getBoundingClientRect().top + 30);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
+        R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.cases-carusel').getBoundingClientRect().top + 30);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
     if ((Ra.top - P) <= 0) {
       if ((Ra.top - P) <= R) {
         b.className = 'stop';

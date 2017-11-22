@@ -1,29 +1,4 @@
 .header {
-  .logo {
-    margin: 10px;
-    display: inline-block;
-    position: relative;
-    z-index: 2000;
-    transition: all $default-time 0.1s;
-    width: 80px;
-
-    @media #{$laptop} {
-      margin: 20px;
-      width: 110px;
-    }
-
-    @media #{$desktop} {
-      margin: 30px;
-      width: 157px;
-    }
-
-    &.active {
-      filter: grayscale(100%);
-      filter: grey;
-      transition: all $default-time 0.2s;
-    }
-  }
-
   .top-nav {
     display: flex;
     justify-content: space-between;

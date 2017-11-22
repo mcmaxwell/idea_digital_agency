@@ -10,12 +10,15 @@
   }
 
   h1 {
-    font-size: rem-calc(40);
+    font-size: rem-calc(20);
     text-align: center;
     position: relative;
     line-height: 2;
     margin-bottom: 38px;
     margin-top: 100px;
+    @media #{$laptop} {
+      font-size: rem-calc(40);
+    }
 
     &::after {
       content: "";
@@ -44,10 +47,6 @@
   }
 
   &-img {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 36%;
     width: 100%;
   }
 }

@@ -163,3 +163,21 @@
     }
   }
 }
+
+.title-cases {
+  text-align: center;
+  font-family: gothamprobold;
+  position: relative;
+  margin-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 125px;
+    height: 1px;
+    transform: translate(-50%);
+    background-color: #f24a41;
+  }
+}
