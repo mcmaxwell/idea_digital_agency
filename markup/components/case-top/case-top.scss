@@ -1,12 +1,10 @@
 .case-top {
   height: 100vh;
   position: relative;
-  background: url(%=static=%general/bg.svg) 0 0/116px 200px;
-  @media #{$laptop} {
-    background: url(%=static=%general/bg.svg) -21px 190px/354px 570px;
-  }
+  background: url(%=static=%general/bg.svg) calc( 53% - 211px) 42%/354px 570px;
+
   @media #{$desktop} {
-    background: url(%=static=%general/bg.svg) 0 190px/480px 769px;
+    background: url(%=static=%general/bg.svg) calc( 53% - 274px) 96%;
   }
 
   h1 {
