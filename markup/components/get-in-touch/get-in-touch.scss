@@ -8,9 +8,10 @@
   bottom: 0;
   background-color: #f1f1f1;
   z-index: 2000;
-  height: 100%;
   overflow: hidden;
-
+  @media #{$laptop} {
+    height: 100%;
+  }
   &.active {
     display: flex;
     right: 0;
@@ -21,11 +22,11 @@
     justify-content: center;
     align-items: center;
     overflow: auto;
-    height: 100%;
     position: relative;
 
     @media #{$laptop} {
       display: flex;
+      height: 100%;
     }
   }
 
@@ -115,12 +116,14 @@
 }
 
 .line-load {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-
+  height: 400px;
+  @media #{$laptop} {
+    height: 100%;
+  }
   &::after {
     content: "";
     position: absolute;

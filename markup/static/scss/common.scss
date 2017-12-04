@@ -37,6 +37,12 @@ img {
   max-width: 100%;
 }
 
+.hide {
+  @media #{$laptop} {
+    display: none!important;
+  }
+}
+
 *:focus {
   outline: none;
 }

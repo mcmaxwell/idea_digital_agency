@@ -1,7 +1,7 @@
 .case {
   box-sizing: border-box;
   padding-top: 80px;
-  background: url(../img/general/about-line.png) -22px 1px/354px 734px;
+    background: url(%=static=%general/about-line.png) 1px 0/25% 570px;
 
   @media #{$desktop} {
     background: url(%=static=%general/about-line.png) -3px 0;

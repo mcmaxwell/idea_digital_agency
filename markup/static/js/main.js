@@ -40,18 +40,17 @@ $(document).ready(function () {
   $('.toggle-menu').click(function () {
     $(this).toggleClass('active')
     $('.main-menu').toggleClass('active')
-    $('.logo').toggleClass('active')
     $('body').toggleClass('fixed')
 
     return false
   })
 
   if (location.pathname === '/' || location.pathname === '/us/') {
-    for(var i = 0; i < $('.main-menu a').length; i++) {
+    for (let i = 0; i < $('.main-menu a').length; i++) {
       $('.main-menu a').eq(i).attr('href', '#' + $('.main-menu a').eq(i).attr('href'))
     }
   } else {
-    for(var i = 0; i < $('.main-menu a').length; i++) {
+    for (let i = 0; i < $('.main-menu a').length; i++) {
       $('.main-menu a').eq(i).attr('href', './#' + $('.main-menu a').eq(i).attr('href'))
     }
   }
@@ -118,11 +117,15 @@ $(document).ready(function () {
   $('.toggle-form').click(function () {
     $('.get-in-touch').toggleClass('active')
     $('.logo').addClass('active')
+    $('main').toggleClass('hide')
     return false
   })
 
   $('.get-in-touch .close').click(function () {
     $('.get-in-touch').toggleClass('active')
+    $('.logo').removeClass('active')
+    $('main').toggleClass('hide')
+
     return false
   })
 
