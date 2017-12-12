@@ -23,6 +23,11 @@ header: {
       {
         link: 'contacts',
         text: 'Контакти'
+      },
+      {
+        link: 'blog.html',
+        text: 'Блог',
+        linkPage: 'link-page'
       }
     ]
   },
@@ -50,6 +55,11 @@ header: {
       {
         link: 'contacts',
         text: 'Contact'
+      },
+      {
+        link: 'blog.html',
+        text: 'Blog',
+        class: 'link-page'
       }
     ]
   }

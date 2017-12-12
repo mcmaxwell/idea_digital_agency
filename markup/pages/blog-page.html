@@ -5,7 +5,7 @@
         {{> head/head head.ua }}
     </head>
 
-    <body class="page">
+    <body class="page blog-wrapper blog-page">
       <script>
         fbq('track', 'Lead', {
         value: 10.00,
@@ -19,6 +19,7 @@
             {{> header/header header.ua }}
           </section>
           <div class="main-container">
+            {{> blog-page/blog-page blogPage.ua}}
             {{> footer/footer footer.ua}}
           </div>
         </main>

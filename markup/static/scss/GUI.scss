@@ -94,34 +94,68 @@
   }
 }
 
-
 h1 {
-  color: #000000;
-  background-image: url(%=static=%general/bg-text.png);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-family: gothamproblack;
-  font-size: rem-calc(26);
-  font-weight: 400;
+  font-size: rem-calc(36);
   text-transform: uppercase;
-  letter-spacing: -0.52px;
-  margin: 0;
-  @media #{$laptop} {
-    font-size: rem-calc(69);
-    letter-spacing: -1.96px;
-  }
-  @media #{$desktop} {
-    font-size: 5.11vw;
-  }
+  margin-bottom: 16px;
+}
+
+h2, h3, h4, h5 ,h6 {
+  font-family: gothamprobold;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: rem-calc(48);
 }
 
 h3 {
+  font-size: rem-calc(40);
+}
+
+h4 {
+  font-size: rem-calc(36);
+}
+
+h5 {
+  font-size: rem-calc(30);
+}
+
+h6 {
   font-size: rem-calc(24);
-  font-family: gothamprobold;
-  @media #{$desktop} {
-    font-size: rem-calc(36);
+  margin-top: 0;
+}
+
+.home-page {
+  h1 {
+    color: #000000;
+    background-image: url(%=static=%general/bg-text.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: gothamproblack;
+    font-size: rem-calc(26);
+    font-weight: 400;
+    letter-spacing: -0.52px;
+    margin: 0;
+    @media #{$laptop} {
+      font-size: rem-calc(69);
+      letter-spacing: -1.96px;
+    }
+    @media #{$desktop} {
+      font-size: 5.11vw;
+    }
+  }
+
+  h3 {
+    font-size: rem-calc(24);
+    font-family: gothamprobold;
+    @media #{$desktop} {
+      font-size: rem-calc(36);
+    }
   }
 }
+
 
 .big-shadow {
   color: #282828;
@@ -295,5 +329,45 @@ select {
 
   select {
     height: 100%;
+  }
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  font-size: rem-calc(18);
+  color: #000;
+
+  svg {
+    min-width: 28px;
+    min-height: 33px;
+    margin-right: 20px;
+  }
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+
+  tr {
+    &:first-child {
+      background-color: #e9e8f9;
+    }
+    &:nth-child(2n + 1):not(:first-child) {
+      background-color: #f4f2f2;
+    }
+  }
+  td {
+    padding: 15px 10px;
+    border: 1px solid #dedede;
+    text-align: center;
+  }
+
+  caption {
+    text-align: left;
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-family: gothamprobold;
+
   }
 }

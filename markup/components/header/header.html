@@ -12,7 +12,7 @@
         <ul class="menu">
           {{#each menuList}}
             <li>
-              <a class="{{isActive}}" href="{{this.link}}" data-section-link="{{this.link}}"><span>{{this.text}}</span></a>
+              <a class="{{linkPage}} {{isActive}} main-menu-link" href="{{this.link}}" {{#if linkPage }} {{else}} data-section-link="{{this.link}}" {{/if}}><span>{{this.text}}</span></a>
             </li>
           {{/each}}
         </ul>

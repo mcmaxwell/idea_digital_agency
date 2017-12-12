@@ -1,7 +1,7 @@
 import 'components/case/case'
 
 $(document).ready(function () {
-
+  const menuLink = $('.main-menu-link')
   const caseCarusel = $('.cases-carusel-list-carusel')
   const settingsCarusel = {
     arrows: false,
@@ -46,14 +46,20 @@ $(document).ready(function () {
   })
 
   if (location.pathname === '/' || location.pathname === '/us/') {
-    for (let i = 0; i < $('.main-menu a').length; i++) {
-      $('.main-menu a').eq(i).attr('href', '#' + $('.main-menu a').eq(i).attr('href'))
+    for (let i = 0; i < menuLink.length; i++) {
+      if(!menuLink.eq(i).hasClass('link-page')) {
+        menuLink.eq(i).attr('href', '#' + menuLink.eq(i).attr('href'))
+      }
     }
   } else {
-    for (let i = 0; i < $('.main-menu a').length; i++) {
-      $('.main-menu a').eq(i).attr('href', './#' + $('.main-menu a').eq(i).attr('href'))
+    for (let i = 0; i < $('.main-menu-link').length; i++) {
+      if(!menuLink.eq(i).hasClass('link-page')) {
+        menuLink.eq(i).attr('href', './#' + menuLink.eq(i).attr('href'))
+      }
     }
   }
+
+
 
   $('.main-menu a').click(function () {
     $('.toggle-menu').click()
