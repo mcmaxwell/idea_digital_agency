@@ -1,8 +1,10 @@
 .case {
   box-sizing: border-box;
-  padding-top: 80px;
+  padding-top: 30px;
+  @media #{$laptop} {
     background: url(%=static=%general/about-line.png) 1px 0/25% 570px;
-
+    padding-top: 80px;
+  }
   @media #{$desktop} {
     background: url(%=static=%general/about-line.png) -3px 0;
   }
@@ -74,10 +76,11 @@
 
   .main-description {
     font-size: rem-calc(19);
-    background: url(%=static=%general/logo-big.svg) 98% 79%/340px 420px no-repeat;
+    background: url(%=static=%general/logo-big.svg) 98% 79%/contain no-repeat;
 
     @media #{$laptop} {
       height: 80vh;
+      background: url(%=static=%general/logo-big.svg) 98% 79%/340px 420px no-repeat;
     }
 
     h2 {

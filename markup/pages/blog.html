@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="ua">
+
+    <head>
+        {{> head/head head.ua }}
+    </head>
+
+    <body class="page blog-list blog-wrapper">
+      <script>
+        fbq('track', 'Lead', {
+        value: 10.00,
+        currency: 'USD',
+        });
+      </script>
+
+        %=symbols=%
+        <main>
+          <section>
+            {{> header/header header.ua }}
+          </section>
+          <div class="main-container">
+            {{> blog/blog blog.ua}}
+            {{> footer/footer footer.ua}}
+          </div>
+        </main>
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here -->
+        <script src="%=static=%js/vendor%=hash=%%=min=%.js"></script>
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

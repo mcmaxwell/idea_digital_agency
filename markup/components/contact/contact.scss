@@ -9,7 +9,6 @@ section.scrollify.contacts {
   @media #{$laptop} {
     border: 15px solid #fff;
     box-shadow: inset 0 0 0 2px  $color-line;
-
   }
 
   .big-shadow.line-before {
@@ -99,8 +98,6 @@ section.scrollify.contacts {
           }
         }
       }
-
-
     }
   }
 
@@ -109,31 +106,5 @@ section.scrollify.contacts {
     bottom: 6px;
     left: 10px;
     right: 10px;
-    justify-content: space-between;
-    text-align: center;
-    font-size: rem-calc(10);
-    .social-list {
-      position: absolute;
-      bottom: 140px;
-      width: 100%;
-      justify-content: center;
-    }
-    @media #{$laptop} {
-      left: 40px;
-      right: 40px;
-      bottom: 20px;
-      text-align: left;
-      font-size: rem-calc(16);
-      display: flex;
-      .social-list {
-        position: static;
-        justify-content: flex-start;
-        width: auto;
-      }
-    }
-    @media #{$desktop} {
-      font-size: rem-calc(18);
-      bottom: 30px;
-    }
   }
 }

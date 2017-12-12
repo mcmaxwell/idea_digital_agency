@@ -14,27 +14,14 @@
       </script>
 
         %=symbols=%
-        {{> navigation/navigation nav.ua}}
-        <main class="scrollify-page">
-          <section class="home scrollify" data-section-name="home" id="home">
+        <main>
+          <section>
             {{> header/header header.ua }}
-            {{> home/home home.ua }}
           </section>
-
-          {{> about/about about.ua}}
-
-          {{> services/services services.ua }}
-
-          <section class="cases-carusel scrollify" data-section-name="cases-carusel" id="cases-carusel">
-            {{> cases-content/cases-content casesContent.ua }}
-            {{> cases-carusel/cases-carusel casesCarusel.ua.home }}
-          </section>
-
-          {{> contact/contact contact.ua }}
-          {{> footer/footer footer.ua }}
-
+          <div class="main-container">
+            {{> footer/footer footer.ua}}
+          </div>
         </main>
-        {{> get-in-touch/get-in-touch getInTouch.ua }}
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>

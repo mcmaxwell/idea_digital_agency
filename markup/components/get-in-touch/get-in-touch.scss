@@ -1,5 +1,4 @@
 .get-in-touch {
-  display: flex;
   transition: all $default-time*2 ;
   position: fixed;
   top: 0;
@@ -8,8 +7,10 @@
   bottom: 0;
   background-color: #f1f1f1;
   z-index: 2000;
-  overflow: hidden;
+  overflow: auto;
   @media #{$laptop} {
+    overflow: hidden;
+    display: flex;
     height: 100%;
   }
   &.active {
@@ -37,8 +38,10 @@
   }
 
   .thanks-massege {
-    margin-left: 75px;
     margin-right: 0;
+    @media #{$laptop} {
+      margin-left: 75px;
+    }
   }
 
   &-form {
@@ -49,6 +52,10 @@
       form {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        @media #{$laptop} {
+          flex-direction: row;
+        }
       }
 
       input,
@@ -85,6 +92,8 @@
 
       [type="submit"] {
         margin-bottom: 0;
+        width: 100%;
+        display: block;
       }
   }
 
@@ -120,24 +129,26 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  height: 400px;
+  height: 200px;
+  padding-top: 100px;
   @media #{$laptop} {
     height: 100%;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    right: -70px;
-    top: 0;
-    height: 0;
-    width: 2px;
-    background-color: #cccccc;
-    transition: all 5s;
+    padding: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: 0;
+      height: 0;
+      width: 2px;
+      background-color: #cccccc;
+      transition: all 5s;
+    }
   }
 
   &.load {
     &::after {
-      height: 2000px;
+      height: 100%;
     }
   }
 }

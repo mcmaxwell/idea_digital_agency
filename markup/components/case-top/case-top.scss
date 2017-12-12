@@ -1,9 +1,10 @@
 .case-top {
   position: relative;
-  background: url(%=static=%general/bg.svg) calc( 50% - 175px) 42%/357px 570px;
 
   @media #{$laptop} {
     height: 100vh;
+    background: url(%=static=%general/bg.svg) calc( 50% - 175px) 146px/357px 570px;
+
     min-height: 768px;
   }
 
@@ -16,24 +17,22 @@
     @media #{$laptop} {
       font-size: rem-calc(40);
       padding: 0 130px;
-      margin-top: 197px;
+      margin-top: 177px;
 
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 120px;
-      height: 1px;
-      background-color: $color-line;
-      left: 50%;
-      transform: translate(-50%);
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 120px;
+        height: 1px;
+        background-color: $color-line;
+        left: 50%;
+        transform: translate(-50%);
+      }
     }
   }
 
   &-content {
-    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;

@@ -279,6 +279,7 @@ select {
 .label-select {
   position: relative;
   width: 100%;
+  display: block;
   &::after {
     content: "";
     position: absolute;
