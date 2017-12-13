@@ -10,9 +10,6 @@ footer {
     justify-content: center;
   }
   @media #{$laptop} {
-    left: 40px;
-    right: 40px;
-    bottom: 20px;
     text-align: left;
     font-size: rem-calc(16);
     display: flex;
@@ -22,8 +19,8 @@ footer {
       width: auto;
     }
   }
+
   @media #{$desktop} {
     font-size: rem-calc(18);
-    bottom: 30px;
   }
 }

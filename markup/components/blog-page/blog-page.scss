@@ -43,3 +43,34 @@
   font-size: rem-calc(18);
   margin-bottom: 24px;
 }
+
+.blog-page-bottom {
+  margin-top: 70px;
+
+  &__title {
+    font-size: rem-calc(24);
+    font-family: gothampromedium;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    display: block;
+  }
+
+  .rating {
+    margin-bottom: 35px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      padding: 8px 15px 6px;
+      background:#e9e8f9;
+      color: #383838;
+      font-size: rem-calc(19);
+      margin-right: 9px;
+      display: block;
+      margin-bottom: 9px;
+    }
+  }
+}

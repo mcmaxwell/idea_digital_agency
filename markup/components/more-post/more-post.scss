@@ -1,0 +1,19 @@
+.more-post {
+  margin: 100px 0 45px;
+
+  h2 {
+    font-size: rem-calc(24);
+    font-family: gothampromedium;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .blog__list {
+    justify-content: space-between;
+  }
+
+  .blog__list-item {
+    width: 32.526%;
+    padding: 0;
+  }
+}

@@ -556,3 +556,31 @@ label.error {
     }
   }
 }
+
+.rating {
+  display: flex;
+  align-items: center;
+
+  &__stars {
+    width: 140px;
+    height: 25px;
+    position: relative;
+    background-image: url(%=static=%general/star.png);
+    background-size: auto 100%;
+    display: block;
+    margin-right: 20px;
+  }
+
+  &__stars-active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(%=static=%general/star-active.png);
+    background-size: auto 100%;
+  }
+}
+
+.table-responsive {
+  overflow: auto;
+}
