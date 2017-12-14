@@ -1658,6 +1658,10 @@ label.error {
   transition: all .3s;
 }
 
+.blog-page.blog-wrapper {
+  background: url(../img/general/bg.svg) calc( 50% - 177px) 55px/357px 570px;
+}
+
 .blog-page .main-container {
   max-width: 1093px;
 }
@@ -1732,74 +1736,6 @@ label.error {
   margin-right: 9px;
   display: block;
   margin-bottom: 9px;
-}
-
-.case-top {
-  position: relative;
-}
-
-@media screen and (min-width: 1025px) {
-  .case-top {
-    height: 100vh;
-    background: url(../img/general/bg.svg) calc( 50% - 175px) 146px/357px 570px;
-    min-height: 768px;
-  }
-}
-
-.case-top h1 {
-  font-size: 1.25rem;
-  text-align: center;
-  position: relative;
-  line-height: 2;
-  margin-bottom: 38px;
-}
-
-@media screen and (min-width: 1025px) {
-  .case-top h1 {
-    font-size: 2.5rem;
-    padding: 0 130px;
-    margin-top: 177px;
-  }
-  .case-top h1::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 120px;
-    height: 1px;
-    background-color: #e8e8e8;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-  }
-}
-
-.case-top-content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 12px;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width: 1025px) {
-  .case-top-content {
-    position: absolute;
-  }
-}
-
-.case-top-img {
-  width: 100%;
 }
 
 .case {
@@ -1900,6 +1836,74 @@ label.error {
 
 .case .main-description h2:nth-child(n + 2) {
   margin-top: 40px;
+}
+
+.case-top {
+  position: relative;
+}
+
+@media screen and (min-width: 1025px) {
+  .case-top {
+    height: 100vh;
+    background: url(../img/general/bg.svg) calc( 50% - 175px) 146px/357px 570px;
+    min-height: 768px;
+  }
+}
+
+.case-top h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+  line-height: 2;
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 1025px) {
+  .case-top h1 {
+    font-size: 2.5rem;
+    padding: 0 130px;
+    margin-top: 177px;
+  }
+  .case-top h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #e8e8e8;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+.case-top-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1025px) {
+  .case-top-content {
+    position: absolute;
+  }
+}
+
+.case-top-img {
+  width: 100%;
 }
 
 .cases-carusel {
@@ -3063,6 +3067,127 @@ section.home .scroll-down:hover::before {
   }
 }
 
+.keep-up {
+  background-color: #f4f2f2;
+}
+
+.keep-up form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 33px 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1025px) {
+  .keep-up form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.keep-up__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.keep-up__text p {
+  margin: 0;
+  min-width: 100%;
+  font-size: 1.1875rem;
+}
+
+.keep-up__text h3 {
+  margin: 0;
+  color: #343434;
+  font-family: gothamproblack;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 20px 0 0;
+}
+
+@media (min-width: 430px) {
+  .keep-up__text h3 {
+    margin: 0 20px;
+  }
+}
+
+.keep-up__text img {
+  margin-bottom: 4px;
+}
+
+.keep-up__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1025px) {
+  .keep-up__inputs {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.keep-up__inputs input:not([type=submit]) {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 1.1875rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .keep-up__inputs input:not([type=submit]) {
+    margin: 0 0 0 23px;
+    width: 183px;
+  }
+}
+
+.keep-up__inputs [type=submit] {
+  background: #343434;
+  color: #fff;
+  padding: 14px 38px;
+  border: 0;
+  margin: 10px 0 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 1025px) {
+  .keep-up__inputs [type=submit] {
+    margin: 0 0 0 23px;
+  }
+}
+
+.keep-up__inputs [type=submit]:hover {
+  background: #fff;
+  color: #343434;
+}
+
 .more-post {
   margin: 100px 0 45px;
 }
@@ -3074,15 +3199,19 @@ section.home .scroll-down:hover::before {
   margin-bottom: 25px;
 }
 
-.more-post .blog__list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1025px) {
+  .more-post .blog__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.more-post .blog__list-item {
-  width: 32.526%;
-  padding: 0;
+@media screen and (min-width: 1025px) {
+  .more-post .blog__list-item {
+    width: 32.526%;
+    padding: 0;
+  }
 }
 
 .navigation {

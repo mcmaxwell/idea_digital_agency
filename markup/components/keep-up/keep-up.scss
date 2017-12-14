@@ -1,0 +1,82 @@
+.keep-up {
+  background-color: #f4f2f2;
+
+  form {
+    display: flex;
+    padding: 33px 30px;
+    flex-direction: column;
+
+    @media #{$laptop} {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    p {
+      margin: 0;
+      min-width: 100%;
+      font-size: rem-calc(19);
+    }
+
+    h3 {
+      margin: 0;
+      color: #343434;
+      font-family: gothamproblack;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0 20px 0 0;
+
+      @media (min-width: 430px) {
+        margin: 0 20px;
+      }
+    }
+
+    img {
+      margin-bottom: 4px;
+    }
+  }
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media #{$laptop} {
+      flex-wrap: nowrap;
+    }
+
+    input:not([type=submit]) {
+      background: none;
+      border: 0;
+      border-bottom: 1px solid rgba(#000, 0.5);
+      color: rgba(#000, 0.5);
+      margin: 10px 0 0;
+      padding: 0;
+      font-size: rem-calc(19);
+      @media #{$laptop} {
+        margin: 0 0 0 23px;
+        width: 183px;
+      }
+    }
+
+    [type=submit] {
+      background: #343434;
+      color: #fff;
+      padding: 14px 38px;
+      border: 0;
+      margin: 10px 0 0;
+      border-radius: 0;
+      transition: all $default-time;
+      @media #{$laptop} {
+        margin: 0 0 0 23px;
+      }
+      &:hover {
+        background: #fff;
+        color: #343434;
+      }
+    }
+  }
+}

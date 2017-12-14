@@ -1,4 +1,8 @@
 .blog-page {
+  &.blog-wrapper {
+    background: url(../img/general/bg.svg) calc( 50% - 177px) 55px/357px 570px;
+  }
+
   .main-container {
     max-width: 1093px;
 
