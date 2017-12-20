@@ -96,9 +96,13 @@
 
 h1 {
   font-family: gothamproblack;
-  font-size: rem-calc(36);
+  font-size: rem-calc(24);
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  @media #{$laptop} {
+    font-size: rem-calc(36);
+  }
 }
 
 h2, h3, h4, h5 ,h6 {
@@ -107,24 +111,43 @@ h2, h3, h4, h5 ,h6 {
 }
 
 h2 {
-  font-size: rem-calc(48);
+  font-size: rem-calc(22);
+  @media #{$laptop} {
+    font-size: rem-calc(48);
+  }
 }
 
 h3 {
-  font-size: rem-calc(40);
+  font-size: rem-calc(20);
+
+  @media #{$laptop} {
+    font-size: rem-calc(40);
+  }
 }
 
 h4 {
-  font-size: rem-calc(36);
+  font-size: rem-calc(20);
+
+  @media #{$laptop} {
+    font-size: rem-calc(36);
+  }
 }
 
 h5 {
-  font-size: rem-calc(30);
+  font-size: rem-calc(20);
+
+  @media #{$laptop} {
+    font-size: rem-calc(30);
+  }
 }
 
 h6 {
-  font-size: rem-calc(24);
-  margin-top: 0;
+  font-size: rem-calc(18);
+
+  @media #{$laptop} {
+    font-size: rem-calc(24);
+    margin-top: 0;
+  }
 }
 
 .home-page {
@@ -333,15 +356,27 @@ select {
 }
 
 .back-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: rem-calc(18);
   color: #000;
+
+  &:hover {
+    svg {
+      fill: $color-hover;
+    }
+    path:first-child {
+      transform: translate(-40px);
+    }
+  }
 
   svg {
     min-width: 28px;
     min-height: 33px;
     margin-right: 20px;
+    fill: #000;
+    overflow: visible;
+    transition: all .1s;
   }
 }
 

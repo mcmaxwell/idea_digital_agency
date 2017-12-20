@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.ideadigital.agency$ [NC]
-RewriteRule ^(.*)$ https://ideadigital.agency/$1 [R=301,L]

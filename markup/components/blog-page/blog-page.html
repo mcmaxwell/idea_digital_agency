@@ -9,6 +9,43 @@
     <img src="%=static=%img/assets/blog-page/blog.jpg" alt="ЗАГОЛОВОК ПОСТА БУДЕТ ЗДЕСЬ ОЧЕНЬ ДЛИННЫЙ В ДВЕ СТРОКИ">
   </div>
   <div class="blog-page-content">
+    <div class="share-page">
+      <div class="share-page__toggle icon icon-share"></div>
+      <ul>
+        <li class="share-page__link share-page__twitter icon icon-facebook">
+          <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet">
+          Tweet</a>
+          <script>window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+
+            return t;
+          }(document, "script", "twitter-wjs"));</script>
+        </li>
+        <li class="share-page__link share-page__facebook">
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=961595533935087';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+        </li>
+      </ul>
+    </div>
     <h2>Первый заголовок</h2>
     <p>MroSupply — компания которая занимается продажей промышленных товаров с 1898 года. Сайту mrosupply.com сейчас уже более 6 лет, на данный момент на нем насчитывается более 200 брендов и 700 000 доступных товаров для покупки. Среди их постоянных клиентов такие бренды как Coca Cola, 7up, United, Whole Foods, Hormel Foods и многие другие.</p>
     <h3>Второй заголовок</h3>

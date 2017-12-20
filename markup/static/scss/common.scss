@@ -44,7 +44,7 @@ img {
 }
 
 * {
-  &:hover *{
+  &:hover {
     transition: all $default-time;
   }
   &:focus {
@@ -111,7 +111,7 @@ section.scrollify {
 }
 
 .blog-wrapper {
-  background: url(%=static=%general/bg.svg) calc( 50% - 177px) 198px/357px 570px;
+  background: url(%=static=%general/bg.svg) calc( 50% - 177px) 201px/357px 570px;
 
   .main-container {
     max-width: 1406px;
@@ -542,12 +542,15 @@ label.error {
     list-style: none;
 
     a {
-      font-size: 36px;
+      font-size: 21px;
       display: inline-block;
-      padding: 10px;
-      min-width: 45px;
+      padding: 8px;
       text-align: center;
       box-sizing: border-box;
+      @media #{$laptop} {
+        font-size: 36px;
+        min-width: 45px;
+      }
       &.active,
       &:hover {
         text-decoration: underline;
@@ -583,4 +586,14 @@ label.error {
 
 .table-responsive {
   overflow: auto;
+}
+
+.sticky {
+  position: fixed;
+  transition: all 0s;
+  z-index: 101;
+}
+.stop {
+  position: absolute;
+  z-index: 101;
 }

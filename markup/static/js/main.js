@@ -175,4 +175,65 @@ $(document).ready(function () {
     }
     return false // вырубaeм стaндaртную oтпрaвку фoрмы
   })
+
+  function updateNavigationPosition () {
+    const $navigation = $('.share-page')
+    const $content = $('.blog-page-content')
+
+    if (window.innerWidth > 1280) {
+      $navigation.css({
+        right: '',
+        position: 'fixed',
+        display: '',
+        opacity: 1,
+        top: '420px',
+      })
+      const contentTopOffset = $content.offset().top - $(window).scrollTop() - 300
+      const contentBottomOffset = $content.offset().top + $content.outerHeight() - ($(window).scrollTop() + $(window).height()) + 390
+
+      if ((contentTopOffset >= 0)) {
+        $navigation.css({
+          position: 'absolute',
+          top: '420px',
+          left: '-70px',
+          right: ''
+
+        })
+      } else if ((contentBottomOffset < -$navigation.outerHeight())) {
+        $navigation.css({
+          position: 'absolute',
+          left: '-70px',
+          right: '',
+          top: $content.outerHeight() + 450
+        })
+      } else {
+        let rightPadding = 0
+        rightPadding += $(window).width() - $content.offset().left
+
+        $navigation.css({
+          position: 'fixed',
+          right: rightPadding + 30,
+          left: '',
+          top: 0
+        })
+      }
+    } else {
+      $navigation.css({
+        display: 'block',
+        position: '',
+        top: '',
+        left: '',
+        right: '',
+      })
+    }
+  }
+
+  updateNavigationPosition()
+
+  $(window).scroll(updateNavigationPosition)
+  $(window).resize(updateNavigationPosition)
+
+  $('.share-page__toggle').click(function () {
+    $('.share-page').toggleClass('active')
+  })
 })
