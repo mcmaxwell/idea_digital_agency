@@ -457,44 +457,52 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon.icon-facebook::before {
-  content: "\ea91";
+.icon-poket:before {
+  content: "";
 }
 
-.icon.icon-twitter::before {
-  content: "\ea96";
+.icon-telegram:before {
+  content: "";
 }
 
-.icon.icon-instagram::before {
-  content: "\ea92";
+.icon-brand:before {
+  content: "";
 }
 
-.icon.icon-vk::before {
-  content: "\ea98";
+.icon-marketing:before {
+  content: "";
 }
 
-.icon.icon-youtube::before {
-  content: "\ea9d";
+.icon-develop:before {
+  content: "";
 }
 
-.icon.icon-brand::before {
-  content: "\e900";
+.icon-web:before {
+  content: "";
 }
 
-.icon.icon-marketing::before {
-  content: "\e901";
+.icon-next:before {
+  content: "";
 }
 
-.icon.icon-develop::before {
-  content: "\e902";
+.icon-facebook:before {
+  content: "";
 }
 
-.icon.icon-web::before {
-  content: "\e903";
+.icon-instagram:before {
+  content: "";
 }
 
-.icon.icon-next::before {
-  content: "\e904";
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-share:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
 }
 
 h1 {
@@ -857,6 +865,11 @@ select {
           align-items: center;
   font-size: 1.125rem;
   color: #000;
+}
+
+.back-link svg path {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .back-link:hover svg {
@@ -1873,19 +1886,49 @@ label.error {
 }
 
 .share-page__twitter::after {
-  content: "\ea96";
+  content: "";
 }
 
 .share-page__twitter iframe {
   opacity: 0;
+  height: 32px !important;
 }
 
 .share-page__facebook .fb-share-button {
   opacity: 0;
 }
 
+.share-page__facebook .fb-share-button * {
+  height: 32px !important;
+}
+
 .share-page__facebook::after {
-  content: "\ea91";
+  content: "";
+}
+
+.share-page__google * {
+  opacity: 0;
+  height: 32px !important;
+}
+
+.share-page__google::after {
+  content: "";
+}
+
+.share-page__telegram {
+  line-height: 30px;
+  height: 30px !important;
+  margin-top: -6px !important;
+}
+
+.share-page__telegram a {
+  opacity: 0;
+  display: block;
+  line-height: 32px;
+}
+
+.share-page__telegram::after {
+  content: "";
 }
 
 .share-page ul {
@@ -1906,8 +1949,10 @@ label.error {
   position: relative;
   padding: 0;
   width: 45px;
+  height: 32px;
   overflow: hidden;
   margin: 0;
+  cursor: pointer;
   width: 100%;
 }
 
@@ -1934,6 +1979,10 @@ label.error {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .share-page ul li::before {

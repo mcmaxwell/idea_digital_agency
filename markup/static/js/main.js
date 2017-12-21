@@ -189,7 +189,7 @@ $(document).ready(function () {
         top: '420px',
       })
       const contentTopOffset = $content.offset().top - $(window).scrollTop() - 300
-      const contentBottomOffset = $content.offset().top + $content.outerHeight() - ($(window).scrollTop() + $(window).height()) + 390
+      const contentBottomOffset = $content.offset().top + $content.outerHeight() - ($(window).scrollTop() + $(window).height()) + $navigation.outerHeight() + 85
 
       if ((contentTopOffset >= 0)) {
         $navigation.css({

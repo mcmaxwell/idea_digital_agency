@@ -61,36 +61,67 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
 
-  &.icon-facebook::before {
-    content: "\ea91";
+
+.icon-poket {
+  &:before {
+    content: $icon-poket;
   }
-  &.icon-twitter::before {
-    content: "\ea96";
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram;
   }
-  &.icon-instagram::before {
-    content: "\ea92";
+}
+.icon-brand {
+  &:before {
+    content: $icon-brand;
   }
-  &.icon-vk::before {
-    content: "\ea98";
+}
+.icon-marketing {
+  &:before {
+    content: $icon-marketing;
   }
-  &.icon-youtube::before {
-    content: "\ea9d";
+}
+.icon-develop {
+  &:before {
+    content: $icon-develop;
   }
-  &.icon-brand::before {
-    content: "\e900";
+}
+.icon-web {
+  &:before {
+    content: $icon-web;
   }
-  &.icon-marketing::before {
-    content: "\e901";
+}
+.icon-next {
+  &:before {
+    content: $icon-next;
   }
-  &.icon-develop::before {
-    content: "\e902";
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
   }
-  &.icon-web::before {
-    content: "\e903";
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
   }
-  &.icon-next::before {
-    content: "\e904";
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-share {
+  &:before {
+    content: $icon-share;
+  }
+}
+.icon-google-plus {
+  &:before {
+    content: $icon-google-plus;
   }
 }
 
@@ -360,6 +391,9 @@ select {
   align-items: center;
   font-size: rem-calc(18);
   color: #000;
+  svg path{
+    transition: all $default-time;
+  }
 
   &:hover {
     svg {
