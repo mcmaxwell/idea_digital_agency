@@ -124,6 +124,7 @@ $(document).ready(function () {
     $('.get-in-touch').toggleClass('active')
     $('.logo').addClass('active')
     $('main').toggleClass('hide')
+    $('form').find('input')[0].focus()
     return false
   })
 
@@ -227,11 +228,13 @@ $(document).ready(function () {
       })
     }
   }
+  if ($('.share-page').length) {
+    updateNavigationPosition()
 
-  updateNavigationPosition()
+    $(window).scroll(updateNavigationPosition)
+    $(window).resize(updateNavigationPosition)
+  }
 
-  $(window).scroll(updateNavigationPosition)
-  $(window).resize(updateNavigationPosition)
 
   $('.share-page__toggle').click(function () {
     $('.share-page').toggleClass('active')
