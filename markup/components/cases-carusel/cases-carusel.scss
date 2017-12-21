@@ -13,8 +13,6 @@
   }
 
   &-list {
-    border-top: 1px solid $color-line;
-    border-bottom: 1px solid $color-line;
     padding: 15px;
     background: #fff;
     max-width: 500px;
@@ -23,6 +21,8 @@
       display: flex;
       max-width: none;
       margin: 0;
+      border-top: 1px solid $color-line;
+      border-bottom: 1px solid $color-line;
     }
 
     .slick-slide {

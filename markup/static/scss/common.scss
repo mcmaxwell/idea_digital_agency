@@ -111,8 +111,9 @@ section.scrollify {
 }
 
 .blog-wrapper {
-  background: url(%=static=%general/bg.svg) calc( 50% - 177px) 201px/357px 570px;
-
+  @media #{$laptop} {
+    background: url(%=static=%general/bg.svg) calc( 50% - 177px) 201px/357px 570px;
+  }
   .main-container {
     max-width: 1406px;
     padding: 0 10px;
@@ -153,7 +154,10 @@ section.scrollify {
   margin: 0 auto;
   box-sizing: border-box;
   flex-direction: column;
+  position: relative;
+
   @media #{$laptop} {
+    justify-content: flex-end;
     flex-direction: row;
   }
 
@@ -168,6 +172,7 @@ section.scrollify {
   .main {
     min-width: 100%;
     @media #{$laptop} {
+      max-width: calc(100% - 430px);
       min-width: calc(100% - 430px);
     }
   }
@@ -201,6 +206,10 @@ section.scrollify {
   background: $color-line;
   position: absolute;
   top: 50%;
+  display: none;
+  @media #{$laptop} {
+    display: block;
+  }
 }
 
 .line-after::after {
@@ -530,9 +539,12 @@ label.error {
 }
 
 .pagination {
-  padding: 55px 0;
-  border-top: 1px solid $color-line;
-  border-bottom: 1px solid $color-line;
+  padding: 40px 0 0;
+  @media #{$laptop} {
+    padding: 55px 0;
+    border-top: 1px solid $color-line;
+    border-bottom: 1px solid $color-line;
+  }
   &-list {
     display: flex;
     margin: 0;
@@ -565,13 +577,24 @@ label.error {
   align-items: center;
 
   &__stars {
-    width: 140px;
-    height: 25px;
+    width: 230px;
+    height: 29px;
     position: relative;
     background-image: url(%=static=%general/star.png);
     background-size: auto 100%;
     display: block;
-    margin-right: 20px;
+    background: url(../img/general/star.png) left center no-repeat, 50px url(../img/general/star.png) no-repeat, 100px url(../img/general/star.png) no-repeat, 150px url(../img/general/star.png) no-repeat, 200px url(../img/general/star.png) no-repeat;
+    background-size: 29px;
+    cursor: pointer;
+
+    @media #{$laptop} {
+      background-image: url(%=static=%general/star.png);
+      background-size: auto 100%;
+      width: 140px;
+      background-repeat: repeat-x;
+      background-size: 29px;
+      margin-right: 20px;
+    }
   }
 
   &__stars-active {
@@ -579,8 +602,15 @@ label.error {
     left: 0;
     top: 0;
     bottom: 0;
-    background-image: url(%=static=%general/star-active.png);
-    background-size: auto 100%;
+    background: url(%=static=%general/star-active.png) left center no-repeat, 50px url(%=static=%general/star-active.png) no-repeat, 100px url(%=static=%general/star-active.png) no-repeat, 150px url(%=static=%general/star-active.png) no-repeat, 200px url(%=static=%general/star-active.png) no-repeat;
+    background-size: 29px;
+
+    @media #{$laptop} {
+      background-image: url(%=static=%general/star-active.png);
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      background-size: 29px;
+    }
   }
 }
 

@@ -1,11 +1,19 @@
 .more-post {
-  margin: 100px 0 45px;
+  margin: 45px 0;
+
+  @media #{$laptop} {
+    margin: 100px 0 45px;
+  }
 
   h2 {
     font-size: rem-calc(24);
     font-family: gothampromedium;
     text-transform: uppercase;
     margin-bottom: 25px;
+    text-align: center;
+    @media #{$laptop} {
+      text-align: left;
+    }
   }
 
   .blog__list {

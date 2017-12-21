@@ -177,9 +177,9 @@ $(document).ready(function () {
     return false // вырубaeм стaндaртную oтпрaвку фoрмы
   })
 
-  function updateNavigationPosition () {
-    const $navigation = $('.share-page')
-    const $content = $('.blog-page-content')
+  function updateNavigationPosition (el, content) {
+    const $navigation = el
+    const $content = content
 
     if (window.innerWidth > 1280) {
       $navigation.css({
@@ -218,6 +218,7 @@ $(document).ready(function () {
           top: 0
         })
       }
+
     } else {
       $navigation.css({
         display: 'block',
@@ -228,11 +229,74 @@ $(document).ready(function () {
       })
     }
   }
-  if ($('.share-page').length) {
-    updateNavigationPosition()
 
-    $(window).scroll(updateNavigationPosition)
-    $(window).resize(updateNavigationPosition)
+  function updateNavigationPositionSidebar () {
+    const $navigation = $('aside.sidebar')
+    const $content = $('.main')
+
+    if (window.innerWidth > 1024) {
+      $navigation.css({
+        right: '',
+        position: 'fixed',
+        display: '',
+        opacity: 1,
+        top: '420px',
+        height: $(window).outerHeight()
+      })
+      const contentTopOffset = $content.offset().top - $(window).scrollTop()
+      const contentBottomOffset = $content.offset().top + $content.outerHeight() - ($(window).scrollTop() + $(window).outerHeight()) - $navigation.outerHeight()
+
+      if ((contentTopOffset >= 0)) {
+        $navigation.css({
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          right: ''
+
+        })
+      } else if ((contentBottomOffset < -$navigation.outerHeight())) {
+        $navigation.css({
+          position: 'absolute',
+          left: '0',
+          right: '',
+          top: $content.outerHeight() - $navigation.outerHeight()
+        })
+      } else {
+        let rightPadding = 0
+        rightPadding += $(window).width() - $content.offset().left + 20
+
+        $navigation.css({
+          position: 'fixed',
+          right: rightPadding,
+          left: '',
+          top: 0
+        })
+      }
+
+    } else {
+      $navigation.css({
+        display: 'block',
+        position: '',
+        top: '',
+        left: '',
+        right: '',
+        height: ''
+      })
+    }
+  }
+
+  if ($('aside.sidebar').length) {
+    updateNavigationPositionSidebar()
+
+    $(window).scroll(updateNavigationPositionSidebar)
+    $(window).resize(updateNavigationPositionSidebar)
+  }
+
+  if ($('.share-page').length) {
+    updateNavigationPosition($('.share-page'), $('.blog-page-content'))
+
+    $(window).scroll(updateNavigationPosition($('.share-page'), $('.blog-page-content')))
+    $(window).resize(updateNavigationPosition($('.share-page'), $('.blog-page-content')))
   }
 
 

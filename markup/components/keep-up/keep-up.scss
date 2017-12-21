@@ -3,10 +3,11 @@
 
   form {
     display: flex;
-    padding: 33px 30px;
+    padding: 33px 10px;
     flex-direction: column;
 
     @media #{$laptop} {
+      padding: 33px 30px;
       flex-direction: row;
     }
   }
@@ -15,28 +16,44 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    @media #{$laptop} {
+      justify-content: flex-start;
+    }
+
     p {
-      margin: 0;
+      margin: 20px 0 0;
       min-width: 100%;
       font-size: rem-calc(19);
+      @media #{$laptop} {
+        margin: 0;
+      }
     }
 
     h3 {
       margin: 0;
       color: #343434;
       font-family: gothamproblack;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 400;
       text-transform: uppercase;
-      margin: 0 20px 0 0;
+      margin: 0 0 0 10px;
 
-      @media (min-width: 430px) {
-        margin: 0 20px;
+      @media #{$laptop} {
+        font-size: 30px;
+        margin: 0 20px 0 0;
+        text-align: left;
       }
     }
 
     img {
-      margin-bottom: 4px;
+      width: 26px;
+
+      @media #{$laptop} {
+        margin-bottom: 4px;
+        width: 35px;
+      }
     }
   }
   &__inputs {
@@ -56,7 +73,9 @@
       margin: 10px 0 0;
       padding: 0;
       font-size: rem-calc(19);
+      text-align: center;
       @media #{$laptop} {
+        text-align: left;
         margin: 0 0 0 23px;
         width: 183px;
       }
@@ -70,8 +89,10 @@
       margin: 10px 0 0;
       border-radius: 0;
       transition: all $default-time;
+      width: 100%;
       @media #{$laptop} {
         margin: 0 0 0 23px;
+        width: auto;
       }
       &:hover {
         background: #fff;

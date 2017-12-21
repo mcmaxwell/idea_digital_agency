@@ -1,12 +1,12 @@
 section.scrollify.contacts {
   box-sizing: border-box;
   min-height: 100vh;
-  background: url(%=static=%general/bg-contacts.png) center center/calc(100% - 46px) 100% no-repeat;
   &-content {
     position: relative;
     height: 100vh;
   }
   @media #{$laptop} {
+    background: url(%=static=%general/bg-contacts.png) center center/calc(100% - 46px) 100% no-repeat;
     border: 15px solid #fff;
     box-shadow: inset 0 0 0 2px  $color-line;
   }
