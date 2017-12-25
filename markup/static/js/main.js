@@ -5,8 +5,23 @@ $(document).ready(function () {
   const caseCarusel = $('.cases-carusel-list-carusel')
   const settingsCarusel = {
     arrows: false,
-    slidesToShow: 3
+    slidesToShow: 3,
+    responsive: [
+     {
+       breakpoint: 1024,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         infinite: true,
+         centerMode: true,
+         centerPadding: '30px',
+         dots: true,
+         focusOnSelect: true
+       }
+     }
+   ]
   }
+  caseCarusel.slick(settingsCarusel)
 
   if ($(window).width() > 1025) {
 
@@ -28,7 +43,6 @@ $(document).ready(function () {
       }
     })
 
-    caseCarusel.slick(settingsCarusel)
   } else {
     setTimeout(function () {
       $('.cases-carusel-item.next-slide').height($('.cases-carusel-list-carusel .cases-carusel-item').height())
@@ -67,11 +81,11 @@ $(document).ready(function () {
 
   $(window).on('resize', function () {
     if ($(window).width() < 1025) {
-      $('.cases-carusel-item.next-slide').height($('.cases-carusel-list-carusel .cases-carusel-item').height())
-
-      if (caseCarusel.hasClass('slick-initialized')) {
-        caseCarusel.slick('unslick')
-      }
+      // $('.cases-carusel-item.next-slide').height($('.cases-carusel-list-carusel .cases-carusel-item').height())
+      //
+      // if (caseCarusel.hasClass('slick-initialized')) {
+      //   caseCarusel.slick('unslick')
+      // }
       $('.scrollify').css('height', 'auto')
 
       if ($('body').hasClass('scrollify-body')) {
@@ -87,7 +101,7 @@ $(document).ready(function () {
         return caseCarusel.slick(settingsCarusel)
       }
 
-      $('.cases-carusel-item.next-slide').height('auto')
+    // $('.cases-carusel-item.next-slide').height('auto')
 
       if (!$('body').hasClass('scrollify-body')) {
         $.scrollify({
@@ -221,12 +235,37 @@ $(document).ready(function () {
 
     } else {
       $navigation.css({
-        display: 'block',
-        position: '',
-        top: '',
-        left: '',
         right: '',
+        position: 'fixed',
+        display: '',
+        opacity: 1,
+        top: '',
       })
+      const contentTopOffset = $content.offset().top - $(window).scrollTop()
+      const contentBottomOffset = 0
+
+      if ((contentTopOffset >= 0)) {
+        $navigation.css({
+          position: 'absolute',
+          top: '10px',
+          left: '',
+          right: '10px'
+        })
+      } else if ((contentBottomOffset < -$navigation.outerHeight())) {
+        $navigation.css({
+          position: 'absolute',
+          left: '',
+          right: '10px',
+          top: $content.outerHeight() + 450
+        })
+      } else {
+        $navigation.css({
+          position: 'fixed',
+          right: '10px',
+          left: '',
+          top: '10px'
+        })
+      }
     }
   }
 
@@ -295,8 +334,8 @@ $(document).ready(function () {
   if ($('.share-page').length) {
     updateNavigationPosition()
 
-    $(window).scroll(updateNavigationPosition())
-    $(window).resize(updateNavigationPosition())
+    $(window).scroll(updateNavigationPosition)
+    $(window).resize(updateNavigationPosition)
   }
 
 

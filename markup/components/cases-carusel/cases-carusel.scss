@@ -15,8 +15,9 @@
   &-list {
     padding: 15px;
     background: #fff;
-    max-width: 500px;
+    max-width: 100%;
     margin: auto;
+    box-sizing: border-box;
     @media #{$laptop} {
       display: flex;
       max-width: none;
