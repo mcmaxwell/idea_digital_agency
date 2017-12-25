@@ -1,7 +1,21 @@
 .blog-page {
   &.blog-wrapper {
     @media #{$laptop} {
-      background: url(../img/general/bg.svg) calc( 50% - 177px) 185px/357px 570px;
+      background: none;
+    }
+  }
+
+  &::after {
+    @media #{$laptop} {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: url(%=static=%general/bg.svg) calc( 50% - -61px) 115px/277px 444px;
+      height: 825px;
+      border-bottom: 1px solid #e8e8e8;
+      z-index: -1;
     }
   }
 
@@ -19,7 +33,6 @@
 }
 
 .blog-page-content {
-  background-color: #fff;
   position: relative;
 
   @media screen and (min-width: 1280px) {
