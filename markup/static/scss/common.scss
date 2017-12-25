@@ -111,8 +111,10 @@ section.scrollify {
 }
 
 .blog-wrapper {
+  overflow-x: hidden;
+
   @media #{$laptop} {
-    background: url(%=static=%general/bg.svg) calc( 50% - 177px) 201px/357px 570px;
+    background: url(%=static=%general/line-blog.png) 108px;
   }
   .main-container {
     max-width: 1406px;

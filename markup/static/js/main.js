@@ -177,9 +177,9 @@ $(document).ready(function () {
     return false // вырубaeм стaндaртную oтпрaвку фoрмы
   })
 
-  function updateNavigationPosition (el, content) {
-    const $navigation = el
-    const $content = content
+  function updateNavigationPosition () {
+    const $navigation = $('.share-page')
+    const $content = $('.blog-page-content')
 
     if (window.innerWidth > 1280) {
       $navigation.css({
@@ -293,10 +293,10 @@ $(document).ready(function () {
   }
 
   if ($('.share-page').length) {
-    updateNavigationPosition($('.share-page'), $('.blog-page-content'))
+    updateNavigationPosition()
 
-    $(window).scroll(updateNavigationPosition($('.share-page'), $('.blog-page-content')))
-    $(window).resize(updateNavigationPosition($('.share-page'), $('.blog-page-content')))
+    $(window).scroll(updateNavigationPosition())
+    $(window).resize(updateNavigationPosition())
   }
 
 
