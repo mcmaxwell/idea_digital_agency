@@ -5,6 +5,13 @@
     }
   }
 
+  .header {
+    @media #{$laptop} {
+      border-bottom: 1px solid #e8e8e8;
+      margin-bottom: 3px;
+    }
+  }
+
   &::after {
     @media #{$laptop} {
       content: "";
@@ -27,7 +34,10 @@
 
 .blog-page-top {
   text-align: center;
-  background-color: #fff;
+
+  h1 {
+    background-color: #fff;
+  }
 
   @media screen and (min-width: 1280px) {
     text-align: left;
@@ -43,10 +53,6 @@
 
   &>h2:first-child {
     padding-right: 50px;
-  }
-
-  h1 {
-    background-color: #fff;
   }
 
   a {
@@ -85,6 +91,7 @@
   color: #c7c7c7;
   font-size: rem-calc(14);
   margin-bottom: 14px;
+  background-color: #fff;
   @media screen and (min-width: 1280px) {
     font-size: rem-calc(18);
     margin-bottom: 24px;
