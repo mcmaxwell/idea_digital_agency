@@ -1675,6 +1675,18 @@ label.error {
   top: auto;
 }
 
+.blog-list .footer {
+  background-color: #fff;
+}
+
+.blog-list .pagination {
+  background-color: #fff;
+}
+
+.blog-list .blog-wrapper {
+  background: url(../img/general/line-blog.png) 337px;
+}
+
 .blog {
   margin-top: 60px;
   text-align: center;
@@ -1709,9 +1721,20 @@ label.error {
 }
 
 .blog__menu-item {
-  background-color: #fff;
   position: relative;
   z-index: 100;
+}
+
+.blog__menu-item:first-child, .blog__menu-item:last-child {
+  background-color: #fff;
+}
+
+.blog__menu-item:first-child {
+  padding-left: 30px;
+}
+
+.blog__menu-item:last-child {
+  padding-right: 30px;
 }
 
 .blog__menu a {
@@ -1808,7 +1831,7 @@ label.error {
 
 @media screen and (min-width: 1025px) {
   .blog-page.blog-wrapper {
-    background: none;
+    background: url(../img/general/line-blog.png) 0 115px;
   }
 }
 
@@ -1833,6 +1856,7 @@ label.error {
 
 .blog-page-top {
   text-align: center;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1853,6 +1877,10 @@ label.error {
 
 .blog-page-content > h2:first-child {
   padding-right: 50px;
+}
+
+.blog-page-content h1 {
+  background-color: #fff;
 }
 
 .blog-page-content a {
