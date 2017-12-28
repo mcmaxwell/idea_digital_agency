@@ -1,7 +1,7 @@
 .blog-page {
   &.blog-wrapper {
     @media #{$laptop} {
-      background: url(../img/general/line-blog.png) 0 115px;
+      background: none;
     }
   }
 
@@ -12,7 +12,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: url(%=static=%general/bg.svg) calc( 50% - -61px) 115px/277px 444px;
+      background: url(../img/general/line-blog.png) 0 115px;
       height: 825px;
       border-bottom: 1px solid #e8e8e8;
       z-index: -1;
