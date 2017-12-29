@@ -1,0 +1,58 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load applicationcontent_tags %}
+{% load feincms_page_tags %}
+{% feincms_nav feincms_page as menu_pages %}
+
+
+
+    <header class="header">
+        <div class="top-nav">
+            <a href="/" class="logo">
+                <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
+            </a>
+            <div class="top-action">
+                <div class="top-lang">
+                    <a href="/" class="{% if feincms_page.language == 'uk' %}active{% endif %}">ua</a>
+                    <a href="/ru" class="{% if feincms_page.language == 'ru' %}active{% endif %}">ru</a>
+                    <a href="/us" class="{% if feincms_page.language == 'en' %}active{% endif %}">us</a>
+                </div>
+                <nav class="main-menu">
+                    <ul class="menu">
+                        <li>
+                            <a class=" active main-menu-link" href="home" data-section-link="home"><span>{% trans "Головна" %}</span></a>
+                        </li>
+                        <li>
+                            <a class="  main-menu-link" href="about" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
+                        </li>
+                        <li>
+                            <a class="  main-menu-link" href="services" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
+                        </li>
+                        <li>
+                            <a class="  main-menu-link" href="cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
+                        </li>
+                        <li>
+                            <a class="  main-menu-link" href="contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
+                        </li>
+                        <li>
+                            <a class="link-page  main-menu-link" href="{% app_reverse "blog_list" "blog.urls" %}"><span>{% trans "Блог" %}</span></a>
+                        </li>
+                    </ul>
+                    {% for info in info %}
+                    <ul class="social-list">
+                        <li>
+                            <a href="{{info.twitter_link}}" target="_blank" class="icon icon-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="{{info.facebook_link}}" target="_blank" class="icon icon-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="{{info.insta_link}}" target="_blank" class="icon icon-instagram"></a>
+                        </li>
+                    </ul>
+                    {% endfor %}
+                </nav>
+                <a href="#" class="toggle-menu"><span></span><span></span><span></span></a>
+            </div>
+        </div>
+    </header>

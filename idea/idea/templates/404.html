@@ -1,0 +1,40 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load feincms_tags %}
+{% load feincms_page_tags %}
+
+
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+  {% include "includes/head.html" %}
+
+  <body class="page">
+
+    <div class="page-error">
+
+        <div class="container">
+            <div class="text-center">
+                <div class="page-error_title">
+                    404
+                </div>
+                <div class="h3">
+                    Страница не найдена
+                </div>
+                <p>
+                    Запрошенный вами документ или страница на нашем сайте не найдены.
+                    <br>Пожалуйста, воспользуйтесь поиском вверху страницы или <a href="/"><strong>вернитесь назад.</strong></a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+
+    <script src="{% static "js/main.min.js" %}"></script>
+    <script src="{% static "js/separate-js/custom.js" %}"></script>
+
+
+  </body>
+
+</html>

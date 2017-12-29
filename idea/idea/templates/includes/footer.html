@@ -1,0 +1,22 @@
+{% load staticfiles %}
+{% load feincms_page_tags %}
+{% feincms_nav feincms_page as menu_pages %}
+
+
+<footer>
+        {% for info in info %}
+        <p>© 2017 Idea Digital Agency |{{info.adress_footer}} <a href="tel:{{info.phone_footer}}">{{info.phone_footer}}</a>  <a href="mailto:{{info.email_footer}}">{{info.email_footer}}</a>
+        </p>
+        <ul class="social-list">
+            <li>
+                <a href="{{info.twitter_link}}" target="_blank" class="icon icon-twitter"></a>
+            </li>
+            <li>
+                <a href="{{info.facebook_link}}" target="_blank" class="icon icon-facebook"></a>
+            </li>
+            <li>
+                <a href="{{info.insta_link}}" target="_blank" class="icon icon-instagram"></a>
+            </li>
+        </ul>
+        {% endfor %}
+    </footer>

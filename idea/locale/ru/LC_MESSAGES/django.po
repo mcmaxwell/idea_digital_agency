@@ -1,0 +1,378 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-29 13:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: blog/admin.py:27
+msgid "Tag"
+msgstr ""
+
+#: blog/admin.py:44 blog/models.py:86 blog/models.py:87
+msgid "Blog"
+msgstr ""
+
+#: blog/models.py:17
+msgid "tag"
+msgstr ""
+
+#: blog/models.py:38 cases/models.py:29 cases/models.py:110
+msgid "title"
+msgstr ""
+
+#: blog/models.py:44
+msgid "author"
+msgstr ""
+
+#: blog/models.py:49 cases/models.py:54
+msgid "text"
+msgstr ""
+
+#: blog/models.py:58
+msgid "date"
+msgstr ""
+
+#: blog/templates/blog/blog_detail.html:23
+msgid "Назад в блог"
+msgstr "Назад в блог"
+
+#: blog/templates/blog/blog_detail.html:26
+msgid "Автор:"
+msgstr "Автор:"
+
+#: blog/templates/blog/blog_detail.html:96
+msgid "вам также будет интересно"
+msgstr "вам также будет интересно"
+
+#: cases/admin.py:27 cases/models.py:120 cases/models.py:121
+msgid "CaseService"
+msgstr ""
+
+#: cases/models.py:23
+msgid "activity_title"
+msgstr ""
+
+#: cases/models.py:35
+msgid "client"
+msgstr ""
+
+#: cases/models.py:40
+msgid "project"
+msgstr ""
+
+#: cases/models.py:47
+msgid "case_site"
+msgstr ""
+
+#: cases/models.py:60
+msgid "pictures_editor"
+msgstr ""
+
+#: cases/models.py:65 info/models.py:19
+msgid "facebook_link"
+msgstr ""
+
+#: cases/models.py:66 info/models.py:20
+msgid "insta_link"
+msgstr ""
+
+#: cases/models.py:67 info/models.py:21
+msgid "twitter_link"
+msgstr ""
+
+#: cases/models.py:96 cases/models.py:97
+msgid "Case"
+msgstr ""
+
+#: content/content_types.py:36
+msgid "text_about_us"
+msgstr ""
+
+#: content/content_types.py:52 content/content_types.py:53
+msgid "IndexPageInfoCT"
+msgstr ""
+
+#: content/models.py:20
+msgid "Page"
+msgstr ""
+
+#: content/models.py:23
+msgid "Main content area"
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:17
+#: idea/templates/includes/header.html:23
+msgid "Головна"
+msgstr "Главная"
+
+#: content/templates/content/content_types/index_page_content.html:20
+#: idea/templates/includes/header.html:26
+msgid "Про нас"
+msgstr "Про нас"
+
+#: content/templates/content/content_types/index_page_content.html:23
+#: idea/templates/includes/header.html:29
+msgid "Послуги"
+msgstr "Услуги"
+
+#: content/templates/content/content_types/index_page_content.html:26
+#: idea/templates/includes/header.html:32
+msgid "Кейси"
+msgstr "Кейсы"
+
+#: content/templates/content/content_types/index_page_content.html:29
+#: idea/templates/includes/header.html:35
+msgid "Контакти"
+msgstr "Контакты"
+
+#: content/templates/content/content_types/index_page_content.html:40
+msgid "Тільки досконалі"
+msgstr "Только совершенные"
+
+#: content/templates/content/content_types/index_page_content.html:40
+msgid "інтернет стратегії"
+msgstr "интернет стратегии"
+
+#: content/templates/content/content_types/index_page_content.html:41
+msgid "креатив та коммунікації в стилі Rock n&#x27;Roll"
+msgstr "креатив и коммуникации в стиле Rock n Roll"
+
+#: content/templates/content/content_types/index_page_content.html:58
+msgid "Далі"
+msgstr "Далее"
+
+#: content/templates/content/content_types/index_page_content.html:63
+msgid "Про нас."
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:77
+msgid "Дизайн"
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:79
+msgid "Графічний дизайн"
+msgstr "Графический дизайн"
+
+#: content/templates/content/content_types/index_page_content.html:80
+msgid "Адаптивний дизайн сайтів"
+msgstr "Адаптивный дизайн сайтов"
+
+#: content/templates/content/content_types/index_page_content.html:81
+msgid "Фото та Відео"
+msgstr "Фото и Видео"
+
+#: content/templates/content/content_types/index_page_content.html:82
+msgid "Айдентіка"
+msgstr "Айдентика"
+
+#: content/templates/content/content_types/index_page_content.html:83
+msgid "Анімаційний дизайн"
+msgstr "Анимационный дизайн"
+
+#: content/templates/content/content_types/index_page_content.html:84
+msgid "Прототипування"
+msgstr "Прототипирование"
+
+#: content/templates/content/content_types/index_page_content.html:94
+msgid "Веб-розробка"
+msgstr "Веб-разработка"
+
+#: content/templates/content/content_types/index_page_content.html:96
+msgid "Розробка веб-сайтів"
+msgstr "Разработка веб-сайтов"
+
+#: content/templates/content/content_types/index_page_content.html:97
+msgid "Ecommerce рішення"
+msgstr "Ecommerce решения"
+
+#: content/templates/content/content_types/index_page_content.html:98
+msgid "Розробка Landing pages"
+msgstr "Разработка Landing pages"
+
+#: content/templates/content/content_types/index_page_content.html:99
+msgid "Розробки на CMS платформах"
+msgstr "Разработка на CMS платформах"
+
+#: content/templates/content/content_types/index_page_content.html:100
+msgid "Індивідуальні рішення"
+msgstr "Индивидуальные решения"
+
+#: content/templates/content/content_types/index_page_content.html:110
+msgid "Діджитал маркетинг"
+msgstr "Диджитал маркетинг"
+
+#: content/templates/content/content_types/index_page_content.html:112
+msgid "SEO просування"
+msgstr "СЕО продвижение"
+
+#: content/templates/content/content_types/index_page_content.html:113
+msgid "SMM"
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:114
+msgid "Контент маркетинг"
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:115
+msgid "Email маркетинг"
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:116
+msgid "Крауд маркетинг"
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:117
+msgid "Аудит веб-сайтів"
+msgstr "Аудит веб-сайтов"
+
+#: content/templates/content/content_types/index_page_content.html:118
+msgid "Внутрішня оптимізація"
+msgstr "Внутреняя оптимизация"
+
+#: content/templates/content/content_types/index_page_content.html:119
+msgid "PPC"
+msgstr ""
+
+#: content/templates/content/content_types/index_page_content.html:129
+msgid "Брендінг Стратегії &amp; Комунікації"
+msgstr "Брендин Стратегии и Коммуникации"
+
+#: content/templates/content/content_types/index_page_content.html:131
+msgid "Бренд стратегії"
+msgstr "Бренд стратегии"
+
+#: content/templates/content/content_types/index_page_content.html:132
+msgid "Маркетингові кампанії"
+msgstr "Маркетинговык кампании"
+
+#: content/templates/content/content_types/index_page_content.html:133
+msgid "Брендінг та візуалізація"
+msgstr "Брендинг и визуализация"
+
+#: content/templates/content/content_types/index_page_content.html:134
+msgid "Керування репутацією"
+msgstr "Управление репутацией"
+
+#: content/templates/content/content_types/index_page_content.html:135
+msgid "Неймінг"
+msgstr "Нейминг"
+
+#: content/templates/content/content_types/index_page_content.html:136
+msgid "Брендбук &amp; гайдлайн"
+msgstr "Брендбук &amp; гайдлайн "
+
+#: content/templates/content/content_types/index_page_content.html:157
+msgid "переглянути кейс"
+msgstr "посмотреть кейс"
+
+#: content/templates/content/content_types/index_page_content.html:165
+msgid "Більше проектів"
+msgstr "Больше проектов"
+
+#: content/templates/content/content_types/index_page_content.html:175
+msgid "Контакти."
+msgstr "Контакты."
+
+#: content/templates/content/content_types/index_page_content.html:177
+msgid "Що далі?"
+msgstr "Что дальше?"
+
+#: content/templates/content/content_types/index_page_content.html:178
+msgid "Ми готові!"
+msgstr "Мы готовы"
+
+#: content/templates/content/content_types/index_page_content.html:178
+msgid "зв&#x27;язатись"
+msgstr "св&#x27;язаться"
+
+#: content/templates/content/content_types/index_page_content.html:206
+msgid "Україна, Дніпро,"
+msgstr "Украина, Днепр"
+
+#: content/templates/content/content_types/index_page_content.html:207
+msgid "І.Акінфієва 18/308"
+msgstr "Акинфеева 18/308"
+
+#: content/templates/content/content_types/index_page_content.html:216
+msgid "Ім&#x27;я"
+msgstr "Имя"
+
+#: content/templates/content/content_types/index_page_content.html:219
+msgid "Прізвище"
+msgstr "Фамилия"
+
+#: content/templates/content/content_types/index_page_content.html:230
+msgid "оберіть ваш бюджет"
+msgstr "выберите ваш бюджет"
+
+#: content/templates/content/content_types/index_page_content.html:238
+msgid "компанія"
+msgstr "кампания"
+
+#: content/templates/content/content_types/index_page_content.html:241
+msgid "деталі"
+msgstr "детали"
+
+#: content/templates/content/content_types/index_page_content.html:244
+msgid "відправити"
+msgstr "отправить"
+
+#: content/templates/content/content_types/index_page_content.html:248
+msgid "Дякуємо що звернулися"
+msgstr "Спасибо что обратились"
+
+#: content/templates/content/content_types/index_page_content.html:249
+msgid "Наш менеджер зв'яжеться з Вами"
+msgstr "Наш менеджер свяжется с Вами"
+
+#: content/templates/content/content_types/index_page_content.html:250
+msgid "протягом години!"
+msgstr "в течение часа!"
+
+#: idea/settings.py:132
+msgid "English"
+msgstr ""
+
+#: idea/settings.py:133
+msgid "Russian"
+msgstr ""
+
+#: idea/settings.py:134
+msgid "Ukrainian"
+msgstr ""
+
+#: idea/templates/includes/header.html:38
+msgid "Блог"
+msgstr ""
+
+#: info/models.py:16
+msgid "adress"
+msgstr ""
+
+#: info/models.py:17
+msgid "email"
+msgstr ""
+
+#: info/models.py:18
+msgid "phone_footer"
+msgstr ""
+
+#: info/models.py:27 info/models.py:28
+msgid "Info"
+msgstr ""

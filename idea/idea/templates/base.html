@@ -1,0 +1,33 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load feincms_tags %}
+{% load feincms_page_tags %}
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+  {% include "includes/head.html" %}
+
+
+    {% block content %}
+    {% endblock %}
+
+    {% comment %}
+    <script src="{% static "js/separate-js/svg4everybody.js" %}"></script>
+    <script>svg4everybody();</script>
+    {% endcomment %}
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+
+
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="{% static "js/vendor.min.js" %}"></script>
+    <script src="{% static "js/main.min.js" %}"></script>
+
+  </body>
+    
+
+</html>

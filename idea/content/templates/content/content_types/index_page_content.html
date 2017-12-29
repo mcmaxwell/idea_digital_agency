@@ -1,0 +1,256 @@
+{% load i18n %}
+{% load l10n %}
+{% load staticfiles %}
+
+
+<body class="page home-page">
+        <script>
+            fbq('track', 'Lead', {
+            value: 10.00,
+            currency: 'USD',
+            });
+        </script>
+
+
+        <ul class="navigation">
+            <li>
+                <a class="active" href="#home" data-section-link="home"><span>{% trans "Головна" %}</span></a>
+            </li>
+            <li>
+                <a class="" href="#about" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
+            </li>
+            <li>
+                <a class="" href="#services" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
+            </li>
+            <li>
+                <a class="" href="#cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
+            </li>
+            <li>
+                <a class="" href="#contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
+            </li>
+        </ul>
+        <main class="scrollify-page">
+            <section class="home scrollify" data-section-name="home" id="home">
+                
+                {% include "includes/header.html" %}
+                
+                <img src="{% static "img/general/logo-big.svg" %}" alt="Idea Digital Agency" class="home-bg-logo">
+
+                <div class="home-content">
+                    <h1>{% trans "Тільки досконалі" %}<br>{% trans "інтернет стратегії" %}</h1>
+                    <p class="line-after">{% trans "креатив та коммунікації в стилі Rock n&#x27;Roll" %}</p>
+                </div>
+                <div class="home-social line-after line-before">
+                    {% for info in info %}
+                    <ul class="social-list">
+                        <li>
+                            <a href="{{info.twitter_link}}" target="_blank" class="icon icon-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="{{info.facebook_link}}" target="_blank" class="icon icon-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="{{info.insta_link}}" target="_blank" class="icon icon-instagram"></a>
+                        </li>
+                    </ul>
+                   {% endfor %}
+                </div>
+                <a href="#about" class="scroll-down arr-bottom arr" data-section-link="about">{% trans "Далі" %}</a>
+            </section>
+
+            <section class="about scrollify" data-section-name="about" id="about">
+                <div class="about-content block-center-content">
+                    <h2 class="big-shadow line-before" data-title="Про нас.">{% trans "Про нас." %}</h2>
+                    {{ctx.text_about_us|safe}}
+                </div>
+            </section>
+
+            <section class="services scrollify" data-section-name="services" id="services">
+                <div class="services-content">
+                    <div class="services-list">
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>01</span>
+                            </div>
+                            <div class="services-item-content">
+                                <div class="icon icon-web"></div>
+                                <h3>{% trans "Дизайн" %}</h3>
+                                <ul>
+                                    <li>{% trans "Графічний дизайн" %}</li>
+                                    <li>{% trans "Адаптивний дизайн сайтів" %}</li>
+                                    <li>{% trans "Фото та Відео" %}</li>
+                                    <li>{% trans "Айдентіка" %}</li>
+                                    <li>{% trans "Анімаційний дизайн" %}</li>
+                                    <li>{% trans "Прототипування" %}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>02</span>
+                            </div>
+                            <div class="services-item-content">
+                                <div class="icon icon-develop"></div>
+                                <h3>{% trans "Веб-розробка" %}</h3>
+                                <ul>
+                                    <li>{% trans "Розробка веб-сайтів" %}</li>
+                                    <li>{% trans "Ecommerce рішення" %}</li>
+                                    <li>{% trans "Розробка Landing pages" %}</li>
+                                    <li>{% trans "Розробки на CMS платформах" %}</li>
+                                    <li>{% trans "Індивідуальні рішення" %}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>03</span>
+                            </div>
+                            <div class="services-item-content">
+                                <div class="icon icon-marketing"></div>
+                                <h3>{% trans "Діджитал маркетинг" %}</h3>
+                                <ul>
+                                    <li>{% trans "SEO просування" %}</li>
+                                    <li>{% trans "SMM" %}</li>
+                                    <li>{% trans "Контент маркетинг" %}</li>
+                                    <li>{% trans "Email маркетинг" %}</li>
+                                    <li>{% trans "Крауд маркетинг" %}</li>
+                                    <li>{% trans "Аудит веб-сайтів" %}</li>
+                                    <li>{% trans "Внутрішня оптимізація" %}</li>
+                                    <li>{% trans "PPC" %}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>04</span>
+                            </div>
+                            <div class="services-item-content">
+                                <div class="icon icon-brand"></div>
+                                <h3>{% trans "Брендінг Стратегії &amp; Комунікації" %}</h3>
+                                <ul>
+                                    <li>{% trans "Бренд стратегії" %}</li>
+                                    <li>{% trans "Маркетингові кампанії" %}</li>
+                                    <li>{% trans "Брендінг та візуалізація" %}</li>
+                                    <li>{% trans "Керування репутацією" %}</li>
+                                    <li>{% trans "Неймінг" %}</li>
+                                    <li>{% trans "Брендбук &amp; гайдлайн" %}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cases-carusel scrollify" data-section-name="cases-carusel" id="cases-carusel">
+                <div class="cases-carusel-content block-center-content">
+                    <h2 class="big-shadow line-before" data-title="Case.">Case.</h2>
+                </div>
+                <div class="cases-carusel">
+                        
+                <div class="cases-carusel-list">
+                    <div class="cases-carusel-list-carusel">
+                        {% for case in cases %}
+                        <a class="cases-carusel-item" href="{{case.get_absolute_url}}">
+                            <img src="{{case.get_image_preview}}" alt="Cradle of Links">
+                            <span class="cases-carusel-item-info">
+                        <h4>{{case.title}}</h4>
+                        <span class="arr arr-right">{% trans "переглянути кейс" %}</span>
+                            </span>
+                        </a>
+                       {% endfor %}
+                    </div>
+                    <a class="cases-carusel-item next-slide" href="#">
+                        <span class="cases-carusel-item-info">
+                    <i class="icon icon-next"></i>
+                    <span>{% trans "Більше проектів" %}</span>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            </section>
+
+            <section class="contacts scrollify" data-section-name="contacts" id="contacts">
+                <div class="contacts-content block-center-content">
+                    <h2 class="big-shadow line-before" data-title="Контакти.">{% trans "Контакти." %}</h2>
+                    <div class="contacts-form">
+                        <span>{% trans "Що далі?" %}</span>
+                        <p><span>{% trans "Ми готові!" %}</span>  <a href="#" class="toggle-form arr arr-right">{% trans "зв&#x27;язатись" %}</a>
+                        </p>
+                    </div>
+                </div>
+                <footer>
+                        {% for info in info %}
+                        <p>© 2017 Idea Digital Agency |{{info.adress_footer}} <a href="tel:{{info.phone_footer}}">{{info.phone_footer}}</a>  <a href="mailto:{{info.email_footer}}">{{info.email_footer}}</a>
+                        </p>
+                        <ul class="social-list">
+                            <li>
+                                <a href="{{info.twitter_link}}" target="_blank" class="icon icon-twitter"></a>
+                            </li>
+                            <li>
+                                <a href="{{info.facebook_link}}" target="_blank" class="icon icon-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="{{info.insta_link}}" target="_blank" class="icon icon-instagram"></a>
+                            </li>
+                        </ul>
+                        {% endfor %}
+                    </footer>
+                <div class="get-in-touch">
+                        <div class="get-in-touch-content">
+                            <a href="" class="logo">
+                                <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
+                            </a>
+                            <span class="close">×</span>
+                            <div class="get-in-touch-address line-load">
+                                <h4>{% trans "Україна, Дніпро," %}</h4>
+                                <p>{% trans "І.Акінфієва 18/308" %}</p>
+                                <p><a href="tel:+380985606565">+380985606565</a>
+                                </p>
+                                <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a>
+                                </p>
+                            </div>
+                            <div class="get-in-touch-form">
+                                <form id="get-in-touch-form" class="ajaxform">
+                                    <div class="block-field">
+                                        <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="text" name="second" placeholder="{% trans "Прізвище" %}" required autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="email" name="email" placeholder="e-mail" required autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="tel" name="phone" placeholder="телефон (необов&#x27;язково)" autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <label for="budget" class="label-select">
+                                            <select name="budget" id="budget" required>
+                                                <option value="" disabled selected>{% trans "оберіть ваш бюджет" %}</option>
+                                                <option value="500$-1000$500$-1000$">500$-1000$</option>
+                                                <option value="1000$-3000$1000$-3000$">1000$-3000$</option>
+                                                <option value="3000$ +3000$ +">3000$ +</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="text" name="company" placeholder="{% trans "компанія" %}" autocomplete="off">
+                                    </div>
+                                    <div class="block-field block-field-textarea">
+                                        <textarea name="message" placeholder="{% trans "деталі" %}" required></textarea>
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="submit" value="{% trans "відправити" %}" class="btn">
+                                    </div>
+                                </form>
+                                <div class="get-in-touch-address thanks-massege hidden">
+                                    <h4>{% trans "Дякуємо що звернулися" %}</h4>
+                                    <p>{% trans "Наш менеджер зв'яжеться з Вами" %}
+                                        <br>{% trans "протягом години!" %}</p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
