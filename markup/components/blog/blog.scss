@@ -1,3 +1,17 @@
+.blog-list {
+  .footer {
+    background-color: #fff;
+  }
+
+  .pagination {
+    background-color: #fff;
+  }
+
+  &.blog-wrapper {
+    background: url(../img/general/line-blog.png) 337px;
+  }
+}
+
 .blog {
   margin-top: 60px;
   text-align: center;
@@ -23,9 +37,21 @@
     }
 
     &-item {
-      background-color: #fff;
       position: relative;
       z-index: 100;
+
+      &:first-child,
+      &:last-child {
+        background-color: #fff;
+      }
+
+      &:first-child {
+        padding-left: 30px;
+      }
+
+      &:last-child {
+        padding-right: 30px;
+      }
     }
     a {
       font-size: 12px;
