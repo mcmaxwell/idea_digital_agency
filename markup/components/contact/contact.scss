@@ -93,7 +93,7 @@ section.scrollify.contacts {
           right: -23px;
           animation: leftToRight2 1.5s ease infinite;
           @keyframes leftToRight2 {
-            0% { right: 30px; }
+            0% { right: 0; }
             100%{ right: -29px; }
           }
         }

@@ -1,0 +1,124 @@
+.page-not-found {
+  footer p {
+    display: none;
+  }
+}
+.page-not-found main {
+  position: relative;
+  height: calc(100% - 100px);
+  overflow: hidden;
+
+  @media #{$laptop} {
+    background: url(%=static=%general/bg.svg) -21px 190px/354px 570px;
+  }
+  @media #{$desktop} {
+    background: url(%=static=%general/bg.svg) 0 190px/480px 769px;
+  }
+}
+
+.page-404 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+//  max-width: 1100px;
+  @media #{$laptop} {
+    justify-content: flex-end;
+    text-align: left;
+  }
+}
+
+.page-404__lighthouse {
+  position: absolute;
+  left: -90px;
+  height: 496px;
+  top: 0;
+  max-width: none;
+  z-index: -1;
+
+  @media #{$laptop} {
+    left: 14%;
+    bottom: -30px;
+    top: auto;
+  }
+}
+
+.page-404__content {
+  margin-top: 75px;
+  width: 66%;
+
+  @media #{$laptop} {
+    width: 44%;
+    position: relative;
+    padding-right: 50px;
+  }
+
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 455px;
+    right: 0;
+    top: -47px;
+    display: none;
+    @media #{$laptop} {
+      display: block;
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 14px 0 4px;
+    line-height: 1;
+    background-image: url(%=static=%general/bg-text.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media #{$laptop} {
+      font-size: 100px;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: gothampro;
+    margin: 0 0 33px;
+    @media #{$laptop} {
+      font-size: 40px;
+    }
+
+    strong {
+      font-family: gothamprobold;
+    }
+  }
+
+  span {
+    color: #c0c0c0;
+    font-size: 18px;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-size: 24px;
+
+    &.arr.arr-right::before {
+      width: 100%;
+      bottom: -10px;
+      left: 0  ;
+      animation: leftToRight 1.5s ease infinite;
+      transform: translate(0);
+      @keyframes leftToRight {
+        0% { width: 90%;}
+        100%{  width: calc(100% + 23px);}
+      }
+    }
+
+    &.arr.arr-right::after {
+      bottom: -14px;
+      right: -23px;
+      animation: leftToRight2 1.5s ease infinite;
+      @keyframes leftToRight2 {
+        0% { right: 0; }
+        100%{ right: -29px; }
+      }
+    }
+  }
+}
