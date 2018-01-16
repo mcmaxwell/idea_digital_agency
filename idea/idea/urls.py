@@ -21,8 +21,8 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^redactor/', include('redactor.urls')),
     url(r'^summernote/', include('django_summernote.urls')),
     url(r'', include('feincms.urls')),
-    url(r'^redactor/', include('redactor.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

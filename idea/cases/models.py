@@ -62,6 +62,24 @@ class Case(models.Model):
         null=True
     )
 
+
+    seo_title = models.CharField(blank=True, max_length=255)
+    
+    seo_keywords = RedactorField(
+        verbose_name=_('seo_keywords'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=True
+    )
+
+    seo_description = RedactorField(
+        verbose_name=_('seo_description'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=True
+    )
+
+
     facebook_link = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('facebook_link'))
     insta_link = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('insta_link'))
     twitter_link = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('twitter_link'))
@@ -69,6 +87,7 @@ class Case(models.Model):
 
     def get_image_top(self):
         return get_thumbnail(self.image_top,'1350x500', crop="center", quality=99).url
+
 
     def get_image_preview(self):
         return get_thumbnail(self.image_preview,'258x258', crop="center",  quality=99).url

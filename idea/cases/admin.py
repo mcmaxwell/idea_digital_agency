@@ -37,6 +37,19 @@ class CaseAdmin(SortableAdminMixin, TabbedTranslationAdmin):
         models.TextField : {'widget': SummernoteWidget},
     }
 
+    fieldsets = (
+
+        
+        (_('Case'), {
+           'fields': ('image_preview', 'image_top','activity_title', 'title','client','project', 'case_site','text', 'pictures_editor', 'facebook_link', 'insta_link', 'twitter_link' ),
+       }),
+
+       (_('SEO'), {
+            'classes': ('collapse', ),
+           'fields': ('seo_title', 'seo_keywords','seo_description', ),
+       }),
+    )
+
     sortable = 'order'
     inlines = [
         CaseServiceInline,

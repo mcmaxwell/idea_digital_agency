@@ -8,6 +8,7 @@ from feincms.apps import app_reverse
 from django.utils.encoding import python_2_unicode_compatible
 from django.template.defaultfilters import slugify
 from unidecode import unidecode
+from django.utils.safestring import mark_safe
 from sorl.thumbnail import get_thumbnail
 
 
@@ -22,6 +23,8 @@ class BlogTag(models.Model):
         return self.tag
 
     class Meta:
+        verbose_name = _('Category')
+        verbose_name_plural = _('Categories')
         ordering = ('order',)
 
 
@@ -51,11 +54,18 @@ class Blog(models.Model):
         null=True
     )
 
+    seo_title = models.CharField(blank=True, max_length=255)
+    
+    seo_keywords = models.CharField(blank=True, max_length=255)
+
+    seo_description = models.CharField(blank=True, max_length=255)
+
     tags = models.ManyToManyField(BlogTag)
 
     subtitle_tag = models.ForeignKey(BlogTag, related_name="_subtitle_tag",blank=True, null=True)
 
     date = models.DateField(_('date'), null=True)
+
 
     def get_image_top(self):
         return get_thumbnail(self.image_top,'1280x720',  quality=99).url

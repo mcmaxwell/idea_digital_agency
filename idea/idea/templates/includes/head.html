@@ -5,9 +5,9 @@
 
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Idea Digital Agency | Веб-розробка, просування, візуалізація, брендінг.</title>
-<meta content="Idea Digital - веб-розробка, просування, візуалізація, брендінг і створення історії та цінностей бренду." name="description">
-<meta content="" name="keywords">
+<title>{% if object.seo_title %}{{object.seo_title}}{% else %}{{ feincms_page.title }}{% endif %}</title>
+<meta content="{% if object.seo_description %}{{object.seo_description|safe}}{% else %}{{ feincms_page.meta_description }}{% endif %}" name="description">
+<meta content="{% if object.seo_keywords %}{{object.seo_keywords|safe}}{% else %}{{ feincms_page.meta_keywords }}{% endif %}" name="keywords">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <meta content="telephone=no" name="format-detection">
@@ -45,14 +45,11 @@
 </noscript>
 <!-- End Facebook Pixel Code -->
 
-<meta property="og:title" content="" />
-<meta property="og:url" content="" />
-<meta property="og:description" content="" />
-<meta property="og:image" content="" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta property="og:image:width" content="500" />
-<meta property="og:image:height" content="300" />
-<meta property="twitter:description" content="" />
+<meta property="og:url" content="{% if object.get_absolute_url %}{{object.get_absolute_url|safe}}{% else %}{{ feincms_page.get_absolute_url }}{% endif %}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{object.seo_title}}">
+<meta name="og:description" content="{{object.seo_description}}">
+
 <link rel="image_src" href="" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">

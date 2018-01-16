@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from django.views.generic.base import TemplateView
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 from django.template.loader import render_to_string
 from .models import Blog, BlogTag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -24,9 +26,23 @@ class BlogView(DetailView):
         context = super(BlogView, self).get_context_data(**kwargs)
         context['tags'] = blog_tags
         context['recommended'] = recommended
+        render(self.request,"includes/head.html",context)
         return context
+        
 
 
+
+# def blog_view(request, slug, **kwargs):
+#     blog = Blog.objects.get(slug=slug)
+#     blog_tags = blog.tags.all()
+#     recommended = Blog.objects.filter(tags__in=blog_tags).exclude(title=blog.title).distinct()
+#     context = {
+#         "object": blog,
+#         "tags": blog_tags,
+#         "recommended": recommended,
+#     }
+#     template = "blog/blog_detail.html"
+#     render_to_response(template,context,context_instance=RequestContext(request))
 
     
 class BlogList(TemplateView):

@@ -33,7 +33,7 @@ class BlogTagAdmin(TabbedTranslationAdmin):
 
 
 class BlogAdmin(CommonPostAdmin, TabbedTranslationAdmin):
-    list_display = ('title_en',)
+    list_display = ('title_ru',)
     formfield_overrides = {
         models.TextField : {'widget': SummernoteWidget},
     }
@@ -41,8 +41,15 @@ class BlogAdmin(CommonPostAdmin, TabbedTranslationAdmin):
     sortable = 'order'
     filter_horizontal = ('tags',)
     fieldsets = (
+
+        
         (_('Blog'), {
            'fields': ('image_preview', 'image_top','title', 'subtitle_tag','author','text', 'tags','date', ),
+       }),
+
+       (_('SEO'), {
+            'classes': ('collapse', ),
+           'fields': ('seo_title', 'seo_keywords','seo_description', ),
        }),
     )
 
