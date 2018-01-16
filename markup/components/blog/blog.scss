@@ -8,7 +8,13 @@
   }
 
   &.blog-wrapper {
-    background: url(../img/general/line-blog.png) 337px;
+  //  background: url(../img/general/line-blog.png) 337px;
+    @media #{$laptop} {
+      background: url(%=static=%general/bg.svg) -24px 197px/354px 570px;
+    }
+    @media #{$desktop} {
+      background: url(%=static=%general/bg.svg) 0 190px/480px 769px;
+    }
   }
 }
 
@@ -26,15 +32,15 @@
     padding: 0 30px;
     position: relative;
 
-    &::after {
-      content: "";
-      height: 1px;
-      width: 3000px;
-      left: -1000px;
-      position: absolute;
-      background-color: #e8e8e8;
-      z-index: -1;
-    }
+    // &::after {
+    //   content: "";
+    //   height: 1px;
+    //   width: 3000px;
+    //   left: -1000px;
+    //   position: absolute;
+    //   background-color: #e8e8e8;
+    //   z-index: -1;
+    // }
 
     &-item {
       position: relative;

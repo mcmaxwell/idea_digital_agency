@@ -73,8 +73,6 @@ $(document).ready(function () {
     }
   }
 
-
-
   $('.main-menu a').click(function () {
     $('.toggle-menu').click()
   })

@@ -8,5 +8,10 @@
     display: block;
     padding: 8px;
     font-size: rem-calc(18);
+    line-height: 1;
+
+    &:hover {
+      fill: #4d58a5;
+    }
   }
 }
