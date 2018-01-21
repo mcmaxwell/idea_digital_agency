@@ -122,13 +122,15 @@
         <form>
             <div class="keep-up__text">
                 <img src="{% static "img/general/mail.png" %}" alt="Keep up with us!" width="35">
-                <h3>Keep up with us!</h3>
-                <p>We share news and projects in our newsletter.</p>
+                <h3>{% trans "Слідкуй за нами!" %}</h3>
+                <p>{% trans "Ми поділяємо новини та проекти в нашому інформаційному бюлетені." %}</p>
             </div>
             <div class="keep-up__inputs">
-                <input type="text" name="Имя" required placeholder="Имя">
-                <input type="email" name="E-mail" required placeholder="E-mail">
+             <form action="/add_subscriber/" method="get">
+                <input type="text" name="name" required placeholder="Имя">
+                <input type="email" name="email" required placeholder="E-mail">
                 <input type="submit" value="sign up">
+            </form>
             </div>
         </form>
     </div>

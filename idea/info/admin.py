@@ -3,7 +3,7 @@ from adminsortable2.admin import SortableAdminMixin, SortableInlineAdminMixin
 from django.utils.html import format_html
 from modeltranslation.admin import TabbedTranslationAdmin
 from .translation import InfoTranslationOptions
-from .models import Info
+from .models import Info, Subscriber
 
 def get_admin_thumbnail(self):
     return get_cloudinary_thumb(self.image, width=100, crop="fill", q=7)
@@ -20,4 +20,8 @@ class InfoAdmin(TabbedTranslationAdmin):
         else:
             return True
 
+class SubscriberAdmin(admin.ModelAdmin):
+	pass
+
 admin.site.register(Info, InfoAdmin)
+admin.site.register(Subscriber, SubscriberAdmin)

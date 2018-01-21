@@ -27,16 +27,16 @@
                 <section class="case">
                         <div class="main-container">
                             <aside class="sidebar">
-                                <h2 class="big-shadow line-before" data-title="О проекте.">О проекте.</h2>
-                                <p class="title">Клієнт:</p>
+                                <h2 class="big-shadow line-before" data-title="О проекте.">{% trans "О проекте." %}</h2>
+                                <p class="title">{% trans "Клієнт:" %}</p>
                                 <p>{{object.client}}</p>
-                                <p class="title">Проект:</p>
+                                <p class="title">{% trans "Проект:" %}</p>
                                 <p>{{object.title}}</p>
-                                <p class="title">Послуги:</p>
+                                <p class="title">{% trans "Послуги:" %}</p>
                                 {% for caseservice in object.get_case_services %}
                                 <p>{{caseservice.title}}</p>
                                 {% endfor %}
-                                <p class="title">Сайт:</p>
+                                <p class="title">{% trans "Сайт:" %}</p>
                                 <p><a href="http://{{object.case_site}}">{{object.case_site}}</a>
                                 </p>
                                 <ul class="social-list line-before line-after">
@@ -61,7 +61,7 @@
                     </section>
         
                     <div class="cases-carusel">
-                        <h2 class="title-cases">Ще проекти</h2>
+                        <h2 class="title-cases">{% trans "Ще проекти" %}</h2>
         
                         <div class="cases-carusel-list">
                             <div class="cases-carusel-list-carusel">
@@ -70,7 +70,7 @@
                                     <img src="{{case.get_image_preview}}" alt="Cradle of Links">
                                     <span class="cases-carusel-item-info">
                                   <h4>{{case.title}}</h4>
-                                  <span class="arr arr-right">переглянути кейс</span>
+                                  <span class="arr arr-right">{% trans "переглянути кейс" %}</span>
                                     </span>
                                 </a>
                                 {% endfor %}
@@ -78,7 +78,7 @@
                             <a class="cases-carusel-item next-slide" href="#">
                                 <span class="cases-carusel-item-info">
                               <i class="icon icon-next"></i>
-                              <span>Більше проектів</span>
+                              <span>{% trnas "Більше проектів" %}</span>
                                 </span>
                             </a>
                         </div>
@@ -87,10 +87,10 @@
         
                     <section class="contacts scrollify" data-section-name="contacts" id="contacts">
                         <div class="contacts-content block-center-content">
-                            <h2 class="big-shadow line-before" data-title="Контакти.">Контакти.</h2>
+                            <h2 class="big-shadow line-before" data-title="Контакти.">{% trans "Контакти." %}</h2>
                             <div class="contacts-form">
-                                <span>Що далі?</span>
-                                <p><span>Ми готові!</span>  <a href="#" class="toggle-form arr arr-right">зв&#x27;язатись</a>
+                                <span>{% trans "Що далі?" %}</span>
+                                <p><span>{% trans "Ми готові!" %}</span>  <a href="#" class="toggle-form arr arr-right">{% trans "зв&#x27;язатись" %}</a>
                                 </p>
                             </div>
                         </div>
@@ -101,60 +101,60 @@
         
                 </main>
                 <div class="get-in-touch">
-                    <div class="get-in-touch-content">
-                        <a href="" class="logo">
-                            <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
-                        </a>
-                        <span class="close">×</span>
-                        <div class="get-in-touch-address line-load">
-                            <h4>Україна, Дніпро,</h4>
-                            <p>І.Акінфієва 18/308</p>
-                            <p><a href="tel:+380985606565">+380985606565</a>
-                            </p>
-                            <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a>
-                            </p>
-                        </div>
-                        <div class="get-in-touch-form">
-                            <form id="get-in-touch-form" class="ajaxform">
-                                <div class="block-field">
-                                    <input type="text" name="first" placeholder="Ім&#x27;я" required autocomplete="off">
+                        <div class="get-in-touch-content">
+                            <a href="" class="logo">
+                                <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
+                            </a>
+                            <span class="close">×</span>
+                            <div class="get-in-touch-address line-load">
+                                <h4>{% trans "Україна, Дніпро," %}</h4>
+                                <p>{% trans "І.Акінфієва 18/308" %}</p>
+                                <p><a href="tel:+380985606565">+380985606565</a>
+                                </p>
+                                <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a>
+                                </p>
+                            </div>
+                            <div class="get-in-touch-form">
+                                <form id="get-in-touch-form" class="ajaxform">
+                                    <div class="block-field">
+                                        <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="text" name="second" placeholder="{% trans "Прізвище" %}" required autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="email" name="email" placeholder="e-mail" required autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="tel" name="phone" placeholder="{% trans "телефон (необов&#x27;язково)" %}" autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <label for="budget" class="label-select">
+                                            <select name="budget" id="budget" required>
+                                                <option value="" disabled selected>{% trans "оберіть ваш бюджет" %}</option>
+                                                <option value="500$-1000$500$-1000$">500$-1000$</option>
+                                                <option value="1000$-3000$1000$-3000$">1000$-3000$</option>
+                                                <option value="3000$ +3000$ +">3000$ +</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="text" name="company" placeholder="{% trans "компанія" %}" autocomplete="off">
+                                    </div>
+                                    <div class="block-field block-field-textarea">
+                                        <textarea name="message" placeholder="{% trans "деталі" %}" required></textarea>
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="submit" value="{% trans "відправити" %}" class="btn">
+                                    </div>
+                                </form>
+                                <div class="get-in-touch-address thanks-massege hidden">
+                                    <h4>{% trans "Дякуємо що звернулися" %}</h4>
+                                    <p>{% trans "Наш менеджер зв'яжеться з Вами" %}
+                                        <br>{% trans "протягом години!" %}</p>
+                                    <br>
+                                    <br>
                                 </div>
-                                <div class="block-field">
-                                    <input type="text" name="second" placeholder="Прізвище" required autocomplete="off">
-                                </div>
-                                <div class="block-field">
-                                    <input type="email" name="email" placeholder="e-mail" required autocomplete="off">
-                                </div>
-                                <div class="block-field">
-                                    <input type="tel" name="phone" placeholder="телефон (необов&#x27;язково)" autocomplete="off">
-                                </div>
-                                <div class="block-field">
-                                    <label for="budget" class="label-select">
-                                        <select name="budget" id="budget" required>
-                                            <option value="" disabled selected>оберіть ваш бюджет</option>
-                                            <option value="500$-1000$500$-1000$">500$-1000$</option>
-                                            <option value="1000$-3000$1000$-3000$">1000$-3000$</option>
-                                            <option value="3000$ +3000$ +">3000$ +</option>
-                                        </select>
-                                    </label>
-                                </div>
-                                <div class="block-field">
-                                    <input type="text" name="company" placeholder="компанія" autocomplete="off">
-                                </div>
-                                <div class="block-field block-field-textarea">
-                                    <textarea name="message" placeholder="деталі" required></textarea>
-                                </div>
-                                <div class="block-field">
-                                    <input type="submit" value="відправити" class="btn">
-                                </div>
-                            </form>
-                            <div class="get-in-touch-address thanks-massege hidden">
-                                <h4>Дякуємо що звернулися</h4>
-                                <p>Наш менеджер зв'яжеться з Вами
-                                    <br>протягом години!</p>
-                                <br>
-                                <br>
                             </div>
                         </div>
                     </div>
-                </div>

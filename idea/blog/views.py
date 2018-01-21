@@ -32,17 +32,12 @@ class BlogView(DetailView):
 
 
 
-# def blog_view(request, slug, **kwargs):
-#     blog = Blog.objects.get(slug=slug)
-#     blog_tags = blog.tags.all()
-#     recommended = Blog.objects.filter(tags__in=blog_tags).exclude(title=blog.title).distinct()
-#     context = {
-#         "object": blog,
-#         "tags": blog_tags,
-#         "recommended": recommended,
-#     }
-#     template = "blog/blog_detail.html"
-#     render_to_response(template,context,context_instance=RequestContext(request))
+
+def add_subscriber(request):
+    if request.GET:
+        country = request.GET['name']
+        address = request.GET['email']
+        print country
 
     
 class BlogList(TemplateView):

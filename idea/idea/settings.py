@@ -75,7 +75,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'idea.helpers.AdminLocaleMiddleware'
 )
+
+ADMIN_LANGUAGE_CODE = 'ru-RU'
 
 ROOT_URLCONF = 'idea.urls'
 
@@ -118,7 +121,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'uk'
 
 TIME_ZONE = 'UTC'
 

@@ -9,7 +9,7 @@ from django.utils.translation import ugettext
 from django.template.loader import render_to_string
 from sorl.thumbnail import get_thumbnail
 from cases.models import Case
-
+from info.models import Info
 # @python_2_unicode_compatible
 # class ParagraphCT(RenderCTMixin, models.Model):
 #     template_name = "content/content_types/text_ct.html"
@@ -32,6 +32,10 @@ from cases.models import Case
 class IndexPageInfoCT(RenderCTMixin, models.Model):
     template_name = "content/content_types/index_page_content.html"
 
+    title = models.CharField(blank=False, max_length=255, verbose_name=_('title'))
+
+    sub_title = models.CharField(blank=False, max_length=255, verbose_name=_('sub_title'))
+
     text_about_us = RedactorField(
         verbose_name=_('text_about_us'),
         allow_file_upload=False,
@@ -41,10 +45,12 @@ class IndexPageInfoCT(RenderCTMixin, models.Model):
 
     def get_template_data(self):
         cases = Case.objects.all()
+        info = Info.objects.all()
 
         return {
             'ctx': self,
             'cases': cases,
+            'info':info,
         }
 
     class Meta:
