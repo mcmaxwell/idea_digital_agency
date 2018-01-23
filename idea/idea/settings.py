@@ -109,8 +109,8 @@ WSGI_APPLICATION = 'idea.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'komtek_lab',
-        'USER': 'django',
+        'NAME': 'idea',
+        'USER': 'admin',
         'PASSWORD': '1qw23er4',
         'HOST': 'localhost',
         'PORT': '',
@@ -145,10 +145,9 @@ LOCALE_PATHS = (
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 #STATIC_URL = 'https://s3.eu-west-2.amazonaws.com/idea/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '../builds/static')
+STATIC_ROOT = os.path.join(BASE_DIR, '../builds/static/modules')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media',)
 MEDIA_URL = '/media/'
