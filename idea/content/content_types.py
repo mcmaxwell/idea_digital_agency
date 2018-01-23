@@ -32,7 +32,12 @@ from info.models import Info
 class IndexPageInfoCT(RenderCTMixin, models.Model):
     template_name = "content/content_types/index_page_content.html"
 
-    title = models.CharField(blank=False, max_length=255, verbose_name=_('title'))
+    title = RedactorField(
+        verbose_name=_('title'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=False
+    )
 
     sub_title = models.CharField(blank=False, max_length=255, verbose_name=_('sub_title'))
 
@@ -42,6 +47,43 @@ class IndexPageInfoCT(RenderCTMixin, models.Model):
         allow_image_upload=False,
         blank=True
     )
+
+    service_title_one = models.CharField(blank=False, max_length=255, verbose_name=_('service_title_one'))
+
+    service_list_one = RedactorField(
+        verbose_name=_('service_list_one'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=True
+    )
+
+    service_title_two = models.CharField(blank=False, max_length=255, verbose_name=_('service_title_two'))
+
+    service_list_two = RedactorField(
+        verbose_name=_('service_list_two'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=True
+    )
+
+    service_title_three = models.CharField(blank=False, max_length=255, verbose_name=_('service_title_three'))
+
+    service_list_three = RedactorField(
+        verbose_name=_('service_list_three'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=True
+    )
+
+    service_title_four = models.CharField(blank=False, max_length=255, verbose_name=_('service_title_four'))
+
+    service_list_four = RedactorField(
+        verbose_name=_('service_list_four'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=True
+    )
+
 
     def get_template_data(self):
         cases = Case.objects.all()

@@ -133,7 +133,18 @@
   </div>
   <div class="blog-page-bottom">
     <span class="blog-page-bottom__title">Оцените статью</span>
-    <div class="rating"><span class="rating__stars"><span class="rating__stars-active" style="width: 70%"></span></span>(4 из 5 на основе 7 отзывов)</div>
+    <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+      <meta itemprop="worstRating" content = "1"/>
+      <span class="rating__stars">
+        <span class="rating__star"></span>
+        <span class="rating__star"></span>
+        <span class="rating__star"></span>
+        <span class="rating__star"></span>
+        <span class="rating__star"></span>
+      </span>
+      (<span itemprop="ratingValue">4</span> из <span itemprop="bestRating">5</span> на основе <span itemprop="reviewCount">7</span> отзывов )
+    </div>
+
     <div class="tags">
       <a href="#">#ui/ux</a>
       <a href="#">#копирайтинг</a>

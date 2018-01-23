@@ -68,7 +68,7 @@ $(document).ready(function () {
   } else {
     for (let i = 0; i < $('.main-menu-link').length; i++) {
       if(!menuLink.eq(i).hasClass('link-page')) {
-        menuLink.eq(i).attr('href', './#' + menuLink.eq(i).attr('href'))
+        menuLink.eq(i).attr('href', '/#' + menuLink.eq(i).attr('href'))
       }
     }
   }
@@ -339,5 +339,26 @@ $(document).ready(function () {
 
   $('.share-page__toggle').click(function () {
     $('.share-page').toggleClass('active')
+  })
+})
+
+$('.rating__star').click(function () {
+  $('.rating__star').removeClass('active')
+  for(var i = 0; i < $(this).index() + 1; i++) {
+    $('.rating__star').eq(i).addClass('active')
+  }
+
+  var percent = ($(this).index() + 1) * 20
+  $.ajax({
+    type: 'GET',
+    url: 'rating/update_rating/',
+    dataType: 'json',
+    context: percent,
+    beforeSend: function () {
+
+    },
+    success: function () {
+
+    }
   })
 })
