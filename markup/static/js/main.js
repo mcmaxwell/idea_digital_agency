@@ -68,7 +68,7 @@ $(document).ready(function () {
   } else {
     for (let i = 0; i < $('.main-menu-link').length; i++) {
       if(!menuLink.eq(i).hasClass('link-page')) {
-        menuLink.eq(i).attr('href', './#' + menuLink.eq(i).attr('href'))
+        menuLink.eq(i).attr('href', '/#' + menuLink.eq(i).attr('href'))
       }
     }
   }
