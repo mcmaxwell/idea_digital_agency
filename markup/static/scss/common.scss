@@ -601,41 +601,62 @@ label.error {
   align-items: center;
 
   &__stars {
-    width: 230px;
-    height: 29px;
+    // width: 230px;
+    // height: 29px;
+    display: flex;
     position: relative;
-    background-image: url(%=static=%general/star.png);
-    background-size: auto 100%;
-    display: block;
-    background: url(../img/general/star.png) left center no-repeat, 50px url(../img/general/star.png) no-repeat, 100px url(../img/general/star.png) no-repeat, 150px url(../img/general/star.png) no-repeat, 200px url(../img/general/star.png) no-repeat;
-    background-size: 29px;
+    // background-image: url(%=static=%general/star.png);
+    // background-size: auto 100%;
+    // display: block;
+    // background: url(../img/general/star.png) left center no-repeat, 50px url(../img/general/star.png) no-repeat, 100px url(../img/general/star.png) no-repeat, 150px url(../img/general/star.png) no-repeat, 200px url(../img/general/star.png) no-repeat;
+    // background-size: 29px;
+    // cursor: pointer;
+    //
+    // @media #{$laptop} {
+    //   background-image: url(%=static=%general/star.png);
+    //   background-size: auto 100%;
+    //   width: 140px;
+    //   background-repeat: repeat-x;
+    //   background-size: 29px;
+    //   margin-right: 20px;
+    // }
+
+    &:hover .rating__star {
+      background: url(../img/general/star-active.png);
+    }
+  }
+
+  &__star {
+    width: 37px;
+    height: 32px;
+    background: url(../img/general/star.png);
+    display: inline-block;
     cursor: pointer;
 
-    @media #{$laptop} {
-      background-image: url(%=static=%general/star.png);
-      background-size: auto 100%;
-      width: 140px;
-      background-repeat: repeat-x;
-      background-size: 29px;
-      margin-right: 20px;
+    &:hover ~ .rating__star {
+      background: url(../img/general/star.png);
+    }
+
+    &.active {
+      background: url(../img/general/star-active.png);
     }
   }
 
-  &__stars-active {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background: url(%=static=%general/star-active.png) left center no-repeat, 50px url(%=static=%general/star-active.png) no-repeat, 100px url(%=static=%general/star-active.png) no-repeat, 150px url(%=static=%general/star-active.png) no-repeat, 200px url(%=static=%general/star-active.png) no-repeat;
-    background-size: 29px;
-
-    @media #{$laptop} {
-      background-image: url(%=static=%general/star-active.png);
-      background-size: auto 100%;
-      background-repeat: repeat-x;
-      background-size: 29px;
-    }
-  }
+  // &__stars-active {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   // background: url(%=static=%general/star-active.png) left center no-repeat, 50px url(%=static=%general/star-active.png) no-repeat, 100px url(%=static=%general/star-active.png) no-repeat, 150px url(%=static=%general/star-active.png) no-repeat, 200px url(%=static=%general/star-active.png) no-repeat;
+  //   // background-size: 29px;
+  //
+  //   @media #{$laptop} {
+  //     background-image: url(%=static=%general/star-active.png);
+  //     background-size: auto 100%;
+  //     background-repeat: repeat-x;
+  //     background-size: 29px;
+  //   }
+  // }
 }
 
 .table-responsive {

@@ -1598,44 +1598,30 @@ label.error {
 }
 
 .rating__stars {
-  width: 230px;
-  height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  background-image: url(../img/general/star.png);
-  background-size: auto 100%;
-  display: block;
-  background: url(../img/general/star.png) left center no-repeat, 50px url(../img/general/star.png) no-repeat, 100px url(../img/general/star.png) no-repeat, 150px url(../img/general/star.png) no-repeat, 200px url(../img/general/star.png) no-repeat;
-  background-size: 29px;
+}
+
+.rating__stars:hover .rating__star {
+  background: url(../img/general/star-active.png);
+}
+
+.rating__star {
+  width: 37px;
+  height: 32px;
+  background: url(../img/general/star.png);
+  display: inline-block;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1025px) {
-  .rating__stars {
-    background-image: url(../img/general/star.png);
-    background-size: auto 100%;
-    width: 140px;
-    background-repeat: repeat-x;
-    background-size: 29px;
-    margin-right: 20px;
-  }
+.rating__star:hover ~ .rating__star {
+  background: url(../img/general/star.png);
 }
 
-.rating__stars-active {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background: url(../img/general/star-active.png) left center no-repeat, 50px url(../img/general/star-active.png) no-repeat, 100px url(../img/general/star-active.png) no-repeat, 150px url(../img/general/star-active.png) no-repeat, 200px url(../img/general/star-active.png) no-repeat;
-  background-size: 29px;
-}
-
-@media screen and (min-width: 1025px) {
-  .rating__stars-active {
-    background-image: url(../img/general/star-active.png);
-    background-size: auto 100%;
-    background-repeat: repeat-x;
-    background-size: 29px;
-  }
+.rating__star.active {
+  background: url(../img/general/star-active.png);
 }
 
 .table-responsive {
@@ -1652,58 +1638,6 @@ label.error {
 .stop {
   position: absolute;
   z-index: 101;
-}
-
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 1025px) {
-  .about {
-    background: url(../img/general/about-line.png) -22px 0/354px 570px;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .about {
-    background: url(../img/general/about-line.png) -3px 0;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .about p {
-    font-size: 1.5rem;
-  }
-}
-
-.about h3 {
-  margin: 37px 0 24px;
-}
-
-@media screen and (min-width: 1025px) {
-  .about h3 {
-    margin: 61px 0 74px;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .about h3 {
-    margin: 40px 0 109px;
-  }
-}
-
-.about .big-shadow.line-before::before {
-  width: 600px;
-  bottom: 12px;
-  top: auto;
 }
 
 .blog-list .footer {
@@ -1858,6 +1792,58 @@ label.error {
   transition: all .3s;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .about {
+    background: url(../img/general/about-line.png) -22px 0/354px 570px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .about {
+    background: url(../img/general/about-line.png) -3px 0;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .about p {
+    font-size: 1.5rem;
+  }
+}
+
+.about h3 {
+  margin: 37px 0 24px;
+}
+
+@media screen and (min-width: 1025px) {
+  .about h3 {
+    margin: 61px 0 74px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .about h3 {
+    margin: 40px 0 109px;
+  }
+}
+
+.about .big-shadow.line-before::before {
+  width: 600px;
+  bottom: 12px;
+  top: auto;
+}
+
 @media screen and (min-width: 1025px) {
   .blog-page.blog-wrapper {
     background: url(../img/general/bg.svg) -24px 189px/354px 570px;
@@ -1983,6 +1969,14 @@ label.error {
 
 .blog-page-bottom .rating .rating__stars {
   margin-bottom: 20px;
+}
+
+.blog-page-bottom .rating span {
+  margin: 0 5px;
+}
+
+.blog-page-bottom .rating .rating__star {
+  margin: 0;
 }
 
 @media screen and (min-width: 1025px) {

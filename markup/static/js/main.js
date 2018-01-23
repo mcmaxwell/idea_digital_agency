@@ -341,3 +341,24 @@ $(document).ready(function () {
     $('.share-page').toggleClass('active')
   })
 })
+
+$('.rating__star').click(function () {
+  $('.rating__star').removeClass('active')
+  for(var i = 0; i < $(this).index() + 1; i++) {
+    $('.rating__star').eq(i).addClass('active')
+  }
+
+  var percent = ($(this).index() + 1) * 20
+  $.ajax({
+    type: 'POST',
+    url: '',
+    dataType: 'json',
+    context: percent,
+    beforeSend: function () {
+
+    },
+    success: function () {
+
+    }
+  })
+})
