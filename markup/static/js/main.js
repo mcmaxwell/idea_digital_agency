@@ -350,8 +350,8 @@ $('.rating__star').click(function () {
 
   var percent = ($(this).index() + 1) * 20
   $.ajax({
-    type: 'POST',
-    url: '',
+    type: 'GET',
+    url: 'rating/update_rating/',
     dataType: 'json',
     context: percent,
     beforeSend: function () {

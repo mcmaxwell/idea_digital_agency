@@ -31,4 +31,5 @@ Page.create_content_type(IndexPageInfoCT)
 Page.create_content_type(ApplicationContent, APPLICATIONS=(
     ('blog.urls', 'Blog application'),
     ('cases.urls', 'Cases category'),
+    ('info.urls', 'Info app'),
 ))

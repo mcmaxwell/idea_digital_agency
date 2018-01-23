@@ -43,3 +43,29 @@ class Subscriber(models.Model):
         verbose_name_plural = _('Subscriber')
         ordering = ['name',]
 
+@python_2_unicode_compatible
+class ContactInfo(models.Model):
+
+    first_name = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('first_name'))
+    second_name = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('second_name'))
+    email = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('email'))
+    phone = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('phone'))
+    budget = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('budget'))
+    company = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('company'))
+    message = RedactorField(
+        verbose_name=_('message'),
+        allow_file_upload=False,
+        allow_image_upload=False,
+        blank=True
+    )
+
+    def __str__(self):
+        return self.first_name + "" + self.second_name
+
+    class Meta:
+        verbose_name = _('ContactInfo')
+        verbose_name_plural = _('ContactInfo')
+        ordering = ['first_name',]
+
+
+
