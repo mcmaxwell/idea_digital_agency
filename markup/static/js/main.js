@@ -343,6 +343,7 @@ $('.rating__star').click(function () {
 
   var percent = ($(this).index() + 1) * 20
 
-  $.post('rating/update_rating', {percent: percent});
+  $.post('rating/update_rating/', {percent: percent});
+  location.reload(true);
 
 })

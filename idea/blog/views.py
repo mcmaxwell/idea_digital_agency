@@ -34,8 +34,24 @@ class BlogView(DetailView):
 
 
 def update_rating(request, slug):
-    blog = Blog.objects.filter(slug=slug)
-    print request.body
+    blog = Blog.objects.get(slug=slug)
+    if request.is_ajax():
+        if request.method == 'POST':
+            percent = request.POST.get('percent', '')
+            print percent
+            blog.votes = blog.votes + 1
+            if int(percent) == 20:
+                blog.rating = blog.rating + 1
+            elif int(percent) == 40:
+                blog.rating = blog.rating + 2
+            elif int(percent) == 60:
+                blog.rating = blog.rating + 3
+            elif int(percent) == 80:
+                blog.rating = blog.rating + 4
+            elif int(percent) == 100:
+                blog.rating = blog.rating + 5
+            blog.save()
+            return redirect('blog.views.BlogView', slug=slug)
 
 class BlogList(TemplateView):
 

@@ -66,6 +66,10 @@ class Blog(models.Model):
 
     date = models.DateField(_('date'), null=True)
 
+    rating = models.PositiveIntegerField(default=0, blank=True, null=True)
+
+    votes = models.PositiveIntegerField(default=0, blank=True, null=True)
+
 
     def get_image_top(self):
         return get_thumbnail(self.image_top,'1280x720',  quality=99).url
@@ -75,6 +79,9 @@ class Blog(models.Model):
 
     def get_subtitle_tag(self):
         return self.subtitle_tag.tag
+
+    def get_rating(self):
+        return int(self.rating / self.votes)
 
     def get_absolute_url(self):
       return app_reverse('blog_detail', 'blog.urls', kwargs={
