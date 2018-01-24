@@ -4,36 +4,37 @@
 {% load feincms_tags %}
 {% load feincms_page_tags %}
 {% feincms_nav feincms_page as menu_pages %}
+{% get_current_language as LANGUAGE_CODE %}
 
 
 
     <header class="header">
         <div class="top-nav">
-            <a href="/" class="logo">
+            <a href="/{{ LANGUAGE_CODE }}" class="logo">
                 <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
             </a>
             <div class="top-action">
                 <div class="top-lang">
-                    <a href="/uk" class="{% if feincms_page.language == 'uk' %}active{% endif %}">ua</a>
-                    <a href="/" class="{% if feincms_page.language == 'ru' %}active{% endif %}">ru</a>
-                    <a href="/us" class="{% if feincms_page.language == 'en' %}active{% endif %}">us</a>
+                    <a href="/uk" class="{% if LANGUAGE_CODE == 'uk' %}active{% endif %}">ua</a>
+                    <a href="/" class="{% if LANGUAGE_CODE == 'ru' %}active{% endif %}">ru</a>
+                    <a href="/us" class="{% if LANGUAGE_CODE == 'en' %}active{% endif %}">us</a>
                 </div>
                 <nav class="main-menu">
                     <ul class="menu">
                         <li>
-                            <a class=" active main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}home" data-section-link="home"><span>{% trans "Головна" %}</span></a>
+                            <a class=" active main-menu-link" href="home" data-section-link="home"><span>{% trans "Головна" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}about" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
+                            <a class="  main-menu-link" href="about" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}services" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
+                            <a class="  main-menu-link" href="services" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
+                            <a class="  main-menu-link" href="cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
+                            <a class="  main-menu-link" href="contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
                         </li>
                         <li>
                             <a class="link-page  main-menu-link" href="{% app_reverse "blog_list" "blog.urls" %}"><span>{% trans "Блог" %}</span></a>

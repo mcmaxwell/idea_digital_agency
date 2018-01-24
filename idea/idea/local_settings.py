@@ -28,6 +28,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'idea.local_settings.debug',
                 'info.context_processors.info',
+                'django.template.context_processors.i18n',
             ],
         },
     },
