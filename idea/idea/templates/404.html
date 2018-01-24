@@ -2,7 +2,7 @@
 {% load staticfiles %}
 {% load feincms_tags %}
 {% load feincms_page_tags %}
-
+{% load applicationcontent_tags %}
 
 <!DOCTYPE html>
 <html lang="ru" class="no-js">
@@ -23,47 +23,48 @@
                 <header class="header">
                     <div class="top-nav">
                         <a href="/" class="logo">
-                            <img src="static/img/general/logo.svg" alt="Idea Digital Agency">
+                            <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
                         </a>
                         <div class="top-action">
                             <div class="top-lang">
-                                <a href="/" class="active">ua</a>
-                                <a href="/ru" class="">ru</a>
+                                <a href="/uk" class="">ua</a>
+                                <a href="/" class="">ru</a>
                                 <a href="/us" class="">us</a>
                             </div>
                             <nav class="main-menu">
                                 <ul class="menu">
                                     <li>
-                                        <a class=" active main-menu-link" href="home" data-section-link="home"><span>Головна</span></a>
+                                        <a class=" active main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}home" data-section-link="home"><span>{% trans "Головна" %}</span></a>
                                     </li>
                                     <li>
-                                        <a class="  main-menu-link" href="about" data-section-link="about"><span>Про нас</span></a>
+                                        <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}about" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
                                     </li>
                                     <li>
-                                        <a class="  main-menu-link" href="services" data-section-link="services"><span>Послуги</span></a>
+                                        <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}services" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
                                     </li>
                                     <li>
-                                        <a class="  main-menu-link" href="cases-carusel" data-section-link="cases-carusel"><span>Кейси</span></a>
+                                        <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
                                     </li>
                                     <li>
-                                        <a class="  main-menu-link" href="contacts" data-section-link="contacts"><span>Контакти</span></a>
+                                        <a class="  main-menu-link" href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
                                     </li>
                                     <li>
-                                        <a class="link-page  main-menu-link" href="blog.html"><span>Блог</span></a>
+                                        <a class="link-page  main-menu-link" href="{% app_reverse "blog_list" "blog.urls" %}"><span>{% trans "Блог" %}</span></a>
                                     </li>
                                 </ul>
+                                {% for info in info %}
                                 <ul class="social-list">
                                     <li>
-                                        <a href="#" target="_blank" class="icon icon-twitter"></a>
+                                        <a href="{{info.twitter_link}}" target="_blank" class="icon icon-twitter"></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/idigitalagency/" target="_blank" class="icon icon-facebook"></a>
+                                        <a href="{{info.facebook_link}}" target="_blank" class="icon icon-facebook"></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/ideadigitaladgency/" target="_blank" class="icon icon-instagram"></a>
+                                        <a href="{{info.insta_link}}" target="_blank" class="icon icon-instagram"></a>
                                     </li>
                                     <li>
-                                        <a href="#" target="_blank" class="icon icon-behance">
+                                        <a href="{{info.behance_link}}" target="_blank" class="icon icon-behance">
                                             <svg width="18" height="18" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                                                 <path d="M12.631 14.019c0.406-0.294 0.6-0.781 0.6-1.456 0-0.375-0.063-0.681-0.194-0.919-0.137-0.238-0.313-0.425-0.544-0.556-0.225-0.137-0.481-0.231-0.775-0.281-0.287-0.056-0.594-0.081-0.906-0.081h-3.294v3.737h3.563c0.625 0.006 1.144-0.144 1.55-0.444z"></path>
                                                 <path d="M13.188 17.394c-0.463-0.35-1.075-0.525-1.838-0.525h-3.831v4.406h3.756c0.35 0 0.675-0.031 0.988-0.1s0.594-0.175 0.831-0.337c0.238-0.156 0.431-0.369 0.575-0.637s0.213-0.619 0.213-1.038c0-0.825-0.231-1.413-0.694-1.769z"></path>
@@ -73,6 +74,7 @@
                                         </a>
                                     </li>
                                 </ul>
+                                {% endfor %}
                             </nav>
                             <a href="#" class="toggle-menu"><span></span><span></span><span></span></a>
                         </div>
@@ -80,9 +82,9 @@
                 </header>
             </section>
             <section class="page-404">
-                <img class="page-404__lighthouse" src="static/img/assets/page-404/lighthouse.png">
+                <img class="page-404__lighthouse" src="{% static "img/assets/page-404/lighthouse.png" %}">
                 <div class="page-404__content">
-                    <img src="static/img/general/logo-big.svg">
+                    <img src="{% static "img/general/logo-big.svg" %}">
                     <h1>404</h1>
                     <span>Seems like you got lost</span>
                     <h2><strong>OOPS!</strong> page not found</h2>
@@ -92,9 +94,9 @@
         </main>
     <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
 
+    <script src="{% static "js/vendor.min.js" %}"></script>
     <script src="{% static "js/main.min.js" %}"></script>
-    <script src="{% static "js/separate-js/custom.js" %}"></script>
-    
+
      {% include "includes/footer.html" %}
 
 

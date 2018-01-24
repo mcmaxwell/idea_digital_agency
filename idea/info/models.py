@@ -22,7 +22,7 @@ class Info(models.Model):
     behance_link = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('behance_link'))
 
     def __str__(self):
-        return self.adress_footer
+        return "Site Information"
 
     class Meta:
         verbose_name = _('Info')
@@ -66,6 +66,3 @@ class ContactInfo(models.Model):
         verbose_name = _('ContactInfo')
         verbose_name_plural = _('ContactInfo')
         ordering = ['first_name',]
-
-
-

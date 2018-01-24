@@ -9,5 +9,5 @@ urlpatterns = [
     url(r'^$', BlogList.as_view(), name='blog_list'),
     url(r'^(?P<slug>[^/]+)/$', BlogView.as_view()
         , name='blog_detail'),
-    url(r'^/rating/update_rating/', update_rating, name='update_rating'),
+    url(r'^(?P<slug>[^/]+)/rating/update_rating/', update_rating, name='update_rating'),
     ]

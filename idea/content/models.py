@@ -25,6 +25,13 @@ Page.register_templates({
 })
 
 
+Page.register_templates({
+    'title': _('Index Page'),
+    'path': 'content/pages/index_page.html',
+    'regions': (
+        ('main', _('Main content area')),
+    ),
+})
 
 Page.create_content_type(IndexPageInfoCT)
 

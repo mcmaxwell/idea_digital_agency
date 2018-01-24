@@ -3,7 +3,7 @@
 {% load feincms_page_tags %}
 
 
-{% include "includes/head.html" %}
+{% include "includes/page_head.html" %}
 
 <body class="page blog-list blog-wrapper">
 
@@ -13,8 +13,8 @@
                 currency: 'USD',
                 });
             </script>
-    
-        
+
+
           {% include "includes/header.html" %}
 
     <section class="blog">
@@ -38,7 +38,7 @@
                     <span class="blog__list-item-cat">{{blog.get_subtitle_tag}}</span>
                 </div>
             </a>
-          {% endfor%} 
+          {% endfor%}
         </div>
         <div class="pagination">
             <ul class="pagination-list">

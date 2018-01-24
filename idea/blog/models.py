@@ -14,7 +14,7 @@ from sorl.thumbnail import get_thumbnail
 
 @python_2_unicode_compatible
 class BlogTag(models.Model):
-    
+
     tag = models.CharField(blank=False, null=False, max_length=255, verbose_name=_('tag'))
 
     order = models.PositiveIntegerField(default=0, blank=False, null=False)
@@ -55,7 +55,7 @@ class Blog(models.Model):
     )
 
     seo_title = models.CharField(blank=True, max_length=255)
-    
+
     seo_keywords = models.CharField(blank=True, max_length=255)
 
     seo_description = models.CharField(blank=True, max_length=255)
@@ -71,8 +71,8 @@ class Blog(models.Model):
         return get_thumbnail(self.image_top,'1280x720',  quality=99).url
 
     def get_image_preview(self):
-        return get_thumbnail(self.image_preview,'1920x1080',  quality=99).url
-    
+        return get_thumbnail(self.image_preview,'330x240', upscale=True,  quality=99).url
+
     def get_subtitle_tag(self):
         return self.subtitle_tag.tag
 
@@ -96,6 +96,3 @@ class Blog(models.Model):
       verbose_name = _('Blog')
       verbose_name_plural = _('Blog')
       ordering = ('-id',)
-
-
-
