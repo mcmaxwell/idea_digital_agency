@@ -7,6 +7,8 @@ from django.template import RequestContext
 from django.template.loader import render_to_string
 from .models import Blog, BlogTag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.shortcuts import render_to_response,redirect
+from info.models import Subscriber
 
 
 
@@ -30,15 +32,9 @@ class BlogView(DetailView):
         return context
         
 
-
-
-
-def add_subscriber(request):
+def update_rating(request):
     if request.GET:
-        country = request.GET['name']
-        address = request.GET['email']
-        print country
-
+        print request.GET
     
 class BlogList(TemplateView):
     

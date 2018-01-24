@@ -29,15 +29,15 @@
                             <aside class="sidebar">
                                 <h2 class="big-shadow line-before" data-title="О проекте.">{% trans "О проекте." %}</h2>
                                 <p class="title">{% trans "Клієнт:" %}</p>
-                                <p>{{object.client}}</p>
+                                <p>{{object.client|default_if_none=""}}</p>
                                 <p class="title">{% trans "Проект:" %}</p>
-                                <p>{{object.title}}</p>
+                                <p>{{object.title|default_if_none=""}}</p>
                                 <p class="title">{% trans "Послуги:" %}</p>
                                 {% for caseservice in object.get_case_services %}
                                 <p>{{caseservice.title}}</p>
                                 {% endfor %}
                                 <p class="title">{% trans "Сайт:" %}</p>
-                                <p><a href="http://{{object.case_site}}">{{object.case_site}}</a>
+                                <p><a href="http://{{object.case_site}}">{{object.case_site|default_if_none=""}}</a>
                                 </p>
                                 <ul class="social-list line-before line-after">
                                     <li>
@@ -115,7 +115,7 @@
                                 </p>
                             </div>
                             <div class="get-in-touch-form">
-                                <form id="get-in-touch-form" class="ajaxform">
+                                <form id="get-in-touch-form" action="{% app_reverse "add_contact_form" "info.urls" %}" method="GET">
                                     <div class="block-field">
                                         <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
                                     </div>

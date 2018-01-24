@@ -88,6 +88,19 @@
             {{object.text|default_if_none:""|safe}}
         <div class="blog-page-bottom">
 
+            <span class="blog-page-bottom__title">Оцените статью</span>
+            <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                <meta itemprop="worstRating" content="1" />
+                <span class="rating__stars">
+        <span class="rating__star"></span>
+                <span class="rating__star"></span>
+                <span class="rating__star"></span>
+                <span class="rating__star"></span>
+                <span class="rating__star"></span>
+                </span>
+                (<span itemprop="ratingValue">2</span> из <span itemprop="bestRating">5</span> на основе <span itemprop="reviewCount">7</span> отзывов )
+            </div>
+
             <!-- <span class="blog-page-bottom__title">Оцените статью</span>
                         <div class="rating"><span class="rating__stars"><span class="rating__stars-active" style="width: 20%"></span></span>(4 из 5 на основе 7 отзывов)</div> -->
             <div class="tags">
@@ -119,18 +132,16 @@
     </div>
     {% endif %}
     <div class="keep-up">
-        <form>
+        <form action="{% app_reverse "add_subscriber" "info.urls" %}" method="GET">
             <div class="keep-up__text">
                 <img src="{% static "img/general/mail.png" %}" alt="Keep up with us!" width="35">
                 <h3>{% trans "Слідкуй за нами!" %}</h3>
                 <p>{% trans "Ми поділяємо новини та проекти в нашому інформаційному бюлетені." %}</p>
             </div>
             <div class="keep-up__inputs">
-             <form action="/add_subscriber/" method="get">
                 <input type="text" name="name" required placeholder="Имя">
                 <input type="email" name="email" required placeholder="E-mail">
                 <input type="submit" value="sign up">
-            </form>
             </div>
         </form>
     </div>

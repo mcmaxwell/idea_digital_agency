@@ -1,6 +1,7 @@
 {% load i18n %}
 {% load l10n %}
 {% load staticfiles %}
+{% load applicationcontent_tags %}
 
 {% include "includes/head.html" %}
 
@@ -39,7 +40,7 @@
                 <img src="{% static "img/general/logo-big.svg" %}" alt="Idea Digital Agency" class="home-bg-logo">
 
                 <div class="home-content">
-                    <h1>{{ctx.title}}</h1>
+                    <h1>{{ctx.title|safe}}</h1>
                     <p class="line-after">{{ctx.sub_title}}</p>
                 </div>
                 <div class="home-social line-after line-before">
@@ -86,15 +87,8 @@
                             </div>
                             <div class="services-item-content">
                                 <div class="icon icon-web"></div>
-                                <h3>{% trans "Дизайн" %}</h3>
-                                <ul>
-                                    <li>{% trans "Графічний дизайн" %}</li>
-                                    <li>{% trans "Адаптивний дизайн сайтів" %}</li>
-                                    <li>{% trans "Фото та Відео" %}</li>
-                                    <li>{% trans "Айдентіка" %}</li>
-                                    <li>{% trans "Анімаційний дизайн" %}</li>
-                                    <li>{% trans "Прототипування" %}</li>
-                                </ul>
+                                <h3>{{ctx.service_title_one}}</h3>
+                               {{ ctx.service_list_one|safe}}
                             </div>
                         </div>
                         <div class="services-item">
@@ -103,14 +97,8 @@
                             </div>
                             <div class="services-item-content">
                                 <div class="icon icon-develop"></div>
-                                <h3>{% trans "Веб-розробка" %}</h3>
-                                <ul>
-                                    <li>{% trans "Розробка веб-сайтів" %}</li>
-                                    <li>{% trans "Ecommerce рішення" %}</li>
-                                    <li>{% trans "Розробка Landing pages" %}</li>
-                                    <li>{% trans "Розробки на CMS платформах" %}</li>
-                                    <li>{% trans "Індивідуальні рішення" %}</li>
-                                </ul>
+                                <h3>{{ctx.service_title_two}}</h3>
+                                {{ ctx.service_list_two|safe}}
                             </div>
                         </div>
                         <div class="services-item">
@@ -119,17 +107,8 @@
                             </div>
                             <div class="services-item-content">
                                 <div class="icon icon-marketing"></div>
-                                <h3>{% trans "Діджитал маркетинг" %}</h3>
-                                <ul>
-                                    <li>{% trans "SEO просування" %}</li>
-                                    <li>{% trans "SMM" %}</li>
-                                    <li>{% trans "Контент маркетинг" %}</li>
-                                    <li>{% trans "Email маркетинг" %}</li>
-                                    <li>{% trans "Крауд маркетинг" %}</li>
-                                    <li>{% trans "Аудит веб-сайтів" %}</li>
-                                    <li>{% trans "Внутрішня оптимізація" %}</li>
-                                    <li>{% trans "PPC" %}</li>
-                                </ul>
+                                <h3>{{ctx.service_title_three}}</h3>
+                                {{ ctx.service_list_three|safe}}
                             </div>
                         </div>
                         <div class="services-item">
@@ -138,15 +117,8 @@
                             </div>
                             <div class="services-item-content">
                                 <div class="icon icon-brand"></div>
-                                <h3>{% trans "Брендінг Стратегії &amp; Комунікації" %}</h3>
-                                <ul>
-                                    <li>{% trans "Бренд стратегії" %}</li>
-                                    <li>{% trans "Маркетингові кампанії" %}</li>
-                                    <li>{% trans "Брендінг та візуалізація" %}</li>
-                                    <li>{% trans "Керування репутацією" %}</li>
-                                    <li>{% trans "Неймінг" %}</li>
-                                    <li>{% trans "Брендбук &amp; гайдлайн" %}</li>
-                                </ul>
+                                <h3>{{ctx.service_title_four}}</h3>
+                                {{ ctx.service_list_four|safe}}
                             </div>
                         </div>
                     </div>
@@ -223,7 +195,7 @@
                                 </p>
                             </div>
                             <div class="get-in-touch-form">
-                                <form id="get-in-touch-form" class="ajaxform">
+                                <form id="get-in-touch-form" action="{% app_reverse "add_contact_form" "info.urls" %}" method="GET">
                                     <div class="block-field">
                                         <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
                                     </div>
