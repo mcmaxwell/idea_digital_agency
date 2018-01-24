@@ -59,7 +59,7 @@ $(document).ready(function () {
     return false
   })
 
-  if (location.pathname === '/' || location.pathname === '/us/') {
+  if (location.pathname === '/' || location.pathname === '/us/' || location.pathname === '/uk/') {
     for (let i = 0; i < menuLink.length; i++) {
       if(!menuLink.eq(i).hasClass('link-page')) {
         menuLink.eq(i).attr('href', '#' + menuLink.eq(i).attr('href'))
