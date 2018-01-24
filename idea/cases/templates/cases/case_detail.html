@@ -1,7 +1,7 @@
 {% load i18n %}
 {% load l10n %}
 {% load staticfiles %}
-
+{% load applicationcontent_tags %}
 
 
 {% include "includes/head.html" %}
@@ -29,15 +29,15 @@
                             <aside class="sidebar">
                                 <h2 class="big-shadow line-before" data-title="О проекте.">{% trans "О проекте." %}</h2>
                                 <p class="title">{% trans "Клієнт:" %}</p>
-                                <p>{{object.client|default_if_none=""}}</p>
+                                <p>{{object.client|default_if_none:""}}</p>
                                 <p class="title">{% trans "Проект:" %}</p>
-                                <p>{{object.title|default_if_none=""}}</p>
+                                <p>{{object.title|default_if_none:""}}</p>
                                 <p class="title">{% trans "Послуги:" %}</p>
                                 {% for caseservice in object.get_case_services %}
                                 <p>{{caseservice.title}}</p>
                                 {% endfor %}
                                 <p class="title">{% trans "Сайт:" %}</p>
-                                <p><a href="http://{{object.case_site}}">{{object.case_site|default_if_none=""}}</a>
+                                <p><a href="http://{{object.case_site}}">{{object.case_site|default_if_none:""}}</a>
                                 </p>
                                 <ul class="social-list line-before line-after">
                                     <li>
@@ -78,7 +78,7 @@
                             <a class="cases-carusel-item next-slide" href="#">
                                 <span class="cases-carusel-item-info">
                               <i class="icon icon-next"></i>
-                              <span>{% trnas "Більше проектів" %}</span>
+                              <span>{% trans "Більше проектів" %}</span>
                                 </span>
                             </a>
                         </div>

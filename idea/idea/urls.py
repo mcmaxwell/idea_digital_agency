@@ -17,7 +17,10 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
+from django.utils.functional import curry
+from django.views.defaults import server_error, page_not_found, permission_denied
 
+handler404 = curry(page_not_found, template_name='404.html')
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
