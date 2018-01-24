@@ -79,11 +79,6 @@ $(document).ready(function () {
 
   $(window).on('resize', function () {
     if ($(window).width() < 1025) {
-      // $('.cases-carusel-item.next-slide').height($('.cases-carusel-list-carusel .cases-carusel-item').height())
-      //
-      // if (caseCarusel.hasClass('slick-initialized')) {
-      //   caseCarusel.slick('unslick')
-      // }
       $('.scrollify').css('height', 'auto')
 
       if ($('body').hasClass('scrollify-body')) {
@@ -98,8 +93,6 @@ $(document).ready(function () {
       if (!caseCarusel.hasClass('slick-initialized')) {
         return caseCarusel.slick(settingsCarusel)
       }
-
-    // $('.cases-carusel-item.next-slide').height('auto')
 
       if (!$('body').hasClass('scrollify-body')) {
         $.scrollify({
@@ -349,16 +342,7 @@ $('.rating__star').click(function () {
   }
 
   var percent = ($(this).index() + 1) * 20
-  $.ajax({
-    type: 'GET',
-    url: 'rating/update_rating/',
-    dataType: 'json',
-    context: percent,
-    beforeSend: function () {
 
-    },
-    success: function () {
+  $.post('rating/update_rating', {percent: percent});
 
-    }
-  })
 })
