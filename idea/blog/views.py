@@ -9,6 +9,7 @@ from .models import Blog, BlogTag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render_to_response,redirect
 from info.models import Subscriber
+import json
 
 
 
@@ -30,21 +31,21 @@ class BlogView(DetailView):
         context['recommended'] = recommended
         render(self.request,"includes/head.html",context)
         return context
-        
 
-def update_rating(request):
-    if request.GET:
-        print request.GET
-    
+
+def update_rating(request, slug):
+    blog = Blog.objects.filter(slug=slug)
+    print request.body
+
 class BlogList(TemplateView):
-    
+
     template_name = "blog/blog_list.html"
 
     def get_context_data(self, **kwargs):
-        
+
         tags = BlogTag.objects.all()
         print tags
-        
+
         try:
             tag = self.request.GET['tag']
         except:
@@ -74,4 +75,3 @@ class BlogList(TemplateView):
         context['blogs'] = blogs
         context['tags'] = tags
         return context
-

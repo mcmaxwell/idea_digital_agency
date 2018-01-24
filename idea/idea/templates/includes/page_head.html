@@ -5,9 +5,9 @@
 
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>{{object.seo_title}}</title>
-<meta content="{{object.seo_description|safe}}" name="description">
-<meta content="{{object.seo_keywords|safe}}" name="keywords">
+<title>{{ feincms_page.title }}</title>
+<meta content="{{ feincms_page.meta_description }}" name="description">
+<meta content="{{ feincms_page.meta_keywords }}" name="keywords">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <meta content="telephone=no" name="format-detection">
@@ -45,10 +45,10 @@
 </noscript>
 <!-- End Facebook Pixel Code -->
 
-<meta property="og:url" content="{{object.get_absolute_url}}">
+<meta property="og:url" content="{{ feincms_page.get_absolute_url }}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{object.seo_title}}">
-<meta name="og:description" content="{{object.seo_description}}">
+<meta property="og:title" content="{{ feincms_page.title }}">
+<meta name="og:description" content="{{ feincms_page.meta_description }}">
 
 <link rel="image_src" href="" />
 <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">

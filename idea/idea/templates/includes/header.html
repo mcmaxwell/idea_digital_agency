@@ -1,6 +1,7 @@
 {% load i18n %}
 {% load staticfiles %}
 {% load applicationcontent_tags %}
+{% load feincms_tags %}
 {% load feincms_page_tags %}
 {% feincms_nav feincms_page as menu_pages %}
 
@@ -8,7 +9,7 @@
 
     <header class="header">
         <div class="top-nav">
-            <a href="{% if feincms_page.language == 'ru' %}/{% elif feincms_page.language == 'uk' %}/uk{% elif feincms_page.language == 'en' %}/us{% endif %}" class="logo">
+            <a href="/" class="logo">
                 <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
             </a>
             <div class="top-action">

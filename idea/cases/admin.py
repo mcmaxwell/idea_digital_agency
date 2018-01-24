@@ -32,16 +32,16 @@ class CaseServiceInline(SortableInlineAdminMixin, admin.StackedInline):
 
 
 class CaseAdmin(SortableAdminMixin, TabbedTranslationAdmin):
-    list_display = ('title_en',)
+    list_display = ('title_ru',)
     formfield_overrides = {
         models.TextField : {'widget': SummernoteWidget},
     }
 
     fieldsets = (
 
-        
+
         (_('Case'), {
-           'fields': ('image_preview', 'image_top','activity_title', 'title','client','project', 'case_site','text', 'pictures_editor', 'facebook_link', 'insta_link', 'twitter_link' ),
+           'fields': ('image_preview', 'image_top','activity_title', 'title','client','project', 'case_site','text', 'pictures_editor', 'facebook_link', 'insta_link', 'twitter_link', 'behance_link' ),
        }),
 
        (_('SEO'), {
@@ -58,4 +58,3 @@ class CaseAdmin(SortableAdminMixin, TabbedTranslationAdmin):
 
 
 admin.site.register(Case, CaseAdmin)
-
