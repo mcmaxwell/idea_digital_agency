@@ -92,11 +92,11 @@
             <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                 <meta itemprop="worstRating" content="1" />
                 <span class="rating__stars">
-        <span class="rating__star"></span>
-                <span class="rating__star"></span>
-                <span class="rating__star"></span>
-                <span class="rating__star"></span>
-                <span class="rating__star"></span>
+                <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating == 1 or object.get_rating > 1 %} active{% endif %}{% endif %}"></span>
+                <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 1 %} active{% endif %}{% endif %}"></span>
+                <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 2 %} active{% endif %}{% endif %}"></span>
+                <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 3 %} active{% endif %}{% endif %}"></span>
+                <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 4 %} active{% endif %}{% endif %}"></span>
                 </span>
                 (<span itemprop="ratingValue">{% if object.votes > 0 %}{{object.get_rating}}{% else %}0{% endif %}</span> из <span itemprop="bestRating">5</span> на основе <span itemprop="reviewCount">{{object.votes}}</span> отзывов )
             </div>
