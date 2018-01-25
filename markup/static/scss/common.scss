@@ -163,6 +163,8 @@ section.scrollify {
       position: relative;
       bottom: auto;
       order: 1;
+      display: flex;
+      align-items: center;
       @media #{$laptop} {
         order: 2;
       }
