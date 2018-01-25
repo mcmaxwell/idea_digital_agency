@@ -72,7 +72,7 @@ class Blog(models.Model):
 
 
     def get_image_top(self):
-        return get_thumbnail(self.image_top,'1280x720',  quality=99).url
+        return get_thumbnail(self.image_top,'1280x720', upscale=True, crop='center',  quality=99).url
 
     def get_image_preview(self):
         return get_thumbnail(self.image_preview,'330x240', upscale=True,  quality=99).url

@@ -81,7 +81,7 @@ class Case(models.Model):
 
 
     def get_image_preview(self):
-        return get_thumbnail(self.image_preview,'300x300',  quality=99).url
+        return get_thumbnail(self.image_preview,'300x300', crop='center', upscale=True,  quality=99).url
 
     def get_absolute_url(self):
       return app_reverse('case_detail', 'cases.urls', kwargs={

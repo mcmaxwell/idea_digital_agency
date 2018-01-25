@@ -10,7 +10,7 @@
 
     <header class="header">
         <div class="top-nav">
-            <a href="/{{ LANGUAGE_CODE }}" class="logo">
+            <a href="/{% if LANGUAGE_CODE == 'uk' %}uk{% endif %}{% if LANGUAGE_CODE == 'en' %}us{% endif %}" class="logo">
                 <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
             </a>
             <div class="top-action">
