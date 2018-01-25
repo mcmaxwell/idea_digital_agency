@@ -597,14 +597,17 @@ label.error {
 }
 
 .rating {
-  display: flex;
   align-items: center;
-
+  text-align: center;
+  @media #{$laptop} {
+    display: flex;
+  }
   &__stars {
     // width: 230px;
     // height: 29px;
     display: flex;
     position: relative;
+    justify-content: center;
     // background-image: url(%=static=%general/star.png);
     // background-size: auto 100%;
     // display: block;
