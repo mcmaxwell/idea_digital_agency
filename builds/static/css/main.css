@@ -523,52 +523,52 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 16px;
 }
 
-h2 {
+.blog-page-content h2 {
   font-size: 1.375rem;
 }
 
 @media screen and (min-width: 1025px) {
-  h2 {
+  .blog-page-content h2 {
     font-size: 3rem;
   }
 }
 
-h3 {
+.blog-page-content h3 {
   font-size: 1.25rem;
 }
 
 @media screen and (min-width: 1025px) {
-  h3 {
+  .blog-page-content h3 {
     font-size: 2.5rem;
   }
 }
 
-h4 {
+.blog-page-content h4 {
   font-size: 1.25rem;
 }
 
 @media screen and (min-width: 1025px) {
-  h4 {
+  .blog-page-content h4 {
     font-size: 2.25rem;
   }
 }
 
-h5 {
+.blog-page-content h5 {
   font-size: 1.25rem;
 }
 
 @media screen and (min-width: 1025px) {
-  h5 {
+  .blog-page-content h5 {
     font-size: 1.875rem;
   }
 }
 
-h6 {
+.blog-page-content h6 {
   font-size: 1.125rem;
 }
 
 @media screen and (min-width: 1025px) {
-  h6 {
+  .blog-page-content h6 {
     font-size: 1.5rem;
     margin-top: 0;
   }

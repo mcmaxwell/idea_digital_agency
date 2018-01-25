@@ -143,46 +143,48 @@ h2, h3, h4, h5 ,h6 {
   font-family: gothamprobold;
   margin-bottom: 16px;
 }
+.blog-page-content {
+  h2 {
+    font-size: rem-calc(22);
+    @media #{$laptop} {
+      font-size: rem-calc(48);
+    }
+  }
 
-h2 {
-  font-size: rem-calc(22);
-  @media #{$laptop} {
-    font-size: rem-calc(48);
+  h3 {
+    font-size: rem-calc(20);
+
+    @media #{$laptop} {
+      font-size: rem-calc(40);
+    }
+  }
+
+  h4 {
+    font-size: rem-calc(20);
+
+    @media #{$laptop} {
+      font-size: rem-calc(36);
+    }
+  }
+
+  h5 {
+    font-size: rem-calc(20);
+
+    @media #{$laptop} {
+      font-size: rem-calc(30);
+    }
+  }
+
+  h6 {
+    font-size: rem-calc(18);
+
+    @media #{$laptop} {
+      font-size: rem-calc(24);
+      margin-top: 0;
+    }
   }
 }
 
-h3 {
-  font-size: rem-calc(20);
-
-  @media #{$laptop} {
-    font-size: rem-calc(40);
-  }
-}
-
-h4 {
-  font-size: rem-calc(20);
-
-  @media #{$laptop} {
-    font-size: rem-calc(36);
-  }
-}
-
-h5 {
-  font-size: rem-calc(20);
-
-  @media #{$laptop} {
-    font-size: rem-calc(30);
-  }
-}
-
-h6 {
-  font-size: rem-calc(18);
-
-  @media #{$laptop} {
-    font-size: rem-calc(24);
-    margin-top: 0;
-  }
-}
 
 .home-page {
   h1 {
