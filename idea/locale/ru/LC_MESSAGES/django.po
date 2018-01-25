@@ -152,10 +152,8 @@ msgid "Сайт:"
 msgstr ""
 
 #: cases/templates/cases/case_detail.html:82
-#, fuzzy
-#| msgid "Більше проектів"
 msgid "Ще проекти"
-msgstr "Больше проектов"
+msgstr "Еще проекты"
 
 #: cases/templates/cases/case_detail.html:91
 #: content/templates/content/content_types/index_page_content.html:150

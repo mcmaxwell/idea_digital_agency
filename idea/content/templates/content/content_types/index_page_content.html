@@ -41,7 +41,7 @@
                 <img src="{% static "img/general/logo-big.svg" %}" alt="Idea Digital Agency" class="home-bg-logo">
 
                 <div class="home-content">
-                    <h1>{{ctx.title|safe}}</h1>
+                    {{ctx.title|safe}}
                     <p class="line-after">{{ctx.sub_title}}</p>
                 </div>
                 <div class="home-social line-after line-before">
@@ -207,7 +207,9 @@
                         </ul>
                         {% endfor %}
                     </footer>
-                <div class="get-in-touch">
+                   </section>
+                  </main>
+                  <div class="get-in-touch">
                         <div class="get-in-touch-content">
                             <a href="/" class="logo">
                                 <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
@@ -265,3 +267,4 @@
                             </div>
                         </div>
                     </div>
+
