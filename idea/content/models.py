@@ -33,6 +33,14 @@ Page.register_templates({
     ),
 })
 
+Page.register_templates({
+    'title': _('Case Page'),
+    'path': 'content/pages/case_page.html',
+    'regions': (
+        ('main', _('Main content area')),
+    ),
+})
+
 Page.create_content_type(IndexPageInfoCT)
 
 Page.create_content_type(ApplicationContent, APPLICATIONS=(
