@@ -127,10 +127,8 @@ msgid "behance_link"
 msgstr ""
 
 #: cases/templates/cases/case_detail.html:30
-#, fuzzy
-#| msgid "Більше проектів"
 msgid "О проекте."
-msgstr "More projects"
+msgstr "About project."
 
 #: cases/templates/cases/case_detail.html:31
 msgid "Клієнт:"
@@ -141,10 +139,8 @@ msgid "Проект:"
 msgstr "Project"
 
 #: cases/templates/cases/case_detail.html:35
-#, fuzzy
-#| msgid "Послуги"
 msgid "Послуги:"
-msgstr "Services"
+msgstr "Services:"
 
 #: cases/templates/cases/case_detail.html:39
 msgid "Сайт:"
@@ -152,7 +148,7 @@ msgstr "Site"
 
 #: cases/templates/cases/case_detail.html:82
 msgid "Ще проекти"
-msgstr "More projects"
+msgstr "View more projects"
 
 #: cases/templates/cases/case_detail.html:91
 #: content/templates/content/content_types/index_page_content.html:150
@@ -162,12 +158,12 @@ msgstr "look at the case"
 #: cases/templates/cases/case_detail.html:99
 #: content/templates/content/content_types/index_page_content.html:158
 msgid "Більше проектів"
-msgstr "More projects"
+msgstr "View more projects"
 
 #: cases/templates/cases/case_detail.html:108
 #: content/templates/content/content_types/index_page_content.html:168
 msgid "Контакти."
-msgstr "Contacts"
+msgstr "Contacts."
 
 #: cases/templates/cases/case_detail.html:110
 #: content/templates/content/content_types/index_page_content.html:170
@@ -182,7 +178,7 @@ msgstr "We are ready!"
 #: cases/templates/cases/case_detail.html:111
 #: content/templates/content/content_types/index_page_content.html:171
 msgid "зв&#x27;язатись"
-msgstr "get to know"
+msgstr "get in touch"
 
 #: cases/templates/cases/case_detail.html:128
 #: content/templates/content/content_types/index_page_content.html:217
@@ -335,11 +331,11 @@ msgstr "Next"
 
 #: content/templates/content/content_types/index_page_content.html:85
 msgid "Про нас."
-msgstr "About us"
+msgstr "about us."
 
 #: content/templates/content/content_types/index_page_content.html:139
 msgid "Кейси."
-msgstr "Cases"
+msgstr "Cases."
 
 #: idea/settings.py:160
 msgid "Russian"

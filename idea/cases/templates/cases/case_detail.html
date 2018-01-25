@@ -27,7 +27,7 @@
                 <section class="case">
                         <div class="main-container">
                             <aside class="sidebar">
-                                <h2 class="big-shadow line-before" data-title="О проекте.">{% trans "О проекте." %}</h2>
+                                <h2 class="big-shadow line-before" data-title="{% trans "О проекте." %}">{% trans "О проекте." %}</h2>
                                 <p class="title">{% trans "Клієнт:" %}</p>
                                 <p>{{object.client|default_if_none:""}}</p>
                                 <p class="title">{% trans "Проект:" %}</p>
@@ -133,7 +133,7 @@
                                 </p>
                             </div>
                             <div class="get-in-touch-form">
-                                <form id="get-in-touch-form" action="{% app_reverse "add_contact_form" "info.urls" %}" method="GET">
+                                <form id="get-in-touch-form" class="ajaxform" action="{% app_reverse "add_contact_form" "info.urls" %}">
                                     <div class="block-field">
                                         <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
                                     </div>

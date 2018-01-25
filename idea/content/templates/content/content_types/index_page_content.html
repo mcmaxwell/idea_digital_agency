@@ -224,7 +224,7 @@
                                 </p>
                             </div>
                             <div class="get-in-touch-form">
-                                <form id="get-in-touch-form" action="{% app_reverse "add_contact_form" "info.urls" %}" method="GET">
+                                <form id="get-in-touch-form" class="ajaxform" action="{% app_reverse "add_contact_form" "info.urls" %}" >
                                     <div class="block-field">
                                         <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
                                     </div>
@@ -267,4 +267,3 @@
                             </div>
                         </div>
                     </div>
-
