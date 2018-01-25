@@ -2760,9 +2760,9 @@ section.scrollify.contacts .contacts-form p .toggle-form::after {
 
 section.scrollify.contacts footer {
   position: absolute;
-  bottom: 6px;
-  left: 10px;
-  right: 10px;
+  bottom: 20px;
+  left: 40px;
+  right: 40px;
 }
 
 footer {
