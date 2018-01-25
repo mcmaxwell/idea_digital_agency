@@ -14,6 +14,10 @@
     position: relative;
     line-height: 2;
     margin-bottom: 38px;
+    color: #000000;
+    background-image: url(%=static=%general/bg-text.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @media #{$laptop} {
       font-size: rem-calc(40);
       padding: 0 130px;

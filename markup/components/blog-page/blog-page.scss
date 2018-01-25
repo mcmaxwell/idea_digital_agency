@@ -29,6 +29,10 @@
     margin: 0;
     padding-bottom: 16px;
     margin-top: 0.83em;
+    color: #000000;
+    background-image: url(%=static=%general/bg-text.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @media screen and (min-width: 1280px) {
