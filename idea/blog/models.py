@@ -75,7 +75,7 @@ class Blog(models.Model):
         return get_thumbnail(self.image_top,'1280x720', upscale=True, crop='center',  quality=99).url
 
     def get_image_preview(self):
-        return get_thumbnail(self.image_preview,'330x240', upscale=True,  quality=99).url
+        return get_thumbnail(self.image_preview,'330x240', upscale=True, crop='center',  quality=99).url
 
     def get_subtitle_tag(self):
         return self.subtitle_tag.tag
@@ -92,7 +92,7 @@ class Blog(models.Model):
 
     def save(self):
         if not self.slug:
-            self.slug = slugify(unidecode(self.title))
+            self.slug = str(self.id) + "-" + slugify(unidecode(self.title))
         super(Blog, self).save()
 
 
