@@ -2483,6 +2483,7 @@ label.error {
   font-weight: 400;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-family: gothampro;
 }
 
 @media screen and (min-width: 1025px) {

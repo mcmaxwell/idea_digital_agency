@@ -85,6 +85,7 @@
         text-transform: uppercase;
         font-weight: 400;
         transition: all $default-time;
+        font-family: gothampro;
         @media #{$laptop} {
           font-size: 2vw;
         }
