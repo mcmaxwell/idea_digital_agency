@@ -52,11 +52,15 @@
       }
 
       &:first-child {
-        padding-left: 30px;
+        @media #{$laptop} {
+          padding-left: 30px;
+        }
       }
 
       &:last-child {
-        padding-right: 30px;
+        @media #{$laptop} {
+          padding-right: 30px;
+        }
       }
     }
     a {
@@ -82,8 +86,11 @@
     &-item {
       padding: 10px;
       box-sizing: border-box;
+      width: 100%;
+      max-width: 400px;
       @media #{$laptop} {
         width: 25%;
+        max-width: none;
       }
 
       &:hover {
