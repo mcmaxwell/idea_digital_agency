@@ -62,7 +62,7 @@ class Blog(models.Model):
 
     tags = models.ManyToManyField(BlogTag)
 
-    subtitle_tag = models.ForeignKey(BlogTag, related_name="_subtitle_tag",blank=True, null=True)
+    subtitle_tag = models.ForeignKey(BlogTag, related_name="_subtitle_tag",blank=False, null=False)
 
     date = models.DateField(_('date'), null=True)
 

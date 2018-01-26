@@ -88,6 +88,7 @@ class BlogList(TemplateView):
 
         #print dir(Paginator.num_pages)
         context = super(BlogList, self).get_context_data(**kwargs)
+        context['tag'] = tag
         context['blogs'] = blogs
         context['tags'] = tags
         return context

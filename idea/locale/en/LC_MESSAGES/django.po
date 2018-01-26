@@ -172,12 +172,12 @@ msgstr "Contacts."
 #: cases/templates/cases/case_detail.html:110
 #: content/templates/content/content_types/index_page_content.html:170
 msgid "Що далі?"
-msgstr "What next?"
+msgstr "So what next?"
 
 #: cases/templates/cases/case_detail.html:111
 #: content/templates/content/content_types/index_page_content.html:171
 msgid "Ми готові!"
-msgstr "We are ready!"
+msgstr "We'are ready!"
 
 #: cases/templates/cases/case_detail.html:111
 #: content/templates/content/content_types/index_page_content.html:171
@@ -331,7 +331,7 @@ msgstr "Contacts"
 
 #: content/templates/content/content_types/index_page_content.html:80
 msgid "Далі"
-msgstr "Next"
+msgstr "Discover"
 
 #: content/templates/content/content_types/index_page_content.html:85
 msgid "Про нас."
@@ -355,7 +355,7 @@ msgstr ""
 
 #: idea/templates/404.html:52 idea/templates/includes/header.html:40
 msgid "Блог"
-msgstr ""
+msgstr "Blog"
 
 #: info/models.py:16
 msgid "adress"
