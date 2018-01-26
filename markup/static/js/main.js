@@ -59,19 +59,19 @@ $(document).ready(function () {
     return false
   })
 
-  if (location.pathname === '/' || location.pathname === '/us/' || location.pathname === '/uk/') {
-    for (let i = 0; i < menuLink.length; i++) {
-      if(!menuLink.eq(i).hasClass('link-page')) {
-        menuLink.eq(i).attr('href', '#' + menuLink.eq(i).attr('href'))
-      }
-    }
-  } else {
-    for (let i = 0; i < $('.main-menu-link').length; i++) {
-      if(!menuLink.eq(i).hasClass('link-page')) {
-        menuLink.eq(i).attr('href', '/#' + menuLink.eq(i).attr('href'))
-      }
-    }
-  }
+  // if (location.pathname === '/' || location.pathname === '/us/' || location.pathname === '/uk/') {
+  //   for (let i = 0; i < menuLink.length; i++) {
+  //     if(!menuLink.eq(i).hasClass('link-page')) {
+  //       menuLink.eq(i).attr('href', '#' + menuLink.eq(i).attr('href'))
+  //     }
+  //   }
+  // } else {
+  //   for (let i = 0; i < $('.main-menu-link').length; i++) {
+  //     if(!menuLink.eq(i).hasClass('link-page')) {
+  //       menuLink.eq(i).attr('href', '/#' + menuLink.eq(i).attr('href'))
+  //     }
+  //   }
+  // }
 
   $('.main-menu a').click(function () {
     $('.toggle-menu').click()
