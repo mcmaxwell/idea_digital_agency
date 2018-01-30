@@ -27,7 +27,7 @@
                 {% trans "Назад в блог" %}
             </a>
             <h1>{{object.title}}</h1>
-            <div class="blog-page-meta"{% trans "Опубликовано:" %} <i>{{object.date}}</i>. {% trans "Автор:" %} <i>{{object.author|default_if_none:""}}</i>
+            <div class="blog-page-meta"{% trans "Опубликовано:" %} <i>{{object.date}}</i> {% trans "Автор:" %} <i>{{object.author|default_if_none:""}}</i>
             </div>
             <img src="{{object.get_image_top}}" alt="{{object.title}}">
         </div>

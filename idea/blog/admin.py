@@ -44,7 +44,7 @@ class BlogAdmin(CommonPostAdmin, TabbedTranslationAdmin):
 
         
         (_('Blog'), {
-           'fields': ('image_preview', 'image_top','title', 'subtitle_tag','author','text', 'tags','date', ),
+           'fields': ('image_preview', 'image_top','title', 'subtitle_tag','author', 'slug', 'text', 'tags','date', ),
        }),
 
        (_('SEO'), {
