@@ -10,6 +10,7 @@
 
   @media #{$laptop} {
     background: url(%=static=%general/bg.svg) -21px 190px/354px 570px;
+    overflow: visible;
   }
   @media #{$desktop} {
     background: url(%=static=%general/bg.svg) 0 190px/480px 769px;

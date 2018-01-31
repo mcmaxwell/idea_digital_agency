@@ -626,8 +626,20 @@ label.error {
     //   margin-right: 20px;
     // }
 
-    &:hover .rating__star {
-      background: url(../img/general/star-active.png);
+
+
+    &.active {
+      &:hover .rating__star {
+        background: url(../img/general/star-active.png);
+      }
+
+      .rating__star {
+        cursor: pointer;
+
+        &:hover ~ .rating__star {
+          background: url(../img/general/star.png);
+        }
+      }
     }
   }
 
@@ -636,11 +648,6 @@ label.error {
     height: 32px;
     background: url(../img/general/star.png);
     display: inline-block;
-    cursor: pointer;
-
-    &:hover ~ .rating__star {
-      background: url(../img/general/star.png);
-    }
 
     &.active {
       background: url(../img/general/star-active.png);

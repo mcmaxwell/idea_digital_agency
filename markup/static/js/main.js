@@ -334,7 +334,7 @@ $(document).ready(function () {
   })
 })
 
-$('.rating__star').click(function () {
+$('.rating__stars.active .rating__star').click(function () {
   $('.rating__star').removeClass('active')
   for(var i = 0; i < $(this).index() + 1; i++) {
     $('.rating__star').eq(i).addClass('active')

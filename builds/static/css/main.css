@@ -1619,8 +1619,16 @@ label.error {
           justify-content: center;
 }
 
-.rating__stars:hover .rating__star {
+.rating__stars.active:hover .rating__star {
   background: url(../img/general/star-active.png);
+}
+
+.rating__stars.active .rating__star {
+  cursor: pointer;
+}
+
+.rating__stars.active .rating__star:hover ~ .rating__star {
+  background: url(../img/general/star.png);
 }
 
 .rating__star {
@@ -1628,11 +1636,6 @@ label.error {
   height: 32px;
   background: url(../img/general/star.png);
   display: inline-block;
-  cursor: pointer;
-}
-
-.rating__star:hover ~ .rating__star {
-  background: url(../img/general/star.png);
 }
 
 .rating__star.active {
@@ -3805,6 +3808,7 @@ section.home .scroll-down:hover::before {
 @media screen and (min-width: 1025px) {
   .page-not-found main {
     background: url(../img/general/bg.svg) -21px 190px/354px 570px;
+    overflow: visible;
   }
 }
 
