@@ -69,8 +69,9 @@ class BlogList(TemplateView):
             tag = None
 
         if self.request.method == 'GET' and tag:
-            #tag = self.request.GET['tag']
-            blogs = Blog.objects.filter(tags__in = tag)
+            tag = BlogTag.objects.get(tag_en = tag)
+            print tag.id
+            blogs = Blog.objects.filter(tags__in = str(tag.id))
         else:
             blogs = Blog.objects.all()
 
