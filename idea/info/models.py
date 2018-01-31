@@ -21,6 +21,13 @@ class Info(models.Model):
     twitter_link = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('twitter_link'))
     behance_link = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('behance_link'))
 
+    seo_title_blog = models.CharField(blank=True, max_length=255)
+
+    seo_keywords_blog = models.CharField(blank=True, max_length=255)
+
+    seo_description_blog = models.CharField(blank=True, max_length=255)
+
+
     def __str__(self):
         return "Site Information"
 

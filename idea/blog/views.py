@@ -24,9 +24,10 @@ class BlogView(DetailView):
     def get_context_data(self, **kwargs):
         blog = Blog.objects.get(slug=self.kwargs.get('slug'))
         blog_tags = blog.tags.all()
-        recommended = Blog.objects.filter(tags__in=blog_tags).exclude(title=blog.title).distinct()
-        print recommended
+        recommended = Blog.objects.filter(subtitle_tag=blog.subtitle_tag).exclude(slug=self.kwargs.get('slug'))
         context = super(BlogView, self).get_context_data(**kwargs)
+        detail = True
+        context['detail'] = detail
         context['tags'] = blog_tags
         context['recommended'] = recommended
         render(self.request,"includes/head.html",context)

@@ -41,7 +41,7 @@ class CaseAdmin(SortableAdminMixin, TabbedTranslationAdmin):
 
 
         (_('Case'), {
-           'fields': ('image_preview', 'image_top','activity_title', 'title','client','project', 'case_site','text', 'pictures_editor', 'facebook_link', 'insta_link', 'twitter_link', 'behance_link' ),
+           'fields': ('image_preview', 'image_top','activity_title', 'title','client','project', 'case_site', 'slug', 'text', 'pictures_editor', 'facebook_link', 'insta_link', 'twitter_link', 'behance_link' ),
        }),
 
        (_('SEO'), {

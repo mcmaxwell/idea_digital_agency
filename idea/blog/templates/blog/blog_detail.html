@@ -27,7 +27,7 @@
                 {% trans "Назад в блог" %}
             </a>
             <h1>{{object.title}}</h1>
-            <div class="blog-page-meta"{% trans "Опубликовано:" %} <i>{{object.date}}</i>. {% trans "Автор:" %} <i>{{object.author|default_if_none:""}}</i>
+            <div class="blog-page-meta"{% trans "Опубликовано:" %} <i>{{object.date}}</i> {% trans "Автор:" %} <i>{{object.author|default_if_none:""}}</i>
             </div>
             <img src="{{object.get_image_top}}" alt="{{object.title}}">
         </div>
@@ -110,7 +110,7 @@
             </div>
         </div>
     </section>
-    {% if recomended %}
+    {% if recommended.count > 0 %}
     <div class="more-post">
         <h2>{% trans "вам также будет интересно" %}</h2>
         <div class="blog__list">

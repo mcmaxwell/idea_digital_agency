@@ -32,6 +32,14 @@ ALLOWED_HOSTS = [
     '*'
 ]
 
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#if DEBUG is True:
+#    SECURE_SSL_REDIRECT = False
+#else:
+#    SECURE_SSL_REDIRECT = True
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
+
 
 # Application definition
 
