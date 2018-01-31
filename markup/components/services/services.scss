@@ -29,12 +29,6 @@
     max-height: none;
   }
 
-  &:last-child {
-    .icon {
-      margin-top: 24px;
-    }
-  }
-
   &-content {
     padding: 20px;
     border: 1px solid $color-line;
