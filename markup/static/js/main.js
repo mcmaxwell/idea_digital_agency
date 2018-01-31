@@ -237,15 +237,15 @@ $(document).ready(function () {
       if ((contentTopOffset >= 0)) {
         $navigation.css({
           position: 'absolute',
-          top: '10px',
+          top: '-32px',
           left: '',
-          right: '10px'
+          right: '0'
         })
       } else if ((contentBottomOffset < -$navigation.outerHeight())) {
         $navigation.css({
           position: 'absolute',
           left: '',
-          right: '10px',
+          right: '0',
           top: $content.outerHeight() + 450
         })
       } else {
@@ -253,7 +253,7 @@ $(document).ready(function () {
           position: 'fixed',
           right: '10px',
           left: '',
-          top: '10px'
+          top: '40px'
         })
       }
     }

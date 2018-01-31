@@ -28,11 +28,11 @@
     background-color: #fff;
     margin: 0;
     padding-bottom: 16px;
-    margin-top: 0.83em;
     color: #000000;
     background-image: url(%=static=%general/bg-text.png);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 0
   }
 
   @media screen and (min-width: 1280px) {
@@ -43,9 +43,11 @@
 .blog-page-content {
   position: relative;
   background-color: #fff;
+  padding-top: 0.83em;
 
   @media screen and (min-width: 1280px) {
     position: static;
+    padding-top: 40px;
   }
 
   &>h2:first-child {
@@ -154,20 +156,22 @@
 
 .share-page {
   position: absolute;
-  right: -10px;
+  right: 0;
+  top: -32px;
   width: 50px;
   text-align: center;
   box-shadow: -2px 2px 2px 0 rgba(#000, .1);
   background-color: #fff;
   padding-bottom: 10px;
   margin-top: -24px;
-  padding-top: 24px;
+  padding-top: 14px;
 
   @media screen and (min-width: 1280px) {
     right: auto;
     box-shadow: none;
     margin: 0;
     padding: 0;
+    top: auto;
   }
 
   &.active {
