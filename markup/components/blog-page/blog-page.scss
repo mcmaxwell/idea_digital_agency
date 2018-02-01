@@ -32,7 +32,12 @@
     background-image: url(%=static=%general/bg-text.png);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 0
+    margin-top: 0;
+
+    @media #{$laptop} {
+      height: 445px;
+      margin: 16px 0;
+    }
   }
 
   @media screen and (min-width: 1280px) {
