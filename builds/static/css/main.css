@@ -4084,6 +4084,39 @@ section.home .scroll-down:hover::before {
   height: 100%;
 }
 
+@media (max-height: 692px) and (min-width: 1290px) {
+  .services-item-content.active h3 {
+    margin-top: 36px;
+    margin-bottom: 45px;
+  }
+  .services-item-content.active .icon {
+    height: 30px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-height: 580px) and (min-width: 1290px) {
+  .services-item-content.active h3 {
+    margin-top: 26px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-height: 580px) and (min-width: 1025px) and (max-width: 1290px) {
+  .services-item-content.active h3 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+  }
+  .services-item-content.active .icon {
+    height: 30px;
+    font-size: 2.5rem;
+  }
+  .services-item-content.active ul {
+    font-size: 0.9375rem;
+  }
+}
+
 .services-item-content ul {
   overflow: hidden;
   -webkit-transition: all 0.3s;
@@ -4121,6 +4154,8 @@ section.home .scroll-down:hover::before {
 .services-item-content .icon {
   height: 60px;
   font-size: 3.125rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .services-item-content .icon-develop {

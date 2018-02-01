@@ -58,6 +58,39 @@
       ul {
         height: 100%;
       }
+
+      @media (max-height: 692px) and (min-width: 1290px) {
+        h3 {
+          margin-top: 36px;
+          margin-bottom: 45px;
+        }
+
+        .icon {
+          height: 30px;
+          font-size: rem-calc(40);
+        }
+      }
+      @media (max-height: 580px) and (min-width: 1290px){
+        h3 {
+          margin-top: 26px;
+          margin-bottom: 25px;
+        }
+      }
+
+      @media (max-height: 580px) and (min-width: 1025px) and (max-width: 1290px) {
+        h3 {
+          margin-top: 20px;
+          margin-bottom: 25px;
+          font-size: rem-calc(20);
+        }
+        .icon {
+          height: 30px;
+          font-size: rem-calc(40);
+        }
+        ul {
+          font-size: rem-calc(15);
+        }
+      }
     }
 
     ul {
@@ -92,6 +125,7 @@
     .icon {
       height: 60px;
       font-size: rem-calc(50);
+      transition: all $default-time;
       &-develop {
         font-size: rem-calc(40);
       }
@@ -121,7 +155,6 @@
       @media #{$desktop} {
         font-size: rem-calc(36);
         margin-top: 100px;
-
       }
       &::after {
         content: "";
