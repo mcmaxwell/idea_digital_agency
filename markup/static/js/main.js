@@ -237,7 +237,7 @@ $(document).ready(function () {
       if ((contentTopOffset >= 0)) {
         $navigation.css({
           position: 'absolute',
-          top: '-32px',
+          top: '-25px',
           left: '',
           right: '0'
         })
