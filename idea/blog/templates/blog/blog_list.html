@@ -21,7 +21,7 @@
         <div class="blog__menu">
             <div class="blog__menu-item"><a href="{% app_reverse "blog_list" "blog.urls" %}" class="">#all</a></div>
             {% for blogtag in tags %}
-            <div class="blog__menu-item"><a href="{% app_reverse "blog_list" "blog.urls" %}?tag={{blogtag.tag_en}}" class="{% if blogtag.id == tag %}active{% endif %}">{{blogtag.tag}}</a>
+            <div class="blog__menu-item"><a href="{% app_reverse "blog_list" "blog.urls" %}?tag={{blogtag.tag_en}}" class="{% if blogtag == tag %}active{% endif %}">#{{blogtag.tag}}</a>
             </div>
            {% endfor %}
         </div>
