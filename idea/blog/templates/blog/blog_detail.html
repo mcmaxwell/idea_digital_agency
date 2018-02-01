@@ -37,7 +37,7 @@
                 <ul>
                     <li class="share-page__link share-page__twitter icon icon-facebook">
                         <a class="twitter-share-button" href="https://twitter.com/intent/tweet">
-          Tweet</a>
+                       </a>
                         <script>
                             window.twttr = (function(d, s, id) {
                                                     var js, fjs = d.getElementsByTagName(s)[0],
@@ -91,7 +91,7 @@
             <span class="blog-page-bottom__title">Оцените статью</span>
             <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                 <meta itemprop="worstRating" content="1" />
-                <span class="rating__stars">
+                <span class="rating__stars active">
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating == 1 or object.get_rating > 1 %} active{% endif %}{% endif %}"></span>
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 1 %} active{% endif %}{% endif %}"></span>
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 2 %} active{% endif %}{% endif %}"></span>
