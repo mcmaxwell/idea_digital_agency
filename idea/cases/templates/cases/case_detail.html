@@ -37,7 +37,7 @@
                                 <p>{{caseservice.title}}</p>
                                 {% endfor %}
                                 <p class="title">{% trans "Сайт:" %}</p>
-                                <p><a href="http://{{object.case_site}}">{{object.case_site|default_if_none:""}}</a>
+                                <p><a href="http://{{object.case_site}}" target="_blank">{{object.case_site|default_if_none:""}}</a>
                                 </p>
                                 <ul class="social-list line-before line-after">
                                   {% if object.twitter_link %}
@@ -57,7 +57,7 @@
                                     {% endif %}
                                     {% if object.behance_link %}
                                     <li>
-                                        <a href="#" target="_blank" class="icon icon-behance">
+                                        <a href="{{object.behance_link}}" target="_blank" class="icon icon-behance">
                                             <svg width="18" height="18" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                                                 <path d="M12.631 14.019c0.406-0.294 0.6-0.781 0.6-1.456 0-0.375-0.063-0.681-0.194-0.919-0.137-0.238-0.313-0.425-0.544-0.556-0.225-0.137-0.481-0.231-0.775-0.281-0.287-0.056-0.594-0.081-0.906-0.081h-3.294v3.737h3.563c0.625 0.006 1.144-0.144 1.55-0.444z"></path>
                                                 <path d="M13.188 17.394c-0.463-0.35-1.075-0.525-1.838-0.525h-3.831v4.406h3.756c0.35 0 0.675-0.031 0.988-0.1s0.594-0.175 0.831-0.337c0.238-0.156 0.431-0.369 0.575-0.637s0.213-0.619 0.213-1.038c0-0.825-0.231-1.413-0.694-1.769z"></path>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-25 17:59+0000\n"
+"POT-Creation-Date: 2018-02-01 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,7 +187,7 @@ msgstr "Мы готовы"
 #: cases/templates/cases/case_detail.html:111
 #: content/templates/content/content_types/index_page_content.html:171
 msgid "зв&#x27;язатись"
-msgstr "св&#x27;язаться"
+msgstr "связаться"
 
 #: cases/templates/cases/case_detail.html:128
 #: content/templates/content/content_types/index_page_content.html:219
@@ -298,6 +298,7 @@ msgid "Page"
 msgstr ""
 
 #: content/models.py:23 content/models.py:32 content/models.py:40
+#: content/models.py:48
 msgid "Main content area"
 msgstr ""
 
@@ -309,28 +310,37 @@ msgstr ""
 msgid "Case Page"
 msgstr ""
 
+#: content/models.py:45
+msgid "Blog Page"
+msgstr ""
+
 #: content/templates/content/content_types/index_page_content.html:21
-#: idea/templates/404.html:37 idea/templates/includes/header.html:25
+#: idea/templates/404.html:37 idea/templates/includes/header.html:24
+#: idea/templates/includes/index_header.html:24
 msgid "Головна"
 msgstr "Главная"
 
 #: content/templates/content/content_types/index_page_content.html:24
-#: idea/templates/404.html:40 idea/templates/includes/header.html:28
+#: idea/templates/404.html:40 idea/templates/includes/header.html:27
+#: idea/templates/includes/index_header.html:27
 msgid "Про нас"
-msgstr "Про нас"
+msgstr "О нас"
 
 #: content/templates/content/content_types/index_page_content.html:27
-#: idea/templates/404.html:43 idea/templates/includes/header.html:31
+#: idea/templates/404.html:43 idea/templates/includes/header.html:30
+#: idea/templates/includes/index_header.html:30
 msgid "Послуги"
 msgstr "Услуги"
 
 #: content/templates/content/content_types/index_page_content.html:30
-#: idea/templates/404.html:46 idea/templates/includes/header.html:34
+#: idea/templates/404.html:46 idea/templates/includes/header.html:33
+#: idea/templates/includes/index_header.html:33
 msgid "Кейси"
 msgstr "Кейсы"
 
 #: content/templates/content/content_types/index_page_content.html:33
-#: idea/templates/404.html:49 idea/templates/includes/header.html:37
+#: idea/templates/404.html:49 idea/templates/includes/header.html:36
+#: idea/templates/includes/index_header.html:36
 msgid "Контакти"
 msgstr "Контакты"
 
@@ -340,25 +350,26 @@ msgstr "Далее"
 
 #: content/templates/content/content_types/index_page_content.html:85
 msgid "Про нас."
-msgstr ""
+msgstr "О нас."
 
 #: content/templates/content/content_types/index_page_content.html:139
 msgid "Кейси."
 msgstr "Кейсы."
 
-#: idea/settings.py:160
+#: idea/settings.py:168
 msgid "Russian"
 msgstr ""
 
-#: idea/settings.py:161
+#: idea/settings.py:169
 msgid "English"
 msgstr ""
 
-#: idea/settings.py:162
+#: idea/settings.py:170
 msgid "Ukrainian"
 msgstr ""
 
-#: idea/templates/404.html:52 idea/templates/includes/header.html:40
+#: idea/templates/404.html:52 idea/templates/includes/header.html:39
+#: idea/templates/includes/index_header.html:39
 msgid "Блог"
 msgstr ""
 
@@ -366,7 +377,7 @@ msgstr ""
 msgid "adress"
 msgstr ""
 
-#: info/models.py:17 info/models.py:36 info/models.py:51
+#: info/models.py:17 info/models.py:43 info/models.py:58
 msgid "email"
 msgstr ""
 
@@ -374,43 +385,43 @@ msgstr ""
 msgid "phone_footer"
 msgstr ""
 
-#: info/models.py:28 info/models.py:29
+#: info/models.py:35 info/models.py:36
 msgid "Info"
 msgstr ""
 
-#: info/models.py:35
+#: info/models.py:42
 msgid "name"
 msgstr ""
 
-#: info/models.py:42 info/models.py:43
+#: info/models.py:49 info/models.py:50
 msgid "Subscriber"
 msgstr ""
 
-#: info/models.py:49
+#: info/models.py:56
 msgid "first_name"
 msgstr ""
 
-#: info/models.py:50
+#: info/models.py:57
 msgid "second_name"
 msgstr ""
 
-#: info/models.py:52
+#: info/models.py:59
 msgid "phone"
 msgstr ""
 
-#: info/models.py:53
+#: info/models.py:60
 msgid "budget"
 msgstr ""
 
-#: info/models.py:54
+#: info/models.py:61
 msgid "company"
 msgstr ""
 
-#: info/models.py:56
+#: info/models.py:63
 msgid "message"
 msgstr ""
 
-#: info/models.py:66 info/models.py:67
+#: info/models.py:73 info/models.py:74
 msgid "ContactInfo"
 msgstr ""
 
