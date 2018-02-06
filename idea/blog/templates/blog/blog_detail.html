@@ -91,7 +91,7 @@
             <span class="blog-page-bottom__title">Оцените статью</span>
             <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                 <meta itemprop="worstRating" content="1" />
-                <span class="rating__stars active">
+                <span class="rating__stars {% if voted %}{% else %}active{% endif %}">
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating == 1 or object.get_rating > 1 %} active{% endif %}{% endif %}"></span>
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 1 %} active{% endif %}{% endif %}"></span>
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 2 %} active{% endif %}{% endif %}"></span>

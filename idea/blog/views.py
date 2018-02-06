@@ -27,6 +27,13 @@ class BlogView(DetailView):
         recommended = Blog.objects.filter(subtitle_tag=blog.subtitle_tag).exclude(slug=self.kwargs.get('slug'))
         context = super(BlogView, self).get_context_data(**kwargs)
         detail = True
+
+        if self.request.session.get(blog.title, False):
+            voted = True
+        else:
+            voted = False
+
+        context['voted'] = voted
         context['detail'] = detail
         context['tags'] = blog_tags
         context['recommended'] = recommended
@@ -36,6 +43,7 @@ class BlogView(DetailView):
 
 def update_rating(request, slug):
     blog = Blog.objects.get(slug=slug)
+    request.session[blog.title] = True
     if request.is_ajax():
         if request.method == 'POST':
             percent = request.POST.get('percent', '')
