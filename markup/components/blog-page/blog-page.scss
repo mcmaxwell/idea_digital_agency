@@ -137,12 +137,8 @@
       margin-bottom: 20px;
     }
 
-    span {
+    span:not(.rating__star-active):not(.rating__star) {
       margin: 0 5px;
-    }
-
-    .rating__star {
-      margin: 0;
     }
 
     @media #{$laptop} {
