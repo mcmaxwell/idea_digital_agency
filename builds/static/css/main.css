@@ -883,6 +883,7 @@ select {
 
 .back-link svg {
   min-width: 28px;
+  max-width: 28px;
   min-height: 33px;
   margin-right: 20px;
   fill: #000;
@@ -1928,7 +1929,7 @@ label.error {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1264px) {
   .blog-page-top {
     text-align: left;
     margin: 16px 0 0;
@@ -1955,7 +1956,7 @@ label.error {
   padding-top: 0.83em;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1264px) {
   .blog-page-content {
     position: static;
     padding-top: 40px;
@@ -2006,7 +2007,7 @@ label.error {
   margin: 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1264px) {
   .blog-page-meta {
     font-size: 1.125rem;
     margin-bottom: 24px;
@@ -2099,7 +2100,7 @@ label.error {
   padding-top: 14px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1264px) {
   .share-page {
     right: auto;
     box-shadow: none;
@@ -2170,7 +2171,7 @@ label.error {
   padding: 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1264px) {
   .share-page ul {
     display: block;
     padding: 100px 0 0;
@@ -2240,7 +2241,7 @@ label.error {
           justify-content: center;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1264px) {
   .share-page__toggle {
     display: none;
   }

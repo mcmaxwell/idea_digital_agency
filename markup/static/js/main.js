@@ -185,7 +185,7 @@ $(document).ready(function () {
     const $navigation = $('.share-page')
     const $content = $('.blog-page-content')
 
-    if (window.innerWidth > 1280) {
+    if (window.innerWidth > 1263) {
       $navigation.css({
         right: '',
         position: 'fixed',
