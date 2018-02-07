@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-01 14:52+0000\n"
+"POT-Creation-Date: 2018-02-06 14:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,8 +73,25 @@ msgstr "Опубликовано:"
 msgid "Автор:"
 msgstr "Автор:"
 
+#: blog/templates/blog/blog_detail.html:91
+msgid "Оцініть статтю"
+msgstr "Оцените статью"
+
+#: blog/templates/blog/blog_detail.html:101
+msgid "з"
+msgstr "из"
+
+#: blog/templates/blog/blog_detail.html:101
+msgid "на основі"
+msgstr "на основе"
+
+#: blog/templates/blog/blog_detail.html:101
+msgid "відгуків"
+msgstr "отзывов"
+
 #: blog/templates/blog/blog_detail.html:115
-msgid "вам также будет интересно"
+#| msgid "вам также будет интересно"
+msgid "вам також буде цікаво"
 msgstr "вам также будет интересно"
 
 #: blog/templates/blog/blog_detail.html:138

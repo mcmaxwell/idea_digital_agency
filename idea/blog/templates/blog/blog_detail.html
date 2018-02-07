@@ -88,7 +88,7 @@
             <p>{{object.text|default_if_none:""|safe}}</p>
         <div class="blog-page-bottom">
 
-            <span class="blog-page-bottom__title">Оцените статью</span>
+            <span class="blog-page-bottom__title">{% trans "Оцініть статтю" %}</span>
             <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                 <meta itemprop="worstRating" content="1" />
                 <span class="rating__stars {% if voted %}{% else %}active{% endif %}">
@@ -98,21 +98,21 @@
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 3 %} active{% endif %}{% endif %}"></span>
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 4 %} active{% endif %}{% endif %}"></span>
                 </span>
-                (<span itemprop="ratingValue">{% if object.votes > 0 %}{{object.get_rating}}{% else %}0{% endif %}</span> из <span itemprop="bestRating">5</span> на основе <span itemprop="reviewCount">{{object.votes}}</span> отзывов )
+                (<span itemprop="ratingValue">{% if object.votes > 0 %}{{object.get_rating}}{% else %}0{% endif %}</span> {% trans "з" %} <span itemprop="bestRating">5</span> {% trans "на основі" %} <span itemprop="reviewCount">{{object.votes}}</span> {% trans "відгуків"%})
             </div>
 
             <!-- <span class="blog-page-bottom__title">Оцените статью</span>
                         <div class="rating"><span class="rating__stars"><span class="rating__stars-active" style="width: 20%"></span></span>(4 из 5 на основе 7 отзывов)</div> -->
             <div class="tags">
                 {% for blogtag in tags %}
-                <a href="{% app_reverse "blog_list" "blog.urls" %}?tag={{blogtag.id}}">#{{blogtag.tag}}</a>
+                <a href="{% app_reverse "blog_list" "blog.urls" %}?tag={{blogtag.tag_en}}">#{{blogtag.tag}}</a>
                 {% endfor %}
             </div>
         </div>
     </section>
     {% if recommended.count > 0 %}
     <div class="more-post">
-        <h2>{% trans "вам также будет интересно" %}</h2>
+        <h2>{% trans "вам також буде цікаво" %}</h2>
         <div class="blog__list">
             {% for blog in recommended %}
             <a class="blog__list-item" href="{{blog.get_absolute_url}}">
