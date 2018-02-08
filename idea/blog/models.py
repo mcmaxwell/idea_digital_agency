@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+from __future__ import unicode_literals, division
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import ugettext
@@ -81,7 +81,19 @@ class Blog(models.Model):
         return self.subtitle_tag.tag
 
     def get_rating(self):
-        return int(self.rating / self.votes)
+        print self.rating
+        print self.votes
+        return round(self.rating / self.votes, 2)
+
+    def get_rating_for_width(self):
+        enter_number = round(self.rating / self.votes, 2)
+        number_dec = str(enter_number).split(".")[1]
+        if len(number_dec) < 2:
+            return int(number_dec + str(0))
+        else:
+            return int(number_dec)
+        #enter_number = str(enter_number.split(',')
+        #return int(number_dec)
 
     def get_absolute_url(self):
       return app_reverse('blog_detail', 'blog.urls', kwargs={
