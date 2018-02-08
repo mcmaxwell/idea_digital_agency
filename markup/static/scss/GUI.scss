@@ -196,11 +196,10 @@ h1 {
     font-family: gothamproblack;
     font-size: rem-calc(26);
     font-weight: 400;
-    letter-spacing: -0.52px;
+    letter-spacing: 1px;
     margin: 0;
     @media #{$laptop} {
       font-size: rem-calc(69);
-      letter-spacing: -1.96px;
     }
     @media #{$desktop} {
       font-size: 5.11vw;
