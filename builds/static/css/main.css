@@ -2127,6 +2127,13 @@ label.error {
   height: 32px !important;
 }
 
+.share-page__facebook a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
 .share-page__facebook .fb-share-button {
   opacity: 0;
 }

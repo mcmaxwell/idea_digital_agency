@@ -210,6 +210,10 @@
   }
 
   &__facebook {
+    a {
+      display: flex;
+      height: 100%;
+    }
     .fb-share-button {
       opacity: 0;
        *  {
