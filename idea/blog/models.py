@@ -19,6 +19,12 @@ class BlogTag(models.Model):
 
     order = models.PositiveIntegerField(default=0, blank=False, null=False)
 
+    seo_title = models.CharField(blank=True, max_length=255)
+
+    seo_keywords = models.CharField(blank=True, max_length=255)
+
+    seo_description = models.CharField(blank=True, max_length=255)
+
     def __str__(self):
         return self.tag
 

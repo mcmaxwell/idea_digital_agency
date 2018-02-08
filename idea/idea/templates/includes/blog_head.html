@@ -7,11 +7,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% if seo_category %}
+    <title>{{ tag.seo_title }}</title>
+    <meta content="{{ tag.seo_keywords }}" name="description">
+    <meta content="{{ tag.seo_description }}" name="keywords">
+    {% else %}
     {% for info in info %}
     <title>{{ info.seo_title_blog }}</title>
     <meta content="{{ info.seo_keywords_blog }}" name="description">
     <meta content="{{ info.seo_description_blog }}" name="keywords">
     {% endfor %}
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <meta content="telephone=no" name="format-detection">

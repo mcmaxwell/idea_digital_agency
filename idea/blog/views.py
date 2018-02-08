@@ -69,6 +69,7 @@ class BlogList(TemplateView):
     def get_context_data(self, **kwargs):
 
         tags = BlogTag.objects.all()
+        seo_category = False
         print tags
 
         try:
@@ -80,6 +81,8 @@ class BlogList(TemplateView):
             tag = BlogTag.objects.get(tag_en = tag)
             print tag.id
             blogs = Blog.objects.filter(tags__in = str(tag.id))
+            seo_category = True
+
         else:
             blogs = Blog.objects.all()
 
@@ -98,6 +101,7 @@ class BlogList(TemplateView):
 
         #print dir(Paginator.num_pages)
         context = super(BlogList, self).get_context_data(**kwargs)
+        context['seo_category'] = seo_category
         context['tag'] = tag
         context['blogs'] = blogs
         context['tags'] = tags

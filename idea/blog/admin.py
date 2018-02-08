@@ -27,9 +27,13 @@ class BlogTagAdmin(TabbedTranslationAdmin):
         (_('Tag'), {
            'fields': ('tag', ),
        }),
+        (_('SEO'), {
+             'classes': ('collapse', ),
+            'fields': ('seo_title', 'seo_keywords','seo_description', ),
+        }),
     )
     sortable = 'order'
-    
+
 
 
 class BlogAdmin(CommonPostAdmin, TabbedTranslationAdmin):
@@ -42,7 +46,7 @@ class BlogAdmin(CommonPostAdmin, TabbedTranslationAdmin):
     filter_horizontal = ('tags',)
     fieldsets = (
 
-        
+
         (_('Blog'), {
            'fields': ('image_preview', 'image_top','title', 'subtitle_tag','author', 'slug', 'text', 'tags','date', ),
        }),
