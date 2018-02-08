@@ -9,31 +9,31 @@
 
     <header class="header">
         <div class="top-nav">
-            <a href="/{% if LANGUAGE_CODE == 'uk' %}uk{% endif %}{% if LANGUAGE_CODE == 'en' %}us{% endif %}" class="logo">
+            <a href="/{% if LANGUAGE_CODE == 'uk' %}ua{% endif %}{% if LANGUAGE_CODE == 'en' %}us{% endif %}" class="logo">
                 <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
             </a>
             <div class="top-action">
                 <div class="top-lang">
-                    <a href="/uk" class="{% if LANGUAGE_CODE == 'uk' %}active{% endif %}">ua</a>
+                    <a href="/ua" class="{% if LANGUAGE_CODE == 'uk' %}active{% endif %}">ua</a>
                     <a href="/" class="{% if LANGUAGE_CODE == 'ru' %}active{% endif %}">ru</a>
                    <!-- <a href="/us" class="{% if LANGUAGE_CODE == 'en' %}active{% endif %}">us</a> -->
                 </div>
                 <nav class="main-menu">
                     <ul class="menu">
                         <li>
-                            <a class=" active main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#home{% endif %}{% if LANGUAGE_CODE == 'uk' %}/uk/#home{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#home{% endif %}" data-section-link="home"><span>{% trans "Головна" %}</span></a>
+                            <a class=" active main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#home{% endif %}{% if LANGUAGE_CODE == 'uk' %}/ua/#home{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#home{% endif %}" data-section-link="home"><span>{% trans "Головна" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#about{% endif %}{% if LANGUAGE_CODE == 'uk' %}/uk/#about{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#about{% endif %}" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
+                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#about{% endif %}{% if LANGUAGE_CODE == 'uk' %}/ua/#about{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#about{% endif %}" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#services{% endif %}{% if LANGUAGE_CODE == 'uk' %}/uk/#services{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#services{% endif %}" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
+                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#services{% endif %}{% if LANGUAGE_CODE == 'uk' %}/ua/#services{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#services{% endif %}" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#cases-carusel{% endif %}{% if LANGUAGE_CODE == 'uk' %}/uk/#cases-carusel{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#cases-carusel{% endif %}" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
+                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#cases-carusel{% endif %}{% if LANGUAGE_CODE == 'uk' %}/ua/#cases-carusel{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#cases-carusel{% endif %}" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
                         </li>
                         <li>
-                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#contacts{% endif %}{% if LANGUAGE_CODE == 'uk' %}/uk/#contacts{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#contacts{% endif %}" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
+                            <a class="  main-menu-link" href="{% if LANGUAGE_CODE == 'ru' %}/#contacts{% endif %}{% if LANGUAGE_CODE == 'uk' %}/ua/#contacts{% endif %}{% if LANGUAGE_CODE == 'en' %}/us/#contacts{% endif %}" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
                         </li>
                         <li>
                             <a class="link-page  main-menu-link" href="{% app_reverse "blog_list" "blog.urls" %}"><span>{% trans "Блог" %}</span></a>
