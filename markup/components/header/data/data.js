@@ -4,24 +4,24 @@ header: {
     isActiveUa: 'active',
     menuList: [
       {
-        link: 'home',
+        link: '#home',
         text: 'Головна',
         isActive: 'active'
       },
       {
-        link: 'about',
+        link: '#about',
         text: 'Про нас'
       },
       {
-        link: 'services',
+        link: '#services',
         text: 'Послуги'
       },
       {
-        link: 'cases-carusel',
+        link: '#cases-carusel',
         text: 'Кейси'
       },
       {
-        link: 'contacts',
+        link: '#contacts',
         text: 'Контакти'
       },
       {
