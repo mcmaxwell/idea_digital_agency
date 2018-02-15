@@ -2941,6 +2941,8 @@ footer .social-list {
 
 .get-in-touch-form {
   width: 100%;
+  position: relative;
+  z-index: 100;
 }
 
 @media screen and (min-width: 1025px) {
@@ -3046,7 +3048,7 @@ footer .social-list {
   }
 }
 
-.line-load {
+.get-in-touch-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3063,25 +3065,40 @@ footer .social-list {
 }
 
 @media screen and (min-width: 1025px) {
-  .line-load {
+  .get-in-touch-address {
     height: 100%;
     padding: 0;
   }
+}
+
+.line-load {
+  position: relative;
+}
+
+@media screen and (min-width: 1025px) {
   .line-load::after {
     content: "";
     position: absolute;
-    right: -70px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
     top: 0;
     height: 0;
     width: 2px;
     background-color: #cccccc;
     -webkit-transition: all 5s;
     transition: all 5s;
+    z-index: 1;
   }
 }
 
 .line-load.load::after {
   height: 100%;
+}
+
+.ziro {
+  width: 0;
+  height: 0;
 }
 
 .header .top-nav {

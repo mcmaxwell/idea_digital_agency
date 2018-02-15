@@ -46,6 +46,8 @@
 
   &-form {
       width: 100%;
+      position: relative;
+      z-index: 100;
       @media #{$laptop} {
         max-width: 50%;
       }
@@ -124,7 +126,7 @@
   }
 }
 
-.line-load {
+.get-in-touch-address {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,15 +136,23 @@
   @media #{$laptop} {
     height: 100%;
     padding: 0;
+  }
+}
+
+.line-load {
+  position: relative;
+  @media #{$laptop} {
     &::after {
       content: "";
       position: absolute;
-      right: -70px;
+      left: 50%;
+      transform: translate(-50%);
       top: 0;
       height: 0;
       width: 2px;
       background-color: #cccccc;
       transition: all 5s;
+      z-index: 1;
     }
   }
 
@@ -151,4 +161,9 @@
       height: 100%;
     }
   }
+}
+
+.ziro {
+  width: 0;
+  height: 0;
 }

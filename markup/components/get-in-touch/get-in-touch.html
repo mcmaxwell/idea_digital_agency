@@ -1,55 +1,57 @@
-<div class="get-in-touch">
-  <div class="get-in-touch-content">
-      <a href="{{linkLogo}}" class="logo">
-          <img src="%=static=%img/general/logo.svg" alt="Idea Digital Agency">
-      </a>
-      <span class="close">×</span>
-      <div class="get-in-touch-address line-load">
-          <h4>{{city}}</h4>
-          <p>{{address}}</p>
-          <p><a href="tel:+380985606565">+380985606565</a></p>
-          <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a></p>
-      </div>
-      <div class="get-in-touch-form">
-          <form id="get-in-touch-form" class="ajaxform" action="http://185.25.117.110/info/contact_form/">
-            <div class="block-field">
-              <input type="text" name="first" placeholder="{{name}}" required autocomplete="off">
+<div class="ziro">
+  <div class="get-in-touch">
+    <div class="get-in-touch-content line-load">
+        <a href="{{linkLogo}}" class="logo">
+            <img src="%=static=%img/general/logo.svg" alt="Idea Digital Agency">
+        </a>
+        <span class="close">×</span>
+        <div class="get-in-touch-address">
+            <h4>{{city}}</h4>
+            <p>{{address}}</p>
+            <p><a href="tel:+380985606565">+380985606565</a></p>
+            <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a></p>
+        </div>
+        <div class="get-in-touch-form">
+            <form id="get-in-touch-form" class="ajaxform" action="http://185.25.117.110/info/contact_form/">
+              <div class="block-field">
+                <input type="text" name="first" placeholder="{{name}}" required autocomplete="off">
+              </div>
+              <div class="block-field">
+                <input type="text" name="second" placeholder="{{second}}" required autocomplete="off">
+              </div>
+              <div class="block-field">
+                <input type="email" name="email" placeholder="e-mail"  autocomplete="off">
+              </div>
+              <div class="block-field">
+                <input type="tel" name="phone" placeholder="{{phone}}" required autocomplete="off">
+              </div>
+              <div class="block-field">
+                <label for="budget" class="label-select">
+                  <select name="budget" id="budget" required>
+                      <option value="" disabled selected>{{budget}}</option>
+                      <option value="500$-1000${{step1}}">{{step1}}</option>
+                      <option value="1000$-3000${{step2}}">{{step2}}</option>
+                      <option value="3000$ +{{step3}}">{{step3}}</option>
+                  </select>
+                </label>
+              </div>
+              <div class="block-field">
+                <input type="text" name="company" placeholder="{{company}}" autocomplete="off">
+              </div>
+              <div class="block-field block-field-textarea">
+                <textarea name="message" placeholder="{{message}}" required></textarea>
+              </div>
+              <div class="block-field">
+                <input type="submit" value="{{send}}" class="btn">
+              </div>
+            </form>
+            <div class="get-in-touch-address thanks-massege hidden">
+                <h4>{{thanks}}</h4>
+                <p>{{{thanksDesc}}}</p>
+                <br>
+                <br>
             </div>
-            <div class="block-field">
-              <input type="text" name="second" placeholder="{{second}}" required autocomplete="off">
-            </div>
-            <div class="block-field">
-              <input type="email" name="email" placeholder="e-mail"  autocomplete="off">
-            </div>
-            <div class="block-field">
-              <input type="tel" name="phone" placeholder="{{phone}}" required autocomplete="off">
-            </div>
-            <div class="block-field">
-              <label for="budget" class="label-select">
-                <select name="budget" id="budget" required>
-                    <option value="" disabled selected>{{budget}}</option>
-                    <option value="500$-1000${{step1}}">{{step1}}</option>
-                    <option value="1000$-3000${{step2}}">{{step2}}</option>
-                    <option value="3000$ +{{step3}}">{{step3}}</option>
-                </select>
-              </label>
-            </div>
-            <div class="block-field">
-              <input type="text" name="company" placeholder="{{company}}" autocomplete="off">
-            </div>
-            <div class="block-field block-field-textarea">
-              <textarea name="message" placeholder="{{message}}" required></textarea>
-            </div>
-            <div class="block-field">
-              <input type="submit" value="{{send}}" class="btn">
-            </div>
-          </form>
-          <div class="get-in-touch-address thanks-massege hidden">
-              <h4>{{thanks}}</h4>
-              <p>{{{thanksDesc}}}</p>
-              <br>
-              <br>
-          </div>
-      </div>
+        </div>
+    </div>
   </div>
 </div>
