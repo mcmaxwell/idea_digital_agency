@@ -37,19 +37,15 @@
     left: 20px;
   }
 
-  .thanks-massege {
-    margin-right: 0;
-    @media #{$laptop} {
-      margin-left: 75px;
-    }
-  }
-
   &-form {
       width: 100%;
       position: relative;
       z-index: 100;
       @media #{$laptop} {
         max-width: 50%;
+        padding-right: 10%;
+        width: 50%;
+        box-sizing: border-box;
       }
       form {
         display: flex;
@@ -102,7 +98,6 @@
   &-address {
     padding: 10px;
     @media #{$laptop} {
-      margin-right: 76px;
       padding: 0;
     }
 
@@ -126,7 +121,7 @@
   }
 }
 
-.get-in-touch-address {
+.get-in-touch-address:not(.thanks-massege) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,6 +131,10 @@
   @media #{$laptop} {
     height: 100%;
     padding: 0;
+    width: 50%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    align-items: flex-end;
   }
 }
 
@@ -154,9 +153,13 @@
       transition: all 5s;
       z-index: 1;
     }
+
   }
 
   &.load {
+    .get-in-touch-form {
+      padding: 0 20px 0 10%;
+    }
     &::after {
       height: 100%;
     }
