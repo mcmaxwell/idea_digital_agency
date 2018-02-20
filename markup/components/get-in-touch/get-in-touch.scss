@@ -158,7 +158,9 @@
 
   &.load {
     .get-in-touch-form {
-      padding: 0 20px 0 10%;
+      @media #{$laptop} {
+        padding: 0 20px 0 10%;
+      }
     }
     &::after {
       height: 100%;
