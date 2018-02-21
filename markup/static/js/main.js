@@ -15,7 +15,7 @@ $(document).ready(function () {
          infinite: true,
          centerMode: true,
          centerPadding: '30px',
-         dots: true,
+         dots: false,
          focusOnSelect: true
        }
      }
