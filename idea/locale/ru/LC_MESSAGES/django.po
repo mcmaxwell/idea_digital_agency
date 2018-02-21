@@ -199,7 +199,7 @@ msgstr "Что дальше?"
 #: cases/templates/cases/case_detail.html:111
 #: content/templates/content/content_types/index_page_content.html:171
 msgid "Ми готові!"
-msgstr "Мы готовы"
+msgstr "Мы готовы!"
 
 #: cases/templates/cases/case_detail.html:111
 #: content/templates/content/content_types/index_page_content.html:171
@@ -239,7 +239,7 @@ msgstr "выберите ваш бюджет"
 #: cases/templates/cases/case_detail.html:160
 #: content/templates/content/content_types/index_page_content.html:251
 msgid "компанія"
-msgstr "кампания"
+msgstr "компания"
 
 #: cases/templates/cases/case_detail.html:163
 #: content/templates/content/content_types/index_page_content.html:254
@@ -254,7 +254,7 @@ msgstr "отправить"
 #: cases/templates/cases/case_detail.html:170
 #: content/templates/content/content_types/index_page_content.html:261
 msgid "Дякуємо що звернулися"
-msgstr "Спасибо что обратились"
+msgstr "Спасибо за заявку"
 
 #: cases/templates/cases/case_detail.html:171
 #: content/templates/content/content_types/index_page_content.html:262

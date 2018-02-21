@@ -25,7 +25,7 @@ class CaseServiceInline(SortableInlineAdminMixin, admin.StackedInline):
     extra = 0
     fieldsets = (
         (_('CaseService'), {
-            'fields': ('title',),
+            'fields': ('title_ru','title_en', 'title_uk'),
         }),
     )
 
