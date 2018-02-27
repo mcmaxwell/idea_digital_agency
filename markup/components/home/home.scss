@@ -1,5 +1,6 @@
 section.home {
   position: relative;
+  min-height: 500px;
   @media #{$laptop} {
     background: url(%=static=%general/bg.svg) -21px 190px/354px 570px;
   }

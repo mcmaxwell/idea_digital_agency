@@ -2657,7 +2657,13 @@ label.error {
 
 section.scrollify.contacts {
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 500px;
+}
+
+@media screen and (min-width: 1025px) {
+  section.scrollify.contacts {
+    min-height: 100vh;
+  }
 }
 
 section.scrollify.contacts-content {
@@ -3343,6 +3349,7 @@ footer .social-list {
 
 section.home {
   position: relative;
+  min-height: 500px;
 }
 
 @media screen and (min-width: 1025px) {
