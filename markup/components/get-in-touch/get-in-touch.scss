@@ -2,9 +2,9 @@
   transition: all $default-time*2 ;
   position: absolute;
   top: 0;
-  width: 100%;
   right: -200%;
   bottom: 0;
+  width: 0;
   background-color: #f1f1f1;
   z-index: 2000;
   overflow: auto;
@@ -17,6 +17,7 @@
   &.active {
     display: flex;
     right: 0;
+    width: 100%;
   }
 
   &-content {
