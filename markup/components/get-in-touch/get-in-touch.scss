@@ -1,6 +1,6 @@
 .get-in-touch {
   transition: all $default-time*2 ;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   right: -200%;
@@ -12,6 +12,7 @@
     overflow: hidden;
     display: flex;
     height: 100%;
+    position: fixed;
   }
   &.active {
     display: flex;

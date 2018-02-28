@@ -2881,7 +2881,7 @@ footer .social-list {
 .get-in-touch {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   right: -200%;
@@ -2898,6 +2898,7 @@ footer .social-list {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
+    position: fixed;
   }
 }
 
