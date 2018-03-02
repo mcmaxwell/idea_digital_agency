@@ -1891,106 +1891,6 @@ label.error {
   transition: all .3s;
 }
 
-.case {
-  box-sizing: border-box;
-  padding-top: 30px;
-}
-
-@media screen and (min-width: 1025px) {
-  .case {
-    background: url(../img/general/about-line.png) 1px 0/25% 570px;
-    padding-top: 80px;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  .case {
-    background: url(../img/general/about-line.png) -3px 0;
-  }
-}
-
-.case .sidebar h2 {
-  font-size: 1.1875rem;
-  padding-top: 70px;
-}
-
-.case .sidebar h2::after {
-  font-size: 2.8125rem;
-}
-
-@media screen and (min-width: 1601px) {
-  .case .sidebar h2::after {
-    font-size: 3.75rem;
-  }
-}
-
-.case .sidebar h2::before {
-  width: 1900px;
-  top: 95%;
-}
-
-.case .sidebar p {
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
-}
-
-.case .sidebar p.title {
-  margin: 10px 0;
-  color: #c7c7c7;
-}
-
-.case .sidebar a {
-  text-decoration: underline;
-}
-
-.case .sidebar a:hover {
-  text-decoration: none;
-}
-
-.case .social-list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: 30px;
-}
-
-.case .social-list a {
-  text-decoration: none;
-}
-
-.case .social-list.line-after::after {
-  width: 62px;
-}
-
-.case .social-list.line-before::before {
-  width: 1162px;
-}
-
-.case .main img {
-  margin-bottom: 80px;
-}
-
-.case .main-description {
-  font-size: 1.1875rem;
-  background: url(../img/general/logo-big.svg) 98% 79%/contain no-repeat;
-}
-
-@media screen and (min-width: 1025px) {
-  .case .main-description {
-    height: 80vh;
-    background: url(../img/general/logo-big.svg) 98% 79%/340px 420px no-repeat;
-  }
-}
-
-.case .main-description h2 {
-  font-family: gothamprobold;
-}
-
-.case .main-description h2:nth-child(n + 2) {
-  margin-top: 40px;
-}
-
 @media screen and (min-width: 1025px) {
   .blog-page.blog-wrapper {
     background: url(../img/general/bg.svg) -24px 189px/354px 570px;
@@ -2352,6 +2252,106 @@ label.error {
   .share-page__toggle {
     display: none;
   }
+}
+
+.case {
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 1025px) {
+  .case {
+    background: url(../img/general/about-line.png) 1px 0/25% 570px;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .case {
+    background: url(../img/general/about-line.png) -3px 0;
+  }
+}
+
+.case .sidebar h2 {
+  font-size: 1.1875rem;
+  padding-top: 70px;
+}
+
+.case .sidebar h2::after {
+  font-size: 2.8125rem;
+}
+
+@media screen and (min-width: 1601px) {
+  .case .sidebar h2::after {
+    font-size: 3.75rem;
+  }
+}
+
+.case .sidebar h2::before {
+  width: 1900px;
+  top: 95%;
+}
+
+.case .sidebar p {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.case .sidebar p.title {
+  margin: 10px 0;
+  color: #c7c7c7;
+}
+
+.case .sidebar a {
+  text-decoration: underline;
+}
+
+.case .sidebar a:hover {
+  text-decoration: none;
+}
+
+.case .social-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+.case .social-list a {
+  text-decoration: none;
+}
+
+.case .social-list.line-after::after {
+  width: 62px;
+}
+
+.case .social-list.line-before::before {
+  width: 1162px;
+}
+
+.case .main img {
+  margin-bottom: 80px;
+}
+
+.case .main-description {
+  font-size: 1.1875rem;
+  background: url(../img/general/logo-big.svg) 98% 79%/contain no-repeat;
+}
+
+@media screen and (min-width: 1025px) {
+  .case .main-description {
+    height: 80vh;
+    background: url(../img/general/logo-big.svg) 98% 79%/340px 420px no-repeat;
+  }
+}
+
+.case .main-description h2 {
+  font-family: gothamprobold;
+}
+
+.case .main-description h2:nth-child(n + 2) {
+  margin-top: 40px;
 }
 
 .case-top {
