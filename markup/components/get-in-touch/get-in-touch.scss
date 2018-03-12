@@ -8,6 +8,7 @@
   background-color: #f1f1f1;
   z-index: 2000;
   overflow: auto;
+  height: 100%;
   @media #{$laptop} {
     overflow: hidden;
     display: flex;
@@ -167,5 +168,11 @@
     &::after {
       height: 100%;
     }
+  }
+}
+
+.hide-mobile {
+  @media (max-width: 1024px) {
+    display: none!important;
   }
 }
