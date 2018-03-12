@@ -1016,6 +1016,7 @@ img {
   left: 0;
   right: 0;
   overflow-y: scroll;
+  background: #f1f1f1;
 }
 
 .logo {
@@ -3293,6 +3294,7 @@ footer .social-list {
   bottom: 0;
   z-index: 1000;
   height: 100%;
+  min-height: 500px;
   background: #f1f1f1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
