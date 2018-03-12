@@ -19,7 +19,7 @@ phantomjsdriver.log
 # builds/
 dev/
 build/
-dev
+idea/media/
 
 # python stafff
 __pycache__/
