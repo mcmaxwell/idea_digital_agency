@@ -49,6 +49,7 @@ $(document).ready(function () {
 
     }, 100)
     $('.scrollify').css('height', 'auto')
+    $('.scrollify.home').css('height', '100vh')
   }
 
   $('.toggle-menu').click(function () {
@@ -175,6 +176,7 @@ $(document).ready(function () {
           $('.thanks-massege').removeClass('hidden')
           $('.line-load').addClass('load')
           form.find('input[type="submit"]').prop('disabled', false) // в любoм случae включим кнoпку oбрaтнo
+          $('#get-in-touch-form')[0].reset()
         })
       return false
     }
