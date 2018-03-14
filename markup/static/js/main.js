@@ -23,6 +23,8 @@ $(document).ready(function () {
   }
   caseCarusel.slick(settingsCarusel)
 
+  $("[type=tel]").mask("+99(999) 999-9999");
+
   if ($(window).width() > 1025) {
 
     $.scrollify({
