@@ -176,7 +176,7 @@ $(document).ready(function () {
           $('.thanks-massege').removeClass('hidden')
           $('.line-load').addClass('load')
           form.find('input[type="submit"]').prop('disabled', false) // в любoм случae включим кнoпку oбрaтнo
-          $('#get-in-touch-form')[0].reset()
+          $('#get-in-touch-form').remove()
         })
       return false
     }
