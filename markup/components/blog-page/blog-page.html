@@ -1,14 +1,15 @@
-<section class="blog-item">
+<section class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="blog-page-top">
     <a href="blog.html" class="back-link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.75 56.01"><path d="M20.46,16.8a1,1,0,0,0-1.3-1.52l-.11.11-12,12A1,1,0,0,0,7,28.8H7l12,12a1,1,0,0,0,1.41-1.41L10.16,29.09H40.75a1,1,0,0,0,0-2H10.16Z" transform="translate(0 0.01)"/><path d="M48.47,0H1.28A1.16,1.16,0,0,0,0,1V22a1.31,1.31,0,0,0,2.55,0V2H47.2V54H2.55V34A1.31,1.31,0,0,0,0,34V55a1.16,1.16,0,0,0,1.28,1h47.2a1.16,1.16,0,0,0,1.27-1V1A1.16,1.16,0,0,0,48.47,0Z" transform="translate(0 0.01)"/></svg>
       {{backLink}}
     </a>
-    <h1>ЗАГОЛОВОК ПОСТА БУДЕТ ЗДЕСЬ ОЧЕНЬ ДЛИННЫЙ В ДВЕ СТРОКИ</h1>
+    <h1 itemprop="headline">ЗАГОЛОВОК ПОСТА БУДЕТ ЗДЕСЬ ОЧЕНЬ ДЛИННЫЙ В ДВЕ СТРОКИ</h1>
+    <meta itemprop="datePublished" content="2017-11-11">
     <div class="blog-page-meta">Опубликовано: <i>11 ноября, 2017</i>. Автор: <i>James Bond</i></div>
     <div class="blog-page-image" style="background-image: url(%=static=%img/assets/blog-page/blog.jpg)"></div>
   </div>
-  <div class="blog-page-content">
+  <div class="blog-page-content" itemprop="articleBody">
     <div class="share-page">
       <div class="share-page__toggle icon icon-share"></div>
       <ul>
@@ -125,8 +126,9 @@
   </div>
   <div class="blog-page-bottom">
     <span class="blog-page-bottom__title">Оцените статью</span>
-    <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+    <div class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
       <meta itemprop="worstRating" content = "1"/>
+
       <span class="rating__stars active">
         <span class="rating__star active"><span class="rating__star-active"></span></span>
         <span class="rating__star active"><span class="rating__star-active"></span></span>
@@ -136,6 +138,7 @@
       </span>
       (<span itemprop="ratingValue">4.25</span> из <span itemprop="bestRating">5</span> на основе <span itemprop="reviewCount">7</span> отзывов )
     </div>
+</span>
 
     <div class="tags">
       <a href="#">#ui/ux</a>
