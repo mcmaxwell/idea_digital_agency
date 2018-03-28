@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 14:06+0000\n"
+"POT-Creation-Date: 2018-03-14 12:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,40 +24,40 @@ msgstr ""
 msgid "Tag"
 msgstr ""
 
-#: blog/admin.py:46 blog/models.py:103 blog/models.py:104
-msgid "Blog"
+#: blog/admin.py:30 blog/admin.py:54 cases/admin.py:47
+msgid "SEO"
 msgstr ""
 
-#: blog/admin.py:50 cases/admin.py:47
-msgid "SEO"
+#: blog/admin.py:50 blog/models.py:121 blog/models.py:122
+msgid "Blog"
 msgstr ""
 
 #: blog/models.py:18
 msgid "tag"
 msgstr ""
 
-#: blog/models.py:26
+#: blog/models.py:32
 msgid "Category"
 msgstr ""
 
-#: blog/models.py:27
+#: blog/models.py:33
 msgid "Categories"
 msgstr ""
 
-#: blog/models.py:41 cases/models.py:29 cases/models.py:120
+#: blog/models.py:47 cases/models.py:29 cases/models.py:120
 #: content/content_types.py:36
 msgid "title"
 msgstr ""
 
-#: blog/models.py:47
+#: blog/models.py:53
 msgid "author"
 msgstr ""
 
-#: blog/models.py:52 cases/models.py:54
+#: blog/models.py:58 cases/models.py:54
 msgid "text"
 msgstr ""
 
-#: blog/models.py:67
+#: blog/models.py:73
 msgid "date"
 msgstr ""
 
@@ -73,36 +73,35 @@ msgstr "Опубликовано:"
 msgid "Автор:"
 msgstr "Автор:"
 
-#: blog/templates/blog/blog_detail.html:91
+#: blog/templates/blog/blog_detail.html:80
 msgid "Оцініть статтю"
 msgstr "Оцените статью"
 
-#: blog/templates/blog/blog_detail.html:101
+#: blog/templates/blog/blog_detail.html:90
 msgid "з"
 msgstr "из"
 
-#: blog/templates/blog/blog_detail.html:101
+#: blog/templates/blog/blog_detail.html:90
 msgid "на основі"
 msgstr "на основе"
 
-#: blog/templates/blog/blog_detail.html:101
+#: blog/templates/blog/blog_detail.html:90
 msgid "відгуків"
 msgstr "отзывов"
 
-#: blog/templates/blog/blog_detail.html:115
-#| msgid "вам также будет интересно"
+#: blog/templates/blog/blog_detail.html:104
 msgid "вам також буде цікаво"
 msgstr "вам также будет интересно"
 
-#: blog/templates/blog/blog_detail.html:138
+#: blog/templates/blog/blog_detail.html:127
 msgid "Слідкуй за нами!"
 msgstr "Следи за нами!"
 
-#: blog/templates/blog/blog_detail.html:139
+#: blog/templates/blog/blog_detail.html:128
 msgid "Ми поділяємо новини та проекти в нашому інформаційному бюлетені."
 msgstr "Мы разделяем новости и проекты в нашем информационном бюллетене."
 
-#: blog/templates/blog/blog_detail.html:144
+#: blog/templates/blog/blog_detail.html:140
 msgid "підписатися"
 msgstr "подписаться"
 
@@ -206,63 +205,64 @@ msgstr "Мы готовы!"
 msgid "зв&#x27;язатись"
 msgstr "связаться"
 
-#: cases/templates/cases/case_detail.html:128
-#: content/templates/content/content_types/index_page_content.html:219
+#: cases/templates/cases/case_detail.html:129
+#: content/templates/content/content_types/index_page_content.html:220
 msgid "Україна, Дніпро,"
 msgstr "Украина, Днепр"
 
-#: cases/templates/cases/case_detail.html:129
-#: content/templates/content/content_types/index_page_content.html:220
-msgid "І.Акінфієва 18/308"
-msgstr "Акинфеева 18/308"
+#: cases/templates/cases/case_detail.html:130
+#: content/templates/content/content_types/index_page_content.html:221
+#| msgid "І.Акінфієва 18/308"
+msgid "І.Акінфієва 18/410"
+msgstr "Акинфеева 18/410"
 
-#: cases/templates/cases/case_detail.html:138
-#: content/templates/content/content_types/index_page_content.html:229
+#: cases/templates/cases/case_detail.html:140
+#: content/templates/content/content_types/index_page_content.html:231
 msgid "Ім&#x27;я"
 msgstr "Имя"
 
-#: cases/templates/cases/case_detail.html:141
-#: content/templates/content/content_types/index_page_content.html:232
+#: cases/templates/cases/case_detail.html:143
+#: content/templates/content/content_types/index_page_content.html:234
 msgid "Прізвище"
 msgstr "Фамилия"
 
-#: cases/templates/cases/case_detail.html:147
-#: content/templates/content/content_types/index_page_content.html:238
+#: cases/templates/cases/case_detail.html:149
+#: content/templates/content/content_types/index_page_content.html:240
 msgid "телефон (необов&#x27;язково)"
 msgstr "телефон"
 
-#: cases/templates/cases/case_detail.html:152
-#: content/templates/content/content_types/index_page_content.html:243
+#: cases/templates/cases/case_detail.html:154
+#: content/templates/content/content_types/index_page_content.html:245
 msgid "оберіть ваш бюджет"
 msgstr "выберите ваш бюджет"
 
-#: cases/templates/cases/case_detail.html:160
-#: content/templates/content/content_types/index_page_content.html:251
+#: cases/templates/cases/case_detail.html:162
+#: content/templates/content/content_types/index_page_content.html:253
 msgid "компанія"
 msgstr "компания"
 
-#: cases/templates/cases/case_detail.html:163
-#: content/templates/content/content_types/index_page_content.html:254
+#: cases/templates/cases/case_detail.html:165
+#: content/templates/content/content_types/index_page_content.html:256
 msgid "деталі"
 msgstr "детали"
 
-#: cases/templates/cases/case_detail.html:166
-#: content/templates/content/content_types/index_page_content.html:257
+#: cases/templates/cases/case_detail.html:168
+#: content/templates/content/content_types/index_page_content.html:259
 msgid "відправити"
 msgstr "отправить"
 
-#: cases/templates/cases/case_detail.html:170
-#: content/templates/content/content_types/index_page_content.html:261
+#: cases/templates/cases/case_detail.html:172
+#: content/templates/content/content_types/index_page_content.html:263
 msgid "Дякуємо що звернулися"
 msgstr "Спасибо за заявку"
 
-#: cases/templates/cases/case_detail.html:171
-#: content/templates/content/content_types/index_page_content.html:262
+#: cases/templates/cases/case_detail.html:173
+#: content/templates/content/content_types/index_page_content.html:264
 msgid "Наш менеджер зв'яжеться з Вами"
 msgstr "Наш менеджер свяжется с Вами"
 
-#: cases/templates/cases/case_detail.html:172
-#: content/templates/content/content_types/index_page_content.html:263
+#: cases/templates/cases/case_detail.html:174
+#: content/templates/content/content_types/index_page_content.html:265
 msgid "протягом години!"
 msgstr "в течение часа!"
 
