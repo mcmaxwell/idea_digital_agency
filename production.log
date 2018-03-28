@@ -1,0 +1,933 @@
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:09:45; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:09:45; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/tests/idea_digital_agency/idea/info/context_processors.py:2: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  from django.core.context_processors import request
+ (2018-01-24 19:09:46; context_processors.py:9)
+ERROR:django.request: Internal Server Error: /static/css/main.min.css/ (2018-01-24 19:09:46; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/js/vendor.min.js/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/js/main.min.js/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/img/general/logo-big.svg/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /media/cache/cd/f0/cdf04a4e47e3fd985baf860407c10fa2.jpg/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /media/cache/1f/69/1f69d14048981dbbf31637fd20826c3b.jpg/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/img/general/logo.svg/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /media/cache/35/16/35164d70c1099fce553aa121df823698.jpg/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/js/vendor.min.js/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/js/main.min.js/ (2018-01-24 19:09:47; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/css/main.min.css/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/js/vendor.min.js/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/js/main.min.js/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/img/general/logo-big.svg/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /media/cache/1f/69/1f69d14048981dbbf31637fd20826c3b.jpg/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /media/cache/cd/f0/cdf04a4e47e3fd985baf860407c10fa2.jpg/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /static/img/general/logo.svg/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /media/cache/35/16/35164d70c1099fce553aa121df823698.jpg/ (2018-01-24 19:09:49; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:09:51; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:09:57; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:09:57; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:09:58; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:09:58; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:09:58; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:10:42; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:10:42; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:10:42; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:10:43; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:10:43; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+ERROR:django.request: Internal Server Error: /1/ (2018-01-24 19:10:54; base.py:284)
+Traceback (most recent call last):
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/core/handlers/base.py", line 92, in get_exception_response
+    response = callback(request, **dict(param_dict, exception=exception))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/functional.py", line 13, in _curried
+    return _curried_func(*(args + moreargs), **dict(kwargs, **morekwargs))
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/views/defaults.py", line 39, in page_not_found
+    template = loader.get_template(template_name)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 52: 'app_reverse'. Did you forget to register or load this tag?
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:16:46; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:16:46; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/tests/idea_digital_agency/idea/info/context_processors.py:2: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  from django.core.context_processors import request
+ (2018-01-24 19:16:47; context_processors.py:9)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:39:14; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:39:14; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:39:15; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-01-24 19:39:15; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/tests/idea_digital_agency/idea/info/context_processors.py:2: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  from django.core.context_processors import request
+ (2018-01-24 19:39:20; context_processors.py:9)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-03-28 15:57:48; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-03-28 15:57:48; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/tests/idea_digital_agency/idea/idea/urls.py:31: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got django.contrib.sitemaps.views.sitemap). Pass the callable instead.
+  {'sitemaps': sitemaps}),
+ (2018-03-28 15:57:48; __init__.py:107)
+WARNING:py.warnings: /Users/alexander/projects/tests/idea_digital_agency/idea/info/context_processors.py:2: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  from django.core.context_processors import request
+ (2018-03-28 15:57:48; context_processors.py:9)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-03-28 15:57:50; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-03-28 15:57:50; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-03-28 15:57:51; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/venvs/frontier/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-03-28 15:57:51; subclassing.py:22)
+WARNING:py.warnings: /Users/alexander/projects/tests/idea_digital_agency/idea/idea/urls.py:31: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got django.contrib.sitemaps.views.sitemap). Pass the callable instead.
+  {'sitemaps': sitemaps}),
+ (2018-03-28 15:57:51; __init__.py:107)
+WARNING:py.warnings: /Users/alexander/projects/tests/idea_digital_agency/idea/info/context_processors.py:2: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  from django.core.context_processors import request
+ (2018-03-28 15:57:52; context_processors.py:9)
