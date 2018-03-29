@@ -19,11 +19,14 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.utils.functional import curry
 from django.views.defaults import server_error, page_not_found, permission_denied
+from feincms.module.page.models import Page
+from info.views import site_map
 
 handler404 = curry(page_not_found, template_name='404.html')
 
 urlpatterns = [
     url(r'^agency_start/', admin.site.urls),
+    url(r'^sitemap\.xml$', site_map),
     url(r'^redactor/', include('redactor.urls')),
     url(r'^summernote/', include('django_summernote.urls')),
     url(r'^i18n/', include('django.conf.urls.i18n')),

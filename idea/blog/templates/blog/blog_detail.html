@@ -16,7 +16,7 @@
         </script>
         {% include "includes/header.html" %}
 <div class="main-container">
-    <section class="blog-item">
+    <section class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="blog-page-top">
             <a href="{% app_reverse "blog_list" "blog.urls" %}" class="back-link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.75 56.01">
@@ -26,12 +26,13 @@
                 </svg>
                 {% trans "Назад в блог" %}
             </a>
-            <h1>{{object.title}}</h1>
+            <h1 itemprop="headline">{{object.title}}</h1>
+            <meta itemprop="datePublished" content="{{object.date}}">
             <div class="blog-page-meta"{% trans "Опубликовано:" %} <i>{{object.date}}</i> {% trans "Автор:" %} <i>{{object.author|default_if_none:""}}</i>
             </div>
             <div class="blog-page-image" style="background-image: url({{object.get_image_top}})"></div>
         </div>
-        <div class="blog-page-content">
+        <div class="blog-page-content" itemprop="articleBody">
             <div class="share-page">
                 <div class="share-page__toggle icon icon-share"></div>
                 <ul>
@@ -78,7 +79,7 @@
         <div class="blog-page-bottom">
 
             <span class="blog-page-bottom__title">{% trans "Оцініть статтю" %}</span>
-            <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            <div class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
                 <meta itemprop="worstRating" content="1"/>
                 <span class="rating__stars {% if voted %}{% else %}active{% endif %}">
                 <span class="rating__star{% if object.votes > 0 %}{% if object.get_rating > 0 %} active{% endif %}{% endif %}"><span class="rating__star-active" style="width:{% if object.votes > 0 %}{% if object.get_rating < 0.99 %}{{object.get_rating_for_width}}{% endif %}{% endif %}%"></span></span>
@@ -89,6 +90,7 @@
                 </span>
                 (<span itemprop="ratingValue">{% if object.votes > 0 %}{{object.get_rating}}{% else %}0{% endif %}</span> {% trans "з" %} <span itemprop="bestRating">5</span> {% trans "на основі" %} <span itemprop="reviewCount">{{object.votes}}</span> {% trans "відгуків"%})
             </div>
+            </span>
 
             <!-- <span class="blog-page-bottom__title">Оцените статью</span>
                         <div class="rating"><span class="rating__stars"><span class="rating__stars-active" style="width: 20%"></span></span>(4 из 5 на основе 7 отзывов)</div> -->

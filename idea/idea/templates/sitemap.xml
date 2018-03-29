@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{% load l10n %}
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  {% for page in pages %}
+   <url>
+
+      <loc>https://ideadigital.agency{{page.get_absolute_url}}</loc>
+
+      <lastmod>{{page.modification_date|date:"Y-n-d"}}</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.3</priority>
+
+   </url>
+   {% endfor %}
+
+   {% for blog in blogs %}
+    <url>
+
+       <loc>https://ideadigital.agency{{blog.get_absolute_url}}</loc>
+
+       <lastmod>{{blog.date|date:"Y-n-d"}}</lastmod>
+
+       <changefreq>monthly</changefreq>
+
+       <priority>0.3</priority>
+
+    </url>
+    {% endfor %}
+    {% for blog in blogs %}
+     <url>
+
+        <loc>https://ideadigital.agency/ua{{blog.get_absolute_url}}</loc>
+
+        <lastmod>{{blog.date|date:"Y-n-d"}}</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.3</priority>
+
+     </url>
+     {% endfor %}
+
+     {% for case in cases %}
+      <url>
+
+         <loc>https://ideadigital.agency/{{cases.get_absolute_url}}</loc>
+
+         <lastmod>{{cases.modification_date|date:"Y-n-d"}}</lastmod>
+
+         <changefreq>monthly</changefreq>
+
+         <priority>0.3</priority>
+
+      </url>
+      {% endfor %}
+
+      {% for cases in cases %}
+       <url>
+
+          <loc>https://ideadigital.agency/ua{{cases.get_absolute_url}}</loc>
+
+          <lastmod>{{cases.modification_date|date:"Y-n-d"}}</lastmod>
+
+          <changefreq>monthly</changefreq>
+
+          <priority>0.3</priority>
+
+       </url>
+       {% endfor %}
+
+</urlset>
