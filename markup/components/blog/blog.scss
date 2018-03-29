@@ -130,7 +130,9 @@
       &-icon {
         float: right;
         width: 46px;
-        height: 29px;
+        height: 30px;
+        min-width: 46px;
+        min-height: 30px;
       }
 
       .blog__list-item-icon-arr {

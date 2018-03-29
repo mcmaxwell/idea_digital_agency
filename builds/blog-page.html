@@ -148,7 +148,7 @@
                 </header>
             </section>
             <div class="main-container">
-                <section class="blog-item">
+                <section class="blog-item" itemscope itemtype="http://schema.org/BlogPosting">
                     <div class="blog-page-top">
                         <a href="blog.html" class="back-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.75 56.01">
@@ -158,12 +158,33 @@
                             </svg>
                             Назад в блог
                         </a>
-                        <h1>ЗАГОЛОВОК ПОСТА БУДЕТ ЗДЕСЬ ОЧЕНЬ ДЛИННЫЙ В ДВЕ СТРОКИ</h1>
-                        <div class="blog-page-meta">Опубликовано: <i>11 ноября, 2017</i>. Автор: <i>James Bond</i>
+                        <h1 itemprop="headline">ЗАГОЛОВОК ПОСТА БУДЕТ ЗДЕСЬ ОЧЕНЬ ДЛИННЫЙ В ДВЕ СТРОКИ</h1>
+                        <meta itemprop="datePublished" content="2017-11-11">
+                        <meta itemprop="dateModified" content="2017-12-29">
+                        <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="url" />
+                        <div class="blog-page-meta">Опубликовано: <i>11 ноября, 2017</i>. Автор: <span itemscope itemtype="http://schema.org/Person"><i itemprop="name">James Bond</i></span>
                         </div>
                         <div class="blog-page-image" style="background-image: url(static/img/assets/blog-page/blog.jpg)"></div>
+
+                        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                            <meta itemprop="image" content="static/img/assets/blog-page/blog.jpg">
+                            <meta itemprop="url" content="static/img/assets/blog-page/blog.jpg">
+                            <meta itemprop="width" content="1227">
+                            <meta itemprop="height" content="920">
+                        </div>
                     </div>
-                    <div class="blog-page-content">
+                    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                        <a itemprop="url" href="https://ideadigital.agency/">
+                            <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                         <mate itemprop="url" content="https://ideadigital.agency/static/img/general/logo.svg">
+                         <meta itemprop="width" content="600">
+                         <meta itemprop="height" content="182">
+                      </span>
+                            <meta itemprop="name" content="Главные digital-тренды в 2018 году: исследование, прогнозы — Idea Digital">
+                            <meta itemprop="description" content="Digital-тренды в 2018: основные тенденции в интернет-маркетинге в этом году. Возрастная динамика, типы контента, мобильность и решение маркетинговых задач. Блог — Idea Digital">
+                        </a>
+                    </div>
+                    <div class="blog-page-content" itemprop="articleBody">
                         <div class="share-page">
                             <div class="share-page__toggle icon icon-share"></div>
                             <ul>
@@ -287,8 +308,9 @@
                     </div>
                     <div class="blog-page-bottom">
                         <span class="blog-page-bottom__title">Оцените статью</span>
-                        <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                        <div class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
                             <meta itemprop="worstRating" content="1" />
+
                             <span class="rating__stars active">
                     <span class="rating__star active"><span class="rating__star-active"></span></span>
                             <span class="rating__star active"><span class="rating__star-active"></span></span>
@@ -298,6 +320,7 @@
                             </span>
                             (<span itemprop="ratingValue">4.25</span> из <span itemprop="bestRating">5</span> на основе <span itemprop="reviewCount">7</span> отзывов )
                         </div>
+                        </span>
 
                         <div class="tags">
                             <a href="#">#ui/ux</a>
