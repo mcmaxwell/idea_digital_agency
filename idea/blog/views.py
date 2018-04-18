@@ -36,7 +36,7 @@ class BlogView(DetailView):
         context['voted'] = voted
         context['detail'] = detail
         context['tags'] = blog_tags
-        context['recommended'] = recommended
+        context['recommended'] = recommended[:3]
         render(self.request,"includes/head.html",context)
         return context
 
@@ -87,14 +87,14 @@ class BlogList(TemplateView):
             blogs = Blog.objects.all()
 
         #blogs = Blog.objects.all()
-        paginator = Paginator(blogs, 16)
+        paginator = Paginator(blogs, 12)
         page = self.request.GET.get('page')
         blogs = paginator.page(1)
         print blogs.paginator.page_range
 
         if page:
            # blogs = Blog.objects.all()
-            paginator = Paginator(blogs, 16)
+            paginator = Paginator(blogs, 12)
             page = self.request.GET.get('page')
             blogs = paginator.page(page)
             #print page

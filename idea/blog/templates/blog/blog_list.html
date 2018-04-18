@@ -49,8 +49,10 @@
                 <li><a href="#">{{ num }}</a>
                 </li>
                 {% else %}
-                <li><a href="">{{ num }}</a>
+                {% if products.has_next %}
+                <li><a href="{% app_reverse "blog_list" "blog.urls" %}?page={{num}}">{{ num }}</a>
                 </li>
+                {% endif %}
                 {% endif %}
                 {% endfor %}
 

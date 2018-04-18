@@ -27,11 +27,30 @@
                 {% trans "Назад в блог" %}
             </a>
             <h1 itemprop="headline">{{object.title}}</h1>
-            <meta itemprop="datePublished" content="{{object.date}}">
-            <div class="blog-page-meta"{% trans "Опубликовано:" %} <i>{{object.date}}</i> {% trans "Автор:" %} <i>{{object.author|default_if_none:""}}</i>
+            <meta itemprop="datePublished" content="{{object.date|date:"Y-n-d"}}">
+            <meta itemprop="dateModified" content="{{object.date|date:"Y-n-d"}}">
+            <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://ideadigital.agency{{object.get_absolute_url}}" />
+            <div class="blog-page-meta"{% trans "Опубликовано:" %} <i>{{object.date}}</i> {% trans "Автор:" %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><i itemprop="name">{{object.author|default_if_none:""}}</i></span>
             </div>
             <div class="blog-page-image" style="background-image: url({{object.get_image_top}})"></div>
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                            <meta itemprop="image" content="https://ideadigital.agency{{object.get_image_top}}">
+                            <meta itemprop="url" content="https://ideadigital.agency{{object.get_image_top}}">
+                            <meta itemprop="width" content="1227">
+                            <meta itemprop="height" content="920">
+            </div>
         </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <a itemprop="url" href="https://ideadigital.agency/">
+             <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <mate itemprop="url" content="https://ideadigital.agency/static/img/general/logo.png">
+                     <meta itemprop="width" content="600">
+                     <meta itemprop="height" content="182">
+               </span>
+                     <meta itemprop="name" content="Главные digital-тренды в 2018 году: исследование, прогнозы — Idea Digital">
+                     <meta itemprop="description" content="Digital-тренды в 2018: основные тенденции в интернет-маркетинге в этом году. Возрастная динамика, типы контента, мобильность и решение маркетинговых задач. Блог — Idea Digital">
+         </a>
+       </div>
         <div class="blog-page-content" itemprop="articleBody">
             <div class="share-page">
                 <div class="share-page__toggle icon icon-share"></div>
