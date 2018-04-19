@@ -77,34 +77,30 @@ class BlogList(TemplateView):
         except:
             tag = None
 
+
+        try:
+            page =  self.request.GET.get('page')
+        except:
+            page = None
+
         if self.request.method == 'GET' and tag:
             tag = BlogTag.objects.get(tag_en = tag)
             print tag.id
             blogs = Blog.objects.filter(tags__in = str(tag.id))
             seo_category = True
-
         else:
             blogs = Blog.objects.all()
 
-        #blogs = Blog.objects.all()
-        paginator = Paginator(blogs, 12)
-        page = self.request.GET.get('page')
-        blogs = paginator.page(1)
-        print blogs.paginator.page_range
+
 
         if page:
-           # blogs = Blog.objects.all()
             paginator = Paginator(blogs, 12)
-            page = self.request.GET.get('page')
             blogs = paginator.page(page)
+        else:
+            paginator = Paginator(blogs, 12)
+            blogs = paginator.page(1)
 
-            try:
-        	blogs = paginator.page(page)
-    	    except PageNotAnInteger:
-        	blogs = paginator.page(1)
-    	    except EmptyPage:
-                blogs = paginator.page(paginator.num_pages)
-            #print page
+            # print page
 
         #print dir(Paginator.num_pages)
         context = super(BlogList, self).get_context_data(**kwargs)
