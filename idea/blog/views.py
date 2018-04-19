@@ -97,6 +97,13 @@ class BlogList(TemplateView):
             paginator = Paginator(blogs, 12)
             page = self.request.GET.get('page')
             blogs = paginator.page(page)
+
+            try:
+        	blogs = paginator.page(page)
+    	    except PageNotAnInteger:
+        	blogs = paginator.page(1)
+    	    except EmptyPage:
+                blogs = paginator.page(paginator.num_pages)
             #print page
 
         #print dir(Paginator.num_pages)

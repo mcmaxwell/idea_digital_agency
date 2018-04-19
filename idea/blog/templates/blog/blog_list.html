@@ -43,19 +43,15 @@
         </div>
         <div class="pagination">
             <ul class="pagination-list">
-
                {% for num in blogs.paginator.page_range %}
                 {% if num == blogs.number %}
-                <li><a href="#">{{ num }}</a>
+                <li><a href="{% app_reverse "blog_list" "blog.urls" %}">{{ num }}</a>
                 </li>
                 {% else %}
-                {% if products.has_next %}
                 <li><a href="{% app_reverse "blog_list" "blog.urls" %}?page={{num}}">{{ num }}</a>
                 </li>
                 {% endif %}
-                {% endif %}
                 {% endfor %}
-
             </ul>
         </div>
 

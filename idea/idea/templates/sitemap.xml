@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-{% load l10n %}
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -8,7 +7,7 @@
 
       <loc>https://ideadigital.agency{{page.get_absolute_url}}</loc>
 
-      <lastmod>{{page.modification_date|date:"Y-n-d"}}</lastmod>
+      <lastmod>{{page.modification_date|date:"Y-n-d H:i"}}</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -22,7 +21,7 @@
 
        <loc>https://ideadigital.agency{{blog.get_absolute_url}}</loc>
 
-       <lastmod>{{blog.date|date:"Y-n-d"}}</lastmod>
+       <lastmod>{{blog.date|date:"Y-n-d H:i"}}</lastmod>
 
        <changefreq>monthly</changefreq>
 
@@ -30,26 +29,27 @@
 
     </url>
     {% endfor %}
-    {% for blog in blogs %}
-     <url>
 
-        <loc>https://ideadigital.agency/ua{{blog.get_absolute_url}}</loc>
+   {% for blog in blogs %}
+    <url>
 
-        <lastmod>{{blog.date|date:"Y-n-d"}}</lastmod>
+       <loc>https://ideadigital.agency/ua{{blog.get_absolute_url}}</loc>
 
-        <changefreq>monthly</changefreq>
+       <lastmod>{{blog.date|date:"Y-n-d H:i"}}</lastmod>
 
-        <priority>0.3</priority>
+       <changefreq>monthly</changefreq>
 
-     </url>
-     {% endfor %}
+       <priority>0.3</priority>
+
+    </url>
+    {% endfor %}
 
      {% for case in cases %}
       <url>
 
-         <loc>https://ideadigital.agency/{{cases.get_absolute_url}}</loc>
+         <loc>https://ideadigital.agency{{case.get_absolute_url}}</loc>
 
-         <lastmod>{{cases.modification_date|date:"Y-n-d"}}</lastmod>
+         <lastmod>{{case.modification_date|date:"Y-n-d H:i"}}</lastmod>
 
          <changefreq>monthly</changefreq>
 
@@ -58,18 +58,19 @@
       </url>
       {% endfor %}
 
-      {% for cases in cases %}
-       <url>
+     {% for case in cases %}
+      <url>
 
-          <loc>https://ideadigital.agency/ua{{cases.get_absolute_url}}</loc>
+         <loc>https://ideadigital.agency/ua{{case.get_absolute_url}}</loc>
 
-          <lastmod>{{cases.modification_date|date:"Y-n-d"}}</lastmod>
+         <lastmod>{{case.modification_date|date:"Y-n-d H:i"}}</lastmod>
 
-          <changefreq>monthly</changefreq>
+         <changefreq>monthly</changefreq>
 
-          <priority>0.3</priority>
+         <priority>0.3</priority>
 
-       </url>
-       {% endfor %}
+      </url>
+      {% endfor %}
 
 </urlset>
+
