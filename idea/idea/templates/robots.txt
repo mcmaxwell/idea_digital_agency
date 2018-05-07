@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /agency_start/
+Disallow: /en/
+Disallow: /uk/
+Disallow: /us/
+
+User-agent: YandexBot
+Disallow: /agency_start/
+Disallow: /en/
+Disallow: /uk/
+Disallow: /us/
+
+Host: https://ideadigital.agency
+Sitemap: https://ideadigital.agency/sitemap.xml

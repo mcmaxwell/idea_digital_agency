@@ -1,0 +1,179 @@
+.vacancies_block {
+    width: 70%;
+    margin: 0  auto;
+    min-height: 800px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+.vacancies_block h1 {
+    background-color: #fff;
+    padding-bottom: 16px;
+    color: #000;
+    background-image: url("../img/bg-text.png");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+.vacancies_block .vacancies_wrap h2 {
+    font-size: 34px;
+}
+.vacancies_block .vacancies_wrap h2 span.red {
+    color: #b02e18;
+    font-size: 34px;
+    display: inline-block;
+}
+.vacancies_block .vacancies_wrap .block-50 {
+    width: 50%;
+    float: left;
+}
+.vacancies_block .ui-accordion .ui-accordion-header {
+    background: #fff;
+    border: transparent;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 0;
+    color: #303030;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 20px 20px 80px;
+    position: relative;
+}
+
+.vacancies_block .ui-accordion .ui-accordion-header:after {
+    content: url("../img/icon-plus.png");
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* .vacancies_block .ui-accordion .ui-accordion-header.ui-state-active:after {
+    content: url("../img/icon-plus-active.png");
+}
+.vacancies_block .ui-accordion .ui-accordion-header:before {
+    content: url("../img/des.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+} */
+
+
+
+
+.vacancies_block .ui-accordion .asis.ui-state-active:before {
+    content: " ";
+    background-image: url("../img/asis_active.svg");
+    background-size: contain;
+}
+
+.vacancies_block .ui-accordion .asis:before {
+    content: " ";
+    background-image: url("../img/asis.svg");
+    background-size: contain;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+}
+
+.vacancies_block .ui-accordion .des.ui-state-active:before {
+    content: " ";
+    background-image: url("../img/des_active.svg");
+    background-size: contain;
+}
+
+.vacancies_block .ui-accordion .des:before {
+    content: url("../img/des.svg");
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+}
+
+.vacancies_block .ui-accordion .seo.ui-state-active:before {
+    content: " ";
+    background-image: url("../img/seo_active.svg");
+    background-size: contain;
+}
+
+.vacancies_block .ui-accordion .seo:before {
+    content: " ";
+    background-image: url("../img/seo.svg");
+    background-size: contain;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+}
+
+/* .vacancies_block .ui-accordion .seo.ui-state-active:before {
+    content: url("../img/des_active.svg");
+} */
+
+.vacancies_block .ui-accordion .ui-accordion-content {
+    border: transparent;
+    height: 100% !important;
+}
+.vacancies_block .ui-accordion .ui-accordion-content ul{
+    list-style: none;
+    padding-left: 5px;
+}
+.vacancies_block .ui-accordion .ui-accordion-content ul li {
+    position: relative;
+    padding: 2px 20px;
+}
+.vacancies_block .ui-accordion .ui-accordion-content ul li::before {
+    content: "○";
+    font-size: 60%;
+    color: #807dc9;
+    position: absolute;
+    line-height: 4px;
+    left: 0;
+    top: calc(50% - 5px);
+}
+.clear {
+    clear: both;
+}
+.vacancies_block .ui-accordion .btn{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-transform: uppercase;
+    background-color: #000;
+    padding: 11px 10px;
+    color: #fff;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 0;
+    margin-top: 35px;
+    margin: 35px auto 0px;
+    text-decoration: none;
+    margin-bottom: 1px;
+    width: 300px;
+    display: block;
+    text-align: center;
+}
+@media only screen
+and (max-device-width: 929px) {
+    .vacancies_block .vacancies_wrap .block-50 {
+        width: 100%;
+    }
+    #accordion {
+        margin: 50px 0;
+    }
+}
+#accordion {
+    margin: 30px 0;
+}

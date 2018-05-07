@@ -45,7 +45,7 @@
             <ul class="pagination-list">
                {% for num in blogs.paginator.page_range %}
                 {% if num == blogs.number %}
-                <li><a href="{% app_reverse "blog_list" "blog.urls" %}">{{ num }}</a>
+                <li><a href="{% app_reverse "blog_list" "blog.urls" %}" class="active">{{ num }}</a>
                 </li>
                 {% else %}
                 <li><a href="{% app_reverse "blog_list" "blog.urls" %}?page={{num}}">{{ num }}</a>
