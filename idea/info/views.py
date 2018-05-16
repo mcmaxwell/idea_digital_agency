@@ -1,10 +1,16 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
+from datetime import datetime
 from .models import ContactInfo, Subscriber
 from django.views.generic.base import TemplateView
 from django.shortcuts import render_to_response,redirect
 from feincms.module.page.models import Page
 from blog.models import Blog
 from cases.models import Case
+from amocrm import amo_settings
+from .crm_utils import Contact, Lead
+
+amo_settings.set('alexrians@gmail.com', 'c8bad8aedb1d614006877dfbf693a5ef', 'ideatest1')
 
 # Create your views here.
 def add_contact_form(request):
@@ -18,9 +24,18 @@ def add_contact_form(request):
         message = request.GET['message']
         save_object = ContactInfo(first_name=first_name, second_name=second_name,
                                          email=email, phone=phone, budget=budget,
-                                         company=company, message=message
+                                         company=company, message=message,
                                          )
         save_object.save()
+
+        new_contact = Contact(name=first_name + ' ' + second_name, company=company, position='QA', phone=phone, email=email,)
+        new_contact.email = email
+        new_contact.save()
+
+        new_lead = Lead(name=company, budget=budget.replace("$", ""),  contact=new_contact.id, email=email,)
+        new_lead.save()
+        new_contact.leads = new_lead
+        new_contact.save()
 
         return redirect('/')
 

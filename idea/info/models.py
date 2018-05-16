@@ -59,6 +59,9 @@ class ContactInfo(models.Model):
     phone = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('phone'))
     budget = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('budget'))
     company = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('company'))
+
+    created_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
     message = RedactorField(
         verbose_name=_('message'),
         allow_file_upload=False,
