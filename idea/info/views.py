@@ -10,7 +10,8 @@ from cases.models import Case
 from amocrm import amo_settings
 from .crm_utils import Contact, Lead
 
-amo_settings.set('alexrians@gmail.com', 'c8bad8aedb1d614006877dfbf693a5ef', 'ideatest1')
+amo_settings.set('ideadigitalukraine@gmail.com', '00e79897bdda78ca52e7fdbcf2b710a9', 'ideadigital')
+#amo_settings.set('alexrians@gmail.com', 'c8bad8aedb1d614006877dfbf693a5ef', 'ideatest1')
 
 # Create your views here.
 def add_contact_form(request):

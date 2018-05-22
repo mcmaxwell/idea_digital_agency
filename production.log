@@ -3655,3 +3655,12 @@ Traceback (most recent call last):
   File "/srv/venv/idea/local/lib/python2.7/site-packages/django/core/paginator.py", line 43, in validate_number
     raise EmptyPage('That page contains no results')
 EmptyPage: That page contains no results
+WARNING:py.warnings: /srv/venv/idea/local/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-05-21 08:54:21; subclassing.py:22)
+WARNING:py.warnings: /srv/venv/idea/local/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-05-21 08:54:21; subclassing.py:22)
+WARNING:py.warnings: /usr/lib/python2.7/importlib/__init__.py:37: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  __import__(name)
+ (2018-05-21 08:54:26; context_processors.py:9)
