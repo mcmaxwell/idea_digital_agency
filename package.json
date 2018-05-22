@@ -27,6 +27,7 @@
     "publish-s3": "s3cmd --acl-public --recursive  sync builds/ s3://skelet --access_key=AKIAIRBMNEIN3ADHNCWA --secret_key=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",
     "collect-django-static": "venv/bin/python ./skelet/manage.py collectstatic --noinput",
     "serve-static": "./node_modules/http-server/bin/http-server dev/ -p 3005 --cors",
+    "dev": "parallelshell \"./idea/manage.py runserver\" \"tars dev --lr\"",
     "build-serve-static": "tars start build-dev && npm run collect-django-static && npm run serve-static"
   },
   "author": "",

@@ -51,6 +51,25 @@ class Subscriber(models.Model):
         ordering = ['name',]
 
 @python_2_unicode_compatible
+class TeamMember(models.Model):
+
+    image = models.ImageField()
+    name = models.CharField(blank=False, null=False, max_length=255, verbose_name=_('name'))
+    position = models.CharField(blank=False, null=False, max_length=255, verbose_name=_('position'))
+
+
+    def get_image(self):
+        return get_thumbnail(self.image,'248x248', quality=99).url
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = _('TeamMember')
+        verbose_name_plural = _('TeamMember')
+        ordering = ['name',]
+
+@python_2_unicode_compatible
 class ContactInfo(models.Model):
 
     first_name = models.CharField(blank=True, null=True, max_length=255, verbose_name=_('first_name'))

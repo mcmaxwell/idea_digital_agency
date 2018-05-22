@@ -9,7 +9,7 @@ from django.utils.translation import ugettext
 from django.template.loader import render_to_string
 from sorl.thumbnail import get_thumbnail
 from cases.models import Case
-from info.models import Info
+from info.models import Info, TeamMember
 # @python_2_unicode_compatible
 # class ParagraphCT(RenderCTMixin, models.Model):
 #     template_name = "content/content_types/text_ct.html"
@@ -88,11 +88,13 @@ class IndexPageInfoCT(RenderCTMixin, models.Model):
     def get_template_data(self):
         cases = Case.objects.all()
         info = Info.objects.all()
+        members = TeamMember.objects.all()
 
         return {
             'ctx': self,
             'cases': cases,
             'info':info,
+            'members': members,
         }
 
     class Meta:

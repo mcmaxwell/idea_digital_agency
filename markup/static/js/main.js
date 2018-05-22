@@ -1,4 +1,5 @@
 import 'components/case/case'
+import 'components/team/team'
 
 $(document).ready(function () {
   const menuLink = $('.main-menu-link')

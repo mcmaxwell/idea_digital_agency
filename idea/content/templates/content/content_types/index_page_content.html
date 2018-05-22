@@ -163,6 +163,25 @@
             </div>
             </section>
 
+            {% if members %}
+            <section class="our__team scrollify" data-section-name="team-carusel" id="team-carusel">
+            	<h2>Наша команда.</h2>
+            	<div class="team_title"><img src="{% static "img/assets/team/team.svg" %}" alt=""></div>
+            	<div class="team__slider clearfix">
+                {% for member in members %}
+                <div class="item">
+            			<div class="avatar_wrp">
+            				<img src="{{member.get_image}}" alt="" class="img-responsive">
+            				<div class="line"></div>
+            			</div>
+            			<div class="person__name">{{member.name}}</div>
+            			<div class="porson_position">{{member.position}}</div>
+            		</div>
+                {% endfor %}
+              </div>
+            </section>
+            {% endif %}
+
             <section class="contacts scrollify" data-section-name="contacts" id="contacts">
                 <div class="contacts-content block-center-content">
                     <h2 class="big-shadow line-before" data-title="{% trans "Контакти." %}">{% trans "Контакти." %}</h2>
