@@ -1,65 +1,65 @@
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-a,
-a:focus,
-a:hover,
-body,
-button,
-div,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-html,
-input,
-li,
-ol,
-p,
-section,
-span,
-textarea,
-ul {
-    font-family: GothamPro, sans-serif;
-    color: #4a4a4a;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.3em;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    text-decoration: none;
-    border: 0
-}
-
-@font-face {
-    font-family: GothamPro-Black;
-    src: url(../../static/fonts/GothamPro-Black.ttf)
-}
-
-@font-face {
-    font-family: GothamPro-Bold;
-    src: url(../../static/fonts/GothamPro-Bold.ttf)
-}
-
-@font-face {
-    font-family: GothamPro-Medium;
-    src: url(../../static/fonts/GothamPro-Medium.ttf)
-}
-
-@font-face {
-    font-family: GothamPro-Regular;
-    src: url(../../static/fonts/GothamPro.ttf)
-}
-
-@font-face {
-    font-family: GothamPro-Light;
-    src: url(../../static/fonts/GothamPro-light.ttf)
-}
+// @charset "UTF-8";
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+// a,
+// a:focus,
+// a:hover,
+// body,
+// button,
+// div,
+// footer,
+// form,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// header,
+// html,
+// input,
+// li,
+// ol,
+// p,
+// section,
+// span,
+// textarea,
+// ul {
+//     font-family: GothamPro, sans-serif;
+//     color: #4a4a4a;
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 1.3em;
+//     margin: 0;
+//     padding: 0;
+//     outline: 0;
+//     text-decoration: none;
+//     border: 0
+// }
+//
+// @font-face {
+//     font-family: GothamPro-Black;
+//     src: url(../../static/fonts/GothamPro-Black.ttf)
+// }
+//
+// @font-face {
+//     font-family: GothamPro-Bold;
+//     src: url(../../static/fonts/GothamPro-Bold.ttf)
+// }
+//
+// @font-face {
+//     font-family: GothamPro-Medium;
+//     src: url(../../static/fonts/GothamPro-Medium.ttf)
+// }
+//
+// @font-face {
+//     font-family: GothamPro-Regular;
+//     src: url(../../static/fonts/GothamPro.ttf)
+// }
+//
+// @font-face {
+//     font-family: GothamPro-Light;
+//     src: url(../../static/fonts/GothamPro-light.ttf)
+// }
 
 .first-block {
     padding: 278px 0 240px 71px;
@@ -69,7 +69,7 @@ ul {
 }
 
 .first-block h1 {
-    font-family: GothamPro-Black;
+    font-family: gothamproblack;
     font-size: 69px;
     text-transform: uppercase;
     color: #000;
@@ -97,7 +97,7 @@ ul {
     text-align: center;
     font-size: 13px;
     background: linear-gradient(89.76deg, #5a1e9e .03%, #ae33e7 99.95%);
-    font-family: GothamPro-Black;
+    font-family: gothamproblack;
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: normal;
@@ -151,7 +151,7 @@ ul {
     left: 50%;
     transform: translate(-50%);
     text-transform: uppercase;
-    font-family: GothamPro-Bold;
+    font-family: gothamprobold;
     font-size: 12px
 }
 
@@ -274,7 +274,7 @@ ul {
     top: 50px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: GothamPro-Bold;
+    font-family: gothamprobold;
     background: 0 0
 }
 
@@ -309,7 +309,7 @@ ul {
 }
 
 .team__slider .person__name {
-    font-family: GothamPro-Bold;
+    font-family: gothamprobold;
     text-transform: uppercase;
     text-align: center;
     color: #000;
@@ -318,7 +318,7 @@ ul {
 }
 
 .team__slider .porson_position {
-    font-family: GothamPro-Regular;
+    font-family: gothampro;
     text-align: center;
     color: #000;
     opacity: .5

@@ -5,7 +5,6 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2359,6 +2358,78 @@ label.error {
   margin-top: 40px;
 }
 
+.case-top {
+  position: relative;
+}
+
+@media screen and (min-width: 1025px) {
+  .case-top {
+    height: 100vh;
+    background: url(../img/general/bg.svg) calc( 50% - 175px) 146px/357px 570px;
+    min-height: 768px;
+  }
+}
+
+.case-top h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+  line-height: 2;
+  margin-bottom: 38px;
+  color: #000000;
+  background-image: url(../img/general/bg-text.png);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1025px) {
+  .case-top h1 {
+    font-size: 2.5rem;
+    padding: 0 130px;
+    margin-top: 177px;
+  }
+  .case-top h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #e8e8e8;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+.case-top-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1025px) {
+  .case-top-content {
+    position: absolute;
+  }
+}
+
+.case-top-img {
+  width: 100%;
+}
+
 .cases-carusel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2587,78 +2658,6 @@ label.error {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   background-color: #e8e8e8;
-}
-
-.case-top {
-  position: relative;
-}
-
-@media screen and (min-width: 1025px) {
-  .case-top {
-    height: 100vh;
-    background: url(../img/general/bg.svg) calc( 50% - 175px) 146px/357px 570px;
-    min-height: 768px;
-  }
-}
-
-.case-top h1 {
-  font-size: 1.25rem;
-  text-align: center;
-  position: relative;
-  line-height: 2;
-  margin-bottom: 38px;
-  color: #000000;
-  background-image: url(../img/general/bg-text.png);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@media screen and (min-width: 1025px) {
-  .case-top h1 {
-    font-size: 2.5rem;
-    padding: 0 130px;
-    margin-top: 177px;
-  }
-  .case-top h1::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 120px;
-    height: 1px;
-    background-color: #e8e8e8;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-  }
-}
-
-.case-top-content {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 12px;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width: 1025px) {
-  .case-top-content {
-    position: absolute;
-  }
-}
-
-.case-top-img {
-  width: 100%;
 }
 
 section.scrollify.contacts {
@@ -4057,27 +4056,6 @@ section.home .scroll-down:hover::before {
   }
 }
 
-.social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.social-list a {
-  display: block;
-  padding: 8px;
-  font-size: 1.125rem;
-  line-height: 1;
-  fill: #383838;
-}
-
-.social-list a:hover {
-  fill: #4d58a5;
-}
-
 .services-content {
   height: 100%;
 }
@@ -4347,65 +4325,25 @@ section.home .scroll-down:hover::before {
   }
 }
 
-a,
-a:focus,
-a:hover,
-body,
-button,
-div,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-html,
-input,
-li,
-ol,
-p,
-section,
-span,
-textarea,
-ul {
-  font-family: GothamPro, sans-serif;
-  color: #4a4a4a;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.3em;
+.social-list {
+  list-style: none;
   margin: 0;
   padding: 0;
-  outline: 0;
-  text-decoration: none;
-  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@font-face {
-  font-family: GothamPro-Black;
-  src: url(../../static/fonts/GothamPro-Black.ttf);
+.social-list a {
+  display: block;
+  padding: 8px;
+  font-size: 1.125rem;
+  line-height: 1;
+  fill: #383838;
 }
 
-@font-face {
-  font-family: GothamPro-Bold;
-  src: url(../../static/fonts/GothamPro-Bold.ttf);
-}
-
-@font-face {
-  font-family: GothamPro-Medium;
-  src: url(../../static/fonts/GothamPro-Medium.ttf);
-}
-
-@font-face {
-  font-family: GothamPro-Regular;
-  src: url(../../static/fonts/GothamPro.ttf);
-}
-
-@font-face {
-  font-family: GothamPro-Light;
-  src: url(../../static/fonts/GothamPro-light.ttf);
+.social-list a:hover {
+  fill: #4d58a5;
 }
 
 .first-block {
@@ -4416,7 +4354,7 @@ ul {
 }
 
 .first-block h1 {
-  font-family: GothamPro-Black;
+  font-family: gothamproblack;
   font-size: 69px;
   text-transform: uppercase;
   color: #000;
@@ -4445,7 +4383,7 @@ ul {
   font-size: 13px;
   background: -webkit-linear-gradient(0.24deg, #5a1e9e 0.03%, #ae33e7 99.95%);
   background: linear-gradient(89.76deg, #5a1e9e 0.03%, #ae33e7 99.95%);
-  font-family: GothamPro-Black;
+  font-family: gothamproblack;
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: normal;
@@ -4502,7 +4440,7 @@ ul {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   text-transform: uppercase;
-  font-family: GothamPro-Bold;
+  font-family: gothamprobold;
   font-size: 12px;
 }
 
@@ -4627,7 +4565,7 @@ ul {
   top: 50px;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: GothamPro-Bold;
+  font-family: gothamprobold;
   background: 0 0;
 }
 
@@ -4662,7 +4600,7 @@ ul {
 }
 
 .team__slider .person__name {
-  font-family: GothamPro-Bold;
+  font-family: gothamprobold;
   text-transform: uppercase;
   text-align: center;
   color: #000;
@@ -4671,7 +4609,7 @@ ul {
 }
 
 .team__slider .porson_position {
-  font-family: GothamPro-Regular;
+  font-family: gothampro;
   text-align: center;
   color: #000;
   opacity: .5;
