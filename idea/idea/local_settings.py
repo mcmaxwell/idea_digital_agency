@@ -39,6 +39,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, '../de1v/static')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "../builds/static"),
+    #os.path.join(BASE_DIR, "../builds/static"),
     os.path.join(BASE_DIR, "../dev/static"),
 ]

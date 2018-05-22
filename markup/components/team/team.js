@@ -3,8 +3,8 @@ $('.team__slider').slick({
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
-    prevArrow: '<button type="button" class="slick-prev"><img src="static/img/assets/team/prev.png">PREV</button>',
-    nextArrow: '<button type="button" class="slick-next">next<img src="static/img/assets/team/next.png"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="/static/img/assets/team/prev.png">PREV</button>',
+    nextArrow: '<button type="button" class="slick-next">next<img src="/static/img/assets/team/next.png"></button>',
     responsive: [
         {
             breakpoint: 1024,

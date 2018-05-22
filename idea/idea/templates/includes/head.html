@@ -17,7 +17,11 @@
 
 
   <!--[if (gt IE 9)|!(IE)]><!-->
+  {% if DEBUG %}
+  <link href="{% static "css/main.css" %}" rel="stylesheet" type="text/css">
+  {% else %}
   <link href="{% static "css/main.min.css" %}" rel="stylesheet" type="text/css">
+  {% endif %}
   <!--<![endif]-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67277385-5"></script>
