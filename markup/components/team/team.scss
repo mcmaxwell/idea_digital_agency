@@ -64,7 +64,7 @@ ul {
 .first-block {
     padding: 278px 0 240px 71px;
     position: relative;
-    background: url(../images/bg.svg) -21px 190px/354px 570px;
+    background: url(../img/assets/team/bg.svg) -21px 190px/354px 570px;
     margin-top: -78px
 }
 
@@ -230,7 +230,7 @@ ul {
 .our__team {
     padding: 122px 0 71px;
     position: relative;
-    background: url(../images/bg.svg) -1px 264px/353px 507px;
+    background: url(../img/assets/team/bg.svg) -1px 264px/353px 507px;
     //margin-top: -78px
 }
 
@@ -273,6 +273,7 @@ ul {
     position: absolute;
     top: 50px;
     text-transform: uppercase;
+    border-color: white;
     font-size: 14px;
     font-family: gothamprobold;
     background: 0 0
@@ -284,21 +285,18 @@ ul {
     margin: 0 auto
 }
 
-.team__slider .slick-prev {
+.team__slider .slick-prevs {
     left: 54px
 }
 
-.team__slider .slick-next img {
+.team__slider .slick-nexts img {
     padding-right: 7px
 }
 
-.team__slider .slick-next {
+.team__slider .slick-nexts {
     right: 54px
 }
 
-.team__slider .slick-next img {
-    padding-left: 7px
-}
 
 .team__slider .avatar_wrp .line {
     width: 1px;
@@ -509,6 +507,25 @@ header {
     top: 8px;
     transform: rotate(-135deg);
     background: #333
+}
+
+.team__slider {
+    background-color: #fff;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+}
+.team__slider .slick-arrow {
+    position: absolute;
+    top: 31%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: gothamprobold;
+    background: 0 0;
+    color: #333;
+}
+
+.icon::before {
+    display: none;
 }
 
 
