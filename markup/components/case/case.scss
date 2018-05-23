@@ -5,6 +5,7 @@
     background: url(%=static=%general/about-line.png) 1px 0/25% 570px;
     padding-top: 80px;
   }
+
   @media #{$desktop} {
     background: url(%=static=%general/about-line.png) -3px 0;
   }
