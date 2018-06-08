@@ -174,7 +174,12 @@ LOCALE_PATHS = (
     os.path.join(BASE_DIR, "locale/"),
 )
 
-
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_HOST_USER = 'bot.idea@yandex.ru'
+EMAIL_HOST_PASSWORD = '0987007a'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/

@@ -9,6 +9,7 @@ from blog.models import Blog
 from cases.models import Case
 from amocrm import amo_settings
 from .crm_utils import Contact, Lead
+from django.core.mail import send_mail
 
 amo_settings.set('ideadigitalukraine@gmail.com', '00e79897bdda78ca52e7fdbcf2b710a9', 'ideadigital')
 #amo_settings.set('alexrians@gmail.com', 'c8bad8aedb1d614006877dfbf693a5ef', 'ideatest1')
@@ -48,6 +49,15 @@ def add_subscriber(request):
         save_object.save()
 
         return redirect('/')
+
+
+def callback_form(request):
+    if request.GET:
+        name = request.GET['name']
+        phone = request.GET['phone']
+        comment = request.GET['comment']
+
+        send_mail('Idea Callback Form', name + " " + phone + " " + comment, 'bot.idea@yandex.ru', ['alexrians@gmail.com',])
 
 
 
