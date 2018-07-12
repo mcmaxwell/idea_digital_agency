@@ -57,7 +57,15 @@ def callback_form(request):
         phone = request.GET['phone']
         comment = request.GET['comment']
 
-        send_mail('Idea Callback Form', name + " " + phone + " " + comment, 'bot.idea@yandex.ru', ['alexrians@gmail.com',])
+        try:
+            service = request.GET['select']
+        except:
+            service = None
+
+        new_contact = Contact(name=name, company='FastCall', position='QA', phone=phone, email="nodata@data.com",)
+        new_contact.save()
+
+        send_mail('Idea Callback Form', name + " " + phone + " " + comment + " " + service, 'bot.idea@yandex.ru', ['ideadigitalukraine@gmail.com',])
 
 
 

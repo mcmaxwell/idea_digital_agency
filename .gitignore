@@ -26,7 +26,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 venv/
-
+idea/idea/local_settings.py
 
 #db.sqlite3
 #*.sqlite3
