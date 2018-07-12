@@ -14,23 +14,36 @@
             currency: 'USD',
             });
         </script>
-
+        <div class="hidden" xmlns:v="http://rdf.data-vocabulary.org/#">
+            <span typeof="v:Breadcrumb"><a href="http://https://ideadigital.agency/" rel="v:url" property="v:title"></a> › </span>
+            <span typeof="v:Breadcrumb"><a href="http://https://ideadigital.agency/#content" rel="v:url" property="v:title">Все начинается с Идеи</a> › </span>
+            <span typeof="v:Breadcrumb">Текущая категория</span>
+        </div>
 
         <ul class="navigation">
             <li>
-                <a class="active" href="#home" data-section-link="home"><span>{% trans "Головна" %}</span></a>
+                <a class="active" href="#home" data-section-link="home"><span>{% trans "Головна" %}</span>01</a>
             </li>
             <li>
-                <a class="" href="#about" data-section-link="about"><span>{% trans "Про нас" %}</span></a>
+                <a class="" href="#about" data-section-link="about"><span>{% trans "Про нас" %}</span>02</a>
             </li>
             <li>
-                <a class="" href="#services" data-section-link="services"><span>{% trans "Послуги" %}</span></a>
+                <a class="" href="#services" data-section-link="services"><span>{% trans "Послуги" %}</span>03</a>
             </li>
             <li>
-                <a class="" href="#cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span></a>
+                <a class="" href="#cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span>04</a>
             </li>
+
             <li>
-                <a class="" href="#contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span></a>
+                <a class="" href="#team-carusel" data-section-link="team-carusel"><span>{% trans "Команда" %}</span>05</a>
+            </li>
+
+            <li>
+                <a class="" href="#partners" data-section-name="partners-carusel" ><span>{% trans "Партнеры" %}</span>06</a>
+            </li>
+
+            <li>
+                <a class="" href="#contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span>07</a>
             </li>
         </ul>
         <main class="scrollify-page">
@@ -81,8 +94,13 @@
             </section>
 
             <section class="about scrollify" data-section-name="about" id="about">
-                <div class="about-content block-center-content">
+                <div class="about-content block_title block-center-content">
                     <h2 class="big-shadow line-before" data-title="{% trans "Про нас." %}">{% trans "Про нас." %}</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static "img/assets/title/about.png" %}">
+                        <img class="tab" src="{% static "img/assets/title/about_t.png" %}">
+                        <img class="mob" src="{% static "img/assets/title/about_m.png" %}">
+                    </div>
                     {{ctx.text_about_us|safe}}
                 </div>
             </section>
@@ -94,7 +112,7 @@
                             <div class="services-count">
                                 <span>01</span>
                             </div>
-                            <a href="https://ideadigital.agency/razrabotka_site/" class="services-item-content">
+                            <a href="https://ideadigital.agency/services/razrabotka_site.html" class="services-item-content">
                                 <div class="icon">
                                 	<img src="{% static "img/assets/services/services_icon4.svg" %}">
                                 </div>
@@ -106,7 +124,7 @@
                             <div class="services-count">
                                 <span>02</span>
                             </div>
-                            <a href="https://ideadigital.agency/internet_marketing/" class="services-item-content">
+                            <a href="https://ideadigital.agency/services/internet_marketing.html" class="services-item-content">
                                 <div class="icon">
                                 	<img src="{% static "img/assets/services/services_icon.svg" %}">
                                 </div>
@@ -118,7 +136,7 @@
                             <div class="services-count">
                                 <span>03</span>
                             </div>
-                            <a href="https://ideadigital.agency/branding/" class="services-item-content">
+                            <a href="https://ideadigital.agency/services/branding.html" class="services-item-content">
                                 <div class="icon">
                                 	<img src="{% static "img/assets/services/services_icon2.svg" %}">
                                 </div>
@@ -130,7 +148,7 @@
                             <div class="services-count">
                                 <span>04</span>
                             </div>
-                            <a href="https://ideadigital.agency/video_prodakshn/" class="services-item-content">
+                            <a href="https://ideadigital.agency/services/video_prodakshn.html" class="services-item-content">
                                 <div class="icon">
                                 	<img src="{% static "img/assets/services/services_icon3.svg" %}">
                                 </div>
@@ -143,8 +161,13 @@
             </section>
 
             <section class="cases-carusel scrollify" data-section-name="cases-carusel" id="cases-carusel">
-                <div class="cases-carusel-content block-center-content">
-                    <h2 class="big-shadow line-before" data-title="{% trans "Кейси." %}">{% trans "Кейси." %}</h2>
+                <div class="cases-carusel-content block_title block-center-content">
+                    <h2 class="big-shadow  line-before" data-title="{% trans "Кейси." %}">{% trans "Кейси." %}</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static "img/assets/title/cases.png" %}">
+                        <img class="tab" src="{% static "img/assets/title/cases_t.png" %}">
+                        <img class="mob" src="{% static "img/assets/title/cases_m.png" %}">
+                    </div>
                 </div>
                 <div class="cases-carusel">
 
@@ -171,28 +194,187 @@
             </div>
             </section>
 
-            <!-- {% if members %}
+            <!--{% if members %}-->
+            <!--<section class="our__team scrollify" data-section-name="team-carusel" id="team-carusel">-->
+                <!--<div class=" block_title block-center-content">-->
+                    <!--<h2 class="big-shadow  line-before">Наша команда.</h2>-->
+                    <!--<div class="b_title">-->
+                        <!--<img class="desc" src="{% static 'img/assets/title/team.png' %}">-->
+                        <!--<img class="tab" src="{% static 'img/assets/title/team_t.png' %}">-->
+                        <!--<img class="mob" src="{% static 'img/assets/title/team_m.png' %}">-->
+                    <!--</div>-->
+                <!--</div>-->
+            	<!--<div class="team__slider clearfix">-->
+                <!--{% for member in members %}-->
+                <!--<div class="item">-->
+                    <!--<div class="avatar_wrp">-->
+                        <!--<img src="{{member.get_image}}" alt="" class="img-responsive">-->
+                        <!--<div class="line"></div>-->
+                    <!--</div>-->
+                    <!--<div class="person__name">{{member.name}}</div>-->
+                    <!--<div class="porson_position">{{member.position}}</div>-->
+                <!--</div>-->
+                <!--{% endfor %}-->
+              <!--</div>-->
+            <!--</section>-->
+            <!--{% endif %}-->
+
             <section class="our__team scrollify" data-section-name="team-carusel" id="team-carusel">
-            	<h2>Наша команда.</h2>
-            	<div class="team_title"><img src="{% static "img/assets/team/team.svg" %}" alt=""></div>
-            	<div class="team__slider clearfix">
-                {% for member in members %}
-                <div class="item">
-            			<div class="avatar_wrp">
-            				<img src="{{member.get_image}}" alt="" class="img-responsive">
-            				<div class="line"></div>
-            			</div>
-            			<div class="person__name">{{member.name}}</div>
-            			<div class="porson_position">{{member.position}}</div>
-            		</div>
-                {% endfor %}
-              </div>
+                <div class="team-content block_title block-center-content">
+                    <h2 class="big-shadow line-before">Наша команда.</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static 'img/assets/title/team.png' %}">
+                        <img class="tab" src="{% static 'img/assets/title/team_t.png' %}">
+                        <img class="mob" src="{% static 'img/assets/title/team_m.png' %}">
+                    </div>
+                </div>
+                <div class="team__slider clearfix">
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_1.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Александр Белицкий</div>
+                        <div class="porson_position">CEO</div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_4.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Виктор Мостовой</div>
+                        <div class="porson_position">Internet Marketer</div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_6.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Юлия Белицкая</div>
+                        <div class="porson_position">CMO</div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_2.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Наталья Изюменко</div>
+                        <div class="porson_position">Web designer</div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_5.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Евгений Бевзюк</div>
+                        <div class="porson_position">Front-end Developer</div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_3.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Илона божок</div>
+                        <div class="porson_position">Project Manager</div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_7.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Яна Кравец</div>
+                        <div class="porson_position">Web designer</div>
+                    </div>
+                    <div class="item">
+                        <div class="avatar_wrp">
+                            <img src="{% static 'img/assets/team2/t_8.png' %}" alt="" class="img-responsive">
+                            <div class="line"></div>
+                        </div>
+                        <div class="person__name">Илья Болилый</div>
+                        <div class="porson_position">Front-end Developer</div>
+                    </div>
+                </div>
             </section>
-            {% endif %} -->
+
+            <section  class="third-block partners scrollify" data-section-name="partners-carusel" id="partners">
+                <div class="team-content block_title block-center-content">
+                    <h2 class="big-shadow line-before">Наши партнеры.</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static 'img/assets/title/partners.png' %}">
+                        <img class="tab" src="{% static 'img/assets/title/partners_t.png' %}">
+                        <img class="mob" src="{% static 'img/assets/title/partners_m.png' %}">
+                    </div>
+                </div>
+                <div class="partnerss__slider">
+                    <div class="item">
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p12.png' %}" alt="">
+                        </div>
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p14.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p1.png' %}" alt="">
+                        </div>
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p2.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p3.png' %}" alt="">
+                        </div>
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p10.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p5.png' %}" alt="">
+                        </div>
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p4.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p7.png' %}" alt="">
+                        </div>
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p8.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p9.png' %}" alt="">
+                        </div>
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p6.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p11.png' %}" alt="">
+                        </div>
+                        <div class="i_wrp">
+                            <img src="{% static 'img/assets/partners/p13.png' %}" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
 
             <section class="contacts scrollify" data-section-name="contacts" id="contacts">
-                <div class="contacts-content block-center-content">
+                <div class="contacts-content block_title block-center-content">
                     <h2 class="big-shadow line-before" data-title="{% trans "Контакти." %}">{% trans "Контакти." %}</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static "img/assets/title/contacts.png" %}">
+                        <img class="tab" src="{% static "img/assets/title/contacts_t.png" %}">
+                        <img class="mob" src="{% static "img/assets/title/contacts_m.png" %}">
+                    </div>
                     <div class="contacts-form">
                         <span>{% trans "Що далі?" %}</span>
                         <p><span>{% trans "Ми готові!" %}</span>  <a href="#" class="toggle-form arr arr-right">{% trans "зв&#x27;язатись" %}</a>
@@ -234,9 +416,9 @@
                         </ul>
                         {% endfor %}
                     </footer>
-                   </section>
-                  </main>
-                  <div class="get-in-touch">
+           </section>
+        </main>
+        <div class="get-in-touch">
                         <div class="get-in-touch-content line-load">
                             <a href="/" class="logo">
                                 <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">

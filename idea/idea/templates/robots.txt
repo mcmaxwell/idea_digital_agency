@@ -3,12 +3,14 @@ Disallow: /agency_start/
 Disallow: /en/
 Disallow: /uk/
 Disallow: /us/
+Disallow: /media/
 
 User-agent: YandexBot
 Disallow: /agency_start/
 Disallow: /en/
 Disallow: /uk/
 Disallow: /us/
+Disallow: /media/
 
 Host: https://ideadigital.agency
 Sitemap: https://ideadigital.agency/sitemap.xml

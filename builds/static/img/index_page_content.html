@@ -1,0 +1,319 @@
+{% load i18n %}
+{% load l10n %}
+{% load staticfiles %}
+{% load applicationcontent_tags %}
+{% load feincms_tags %}
+{% load feincms_page_tags %}
+
+
+
+<body class="page home-page">
+        <script>
+            fbq('track', 'Lead', {
+            value: 10.00,
+            currency: 'USD',
+            });
+        </script>
+
+
+        <ul class="navigation">
+            <li>
+                <a class="active" href="#home" data-section-link="home"><span>{% trans "Головна" %}</span>01</a>
+            </li>
+            <li>
+                <a class="" href="#about" data-section-link="about"><span>{% trans "Про нас" %}</span>02</a>
+            </li>
+            <li>
+                <a class="" href="#services" data-section-link="services"><span>{% trans "Послуги" %}</span>03</a>
+            </li>
+            <li>
+                <a class="" href="#cases-carusel" data-section-link="cases-carusel"><span>{% trans "Кейси" %}</span>04</a>
+            </li>
+            <li>
+                <a class="" href="#contacts" data-section-link="contacts"><span>{% trans "Контакти" %}</span>05</a>
+            </li>
+        </ul>
+        <main class="scrollify-page">
+            <section class="home scrollify" data-section-name="home" id="home">
+
+                {% include "includes/index_header.html" %}
+
+                <img src="{% static "img/general/logo-big.svg" %}" alt="Idea Digital Agency" class="home-bg-logo">
+
+                <div class="home-content">
+                    {{ctx.title|safe}}
+                    <p class="line-after">{{ctx.sub_title}}</p>
+                </div>
+                <div class="home-social line-after line-before">
+                    {% for info in info %}
+                    <ul class="social-list">
+                       {% if info.twitter_link %}
+                        <li>
+                            <a href="{{info.twitter_link}}" target="_blank" class="icon icon-twitter"></a>
+                        </li>
+                        {% endif %}
+                        {% if info.facebook_link %}
+                        <li>
+                            <a href="{{info.facebook_link}}" target="_blank" class="icon icon-facebook"></a>
+                        </li>
+                        {% endif %}
+                        {% if info.insta_link %}
+                        <li>
+                            <a href="{{info.insta_link}}" target="_blank" class="icon icon-instagram"></a>
+                        </li>
+                        {% endif %}
+                         {% if info.behance_link %}
+                         <li>
+                            <a href="{{info.behance_link}}" target="_blank" class="icon icon-behance">
+                                <svg width="18" height="18" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path d="M12.631 14.019c0.406-0.294 0.6-0.781 0.6-1.456 0-0.375-0.063-0.681-0.194-0.919-0.137-0.238-0.313-0.425-0.544-0.556-0.225-0.137-0.481-0.231-0.775-0.281-0.287-0.056-0.594-0.081-0.906-0.081h-3.294v3.737h3.563c0.625 0.006 1.144-0.144 1.55-0.444z"></path>
+                                    <path d="M13.188 17.394c-0.463-0.35-1.075-0.525-1.838-0.525h-3.831v4.406h3.756c0.35 0 0.675-0.031 0.988-0.1s0.594-0.175 0.831-0.337c0.238-0.156 0.431-0.369 0.575-0.637s0.213-0.619 0.213-1.038c0-0.825-0.231-1.413-0.694-1.769z"></path>
+                                    <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM20.975 8.419h6.481v1.581h-6.481v-1.581zM16.925 21.45c-0.313 0.594-0.738 1.075-1.262 1.45-0.531 0.375-1.137 0.65-1.819 0.831-0.675 0.181-1.375 0.269-2.088 0.269h-7.756v-15.994h7.537c0.762 0 1.456 0.069 2.088 0.2 0.625 0.131 1.162 0.356 1.613 0.662 0.444 0.306 0.794 0.713 1.044 1.219 0.244 0.5 0.369 1.131 0.369 1.875 0 0.806-0.181 1.475-0.55 2.012s-0.906 0.975-1.631 1.319c0.988 0.281 1.713 0.781 2.194 1.487 0.488 0.712 0.725 1.569 0.725 2.569 0.006 0.819-0.15 1.519-0.462 2.1zM29.981 18.975h-8.356c0 0.913 0.313 1.781 0.788 2.25 0.475 0.462 1.163 0.7 2.056 0.7 0.644 0 1.194-0.163 1.663-0.488 0.462-0.325 0.744-0.669 0.85-1.025h2.8c-0.45 1.394-1.131 2.387-2.063 2.988-0.919 0.6-2.044 0.9-3.35 0.9-0.913 0-1.731-0.15-2.469-0.438-0.738-0.294-1.35-0.706-1.869-1.244-0.506-0.538-0.894-1.181-1.175-1.931-0.275-0.744-0.419-1.575-0.419-2.469 0-0.869 0.144-1.675 0.425-2.425 0.288-0.75 0.688-1.4 1.212-1.938 0.525-0.544 1.15-0.975 1.875-1.294 0.725-0.313 1.525-0.469 2.413-0.469 0.981 0 1.837 0.188 2.575 0.575 0.731 0.381 1.331 0.894 1.806 1.537s0.806 1.375 1.019 2.2c0.206 0.813 0.275 1.669 0.219 2.569z"></path>
+                                    <path d="M24.269 14.494c-0.506 0-0.931 0.088-1.262 0.262s-0.6 0.387-0.806 0.637c-0.206 0.256-0.344 0.525-0.425 0.819-0.081 0.281-0.131 0.538-0.144 0.762h5.175c-0.075-0.813-0.356-1.412-0.731-1.831-0.387-0.425-1.025-0.65-1.806-0.65z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                       {% endif %}
+                    </ul>
+                   {% endfor %}
+                </div>
+                <a href="#about" class="scroll-down arr-bottom arr" data-section-link="about">{% trans "Далі" %}</a>
+            </section>
+
+            <section class="about scrollify" data-section-name="about" id="about">
+                <div class="about-content block_title block-center-content">
+                    <h2 class="big-shadow line-before" data-title="{% trans "Про нас." %}">{% trans "Про нас." %}</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static "img/assets/title/about.png" %}">
+                        <img class="tab" src="{% static "img/assets/title/about_t.png" %}">
+                        <img class="mob" src="{% static "img/assets/title/about_m.png" %}">
+                    </div>
+                    {{ctx.text_about_us|safe}}
+                </div>
+            </section>
+
+            <section class="services scrollify" data-section-name="services" id="services">
+                <div class="services-content">
+                    <div class="services-list">
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>01</span>
+                            </div>
+                            <a href="https://ideadigital.agency/services/razrabotka_site.html" class="services-item-content">
+                                <div class="icon">
+                                	<img src="{% static "img/assets/services/services_icon4.svg" %}">
+                                </div>
+                                <h3>{{ctx.service_title_one}}</h3>
+                                {{ ctx.service_list_one|safe}}
+                            </a>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>02</span>
+                            </div>
+                            <a href="https://ideadigital.agency/services/internet_marketing.html" class="services-item-content">
+                                <div class="icon">
+                                	<img src="{% static "img/assets/services/services_icon.svg" %}">
+                                </div>
+                                <h3>{{ctx.service_title_two}}</h3>
+                                {{ ctx.service_list_two|safe}}
+                            </a>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>03</span>
+                            </div>
+                            <a href="https://ideadigital.agency/services/branding.html" class="services-item-content">
+                                <div class="icon">
+                                	<img src="{% static "img/assets/services/services_icon2.svg" %}">
+                                </div>
+                                <h3>{{ctx.service_title_three}}</h3>
+                                {{ ctx.service_list_three|safe}}
+                            </a>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-count">
+                                <span>04</span>
+                            </div>
+                            <a href="https://ideadigital.agency/services/video_prodakshn.html" class="services-item-content">
+                                <div class="icon">
+                                	<img src="{% static "img/assets/services/services_icon3.svg" %}">
+                                </div>
+                                <h3>{{ctx.service_title_four}}</h3>
+                                {{ ctx.service_list_four|safe}}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cases-carusel scrollify" data-section-name="cases-carusel" id="cases-carusel">
+                <div class="cases-carusel-content block_title block-center-content">
+                    <h2 class="big-shadow  line-before" data-title="{% trans "Кейси." %}">{% trans "Кейси." %}</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static "img/assets/title/cases.png" %}">
+                        <img class="tab" src="{% static "img/assets/title/cases_t.png" %}">
+                        <img class="mob" src="{% static "img/assets/title/cases_m.png" %}">
+                    </div>
+                </div>
+                <div class="cases-carusel">
+
+                <div class="cases-carusel-list">
+                    <div class="cases-carusel-list-carusel">
+                        {% for case in cases %}
+                        <a class="cases-carusel-item" href="{{case.get_absolute_url}}">
+                            <img src="{{case.get_image_preview}}" alt="{{case.title}}">
+                            <span class="cases-carusel-item-info">
+                        <h4>{{case.title}}</h4>
+                        <span class="arr arr-right">{% trans "переглянути кейс" %}</span>
+                            </span>
+                        </a>
+                       {% endfor %}
+                    </div>
+                    <a class="cases-carusel-item next-slide" href="#">
+                        <span class="cases-carusel-item-info">
+                    <i class="icon icon-next"></i>
+                    <span>{% trans "Більше проектів" %}</span>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            </section>
+
+            <!--{% if members %}-->
+            <!--<section class="our__team scrollify" data-section-name="team-carusel" id="team-carusel">-->
+                <!--<div class=" block_title block-center-content">-->
+                    <!--<h2 class="big-shadow  line-before">Наша команда.</h2>-->
+                    <!--<div class="b_title">-->
+                        <!--<img class="desc" src="{% static 'img/assets/title/team.png' %}">-->
+                        <!--<img class="tab" src="{% static 'img/assets/title/team_t.png' %}">-->
+                        <!--<img class="mob" src="{% static 'img/assets/title/team_m.png' %}">-->
+                    <!--</div>-->
+                <!--</div>-->
+            	<!--<div class="team__slider clearfix">-->
+                <!--{% for member in members %}-->
+                <!--<div class="item">-->
+                    <!--<div class="avatar_wrp">-->
+                        <!--<img src="{{member.get_image}}" alt="" class="img-responsive">-->
+                        <!--<div class="line"></div>-->
+                    <!--</div>-->
+                    <!--<div class="person__name">{{member.name}}</div>-->
+                    <!--<div class="porson_position">{{member.position}}</div>-->
+                <!--</div>-->
+                <!--{% endfor %}-->
+              <!--</div>-->
+            <!--</section>-->
+            <!--{% endif %}-->
+
+            <section class="contacts scrollify" data-section-name="contacts" id="contacts">
+                <div class="contacts-content block_title block-center-content">
+                    <h2 class="big-shadow line-before" data-title="{% trans "Контакти." %}">{% trans "Контакти." %}</h2>
+                    <div class="b_title">
+                        <img class="desc" src="{% static "img/assets/title/contacts.png" %}">
+                        <img class="tab" src="{% static "img/assets/title/contacts_t.png" %}">
+                        <img class="mob" src="{% static "img/assets/title/contacts_m.png" %}">
+                    </div>
+                    <div class="contacts-form">
+                        <span>{% trans "Що далі?" %}</span>
+                        <p><span>{% trans "Ми готові!" %}</span>  <a href="#" class="toggle-form arr arr-right">{% trans "зв&#x27;язатись" %}</a>
+                        </p>
+                    </div>
+                </div>
+                <footer>
+                        {% for info in info %}
+                        <p>© 2017 Idea Digital Agency | {{info.adress_footer}} <a href="tel:{{info.phone_footer}}">{{info.phone_footer}}</a>  <a href="mailto:{{info.email_footer}}">{{info.email_footer}}</a>
+                        </p>
+                        <ul class="social-list">
+                           {% if info.twitter_link %}
+                            <li>
+                                <a href="{{info.twitter_link}}" target="_blank" class="icon icon-twitter"></a>
+                            </li>
+                            {% endif %}
+                            {% if info.facebook_link %}
+                            <li>
+                                <a href="{{info.facebook_link}}" target="_blank" class="icon icon-facebook"></a>
+                            </li>
+                            {% endif %}
+                            {% if info.insta_link %}
+                            <li>
+                                <a href="{{info.insta_link}}" target="_blank" class="icon icon-instagram"></a>
+                            </li>
+                            {% endif %}
+                             {% if info.behance_link %}
+                             <li>
+                                <a href="{{info.behance_link}}" target="_blank" class="icon icon-behance">
+                                    <svg width="18" height="18" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <path d="M12.631 14.019c0.406-0.294 0.6-0.781 0.6-1.456 0-0.375-0.063-0.681-0.194-0.919-0.137-0.238-0.313-0.425-0.544-0.556-0.225-0.137-0.481-0.231-0.775-0.281-0.287-0.056-0.594-0.081-0.906-0.081h-3.294v3.737h3.563c0.625 0.006 1.144-0.144 1.55-0.444z"></path>
+                                        <path d="M13.188 17.394c-0.463-0.35-1.075-0.525-1.838-0.525h-3.831v4.406h3.756c0.35 0 0.675-0.031 0.988-0.1s0.594-0.175 0.831-0.337c0.238-0.156 0.431-0.369 0.575-0.637s0.213-0.619 0.213-1.038c0-0.825-0.231-1.413-0.694-1.769z"></path>
+                                        <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM20.975 8.419h6.481v1.581h-6.481v-1.581zM16.925 21.45c-0.313 0.594-0.738 1.075-1.262 1.45-0.531 0.375-1.137 0.65-1.819 0.831-0.675 0.181-1.375 0.269-2.088 0.269h-7.756v-15.994h7.537c0.762 0 1.456 0.069 2.088 0.2 0.625 0.131 1.162 0.356 1.613 0.662 0.444 0.306 0.794 0.713 1.044 1.219 0.244 0.5 0.369 1.131 0.369 1.875 0 0.806-0.181 1.475-0.55 2.012s-0.906 0.975-1.631 1.319c0.988 0.281 1.713 0.781 2.194 1.487 0.488 0.712 0.725 1.569 0.725 2.569 0.006 0.819-0.15 1.519-0.462 2.1zM29.981 18.975h-8.356c0 0.913 0.313 1.781 0.788 2.25 0.475 0.462 1.163 0.7 2.056 0.7 0.644 0 1.194-0.163 1.663-0.488 0.462-0.325 0.744-0.669 0.85-1.025h2.8c-0.45 1.394-1.131 2.387-2.063 2.988-0.919 0.6-2.044 0.9-3.35 0.9-0.913 0-1.731-0.15-2.469-0.438-0.738-0.294-1.35-0.706-1.869-1.244-0.506-0.538-0.894-1.181-1.175-1.931-0.275-0.744-0.419-1.575-0.419-2.469 0-0.869 0.144-1.675 0.425-2.425 0.288-0.75 0.688-1.4 1.212-1.938 0.525-0.544 1.15-0.975 1.875-1.294 0.725-0.313 1.525-0.469 2.413-0.469 0.981 0 1.837 0.188 2.575 0.575 0.731 0.381 1.331 0.894 1.806 1.537s0.806 1.375 1.019 2.2c0.206 0.813 0.275 1.669 0.219 2.569z"></path>
+                                        <path d="M24.269 14.494c-0.506 0-0.931 0.088-1.262 0.262s-0.6 0.387-0.806 0.637c-0.206 0.256-0.344 0.525-0.425 0.819-0.081 0.281-0.131 0.538-0.144 0.762h5.175c-0.075-0.813-0.356-1.412-0.731-1.831-0.387-0.425-1.025-0.65-1.806-0.65z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                           {% endif %}
+                        </ul>
+                        {% endfor %}
+                    </footer>
+           </section>
+        </main>
+        <div class="get-in-touch">
+                        <div class="get-in-touch-content line-load">
+                            <a href="/" class="logo">
+                                <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
+                            </a>
+                            <span class="close">×</span>
+                            <div class="get-in-touch-address">
+                               <div class="get-in-touch-address-content">
+                                <h4>{% trans "Україна, Дніпро," %}</h4>
+                                <p>{% trans "І.Акінфієва 18/410" %}</p>
+                                <p><a href="tel:+380985606565">+380985606565</a>
+                                </p>
+                                <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a>
+                                </p>
+                               </div>
+                            </div>
+                            <div class="get-in-touch-form">
+                                <form id="get-in-touch-form" class="ajaxform" action="{% app_reverse "add_contact_form" "info.urls" %}" >
+                                    <div class="block-field">
+                                        <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
+                                    </div>
+                                    <div class="block-field hide-mobile">
+                                        <input type="text" name="second" placeholder="{% trans "Прізвище" %}" autocomplete="off">
+                                    </div>
+                                    <div class="block-field hide-mobile">
+                                        <input type="email" name="email" placeholder="e-mail" autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="tel" name="phone" placeholder="{% trans "телефон (необов&#x27;язково)" %}" required autocomplete="off">
+                                    </div>
+                                    <div class="block-field">
+                                        <label for="budget" class="label-select">
+                                            <select name="budget" id="budget" required>
+                                                <option value="" disabled selected>{% trans "оберіть ваш бюджет" %}</option>
+                                                <option value="500$">500$-1000$</option>
+                                                <option value="1000$">1000$-3000$</option>
+                                                <option value="3000$">3000$ +</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="block-field hide-mobile">
+                                        <input type="text" name="company" placeholder="{% trans "компанія" %}" autocomplete="off">
+                                    </div>
+                                    <div class="block-field block-field-textarea">
+                                        <textarea name="message" placeholder="{% trans "деталі" %}" required></textarea>
+                                    </div>
+                                    <div class="block-field">
+                                        <input type="submit" value="{% trans "відправити" %}" class="btn">
+                                    </div>
+                                </form>
+                                <div class="get-in-touch-address thanks-massege hidden">
+                                    <h4>{% trans "Дякуємо що звернулися" %}</h4>
+                                    <p>{% trans "Наш менеджер зв'яжеться з Вами" %}
+                                        <br>{% trans "протягом години!" %}</p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                    </div>
+                  </div>

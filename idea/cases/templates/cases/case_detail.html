@@ -103,13 +103,25 @@
 
                     </div>
 
-                    <section class="contacts scrollify" data-section-name="contacts" id="contacts">
-                        <div class="contacts-content block-center-content">
-                            <h2 class="big-shadow line-before" data-title="{% trans "Контакти." %}">{% trans "Контакти." %}</h2>
-                            <div class="contacts-form">
-                                <span>{% trans "Що далі?" %}</span>
-                                <p><span>{% trans "Ми готові!" %}</span>  <a href="#" class="toggle-form arr arr-right">{% trans "зв&#x27;язатись" %}</a>
-                                </p>
+                    <section class="block__form_wrap  scrollify" data-section-name="contacts" id="contacts">
+                        <div class="cases-carusel-content block_title block-center-content">
+                            <h2 class="big-shadow  line-before">Форма.</h2>
+                            <div class="b_title">
+                                <img class="desc" src="{% static 'img/assets/title/form.png' %}" alt="">
+                                <img class="tab" src="{% static 'img/assets/title/form_t.png' %}">
+                                <img class="mob" src="{% static 'img/assets/title/form_m.png' %}">
+                            </div>
+                        </div>
+                        <div class="block__form_wrp">
+                            <div class="block__form">
+                                <h3>Заказать</h3>
+                                <form action="" method="get">
+                                    <input type="name" placeholder="Имя" name="" value="">
+                                    <input type="number" placeholder="Телефон" name="" value="">
+                                    <input type="text" placeholder="Коментарий" name="" value="">
+                                    <!--<textarea placeholder="Коментарий"></textarea>-->
+                                    <input type="submit" value="Отправить">
+                                </form>
                             </div>
                         </div>
 
@@ -118,63 +130,77 @@
                     </section>
 
                 </main>
-                 <div class="get-in-touch">
-                        <div class="get-in-touch-content line-load">
-                            <a href="" class="logo">
-                                <img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">
-                            </a>
-                            <span class="close">×</span>
-                            <div class="get-in-touch-address">
-                               <div class="get-in-touch-address-content"> 
-                                <h4>{% trans "Україна, Дніпро," %}</h4>
-                                <p>{% trans "І.Акінфієва 18/410" %}</p>
-                                <p><a href="tel:+380985606565">+380985606565</a>
-                                </p>
-                                <p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a>
-                                </p>
-                               </div>
-                            </div>
-                            <div class="get-in-touch-form">
-                                <form id="get-in-touch-form" class="ajaxform" action="{% app_reverse "add_contact_form" "info.urls" %}">
-                                    <div class="block-field">
-                                        <input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">
-                                    </div>
-                                    <div class="block-field hide-mobile">
-                                        <input type="text" name="second" placeholder="{% trans "Прізвище" %}" autocomplete="off">
-                                    </div>
-                                    <div class="block-field hide-mobile">
-                                        <input type="email" name="email" placeholder="e-mail" autocomplete="off">
-                                    </div>
-                                    <div class="block-field">
-                                        <input type="tel" name="phone" placeholder="{% trans "телефон (необов&#x27;язково)" %}" required autocomplete="off">
-                                    </div>
-                                    <div class="block-field">
-                                        <label for="budget" class="label-select">
-                                            <select name="budget" id="budget" required>
-                                                <option value="" disabled selected>{% trans "оберіть ваш бюджет" %}</option>
-                                                <option value="500$-1000$500$-1000$">500$-1000$</option>
-                                                <option value="1000$-3000$1000$-3000$">1000$-3000$</option>
-                                                <option value="3000$ +3000$ +">3000$ +</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="block-field hide-mobile">
-                                        <input type="text" name="company" placeholder="{% trans "компанія" %}" autocomplete="off">
-                                    </div>
-                                    <div class="block-field block-field-textarea">
-                                        <textarea name="message" placeholder="{% trans "деталі" %}" required></textarea>
-                                    </div>
-                                    <div class="block-field">
-                                        <input type="submit" value="{% trans "відправити" %}" class="btn">
-                                    </div>
-                                </form>
-                                <div class="get-in-touch-address thanks-massege hidden">
-                                    <h4>{% trans "Дякуємо що звернулися" %}</h4>
-                                    <p>{% trans "Наш менеджер зв'яжеться з Вами" %}
-                                        <br>{% trans "протягом години!" %}</p>
-                                    <br>
-                                    <br>
-                                </div>
-                            </div>
+
+
+                <div class="form form__wrapper_submit">
+                    <div class="header__title">
+                        <div class="logo__form">
+                            <img src="{% static 'img/general/f_logo.png' %}" alt="">
+                        </div>
+                        <div class="btn_close">×</div>
                     </div>
-                 </div>
+                    <div class="content__form">
+                        <h3>СПАСИБО ЗА ЗАЯВКУ!</h3>
+                        <p>НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ В ТЕЧЕНИЕ ЧАСА!</p>
+                    </div>
+                </div>
+                 <!--<div class="get-in-touch">-->
+                        <!--<div class="get-in-touch-content line-load">-->
+                            <!--<a href="" class="logo">-->
+                                <!--<img src="{% static "img/general/logo.svg" %}" alt="Idea Digital Agency">-->
+                            <!--</a>-->
+                            <!--<span class="close">×</span>-->
+                            <!--<div class="get-in-touch-address">-->
+                               <!--<div class="get-in-touch-address-content"> -->
+                                <!--<h4>{% trans "Україна, Дніпро," %}</h4>-->
+                                <!--<p>{% trans "І.Акінфієва 18/410" %}</p>-->
+                                <!--<p><a href="tel:+380985606565">+380985606565</a>-->
+                                <!--</p>-->
+                                <!--<p><a href="mailto:contact@ideadigital.agency">contact@ideadigital.agency</a>-->
+                                <!--</p>-->
+                               <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="get-in-touch-form">-->
+                                <!--<form id="get-in-touch-form" class="ajaxform" action="{% app_reverse "add_contact_form" "info.urls" %}">-->
+                                    <!--<div class="block-field">-->
+                                        <!--<input type="text" name="first" placeholder="{% trans "Ім&#x27;я" %}"required autocomplete="off">-->
+                                    <!--</div>-->
+                                    <!--<div class="block-field hide-mobile">-->
+                                        <!--<input type="text" name="second" placeholder="{% trans "Прізвище" %}" autocomplete="off">-->
+                                    <!--</div>-->
+                                    <!--<div class="block-field hide-mobile">-->
+                                        <!--<input type="email" name="email" placeholder="e-mail" autocomplete="off">-->
+                                    <!--</div>-->
+                                    <!--<div class="block-field">-->
+                                        <!--<input type="tel" name="phone" placeholder="{% trans "телефон (необов&#x27;язково)" %}" required autocomplete="off">-->
+                                    <!--</div>-->
+                                    <!--<div class="block-field">-->
+                                        <!--<label for="budget" class="label-select">-->
+                                            <!--<select name="budget" id="budget" required>-->
+                                                <!--<option value="" disabled selected>{% trans "оберіть ваш бюджет" %}</option>-->
+                                                <!--<option value="500$-1000$500$-1000$">500$-1000$</option>-->
+                                                <!--<option value="1000$-3000$1000$-3000$">1000$-3000$</option>-->
+                                                <!--<option value="3000$ +3000$ +">3000$ +</option>-->
+                                            <!--</select>-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="block-field hide-mobile">-->
+                                        <!--<input type="text" name="company" placeholder="{% trans "компанія" %}" autocomplete="off">-->
+                                    <!--</div>-->
+                                    <!--<div class="block-field block-field-textarea">-->
+                                        <!--<textarea name="message" placeholder="{% trans "деталі" %}" required></textarea>-->
+                                    <!--</div>-->
+                                    <!--<div class="block-field">-->
+                                        <!--<input type="submit" value="{% trans "відправити" %}" class="btn">-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                                <!--<div class="get-in-touch-address thanks-massege hidden">-->
+                                    <!--<h4>{% trans "Дякуємо що звернулися" %}</h4>-->
+                                    <!--<p>{% trans "Наш менеджер зв'яжеться з Вами" %}-->
+                                        <!--<br>{% trans "протягом години!" %}</p>-->
+                                    <!--<br>-->
+                                    <!--<br>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                    <!--</div>-->
+                 <!--</div>-->

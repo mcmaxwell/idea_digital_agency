@@ -214,7 +214,7 @@ msgstr "Украина, Днепр"
 #: content/templates/content/content_types/index_page_content.html:221
 #| msgid "І.Акінфієва 18/308"
 msgid "І.Акінфієва 18/410"
-msgstr "Акинфеева 18/410"
+msgstr "Акинфиева 18/410"
 
 #: cases/templates/cases/case_detail.html:140
 #: content/templates/content/content_types/index_page_content.html:231

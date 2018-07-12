@@ -1,11 +1,18 @@
-<svg width="79" height="71" viewBox="0 0 79 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.5 0.5H6.5V59.5H0.5V0.5Z" transform="translate(72 0.5)" stroke="black"/>
-<path d="M0.5 0.5H29.5V25.5H0.5V0.5Z" transform="translate(6.5 18.5)" stroke="black"/>
-<path d="M0.5 0.5H6.5V22.5H0.5V0.5Z" transform="translate(0.5 20)" stroke="black"/>
-<path d="M0.5 0.5H8.11586L9.84919 7H0.5V0.5Z" transform="translate(28 43.5)" stroke="black"/>
-<path d="M0.5 0.5H17.5V7H0.5V0.5Z" transform="translate(11 43.5)" stroke="black"/>
-<path d="M6.37715 20.5L0.662865 0.5H17.1396L23.8063 20.5H6.37715Z" transform="translate(11 50)" stroke="black"/>
-<path d="M0.5 43.1737V18.3146L37 0.794617V59.2337L0.5 43.1737Z" transform="translate(35.5 0.5)" stroke="black"/>
-<path d="M0 2.82843L36.7696 0" transform="translate(9.5 17.5) rotate(45)" stroke="black"/>
-<path d="M0 0L36.7696 2.82843" transform="translate(35.5 19.5) rotate(135)" stroke="black"/>
+<svg width="83" height="96" viewBox="0 0 83 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.474 31.1475C60.474 44.8603 55.2701 52.322 50.0663 56.6883C47.4424 58.8899 44.7904 60.3274 42.7142 61.3846C42.4643 61.5119 42.2193 61.6353 41.9817 61.755C41.2523 62.1223 40.5932 62.4543 40.0805 62.7523C39.7374 62.9517 39.4111 63.163 39.1481 63.3907C38.9015 63.6041 38.5967 63.9273 38.4785 64.3767C37.6931 67.361 37.286 70.138 36.9833 72.6002C36.9077 73.2151 36.839 73.8055 36.7731 74.3724C36.5716 76.1042 36.3958 77.6162 36.1261 78.9337C35.7685 80.6805 35.2804 81.8796 34.5166 82.6539C33.7894 83.391 32.6749 83.8771 30.737 83.8771C28.8332 83.8771 27.7344 83.4313 27.0033 82.7394C26.2385 82.0156 25.7235 80.8838 25.2925 79.1809C24.9946 78.0037 24.7595 76.6604 24.488 75.1099C24.3649 74.4065 24.2343 73.6605 24.087 72.868C23.6215 70.3637 23.0035 67.4919 21.9527 64.3169C21.8689 64.0638 21.7191 63.8818 21.6049 63.7666C21.486 63.6467 21.3537 63.5474 21.2327 63.4665C20.9927 63.3061 20.6932 63.1499 20.3804 62.9978C20.0949 62.859 19.7626 62.7065 19.4042 62.5421L19.278 62.4842C18.8668 62.2955 18.4143 62.0867 17.9255 61.85C15.9733 60.9046 13.4533 59.5182 10.9562 57.32C5.99901 52.9562 1 45.2785 1 31.1475C1 14.485 14.3262 1 30.737 1C47.1478 1 60.474 14.485 60.474 31.1475Z" transform="translate(11.2207 11.123)" stroke="black" stroke-width="2"/>
+<line y1="-1" x2="16.9053" y2="-1" transform="translate(33.2739 77.3115)" stroke="black" stroke-width="2"/>
+<path d="M0 0H13.8316" transform="translate(34.811 84.3193)" stroke="black" stroke-width="2"/>
+<path d="M0 0H5.56407" transform="matrix(-0.828629 0.559798 -0.549608 -0.835423 11.1475 58.0176)" stroke="black" stroke-width="2"/>
+<path d="M0 0L5.54119 0" transform="translate(6.54102 40.9043) rotate(179.854)" stroke="black" stroke-width="2"/>
+<path d="M0 0L4.60258 3.12684" transform="translate(11.1475 23.7549) rotate(179.854)" stroke="black" stroke-width="2"/>
+<path d="M0 0L3.06173 4.69234" transform="translate(24.2104 11.2959) rotate(179.854)" stroke="black" stroke-width="2"/>
+<path d="M0 0H5.56407" transform="matrix(0.828629 0.559798 0.549608 -0.835423 71.8525 58.0371)" stroke="black" stroke-width="2"/>
+<path d="M0 0L5.54119 0" transform="translate(76.459 40.9248) scale(1 -1) rotate(-0.146337)" stroke="black" stroke-width="2"/>
+<path d="M0 0L4.60258 3.12684" transform="translate(71.8525 23.7754) scale(1 -1) rotate(-0.146337)" stroke="black" stroke-width="2"/>
+<path d="M0 0L3.06173 4.69234" transform="translate(58.7896 11.3164) scale(1 -1) rotate(-0.146337)" stroke="black" stroke-width="2"/>
+<path d="M0 0L3.07493 4.67255" transform="matrix(0.820187 0.572096 -0.561887 0.827214 41.2192 1)" stroke="black" stroke-width="2"/>
+<path d="M1.94857 7.56557L6.1474 1.71507L10.3462 7.56557H1.94857Z" transform="translate(35.5791 29.8115)" stroke="black" stroke-width="2"/>
+<path d="M0 0H37.377" transform="translate(36.3477 38.377) rotate(90)" stroke="black" stroke-width="2"/>
+<path d="M0 0H37.377" transform="translate(47.1055 38.377) rotate(90)" stroke="black" stroke-width="2"/>
+<path d="M0 0H37.377" transform="translate(41.7266 38.377) rotate(90)" stroke="black" stroke-width="2"/>
 </svg>
