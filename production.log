@@ -5410,3 +5410,51 @@ Traceback (most recent call last):
   File "/srv/venv/idea/local/lib/python2.7/site-packages/django/db/models/query.py", line 387, in get
     self.model._meta.object_name
 DoesNotExist: BlogTag matching query does not exist.
+WARNING:py.warnings: /srv/venv/idea/local/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-07-12 13:55:58; subclassing.py:22)
+WARNING:py.warnings: /srv/venv/idea/local/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-07-12 13:55:58; subclassing.py:22)
+WARNING:py.warnings: /usr/lib/python2.7/importlib/__init__.py:37: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  __import__(name)
+ (2018-07-12 13:56:02; context_processors.py:9)
+INFO:amocrm: contacts - Sending post request to /private/api/auth.php?type=json (2018-07-12 13:56:56; base.py:183)
+INFO:amocrm: contacts - Sending get request to /private/api/v2/json/accounts/current (2018-07-12 13:56:56; base.py:183)
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 13:56:56; base.py:183)
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 13:58:01; base.py:183)
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 14:07:33; base.py:183)
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 14:13:09; base.py:183)
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 14:13:16; base.py:183)
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 14:15:26; base.py:183)
+ERROR:django.request: Internal Server Error: /info/callback_form/ (2018-07-12 14:15:27; base.py:284)
+Traceback (most recent call last):
+  File "/srv/venv/idea/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/srv/venv/idea/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/srv/venv/idea/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/srv/idea_digital_agency/idea/feincms/views/__init__.py", line 34, in dispatch
+    return super(Handler, self).dispatch(request, *args, **kwargs)
+  File "/srv/idea_digital_agency/idea/feincms/module/mixins.py", line 226, in dispatch
+    return self.handler(request, *args, **kwargs)
+  File "/srv/idea_digital_agency/idea/feincms/module/mixins.py", line 89, in handler
+    r = self.process_content_types()
+  File "/srv/idea_digital_agency/idea/feincms/module/mixins.py", line 179, in process_content_types
+    r = content.process(self.request, view=self)
+  File "/srv/idea_digital_agency/idea/feincms/content/application/models.py", line 323, in process
+    output = fn(request, *args, **kwargs)
+  File "/srv/idea_digital_agency/idea/info/views.py", line 68, in callback_form
+    send_mail('Idea Callback Form', name + " " + phone + " " + comment + " " + service, 'bot.idea@yandex.ru', ['ideadigitalukraine@gmail.com',])
+TypeError: coercing to Unicode: need string or buffer, NoneType found
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 14:15:27; base.py:183)
+INFO:amocrm: leads - Sending get request to /private/api/v2/json/accounts/current (2018-07-12 14:15:27; base.py:183)
+INFO:amocrm: leads - Sending post request to /private/api/v2/json/leads/set (2018-07-12 14:15:27; base.py:183)
+INFO:amocrm: contacts - Sending post request to /private/api/v2/json/contacts/set (2018-07-12 14:15:27; base.py:183)
+WARNING:py.warnings: /srv/venv/idea/local/lib/python2.7/site-packages/django/utils/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-07-12 14:17:56; subclassing.py:22)
+WARNING:py.warnings: /srv/venv/idea/local/lib/python2.7/site-packages/cloudinary/models.py:24: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+ (2018-07-12 14:17:56; subclassing.py:22)
