@@ -18,7 +18,7 @@ phantomjsdriver.log
 # static output
 # builds/
 dev/
-build/
+#build/
 idea/media/
 
 # python stafff
