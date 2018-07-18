@@ -62,10 +62,15 @@ def callback_form(request):
         except:
             service = None
 
-        new_contact = Contact(name=name, company='FastCall{0}'.format(datetime.now().strftime("%Y-%m-%d %H:%M")), position='QA', phone=phone, email='nodata@data.com',)
+        try:
+            form_name = request.GET['form_name']
+        except:
+            form_name = None
+
+        new_contact = Contact(name=name, company='FastCall{0}'.format(datetime.now().strftime("%Y-%m-%d %H:%M")), position='QA', phone=phone, email=form_name,)
         new_contact.save()
 
-        new_lead = Lead(name='FastCall - ({0})'.format(datetime.now().strftime("%Y-%m-%d %H:%M")), budget="1000",  contact=new_contact.id, email='nodata@data.com',)
+        new_lead = Lead(name='FastCall - ({0})'.format(datetime.now().strftime("%Y-%m-%d %H:%M")), budget="1000",  contact=new_contact.id, email=form_name,)
         new_lead.save()
         new_contact.leads = new_lead
         new_contact.save()

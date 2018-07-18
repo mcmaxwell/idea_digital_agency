@@ -517,7 +517,7 @@
                 <input type="name" placeholder="Имя" name="name" value="" required="required">
                 <input type="number" placeholder="Телефон" name="phone" value="" required="required">
                 <textarea placeholder="Коментарий" name="comment"></textarea>
-                <input type="hidden" name="form1" value="zakazat_footer">
+                <input type="hidden" name="form_name" value="zakazat_footer">
                 <input type="submit" value="Отправить">
             </form>
         </div>
@@ -546,7 +546,7 @@
             <input type="name" placeholder="Имя" name="name" value="" required="required">
             <input type="number" placeholder="Телефон" name="phone" value="" required="required">
             <textarea placeholder="Коментарий" name="comment"></textarea>
-            <input type="hidden" name="form1" value="zakazat_footer">
+            <input type="hidden" name="form_name" value="zakazat_footer">
             <input type="submit" value="Отправить">
         </form>
     </div>
@@ -565,7 +565,7 @@
             <input type="name" placeholder="Имя" name="name" value="" required="required">
             <input type="number" placeholder="Телефон" name="phone" value="" required="required">
             <textarea placeholder="Коментарий" name="comment"></textarea>
-            <input type="hidden" name="form1" value="zakazat_footer">
+            <input type="hidden" name="form_name" value="zakazat_footer">
             <input type="submit" value="Отправить">
         </form>
     </div>
@@ -601,7 +601,7 @@
             var form = $(this);
             var name = form.find('input[name="name"]').val(),
                 phone = form.find('input[name="phone"]').val(),
-                form_name = form.find('input[name="form1"]').val(),
+                form_name = form.find('input[name="form_name"]').val(),
                 comment = form.find('textarea[name="comment"]').val(),
                 select =  form.find('#select-custom option:selected').text();
             $.ajax({
