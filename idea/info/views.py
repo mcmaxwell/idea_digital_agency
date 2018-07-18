@@ -62,8 +62,17 @@ def callback_form(request):
         except:
             service = None
 
-        new_contact = Contact(name=name, company='FastCall', position='QA', phone=phone, email="nodata@data.com",)
+        new_contact = Contact(name=name, company='FastCall{0}'.format(datetime.now().strftime("%Y-%m-%d %H:%M")), position='QA', phone=phone, email='nodata@data.com',)
         new_contact.save()
+
+        new_lead = Lead(name='FastCall - ({0})'.format(datetime.now().strftime("%Y-%m-%d %H:%M")), budget="1000",  contact=new_contact.id, email='nodata@data.com',)
+        new_lead.save()
+        new_contact.leads = new_lead
+        new_contact.save()
+
+
+        # new_contact = Contact(name=name, company='FastCall', position='QA', phone=phone, email="nodata@data.com",)
+        # new_contact.save()
 
         send_mail('Idea Callback Form', name + " " + phone + " " + comment + " " + service, 'bot.idea@yandex.ru', ['ideadigitalclients@gmail.com',])
 
