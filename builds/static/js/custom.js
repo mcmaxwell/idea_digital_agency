@@ -58,21 +58,26 @@
         ]
     });
 
-    $('form').on('submit', function (event) {
-        event.preventDefault();
-        var form = $(this);
-        var name = form.find('input[name="name"]').val(),
-            phone = form.find('input[name="phone"]').val(),
-            comment = form.find('textarea[name="comment"]').val();
-        $.ajax({
-            url: "https://ideadigital.agency/info/callback_form/?name=" + name + "&phone=" + phone + "&comment=" + comment,
-            method: "GET",
-            success: function(data) {
-                $('.form__wrapper_submit').toggleClass('open');
-            },
-            error:function (e) {
-                console.log("error")
-            }
+    $(document).ready(function () {
+        $('form').on('submit', function (event) {
+            event.preventDefault();
+            var form = $(this);
+            var name = form.find('input[name="name"]').val(),
+                phone = form.find('input[name="phone"]').val(),
+                form_name = form.find('input[name="form1"]').val(),
+                comment = form.find('textarea[name="comment"]').val(),
+                select =  form.find('#select-custom option:selected').text();
+            $.ajax({
+                url: "https://ideadigital.agency/info/callback_form/?name=" + name + "&phone=" + phone + "&comment=" + comment + '&form_name=' + form_name + '&select=' + select,
+                method: "GET",
+                success: function (data) {
+                    $('.form__wrapper_submit').toggleClass('open');
+                    $('.form__wrapper_call').removeClass('open');
+                },
+                error: function (e) {
+                    //todo when error with ajax
+                }
+            });
         });
     });
 

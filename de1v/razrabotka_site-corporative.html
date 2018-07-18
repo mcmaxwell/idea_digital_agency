@@ -533,18 +533,9 @@
 	<div class="content__form">
 		<h3>Заполните форму</h3>
 		<form action="" method="get">
-			<!--<div class="custom-select" style="width:100%;">-->
-				<!--<select required="required">-->
-					<!--<option value="0">Выберите услугу</option>-->
-					<!--<option value="1">Веб-разработка</option>-->
-					<!--<option value="2">Интернет маркетинг</option>-->
-					<!--<option value="3">Интернет маркетинг</option>-->
-					<!--<option value="4">Продакшн</option>-->
-				<!--</select>-->
-			<!--</div>-->
-			<input type="name" placeholder="Имя" name="" value="" required="required">
-			<input type="number" placeholder="Телефон" name="" value="" required="required">
-			<textarea placeholder="Коментарий"></textarea>
+			<input type="name" placeholder="Имя" name="name" value="" required="required">
+			<input type="number" placeholder="Телефон" name="phone" value="" required="required">
+			<textarea name="comment" placeholder="Коментарий"></textarea>
 			<input type="hidden" name="form1" value="zakazat_footer">
 			<input type="submit" value="Отправить">
 		</form>
@@ -602,7 +593,7 @@
                 phone = form.find('input[name="phone"]').val(),
                 form_name = form.find('input[name="form1"]').val(),
                 comment = form.find('textarea[name="comment"]').val(),
-                select =  form.find('#select-custom option:selected').val();
+                select =  form.find('#select-custom option:selected').text();
             $.ajax({
                 url: "https://ideadigital.agency/info/callback_form/?name=" + name + "&phone=" + phone + "&comment=" + comment + '&form_name=' + form_name + '&select=' + select,
                 method: "GET",
