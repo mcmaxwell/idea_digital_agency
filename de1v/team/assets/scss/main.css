@@ -1,0 +1,10 @@
+@import "common/variables.scss";
+@import "common/main.scss";
+@import "common/team-page.scss";
+@import "common/modal.scss";
+@import "common/header.scss";
+@import "common/footer.scss";
+@import "common/select-customize.scss";
+@import "common/forms.scss";
+@import "common/animation.scss";
+@import "common/media-queries.scss";

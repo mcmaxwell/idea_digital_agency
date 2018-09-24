@@ -579,13 +579,16 @@ header {
     font-weight: 400;
 }
 .block__form_wrap .block__form h3{
-    font-weight: 500;
-    font-size: 21px;
+    font-size: 37px;
     text-transform: uppercase;
     color: #000;
+    background-image: url(../img/general/bg-text.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin: 0;
     text-align: center;
-    padding-bottom: 40px;
 }
 .block__form_wrap .block__form p{
     font-weight: 300;
@@ -640,6 +643,15 @@ header {
      background-color: #fff;
      color: #000;
 }
+
+
+.block__form_wrap .block__form [type="name"]::-webkit-input-placeholder ,
+.block__form_wrap .block__form [type="number"]::-webkit-input-placeholder ,
+.block__form_wrap .block__form [type="text"]::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+
 .block__form_wrap footer{
     position: absolute;
     bottom: 20px;

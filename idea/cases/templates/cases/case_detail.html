@@ -7,6 +7,31 @@
 {% include "includes/head.html" %}
 
 <body class="page">
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '667792043576710',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.12'
+        });
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/ru_RU/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-customerchat"
+     page_id="270207906818646"
+     minimized="true"
+     logged_in_greeting="Здравствуйте! Чем мы можем вам помочь?"
+     logged_out_greeting="Мы всегда на связи!">
+</div>
+
         <script>
             fbq('track', 'Lead', {
             value: 10.00,
@@ -115,11 +140,12 @@
                         <div class="block__form_wrp">
                             <div class="block__form">
                                 <h3>Заказать</h3>
-                                <form action="" method="get">
-                                    <input type="name" placeholder="Имя" name="" value="">
-                                    <input type="number" placeholder="Телефон" name="" value="">
-                                    <input type="text" placeholder="Коментарий" name="" value="">
-                                    <!--<textarea placeholder="Коментарий"></textarea>-->
+                                <form action="" method="get" class="case_form">
+                                    <input type="name" placeholder="Имя" name="name" value="">
+                                    <input type="number" placeholder="Телефон" name="phone" value="">
+                                    <input type="text" placeholder="Коментарий" name="comment" value="">
+                                    <!--<textarea name="comment" cols="1" placeholder="Коментарий"></textarea>-->
+                                    <input type="hidden" name="form_name" value="case-page">
                                     <input type="submit" value="Отправить">
                                 </form>
                             </div>
@@ -132,7 +158,7 @@
                 </main>
 
 
-                <div class="form form__wrapper_submit">
+                <div id="form__wrapper_submit" class="form form__wrapper_submit">
                     <div class="header__title">
                         <div class="logo__form">
                             <img src="{% static 'img/general/f_logo.png' %}" alt="">
@@ -144,6 +170,8 @@
                         <p>НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ В ТЕЧЕНИЕ ЧАСА!</p>
                     </div>
                 </div>
+
+
                  <!--<div class="get-in-touch">-->
                         <!--<div class="get-in-touch-content line-load">-->
                             <!--<a href="" class="logo">-->
@@ -204,3 +232,28 @@
                             <!--</div>-->
                     <!--</div>-->
                  <!--</div>-->
+
+                <!--<script>-->
+                    <!--$(document).ready(function() {-->
+                        <!--$('form').on('submit', function (event) {-->
+                            <!--event.preventDefault();-->
+                            <!--var form = $(this);-->
+                            <!--var name = form.find('input[name="name"]').val(),-->
+                                <!--phone = form.find('input[name="phone"]').val(),-->
+                                <!--form_name = form.find('input[name="form_name"]').val(),-->
+                                <!--comment = form.find('textarea[name="comment"]').val(),-->
+                                <!--select =  form.find('#select-custom option:selected').text();-->
+                            <!--$.ajax({-->
+                                <!--url: "https://ideadigital.agency/info/callback_form/?name=" + name + "&phone=" + phone + "&comment=" + comment + '&form_name=' + form_name + '&select=' + select,-->
+                                <!--method: "GET",-->
+                                <!--success: function (data) {-->
+                                    <!--$('#form__wrapper_submit').toggleClass('open');-->
+                                    <!--$('.form__wrapper_call').removeClass('open');-->
+                                <!--},-->
+                                <!--error: function (e) {-->
+                                    <!--//todo when error with ajax-->
+                                <!--}-->
+                            <!--});-->
+                        <!--});-->
+                    <!--});-->
+                <!--</script>-->

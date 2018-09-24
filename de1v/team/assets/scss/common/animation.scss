@@ -1,0 +1,164 @@
+/*----ANIMATION-----*/
+.scroll-down {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    font-family: GothamPro-Bold;
+    font-size: rem-calc(9);
+    line-height: 1.26;
+    font-size: 15px;
+
+    &:after{
+      border-width: 9px 5.5px 0;
+      border-color: #000 transparent transparent;
+    }
+
+    &:hover {
+      &::after {
+        border-color: #4d58a5 transparent transparent transparent !important;
+      }
+      &::before {
+        background-color: #4d58a5;
+      }
+    }
+
+    @media (max-width: 1920px) {
+      &::after {
+        animation: scroll 1.5s ease infinite;
+        @keyframes scroll {
+          0% { bottom: 20px; }
+          100%{ bottom: 0; }
+        }
+      }
+      &::before {
+        animation: height 1.5s ease infinite;
+        @keyframes height {
+          0% {
+            height: 35px;
+            bottom: 20px;
+           }
+          100%{
+            height: 55px;
+            bottom: 0;
+           }
+        }
+      }
+    }
+  }
+.arr.arr-bottom {
+    padding-bottom: 60px;
+}
+.arr.arr-bottom::after, .arr.arr-bottom::before {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.arr::after, .arr::before {
+    content: "";
+    position: absolute;
+}
+.arr::before {
+    background-color: #000;
+}
+.arr.arr-bottom::before {
+    height: 50px;
+    width: 1px;
+}
+.arr::after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+.arr.arr-bottom::after {
+    border-width: 9px 5.5px 0;
+    border-color: #000 transparent transparent;
+}
+.toggle-form {
+  position: relative;
+
+  &::before {
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    animation: leftToRight 1.5s ease infinite;
+    transform: translate(0);
+    @keyframes leftToRight {
+      0% { width: 90%;}
+      100%{  width: calc(100% + 20px);}
+    }
+  }
+
+  &::after {
+    bottom: -14px;
+    right: -23px;
+    animation: leftToRight3 1.5s ease infinite;
+    @keyframes leftToRight3 {
+      0% { right: 20px; }
+      100%{ right: -30px; }
+    }
+  }
+}
+.arr.arr-right::before {
+    height: 1px;
+    width: 32px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.arr.arr-right::after {
+    border-width: 4.5px 0 4.5px 11px;
+    border-color: transparent transparent transparent #000;
+    /* bottom: -4px; */
+}
+.scroll-down.arr-bottom.arr:hover {
+    font-family: GothamPro-Bold;
+}
+/* --------cases animarion----- */
+.cases-carusel-item:hover .arrow-right::before {
+    right: 0;
+    width: 53%;
+}
+.cases-carusel-item:hover .arrow-right::after {
+    left: 76%;
+}
+/* --------cases animarion----- */
+
+.second-block .second-block__wrp .arrow-right:hover::before {
+  right: 0;
+  width: 100%;
+}
+.second-block .second-block__wrp .arrow-right:hover::after{
+  left: 100%;
+}
+.second-block .second-block__wrp .arrow-right::before {
+  background: #000;
+  left: 0;
+  width: 80%;
+}
+.second-block .second-block__wrp .arrow-right::after{
+  border-color: transparent transparent transparent #000;
+  left: 80%;
+}
+
+.arrow-right:before{
+  left: 23%;
+  width: 20%;
+  background: #fff;
+  transform: translate(0);
+  transition: all .5s;
+  height: 1px;
+  bottom: -10px;
+}
+.arrow-right::after {
+    border-width: 4.5px 0 4.5px 11px;
+    bottom: -13px;
+    left: 43%;
+    border-color: transparent transparent transparent #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+/*----ANIMATION-----*/

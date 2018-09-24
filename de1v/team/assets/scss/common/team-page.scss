@@ -1,0 +1,341 @@
+.social_btns-team {
+    position: absolute;
+    bottom: 62px;
+    left: 21px;
+
+    a {
+        display: inline-block;
+        padding-left: 9px;
+        img{
+          width: 18px;
+        }
+    }
+}
+.line-after::after, .line-before::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #e8e8e8;
+    position: absolute;
+    top: 50%;
+}
+.line-after::after {
+    left: calc(100% + 12px);
+}
+.line-after::before {
+    right: calc(100% + 12px);
+}
+
+.block-team-header .scroll-down-team {
+    position: relative;
+    bottom: 0;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    font-family: GothamPro-Bold;
+    font-size: rem-calc(9);
+    line-height: 1.26;
+    font-size: 15px;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+// .social_btns::after, .social_btns::before {
+//     width: 161px;
+// }
+.team-header_overflow{
+    overflow: hidden;
+}
+.team-center{
+    min-width: 880px;
+    max-width: 280px;
+    display: table;
+    margin: auto;
+}
+.team-block-bg{
+    position: relative;
+    background: url(../images/bg.svg) -21px -5px/354px 570px;
+}
+.team-block-bg_height{
+    height: 100vh;
+}
+.team-main-title{
+    font-weight: bold;
+    font-size: 39px;
+    text-align: center;
+    color: #000;
+}
+.team-main-title_padd{
+    padding: 18px 0 40px;
+}
+.team-main-img{
+    width: 100%;
+    height: auto;
+}
+
+.team-container{
+    max-width: 1042px;
+    min-width: 280px;
+    margin: 0 auto;
+}
+.team-vakancy__wrp_padd{
+    padding-bottom: 60px;
+}
+.team-vakancy__title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+.team-vakancy__title_padd{
+    padding-bottom: 30px;
+}
+.team-vakancy__text{
+    font-weight: 300;
+    line-height: 19px;
+    font-size: 15px;
+}
+.team-vakancy__text_padd{
+    padding-bottom: 18px;
+}
+
+.link-block{
+    font-family: GothamPro-Medium;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+.link-block__item {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+.link-block__item:hover{
+    font-weight: bold;
+}
+.link-block .arrow-right::before {
+    background: #000;
+    left: 0;
+    width: 80%;
+}
+.link-block .arrow-right::after {
+    border-color: transparent transparent transparent #000;
+    left: 80%;
+}
+.link-block  .arrow-right:hover::before {
+    right: 0;
+    width: 100%;
+}
+.link-block  .arrow-right:hover::after {
+    left: 100%;
+}
+
+.team-value__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.team-value__list_padd {
+    padding-top: 60px;
+}
+.team-value__item_padd{
+    padding-bottom: 40px;
+}
+.team-value__numb{
+    font-weight: 700;
+    line-height: normal;
+    font-size: 39px;
+    text-transform: uppercase;
+    color: #C8C8C8;
+}
+.team-value__numb_padd{
+    padding-right: 30px;
+}
+.team-value__text{
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.vakancy-modal__social_padd{
+    padding-bottom: 70px;
+}
+.vakancy-modal__social a{
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.vakancy{
+    width: 80%;
+}
+.vakancy-content {
+    border-radius: 0;
+    border: 0;
+}
+.vakancy-content_padd{
+    padding: 115px 80px 105px;
+}
+
+.vakancy-modal__title{
+    font-weight: 500;
+    line-height: normal;
+    font-size: 37px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+.vakancy-modal__title_padd{
+    padding-bottom: 78px;
+}
+.vakancy-modal__text-title{
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.vakancy-modal__text-title_padd{
+    padding-bottom: 34px;
+}
+.vakancy-modal__text{
+    line-height: 23px;
+    font-size: 16px;
+    color: #515151;
+}
+.vakancy-modal__text_padd{
+    padding-bottom: 40px;
+}
+.vakancy-modal_center{
+    text-align: center;
+}
+.vakancy-modal__vc{
+    line-height: 23px;
+    font-size: 16px;
+    color: #000000;
+}
+.vakancy-modal__vc_padd{
+    padding-bottom: 26px;
+}
+.vakancy-modal__vc-part{
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.vakancy-modal__vc-part_padd{
+    padding-bottom: 30px;
+}
+.close-team{
+    opacity: 1;
+}
+.btn_close {
+    font-size: 50px;
+    opacity: 1;
+    line-height: 100%;
+    padding: 10px 17px;
+}
+.vakancy-form{
+    width: 480px;
+}
+.vakancy-form-content_padd{
+    padding: 55px 45px 45px;
+}
+.vakancy-form-content {
+    border-radius: 0;
+    border: 0;
+}
+.content-form-team__inputs {
+    font-weight: 400;
+    line-height: normal;
+    font-size: 15px;
+    letter-spacing: .02em;
+    color: rgba(0,0,0,.5);
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #4F4F4F;
+    margin-bottom: 40px;
+    padding-bottom: 6px;
+}
+.content-form-team__title{
+    font-weight: bold;
+    line-height: normal;
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #070707;
+}
+.content-form-team__submit{
+    padding: 9.5px 0 14.5px;
+    display: inline-block;
+    width: 189px;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    background: #601fa3;
+    font-family: GothamPro-Bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: normal;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 99;
+    border: 3px solid #601fa3;
+    cursor: pointer;
+    letter-spacing: .5px;
+    box-shadow: 0 2px 8px rgba(91,91,91,.5);
+    padding-bottom: 4px;
+    height: 45px;
+}
+.content-form-team__submit:hover {
+    cursor: pointer;
+    background: #fff;
+    border: 3px solid #601fa3;
+    color: #333;
+    line-height: normal;
+}
+.content-form-team__title_padd{
+    padding-bottom: 45px;
+}
+.file-upload {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 32px;
+    border-radius: 3px;
+    padding: 0px 10px;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    font-size: 0;
+    cursor: pointer;
+}
+// .file-upload:hover {
+//     background: #7aad55;
+// }
+.file-upload input[type="file"]{
+   display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+    /* Растягиваем label на всю возможную площадь блока .file-upload */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.file-upload span {
+    line-height: 36px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+}
+.filename {
+    background: #fff;
+    border: 0;
+    padding-top: 20px;
+    width: 100%;
+}

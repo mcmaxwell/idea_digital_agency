@@ -7,7 +7,7 @@
 
     <meta name="author" content="Ideadigital">
     <meta name="keywords" content="имиджевое видео, проморолики, музыкальные клипы, продакшн, видеопродакшн, контент для блогеров">
-    <meta name="description" content="→ Продакшн-услуги полного цикла — Время создавать видео‎ ✅ Под ключ · Имиджевое видео · Проморолики · Музыкальные клипы ➦ Ideadigital.agency ☎: (098) 560-65-65">
+    <meta name="description" content="Видео продакшн ☝ Имиджевое видео, Проморолики, Музыкальные клипы → Звоните! ☎: (098) 560-65-65 ✅ Время создавать видео!">
 
     <title>Продакшн (Production) услуги полного цикла в Днепре и Украине: Одесса, Киев, Харьков</title>
     <link rel="shortcut icon" href="build/images/favicon.ico" type="image/ico" />
@@ -21,8 +21,49 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="build/common/og.jpg">
     <meta property="og:description" content="">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '496784744053400');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=496784744053400&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+
 </head>
 <body>
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '667792043576710',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.12'
+        });
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/ru_RU/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-customerchat"
+     page_id="270207906818646"
+     minimized="true"
+     logged_in_greeting="Здравствуйте! Чем мы можем вам помочь?"
+     logged_out_greeting="Мы всегда на связи!">
+</div>
 
 <div class="hidden" xmlns:v="http://rdf.data-vocabulary.org/#">
     <span typeof="v:Breadcrumb"><a href="http://ideadigital.agency /" rel="v:url" property="v:title">ideadigital.agency </a> › </span>
@@ -51,7 +92,7 @@
                 <span><a href="tel:+38 098 560 65 65">+38 098 560 65 65</a></span>
             </div>
             <div class="btn_wrp">
-                <span class="main_form_call">мы перезвоним</span>
+                <span class="form_call">мы перезвоним</span>
             </div>
             <div class="burger_wrp">
                 <div class="main_menu">
@@ -85,7 +126,7 @@
         <h1>Создание рекламного видео</h1>
         <div class="small_title">Предлагаем идеи, делаем проект, даем качественный ожидаемый результат!</div>
         <div class="btn_order">
-            <span class="main_form_servises">заказать услугу</span>
+            <span class="form_head">заказать услугу</span>
         </div>
         <div class="big_logo"><img src="build/images/idealogo.svg" alt=""></div>
         <a href="#developme" class="scroll-down arr-bottom arr" data-section-link="land_2">Далее</a>
@@ -183,7 +224,7 @@
         <div class="dev_bg"><img src="build/images/video_bg.png" alt=""></div>
         <div class="angle_dev_bg"><img src="build/images/angle_dev.png" alt=""></div>
         <div class="btn_order btn_center">
-            <span class="main_form_servises">заказать услугу</span>
+            <span class="form_dev">заказать услугу</span>
         </div>
         <div class="text_about">
             Закажите сейчас и получите бонус 15% от стоимости заказа
@@ -425,7 +466,7 @@
                 <div class="cost_item">
                     <div class="price">от<span>400</span>usd</div>
                     <div class="order__btn">
-                        <span class="main_form_servises toggle-form arr arr-right">заказать</span>
+                        <span class="form_cost toggle-form arr arr-right">заказать</span>
                     </div>
                 </div>
             </div>
@@ -447,7 +488,7 @@
         </div>
         <div class="cont_do">
             <span>мы готовы!</span>
-            <span class="main_form toggle-form arr arr-right">сВЯЗАТЬСЯ</span>
+            <span class="form_footer main_form toggle-form arr arr-right">сВЯЗАТЬСЯ</span>
         </div>
 
     </div>
@@ -481,8 +522,8 @@
     </div>
 </footer>
 
-
-<div class="form form__wrapper_call">
+<!--forms-->
+<div id="form__wrapper_call" class="main_form__style">
     <div class="header__title">
         <div class="logo__form">
             <img src="build/images/f_logo.png" alt="">
@@ -494,15 +535,55 @@
             <form action="">
                 <input type="name" placeholder="Имя" name="name" value="" required="required">
                 <input type="number" placeholder="Телефон" name="phone" value="" required="required">
-                <textarea name="comment" placeholder="Коментарий"></textarea>
-                <input type="hidden" name="form1" value="zakazat_footer">
+                <textarea placeholder="Коментарий" name="comment"></textarea>
+                <input type="hidden" name="form_name" value="videoprod_call">
                 <input type="submit" value="Отправить">
             </form>
         </div>
     </div>
 </div>
 
-<div class="form form__wrapper">
+<div id="form__wrapper_servise--head" class="main_form__style">
+    <div class="header__title">
+        <div class="logo__form">
+            <img src="build/images/f_logo.png" alt="">
+        </div>
+        <div class="btn_close">×</div>
+        <div class="content__form">
+            <h3>Заполните форму</h3>
+            <p>Мы перезвоним Вам в течении 15 минут</p>
+            <form action="">
+                <input type="name" placeholder="Имя" name="name" value="" required="required">
+                <input type="number" placeholder="Телефон" name="phone" value="" required="required">
+                <textarea placeholder="Коментарий" name="comment"></textarea>
+                <input type="hidden" name="form_name" value="videoprod_zakaz_yslugu_head">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="form__wrapper_servise--dev" class="main_form__style">
+    <div class="header__title">
+        <div class="logo__form">
+            <img src="build/images/f_logo.png" alt="">
+        </div>
+        <div class="btn_close">×</div>
+        <div class="content__form">
+            <h3>Заполните форму</h3>
+            <p>Мы перезвоним Вам в течении 15 минут</p>
+            <form action="">
+                <input type="name" placeholder="Имя" name="name" value="" required="required">
+                <input type="number" placeholder="Телефон" name="phone" value="" required="required">
+                <textarea placeholder="Коментарий" name="comment"></textarea>
+                <input type="hidden" name="form_name" value="videoprod_zakaz_yslugu_dev">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="form__wrapper_block--cost" class="main_form__style">
     <div class="header__title">
         <div class="logo__form">
             <img src="build/images/f_logo.png" alt="">
@@ -512,25 +593,16 @@
     <div class="content__form">
         <h3>Заполните форму</h3>
         <form action="">
-            <div class="custom-select" style="width:100%;">
-                <select id="select-custom">
-                    <option value="0">Выберите услугу</option>
-                    <option value="1">Веб-разработка</option>
-                    <option value="2">Интернет маркетинг</option>
-                    <option value="3">Интернет маркетинг</option>
-                    <option value="4">Продакшн</option>
-                </select>
-            </div>
             <input type="name" placeholder="Имя" name="name" value="" required="required">
             <input type="number" placeholder="Телефон" name="phone" value="" required="required">
-            <textarea name="comment" placeholder="Коментарий"></textarea>
-            <input type="hidden" name="form1" value="zakazat_footer">
+            <textarea placeholder="Коментарий" name="comment"></textarea>
+            <input type="hidden" name="form_name" value="videoprod_zakaz_yslugu_stoimost">
             <input type="submit" value="Отправить">
         </form>
     </div>
 </div>
 
-<div class="form form__wrapper_servises">
+<div id="form__wrapper_servises--footer" class="main_form__style">
     <div class="header__title">
         <div class="logo__form">
             <img src="build/images/f_logo.png" alt="">
@@ -542,14 +614,14 @@
         <form action="" method="get">
             <input type="name" placeholder="Имя" name="name" value="" required="required">
             <input type="number" placeholder="Телефон" name="phone" value="" required="required">
-            <textarea name="comment" placeholder="Коментарий"></textarea>
-            <input type="hidden" name="form1" value="zakazat_footer">
+            <textarea placeholder="Коментарий" name="comment"></textarea>
+            <input type="hidden" name="form_name" value="videoprod_zakaz_yslugu_footer">
             <input type="submit" value="Отправить">
         </form>
     </div>
 </div>
 
-<div class="form form__wrapper_submit">
+<div id="form__wrapper_submit" class="main_form__style">
     <div class="header__title">
         <div class="logo__form">
             <img src="build/images/f_logo.png" alt="">
@@ -561,7 +633,7 @@
         <p>НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ В ТЕЧЕНИЕ ЧАСА!</p>
     </div>
 </div>
-
+<!--forms-->
 
 <script src="build/js/jquery-1.9.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -577,14 +649,14 @@
             var form = $(this);
             var name = form.find('input[name="name"]').val(),
                 phone = form.find('input[name="phone"]').val(),
-                form_name = form.find('input[name="form1"]').val(),
+                form_name = form.find('input[name="form_name"]').val(),
                 comment = form.find('textarea[name="comment"]').val(),
                 select =  form.find('#select-custom option:selected').text();
             $.ajax({
                 url: "https://ideadigital.agency/info/callback_form/?name=" + name + "&phone=" + phone + "&comment=" + comment + '&form_name=' + form_name + '&select=' + select,
                 method: "GET",
                 success: function (data) {
-                    $('.form__wrapper_submit').toggleClass('open');
+                    $('#form__wrapper_submit').toggleClass('open');
                     $('.form__wrapper_call').removeClass('open');
                 },
                 error: function (e) {

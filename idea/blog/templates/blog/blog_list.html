@@ -7,6 +7,31 @@
 
 <body class="page blog-list blog-wrapper">
 
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '667792043576710',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.12'
+        });
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/ru_RU/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-customerchat"
+     page_id="270207906818646"
+     minimized="true"
+     logged_in_greeting="Здравствуйте! Чем мы можем вам помочь?"
+     logged_out_greeting="Мы всегда на связи!">
+</div>
+
         <script>
                 fbq('track', 'Lead', {
                 value: 10.00,
